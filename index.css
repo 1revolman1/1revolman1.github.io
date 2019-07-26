@@ -9,6 +9,7 @@ div.desk {
   position: relative;
   height: 100vmin;
   width: 100vmin;
+  font-size: 50px;
   background: wheat;
   border: 2px solid black;
 }
