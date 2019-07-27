@@ -9,8 +9,8 @@
   position: absolute;
   top: calc(50% - 200px);
   left: calc(50% - 200px);
-  height: 70vmin;
-  width: 70vmin;
+  height: 400px;
+  width: 400px;
   border-radius: 300px;
   background: rgba(0, 0, 0, 0.644);
   -webkit-box-shadow: 10px 41px 45px 32px rgba(0, 0, 0, 0.75);
