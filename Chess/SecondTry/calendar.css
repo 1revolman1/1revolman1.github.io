@@ -6,7 +6,6 @@
 .main {
   height: 100vmin;
   width: 100vmin;
-  background: red;
   border: 5px solid black;
 }
 div.side {
@@ -20,7 +19,6 @@ div.mainboard {
   float: left;
   width: 90%;
   height: 90%;
-  background: yellow;
 }
 div.right,
 div.left {
@@ -54,7 +52,6 @@ div.drub {
   float: left;
   width: 100%;
   height: 50%;
-  background: green;
 }
 div.letter-tb,
 div.letter-rl {
