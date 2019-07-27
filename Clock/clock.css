@@ -1,0 +1,126 @@
+* {
+  text-align: center;
+  font-size: 99%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.clock {
+  position: absolute;
+  top: calc(50% - 200px);
+  left: calc(50% - 200px);
+  height: 90vmin;
+  width: 90vmin;
+  border-radius: 300px;
+  background: rgba(0, 0, 0, 0.644);
+  -webkit-box-shadow: 10px 41px 45px 32px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 41px 45px 32px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 41px 45px 32px rgba(0, 0, 0, 0.75);
+}
+div.mainframe {
+  border-radius: 90%;
+  position: absolute;
+  height: 90%;
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: yellow;
+}
+.topel,
+.leftel,
+.centel,
+.rightel,
+.bottel {
+  position: absolute;
+  border-radius: 100px;
+  height: 5%;
+  width: 5%;
+  background: white;
+}
+.leftel {
+  top: 50%;
+  left: 0%;
+  transform: translate(0%, -50%);
+}
+.topel {
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+img {
+  border-radius: 10000px;
+}
+.centel {
+  background: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.rightel {
+  top: 50%;
+  left: 100%;
+  transform: translate(-100%, -50%);
+}
+.bottel {
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+
+.min {
+  position: absolute;
+  height: 850%;
+  width: 10%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  transform-origin: 100% 0%;
+  background: white;
+  animation-name: timer;
+  animation-delay: 0s;
+  animation-duration: 720s;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.hour {
+  position: absolute;
+  height: 500%;
+  width: 20%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  transform-origin: 100% 0%;
+  background: white;
+  animation-name: timer;
+  animation-delay: 0s;
+  animation-duration: 8640s;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.sec {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  height: 1000%;
+  width: 5%;
+  transform-origin: 100% 0%;
+  background: white;
+  animation-name: timer;
+  animation-delay: 0s;
+  animation-duration: 60s;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes timer {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
