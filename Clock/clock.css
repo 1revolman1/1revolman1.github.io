@@ -11,6 +11,7 @@
   left: calc(50% - 200px);
   height: 400px;
   width: 400px;
+  border: 3px solid black;
   border-radius: 300px;
   background: rgba(0, 0, 0, 0.644);
   -webkit-box-shadow: 10px 41px 45px 32px rgba(0, 0, 0, 0.75);
@@ -25,7 +26,7 @@ div.mainframe {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: yellow;
+  border: 2px solid black;
 }
 .topel,
 .leftel,
@@ -48,7 +49,7 @@ div.mainframe {
   left: 50%;
   transform: translate(-50%, 0%);
 }
-img {
+img.ric {
   border-radius: 10000px;
 }
 .centel {
