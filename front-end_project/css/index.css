@@ -2,6 +2,21 @@
   margin: 0;
   padding: 0;
 }
+input[type="text"]::-ms-reveal,
+input[type="text"]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+body {
+  background: #ebebeb;
+}
+.wrapper {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 942px;
+  margin: 0 auto;
+}
 .button1 {
   display: flex;
   justify-content: center;
@@ -15,14 +30,11 @@ header {
   font-weight: 400;
   font-size: 18px;
   color: #ffffff;
+  height: 66px;
 }
 
 header .logo-wrapper {
-  display: flex;
-  justify-content: flex-start;
   height: 66px;
-  max-width: 891px;
-  margin: 0 auto;
 }
 header .logo {
   width: 80px;
@@ -51,19 +63,15 @@ header .logo-wrapper p {
 
 /* Nav Block*/
 
-nav .nav-wrapper {
-  display: flex;
-  justify-content: flex-start;
-  height: 69px;
-  max-width: 891px;
-  margin: 0 auto;
-}
 nav {
   box-sizing: border-box;
   background: #474747;
   font-family: "Arial MT";
-  font-size: 16px;
+  font-size: 12pt;
   font-weight: 400;
+}
+nav .nav-wrapper {
+  height: 69px;
 }
 nav .menu {
   list-style: none;
@@ -73,12 +81,10 @@ nav .menu {
 nav .menu li:not(:first-child) {
   margin-left: 55px;
   position: relative;
-  display: inline-block;
 }
 nav .menu li:first-child {
   margin-left: 24px;
   position: relative;
-  display: inline-block;
 }
 nav .menu > li:not(:last-child)::after {
   content: "";
@@ -91,13 +97,62 @@ nav .menu > li:not(:last-child)::after {
   top: 15%;
   margin-left: 27px;
 }
-.menu li a:hover::before {
+nav .menu li a:hover::before {
   content: "";
   display: block;
   width: 100%;
   height: 4px;
-  background: red;
+  background: #f26c4f;
   position: absolute;
   top: 100%;
   margin-top: 20px;
+}
+
+/*Section "SOCIAL" */
+.nodecorator {
+  text-decoration: none;
+}
+
+section.social {
+  background: #ebebeb;
+  font-size: 12pt;
+  font-family: Arial, Helvetica, sans-serif;
+}
+section.social .social-wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 46px;
+  margin: 15px auto 10px auto;
+}
+section.social .search_bar {
+  position: relative;
+  width: 340px;
+}
+section.social .search::placeholder {
+  color: #959595;
+  font-family: "Arial - Bold MT";
+  font-size: 12pt;
+  font-weight: 400;
+  padding: 19px 0 15px 20px;
+}
+section.social .search_img {
+  position: absolute;
+  top: 28%;
+  left: 92%;
+}
+section.social .social-wrapper .search {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+section.social .social-wrapper .soc {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+section.social .social-wrapper .soc li {
+  margin: 17px 0 20px 34px;
+}
+.soc li a {
+  color: #8f8f8f;
 }
