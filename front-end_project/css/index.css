@@ -154,18 +154,16 @@ section.social .social-wrapper .soc li {
 section.fcontent .wrapper {
   height: 786px;
   flex-direction: column;
-  background: red;
 }
 section.fcontent .firstblock {
   height: 391px;
   margin-bottom: 15px;
-  background: yellow;
+  background: #373737;
   position: relative;
   display: flex;
   flex-direction: row;
 }
-section.fcontent .firstblock img {
-}
+
 section.fcontent .firstblock .img::after {
   content: "";
   display: block;
@@ -176,9 +174,39 @@ section.fcontent .firstblock .img::after {
   height: 391px;
   background: #f26c4f;
 }
+section.fcontent .firstblock .img::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 631px;
+  border: 31px solid transparent;
+  border-left: 22px solid #f26c4f;
+  margin-top: 25px;
+}
+section.fcontent .firstblock .ftext {
+  width: 100%;
+  margin: 45px 45px 0 45px;
+  background: seagreen;
+}
+.ftext h1 {
+  color: #ffffff;
+  font-family: "Arial - Bold MT", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.19px;
+  margin-bottom: 17px;
+}
+.ftext p {
+  color: #a7a7a7;
+  font-family: "Arial MT";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 23px;
+}
 section.fcontent .secondblock {
   height: 380px;
-  background: green;
   display: flex;
   flex-direction: row;
 }
