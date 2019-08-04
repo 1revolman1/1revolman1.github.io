@@ -148,3 +148,44 @@ section.social .social-wrapper .soc li {
 .soc li a {
   color: #8f8f8f;
 }
+
+/* Section 1 Content*/
+
+section.fcontent .wrapper {
+  height: 786px;
+  flex-direction: column;
+  background: red;
+}
+section.fcontent .firstblock {
+  height: 391px;
+  margin-bottom: 15px;
+  background: yellow;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+section.fcontent .firstblock img {
+}
+section.fcontent .firstblock .img::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 631px;
+  width: 9px;
+  height: 391px;
+  background: #f26c4f;
+}
+section.fcontent .secondblock {
+  height: 380px;
+  background: green;
+  display: flex;
+  flex-direction: row;
+}
+section.fcontent .secondblock div {
+  width: 301px;
+  background: orange;
+}
+section.fcontent .secondblock div:not(:first-child) {
+  margin-left: 20px;
+}
