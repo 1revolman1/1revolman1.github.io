@@ -60,7 +60,7 @@ header .wrapper p {
 
 nav {
   background: #474747;
-  font-family: "Arial MT";
+  font-family: "Arial MT", sans-serif;
   font-size: 12pt;
   font-weight: 400;
 }
@@ -122,7 +122,7 @@ section.social .search_bar {
 }
 section.social .search::placeholder {
   color: #959595;
-  font-family: "Arial - Bold MT";
+  font-family: "Arial - Bold MT", sans-serif;
   font-size: 12pt;
   font-weight: 400;
   padding: 19px 0 15px 20px;
@@ -187,33 +187,72 @@ section.fcontent .firstblock .img::before {
 section.fcontent .firstblock .ftext {
   width: 100%;
   margin: 45px 45px 0 45px;
-  background: seagreen;
 }
 .ftext h1 {
   color: #ffffff;
   font-family: "Arial - Bold MT", sans-serif;
-  font-size: 22px;
+  font-size: 19pt;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 24px;
   letter-spacing: -0.19px;
   margin-bottom: 17px;
 }
 .ftext p {
   color: #a7a7a7;
-  font-family: "Arial MT";
-  font-size: 12px;
+  font-family: "Arial MT", sans-serif;
+  font-size: 12pt;
   font-weight: 400;
-  line-height: 23px;
+  line-height: 16px;
+  margin-bottom: 22px;
+}
+.ftext p#t2 {
+  margin: 0;
+  text-align: end;
 }
 section.fcontent .secondblock {
   height: 380px;
   display: flex;
   flex-direction: row;
 }
-section.fcontent .secondblock div {
-  width: 301px;
-  background: orange;
+section.fcontent .secondblock .ftext h2 {
+  color: #4f4f4f;
+  font-size: 23pt;
+  font-weight: 400;
+  line-height: 31px;
+  margin: 24px auto 26px 28px;
 }
-section.fcontent .secondblock div:not(:first-child) {
+section.fcontent .secondblock .ftext p {
+  color: #646464;
+  font-size: 12pt;
+  font-weight: 400;
+  line-height: 24px;
+  margin-left: 30px;
+}
+section.fcontent .secondblock .img::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 230px;
+  border: 35px solid transparent;
+  border-top: 35px solid #f26c4f;
+  border-right: 35px solid #f26c4f;
+}
+section.fcontent .secondblock .plus {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 4%;
+  left: 90%;
+}
+section.fcontent .secondblock div.block1,
+section.fcontent .secondblock div.block2,
+section.fcontent .secondblock div.block3 {
+  width: 301px;
+  position: relative;
+  background: #ffffff;
+}
+section.fcontent .secondblock div.block2,
+section.fcontent .secondblock div.block3 {
   margin-left: 20px;
 }
