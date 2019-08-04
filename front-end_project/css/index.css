@@ -214,6 +214,9 @@ section.fcontent .secondblock {
   display: flex;
   flex-direction: row;
 }
+section.fcontent .secondblock img {
+  width: 100%;
+}
 section.fcontent .secondblock .ftext h2 {
   color: #4f4f4f;
   font-size: 23pt;
@@ -224,7 +227,6 @@ section.fcontent .secondblock .ftext h2 {
 section.fcontent .secondblock .ftext p {
   color: #646464;
   font-size: 12pt;
-  font-weight: 400;
   line-height: 24px;
   margin-left: 30px;
 }
@@ -256,3 +258,5 @@ section.fcontent .secondblock div.block2,
 section.fcontent .secondblock div.block3 {
   margin-left: 20px;
 }
+
+/* Section 2 Content*/
