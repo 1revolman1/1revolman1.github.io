@@ -5,6 +5,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+	background:red;
+}
 .clock {
   position: absolute;
   top: calc(50% - 200px);
