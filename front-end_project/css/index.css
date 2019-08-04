@@ -32,11 +32,8 @@ header {
   color: #ffffff;
   height: 66px;
 }
-
-header .logo-wrapper {
-  height: 66px;
-}
 header .logo {
+  height: 66px;
   width: 80px;
   background-color: #f26c4f;
   position: relative;
@@ -53,10 +50,8 @@ header .logo::after {
 header .logo a {
   font-size: 36px;
 }
-header .logo-wrapper p {
-  display: flex;
+header .wrapper p {
   justify-content: flex-start;
-  align-items: center;
   font-family: Arial, Helvetica, sans-serif;
   margin-left: 23px;
 }
@@ -64,16 +59,13 @@ header .logo-wrapper p {
 /* Nav Block*/
 
 nav {
-  box-sizing: border-box;
   background: #474747;
   font-family: "Arial MT";
   font-size: 12pt;
   font-weight: 400;
 }
-nav .nav-wrapper {
-  height: 69px;
-}
 nav .menu {
+  height: 69px;
   list-style: none;
   display: flex;
   align-items: center;
@@ -86,7 +78,7 @@ nav .menu li:first-child {
   margin-left: 24px;
   position: relative;
 }
-nav .menu > li:not(:last-child)::after {
+nav .menu li:not(:last-child)::after {
   content: "";
   width: 1px;
   height: 15px;
