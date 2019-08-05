@@ -309,7 +309,7 @@ section.scontent .firstblock .firstblock1 > div::after {
   height: 173px;
   background-color: #ce4e32;
 }
-section.scontent .firstblock .firstblock2 > div::after {
+section.scontent .firstblock .firstblock2::after {
   content: "";
   display: block;
   position: absolute;
@@ -325,7 +325,6 @@ section.scontent .firstblock .firstblock3 > div::after {
   position: absolute;
   top: 0;
   left: 0;
-  /* Style for "Rectangle" */
   width: 4px;
   height: 76px;
   background-color: #ce4e32;
@@ -336,7 +335,7 @@ section.scontent .firstblock .firstblock1 div:not(:last-child) {
 }
 section.scontent .firstblock .firstblock1 .ftext {
   position: absolute;
-  margin: 36px auto auto 40px;
+  margin: 30px auto auto 40px;
 }
 section.scontent .firstblock .firstblock1 .ftext h2 {
   text-shadow: 0 1px 0 #ffffff;
@@ -398,6 +397,9 @@ section.scontent .firstblock .firstblock1 .ftext li:not(:last-child)::after {
 section.scontent .firstblock .firstblock1 .ftext span img:last-child {
   margin-right: 8px;
 }
+section.scontent .firstblock .firstblock2 .ftext {
+  margin: 25px auto auto 39px;
+}
 section.scontent .firstblock .firstblock2 {
   height: 98px;
   margin-bottom: 9px;
@@ -410,7 +412,6 @@ section.scontent .firstblock .firstblock2 h2 {
   font-size: 24px;
   line-height: 36px;
   letter-spacing: -0.24px;
-  margin: 28px auto auto 39px;
 }
 section.scontent .firstblock .firstblock2 ul {
   text-shadow: 0 1px 0 #ffffff;
@@ -419,7 +420,6 @@ section.scontent .firstblock .firstblock2 ul {
   font-size: 10px;
   line-height: 21px;
   letter-spacing: 0.1px;
-  margin: auto auto 25px 43px;
 }
 .firstblock2 li:not(:last-child) {
   margin-right: 18px;
@@ -442,17 +442,18 @@ section.scontent .firstblock .firstblock3 {
 section.scontent .firstblock .firstblock3 > div {
   height: 76px;
   position: relative;
+  margin-bottom: 10px;
 }
 section.scontent .firstblock .firstblock3 .ftext {
-  /* margin: 18px auto auto 39px; */
+  position: absolute;
+  margin: 28px auto auto 39px;
 }
 section.scontent .firstblock .firstblock3 .ftext h2 {
   text-shadow: 0 1px 0 #ffffff;
   color: #474747;
   font-family: "Arial - Bold MT", sans-serif;
-  font-size: 18px;
+  font-size: 17px;
   letter-spacing: -0.18px;
-  margin-top: 5px;
 }
 section.scontent .firstblock .firstblock3 .ftext ul {
   margin: 5px auto 10px auto;
@@ -464,22 +465,4 @@ section.scontent .firstblock .firstblock3 .ftext li {
   letter-spacing: 0.1px;
   position: relative;
   margin-right: 30px;
-}
-section.scontent .firstblock .firstblock3 .ftext li:not(:last-child)::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 20%;
-  left: 100%;
-  margin-left: 15px;
-  width: 1.5px;
-  height: 12px;
-  background-color: #dfdfdf;
-}
-section.scontent .firstblock .firstblock3 div:not(:last-child) {
-  margin-bottom: 7px;
-}
-section.scontent .secondblock {
-  background: green;
-  width: 300px;
 }
