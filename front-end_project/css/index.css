@@ -521,11 +521,73 @@ section.scontent .firstblock .firstblock3 .ftext li {
   text-shadow: 0 1px 0 #ffffff;
   color: #a7a7a7;
   line-height: 23px;
-  margin: 0;
+  margin: 2px auto auto auto;
 }
 .secondblock2 .ftext hr {
   height: 1px;
   box-shadow: 0 1px 0 #ffffff;
   background-color: #8f8f8f;
   margin-top: 30px;
+}
+
+/* Tcontent */
+
+.tcontent .wrapper {
+  height: 1611px;
+  margin-top: 23px;
+  flex-direction: row;
+}
+.tcontent .firstblock {
+  width: 66%;
+  background: salmon;
+  margin-right: 19px;
+}
+.tcontent .secondblock {
+  width: 32%;
+}
+.tcontent .secondblock2 {
+  height: 380px;
+}
+.tcontent .ftext {
+  height: 152px;
+}
+.tcontent .secondblock ul {
+  margin-top: 31px;
+  display: flex;
+  flex-direction: column;
+}
+.tcontent .secondblock a {
+  position: relative;
+  width: 300px;
+  height: 44px;
+  box-shadow: 0 1px 1px #000000;
+  background-color: #ffffff;
+  margin-bottom: 7px;
+  text-decoration: none;
+}
+.tcontent .secondblock a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 3px;
+  height: 44px;
+  background-color: #cacaca;
+  top: 0;
+  left: 0;
+}
+.tcontent .secondblock a p {
+  color: #474747;
+  font-family: "Arial - Bold MT", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: -0.16px;
+  margin: 8px auto auto 25px;
+}
+.tcontent .secondblock p > span {
+  color: #a7a7a7;
+  font-family: "Arial MT", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 23px;
 }
