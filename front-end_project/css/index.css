@@ -390,18 +390,18 @@ section.scontent .firstblock .firstblock1 .ftext li:not(:last-child)::after {
   background-color: #dfdfdf;
 }
 
-.firstblock1 > div:hover,
-.firstblock1 > div:hover p#wh,
-.firstblock1 > div:hover ul#wh > li,
-.firstblock1 > div:hover h2#wh,
-.firstblock2:hover,
-.firstblock2:hover p#wh,
-.firstblock2:hover ul#wh > li,
-.firstblock2:hover h2#wh,
-.firstblock3 > div:hover,
-.firstblock3 > div:hover p#wh,
-.firstblock3 > div:hover ul#wh > li,
-.firstblock3 > div:hover h2#wh {
+.scontent .firstblock1 > div:hover,
+.scontent .firstblock1 > div:hover p#wh,
+.scontent .firstblock1 > div:hover ul#wh > li,
+.scontent .firstblock1 > div:hover h2#wh,
+.scontent .firstblock2:hover,
+.scontent .firstblock2:hover p#wh,
+.scontent .firstblock2:hover ul#wh > li,
+.scontent .firstblock2:hover h2#wh,
+.scontent .firstblock3 > div:hover,
+.scontent .firstblock3 > div:hover p#wh,
+.scontent .firstblock3 > div:hover ul#wh > li,
+.scontent .firstblock3 > div:hover h2#wh {
   color: white;
   background: #f26c4f;
 }
@@ -539,8 +539,116 @@ section.scontent .firstblock .firstblock3 .ftext li {
 }
 .tcontent .firstblock {
   width: 66%;
-  background: salmon;
   margin-right: 19px;
+}
+
+.tcontent .firstblock1 {
+  height: 43px;
+  margin-bottom: 25px;
+}
+.tcontent .firstblock1 .readmore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tcontent .firstblock1 .readmore a {
+  display: flex;
+  flex-direction: column;
+}
+.tcontent .firstblock1 p {
+  text-shadow: 0 1px 0 #ffffff;
+  color: #bdbdbd;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+}
+.tcontent .firstblock2 {
+  display: flex;
+  flex-direction: column;
+  height: 380px;
+  margin-bottom: 31px;
+  font-family: "Arial - Bold MT", sans-serif;
+}
+.tcontent .firstblock2 .ftext {
+  height: 335px;
+  margin: 36px 45px auto 50px;
+}
+.tcontent .firstblock2 h2 {
+  color: #707070;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 25px;
+  margin-bottom: 28px;
+}
+.tcontent .firstblock2 p {
+  color: #707070;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+.tcontent .firstblock2 .likepad > div > p {
+  margin: auto 9px auto 26px;
+  color: #a2a2a2;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.tcontent .firstblock2 .likepad .heart {
+  position: absolute;
+  top: 20%;
+  left: 87%;
+}
+.tcontent .firstblock2 .likepad > div {
+  display: flex;
+  justify-items: center;
+}
+.tcontent .firstblock2 span {
+  color: #f26c4f;
+}
+.tcontent .firstblock2 .likepad {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 41px;
+  box-shadow: 0 1px 1px #000000;
+  background-color: #efefef;
+}
+.tcontent .firstblock3 {
+  display: flex;
+  flex-direction: column;
+  height: 615px;
+  margin-bottom: 32px;
+}
+.tcontent .img img {
+  width: 100%;
+  height: 100%;
+}
+.tcontent .firstblock3 > div {
+  height: 308px;
+}
+.tcontent .firstblock3 .ftext {
+  margin: 39px 65px auto 50px;
+}
+.tcontent .firstblock3 .ftext h2 {
+  color: #707070;
+  font-size: 30px;
+  line-height: 35px;
+  margin-bottom: 16px;
+}
+.tcontent .firstblock3 .ftext p:nth-child(2) {
+  color: #949494;
+  font-family: "Arial MT";
+  font-size: 14px;
+  margin-bottom: 0;
+  line-height: 25px;
+}
+.tcontent .firstblock3 .ftext p:nth-child(3) {
+  line-height: 22px;
+}
+.tcontent .firstblock4 {
+  height: 484px;
 }
 .tcontent .secondblock {
   width: 32%;
