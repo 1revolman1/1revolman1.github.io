@@ -176,15 +176,13 @@ section.fcontent .firstblock .useropt {
   box-shadow: 0 1px 1px #000000;
   background-color: #000000;
   opacity: 0.5;
+  font-family: "Arial MT", sans-serif;
 }
 section.fcontent .firstblock .useropt a {
   color: #ffffff;
-  font-family: "Arial MT", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
   line-height: 71px;
-  letter-spacing: -0.16px;
   text-decoration: none;
+  letter-spacing: -0.16px;
   margin: 24px auto 22px 30px;
 }
 section.fcontent .firstblock .img::after {
@@ -208,7 +206,6 @@ section.fcontent .firstblock .img::before {
   margin-top: 25px;
 }
 section.fcontent .firstblock .ftext {
-  width: 100%;
   margin: 45px 45px 0 45px;
 }
 .ftext h1 {
@@ -239,25 +236,16 @@ section.fcontent .secondblock {
   display: flex;
   flex-direction: row;
 }
-section.fcontent .secondblock img {
-  width: 100%;
-}
 section.fcontent .secondblock .ftext {
   margin: 24px 28px auto 28px;
 }
 section.fcontent .secondblock .ftext h2 {
   color: #4f4f4f;
-  font-size: 26px;
+  font-size: 25px;
   font-family: "Arial-BoldMT", "AdobeInvisFont", "MyriadPro-Regular", sans-serif;
-  font-weight: 400;
-  line-height: 31px;
-  text-align: left;
 }
 section.fcontent .secondblock .ftext p {
   color: #646464;
-  font-size: 12px;
-  font-family: "Arial-BoldMT", "AdobeInvisFont", "MyriadPro-Regular", sans-serif;
-  font-weight: 400;
   line-height: 24px;
   margin-top: 25px;
 }
@@ -278,16 +266,12 @@ section.fcontent .secondblock .plus {
   top: 4%;
   left: 90%;
 }
-section.fcontent .secondblock div.block1,
-section.fcontent .secondblock div.block2,
-section.fcontent .secondblock div.block3 {
+section.fcontent .secondblock > div {
   width: 301px;
   position: relative;
   background: #ffffff;
 }
-section.fcontent .secondblock div.block2,
-section.fcontent .secondblock div.block3 {
+section.fcontent .secondblock > div:not(:first-child) {
   margin-left: 20px;
 }
-
 /* Section 2 Content*/
