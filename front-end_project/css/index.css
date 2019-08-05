@@ -650,15 +650,32 @@ section.scontent .firstblock .firstblock3 .ftext li {
 .tcontent .firstblock4 {
   height: 484px;
 }
+.tcontent .firstblock4 .ftext {
+  padding: 61px 45px 0 50px;
+}
+.tcontent .firstblock4 .ftext h2 {
+  color: #707070;
+  font-size: 30px;
+  line-height: 25px;
+  margin-bottom: 25px;
+}
+.tcontent .firstblock4 .ftext p {
+  color: #949494;
+  font-size: 14px;
+  line-height: 22px;
+}
+.tcontent .firstblock4 .ftext p span {
+  line-height: 25px;
+}
 .tcontent .secondblock {
   width: 32%;
 }
 .tcontent .secondblock2 {
   height: 380px;
 }
-.tcontent .ftext {
+/* .tcontent .ftext {
   height: 152px;
-}
+} */
 .tcontent .secondblock ul {
   margin-top: 31px;
   display: flex;
