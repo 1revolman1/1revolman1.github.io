@@ -47,7 +47,7 @@ header .logo::after {
   top: 18px;
 }
 header .logo a {
-  font-size: 36px;
+  font-size: 48px;
 }
 header .wrapper p {
   justify-content: flex-start;
@@ -213,9 +213,8 @@ section.fcontent .firstblock .ftext {
 }
 .ftext h1 {
   color: #ffffff;
-  font-family: "Arial - Bold MT", sans-serif;
-  font-family: "Arial - Bold MT";
-  font-size: 22px;
+  font-family: "Arial-BoldMT", "AdobeInvisFont", "MyriadPro-Regular", sans-serif;
+  font-size: 19px;
   font-weight: 700;
   line-height: 24px;
   letter-spacing: -0.19px;
@@ -243,22 +242,24 @@ section.fcontent .secondblock {
 section.fcontent .secondblock img {
   width: 100%;
 }
+section.fcontent .secondblock .ftext {
+  margin: 24px 28px auto 28px;
+}
 section.fcontent .secondblock .ftext h2 {
   color: #4f4f4f;
-  font-family: "Arial - Bold MT", sans-serif;
   font-size: 26px;
+  font-family: "Arial-BoldMT", "AdobeInvisFont", "MyriadPro-Regular", sans-serif;
   font-weight: 400;
   line-height: 31px;
   text-align: left;
-  margin: 24px auto 26px 28px;
-  /* margin: 24px; */
 }
 section.fcontent .secondblock .ftext p {
   color: #646464;
   font-size: 12px;
+  font-family: "Arial-BoldMT", "AdobeInvisFont", "MyriadPro-Regular", sans-serif;
   font-weight: 400;
   line-height: 24px;
-  margin: 30px;
+  margin-top: 25px;
 }
 section.fcontent .secondblock .img::after {
   content: "";
