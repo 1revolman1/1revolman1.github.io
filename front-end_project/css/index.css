@@ -23,6 +23,7 @@ body {
   justify-content: flex-start;
   max-width: 942px;
   margin: 0 auto;
+  position: relative;
 }
 .button1 {
   display: flex;
@@ -161,7 +162,6 @@ section.social .social-wrapper .soc li {
 }
 
 /* Section 1 Content*/
-
 section.fcontent .wrapper {
   height: 786px;
   flex-direction: column;
@@ -224,6 +224,11 @@ section.fcontent .firstblock .ftext {
   letter-spacing: -0.19px;
   margin-bottom: 17px;
 }
+.ftext h2 {
+  color: #4f4f4f;
+  font-size: 25px;
+  font-family: "Arial-BoldMT", "AdobeInvisFont", "MyriadPro-Regular", sans-serif;
+}
 .ftext p {
   color: #a7a7a7;
   font-family: "Arial MT", sans-serif;
@@ -254,7 +259,7 @@ section.fcontent .secondblock .ftext p {
   line-height: 24px;
   margin-top: 25px;
 }
-section.fcontent .secondblock .img::after {
+.for-tl-triang .img::after {
   content: "";
   display: block;
   position: absolute;
@@ -264,11 +269,11 @@ section.fcontent .secondblock .img::after {
   border-top: 35px solid #f26c4f;
   border-right: 35px solid #f26c4f;
 }
-section.fcontent .secondblock .plus {
+.plus {
   content: "";
   display: block;
   position: absolute;
-  top: 4%;
+  top: 3%;
   left: 90%;
 }
 section.fcontent .secondblock > div {
@@ -280,6 +285,12 @@ section.fcontent .secondblock > div:not(:first-child) {
 }
 
 /* Section 2 Content*/
+.wrapper > .img {
+  position: absolute;
+  top: 33%;
+  right: 100%;
+  margin-right: 13px;
+}
 .white_bl {
   background: white;
 }
@@ -292,6 +303,7 @@ section.scontent .firstblock {
   flex-direction: column;
   width: 624px;
   margin-right: 20px;
+  position: relative;
 }
 section.scontent .firstblock .firstblock1 {
   height: 359px;
@@ -442,7 +454,9 @@ section.scontent .firstblock .firstblock3 {
 section.scontent .firstblock .firstblock3 > div {
   height: 76px;
   position: relative;
-  margin-bottom: 10px;
+}
+section.scontent .firstblock .firstblock3 > div:not(:last-child) {
+  margin-bottom: 7px;
 }
 section.scontent .firstblock .firstblock3 .ftext {
   position: absolute;
@@ -465,4 +479,53 @@ section.scontent .firstblock .firstblock3 .ftext li {
   letter-spacing: 0.1px;
   position: relative;
   margin-right: 30px;
+}
+
+/*SecondBlock*/
+.secondblock {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 100%;
+}
+.secondblock .secondblock1 {
+  height: 581px;
+  box-shadow: 0 1px 0 #d3d3d3;
+  background-color: #373737;
+  margin-bottom: 36px;
+  position: relative;
+}
+.secondblock1 .ftext {
+  margin: 31px 39px auto 29px;
+}
+.secondblock1 .ftext h2 {
+  color: #ffffff;
+  line-height: 31px;
+  margin-bottom: 20px;
+}
+.secondblock1 .ftext p {
+  color: #ffffff;
+  line-height: 24px;
+}
+.secondblock .secondblock2 {
+  height: 190px;
+}
+.secondblock2 .ftext h2 {
+  text-shadow: 0 1px 0 #ffffff;
+  font-size: 19px;
+  line-height: 24px;
+  letter-spacing: -0.19px;
+  margin-bottom: 19px;
+}
+.secondblock2 .ftext p {
+  text-shadow: 0 1px 0 #ffffff;
+  color: #a7a7a7;
+  line-height: 23px;
+  margin: 0;
+}
+.secondblock2 .ftext hr {
+  height: 1px;
+  box-shadow: 0 1px 0 #ffffff;
+  background-color: #8f8f8f;
+  margin-top: 30px;
 }
