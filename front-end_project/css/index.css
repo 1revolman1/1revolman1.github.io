@@ -216,7 +216,6 @@ section.fcontent .firstblock .ftext {
   line-height: 24px;
   letter-spacing: -0.19px;
   margin-bottom: 17px;
-  text-align: justify;
 }
 .ftext p {
   color: #a7a7a7;
@@ -225,7 +224,6 @@ section.fcontent .firstblock .ftext {
   font-weight: 400;
   line-height: 23px;
   margin-bottom: 22px;
-  text-align: justify;
 }
 .ftext p#t2 {
   margin: 0;
@@ -274,4 +272,48 @@ section.fcontent .secondblock > div {
 section.fcontent .secondblock > div:not(:first-child) {
   margin-left: 20px;
 }
+
 /* Section 2 Content*/
+
+section.scontent .wrapper {
+  margin-top: 20px;
+  flex-direction: row;
+}
+section.scontent .firstblock {
+  display: flex;
+  flex-direction: column;
+  width: 624px;
+  margin-right: 20px;
+}
+section.scontent .firstblock .firstblock1 {
+  height: 359px;
+  margin-bottom: 13px;
+}
+section.scontent .firstblock .firstblock1 > div {
+  height: 173px;
+  background: firebrick;
+}
+section.scontent .firstblock .firstblock1 div:not(:last-child) {
+  margin-bottom: 13px;
+}
+section.scontent .firstblock .firstblock2 {
+  height: 98px;
+  background: sienna;
+  margin-bottom: 9px;
+}
+section.scontent .firstblock .firstblock3 {
+  display: flex;
+  flex-direction: column;
+  height: 324px;
+}
+section.scontent .firstblock .firstblock3 > div {
+  height: 76px;
+  background: sandybrown;
+}
+section.scontent .firstblock .firstblock3 div:not(:last-child) {
+  margin-bottom: 7px;
+}
+section.scontent .secondblock {
+  background: green;
+  width: 300px;
+}
