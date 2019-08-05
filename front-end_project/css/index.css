@@ -8,6 +8,13 @@ input[type="text"]::-ms-clear {
   width: 0;
   height: 0;
 }
+a {
+  text-decoration: none;
+}
+ul {
+  display: flex;
+  list-style: none;
+}
 body {
   background: #ebebeb;
 }
@@ -180,7 +187,7 @@ section.fcontent .firstblock .useropt {
 }
 section.fcontent .firstblock .useropt a {
   color: #ffffff;
-  line-height: 71px;
+  line-height: 63px;
   text-decoration: none;
   letter-spacing: -0.16px;
   margin: 24px auto 22px 30px;
@@ -267,14 +274,15 @@ section.fcontent .secondblock .plus {
 section.fcontent .secondblock > div {
   width: 301px;
   position: relative;
-  background: #ffffff;
 }
 section.fcontent .secondblock > div:not(:first-child) {
   margin-left: 20px;
 }
 
 /* Section 2 Content*/
-
+.white_bl {
+  background: white;
+}
 section.scontent .wrapper {
   margin-top: 20px;
   flex-direction: row;
@@ -290,25 +298,183 @@ section.scontent .firstblock .firstblock1 {
   margin-bottom: 13px;
 }
 section.scontent .firstblock .firstblock1 > div {
+  position: relative;
   height: 173px;
-  background: firebrick;
 }
+section.scontent .firstblock .firstblock1 > div::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 4px;
+  height: 173px;
+  background-color: #ce4e32;
+}
+section.scontent .firstblock .firstblock2 > div::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 98px;
+  background-color: #ce4e32;
+}
+section.scontent .firstblock .firstblock3 > div::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* Style for "Rectangle" */
+  width: 4px;
+  height: 76px;
+  background-color: #ce4e32;
+}
+
 section.scontent .firstblock .firstblock1 div:not(:last-child) {
   margin-bottom: 13px;
 }
+section.scontent .firstblock .firstblock1 .ftext {
+  position: absolute;
+  margin: 36px auto auto 40px;
+}
+section.scontent .firstblock .firstblock1 .ftext h2 {
+  text-shadow: 0 1px 0 #ffffff;
+  color: #474747;
+  font-family: "Arial - Bold MT", sans-serif;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.24px;
+}
+section.scontent .firstblock .firstblock1 .ftext p {
+  text-shadow: 0 1px 0 #ffffff;
+  color: #707070;
+  font-family: "Arial MT", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+section.scontent .firstblock .firstblock1 .ftext ul {
+  margin: 5px auto 10px auto;
+}
+section.scontent .firstblock .firstblock1 .ftext li {
+  color: #8f8f8f;
+  position: relative;
+  font-family: Tahoma, sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.1px;
+  margin-right: 65px;
+}
+section.scontent .firstblock .firstblock1 .ftext li:not(:last-child)::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0%;
+  left: 100%;
+  margin-left: 30px;
+  width: 1.5px;
+  height: 21px;
+  background-color: #dfdfdf;
+}
+
+.firstblock1 > div:hover,
+.firstblock1 > div:hover p#wh,
+.firstblock1 > div:hover ul#wh > li,
+.firstblock1 > div:hover h2#wh,
+.firstblock2:hover,
+.firstblock2:hover p#wh,
+.firstblock2:hover ul#wh > li,
+.firstblock2:hover h2#wh,
+.firstblock3 > div:hover,
+.firstblock3 > div:hover p#wh,
+.firstblock3 > div:hover ul#wh > li,
+.firstblock3 > div:hover h2#wh {
+  color: white;
+  background: #f26c4f;
+}
+
+section.scontent .firstblock .firstblock1 .ftext span img:last-child {
+  margin-right: 8px;
+}
 section.scontent .firstblock .firstblock2 {
   height: 98px;
-  background: sienna;
   margin-bottom: 9px;
+  position: relative;
+}
+section.scontent .firstblock .firstblock2 h2 {
+  text-shadow: 0 1px 0 #ffffff;
+  color: #474747;
+  font-family: "Arial - Bold MT", sans-serif;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.24px;
+  margin: 28px auto auto 39px;
+}
+section.scontent .firstblock .firstblock2 ul {
+  text-shadow: 0 1px 0 #ffffff;
+  color: #8f8f8f;
+  font-family: Tahoma, sans-serif;
+  font-size: 10px;
+  line-height: 21px;
+  letter-spacing: 0.1px;
+  margin: auto auto 25px 43px;
+}
+.firstblock2 li:not(:last-child) {
+  margin-right: 18px;
+  position: relative;
+}
+section.scontent .firstblock .firstblock2 .ftext li:not(:last-child)::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 25%;
+  left: 100%;
+  margin-left: 10px;
+  width: 1.5px;
+  height: 12px;
+  background-color: #dfdfdf;
 }
 section.scontent .firstblock .firstblock3 {
-  display: flex;
-  flex-direction: column;
   height: 324px;
 }
 section.scontent .firstblock .firstblock3 > div {
   height: 76px;
-  background: sandybrown;
+  position: relative;
+}
+section.scontent .firstblock .firstblock3 .ftext {
+  /* margin: 18px auto auto 39px; */
+}
+section.scontent .firstblock .firstblock3 .ftext h2 {
+  text-shadow: 0 1px 0 #ffffff;
+  color: #474747;
+  font-family: "Arial - Bold MT", sans-serif;
+  font-size: 18px;
+  letter-spacing: -0.18px;
+  margin-top: 5px;
+}
+section.scontent .firstblock .firstblock3 .ftext ul {
+  margin: 5px auto 10px auto;
+}
+section.scontent .firstblock .firstblock3 .ftext li {
+  color: #8f8f8f;
+  font-family: Tahoma, sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.1px;
+  position: relative;
+  margin-right: 30px;
+}
+section.scontent .firstblock .firstblock3 .ftext li:not(:last-child)::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 20%;
+  left: 100%;
+  margin-left: 15px;
+  width: 1.5px;
+  height: 12px;
+  background-color: #dfdfdf;
 }
 section.scontent .firstblock .firstblock3 div:not(:last-child) {
   margin-bottom: 7px;
