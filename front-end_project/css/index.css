@@ -290,10 +290,6 @@ section.fcontent .secondblock > div:not(:first-child) {
   top: 33%;
   right: 100%;
   margin-right: 13px;
-  /* transition-property: top, right;
-  transition-duration: 2s;
-  transition-timing-function: linear;
-  transition-delay: 0; */
 }
 .ftext ul .img {
   width: 657px;
