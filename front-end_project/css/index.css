@@ -290,6 +290,43 @@ section.fcontent .secondblock > div:not(:first-child) {
   top: 33%;
   right: 100%;
   margin-right: 13px;
+  /* transition-property: top, right;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 0; */
+}
+.ftext ul .img {
+  width: 657px;
+  height: 159px;
+  position: absolute;
+  top: -22%;
+  left: -13%;
+  display: flex;
+  z-index: 99;
+  align-items: center;
+  opacity: 0;
+}
+.firstblock2 .ftext ul .img {
+  width: 622px;
+  height: 98px;
+  top: 0%;
+  left: -6%;
+}
+.firstblock3 .ftext ul .img {
+  width: 657px;
+  height: 76px;
+  top: -59%;
+  left: -13%;
+}
+.firstblock3 .block2 .ftext ul .img,
+.firstblock3 .block4 .ftext ul .img {
+  width: 657px;
+  height: 76px;
+  top: -59%;
+  left: -15%;
+}
+.ftext ul .img:hover {
+  opacity: 1;
 }
 .white_bl {
   background: white;
@@ -348,6 +385,9 @@ section.scontent .firstblock .firstblock1 div:not(:last-child) {
 section.scontent .firstblock .firstblock1 .ftext {
   position: absolute;
   margin: 30px auto auto 40px;
+}
+section.scontent .firstblock .firstblock1 .ftext::after {
+  background: url(/img/roler.svg);
 }
 section.scontent .firstblock .firstblock1 .ftext h2 {
   text-shadow: 0 1px 0 #ffffff;
@@ -613,7 +653,7 @@ section.scontent .firstblock .firstblock3 .ftext li {
   align-items: center;
   width: 100%;
   height: 41px;
-  box-shadow: 0 1px 1px #000000;
+  box-shadow: 0 1px 1px #b6b6b6;
   background-color: #efefef;
 }
 .tcontent .firstblock3 {
