@@ -1,0 +1,96 @@
+@import "mix.scss";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+nav {
+  @include flex($justify: center);
+  margin: 0 auto;
+  @include block($h: 55px, $bg: #343a40);
+  width: 100%;
+  position: fixed;
+  .wrapper-nav {
+    position: relative;
+    padding: 0 30px 0 30px;
+    @include flex($justify: space-between);
+    @include block($h: 100%, $bg: #343a40);
+    max-width: 625px;
+    a {
+      @include text($size: 20px, $color: white);
+    }
+    &-menu {
+      position: relative;
+      @include flex();
+      @include block(
+        $w: 45px,
+        $h: 38px,
+        $border: 1px solid rgba(255, 255, 255, 0.1),
+        $bRaduis: 13%,
+        $bg: #343a40
+      );
+      #menu__toggle {
+        opacity: 0;
+      }
+      .menu__btn {
+        @include flex();
+        @include block($w: 100%, $h: 100%, $bRaduis: 13%);
+        position: absolute;
+        cursor: pointer;
+        z-index: 1;
+      }
+      .burg {
+        @include block(
+          $w: 50%,
+          $h: 2%,
+          $border: 1px solid rgba(255, 255, 255, 0.1),
+          $bRaduis: 13%,
+          $bg: rgba(255, 255, 255, 0.644)
+        );
+      }
+      .burg::after {
+        @include block(
+          $w: 50%,
+          $h: 2%,
+          $border: 1px solid rgba(255, 255, 255, 0.1),
+          $bRaduis: 13%,
+          $bg: rgba(255, 255, 255, 0.644)
+        );
+        position: absolute;
+        top: 20%;
+        left: 23%;
+        content: "";
+      }
+      .burg::before {
+        @include block(
+          $w: 50%,
+          $h: 2%,
+          $border: 1px solid rgba(255, 255, 255, 0.1),
+          $bRaduis: 13%,
+          $bg: rgba(255, 255, 255, 0.644)
+        );
+        position: absolute;
+        top: 73%;
+        left: 23%;
+        content: "";
+      }
+      .menu__box {
+        list-style-type: none;
+        position: absolute;
+        top: 100%;
+        left: -1333%;
+        visibility: hidden;
+        background: #212529;
+      }
+      .menu__item {
+        // visibility: hidden;
+        text-decoration: none;
+        color: #5757a0;
+        padding: 10px 20px;
+      }
+      #menu__toggle:checked ~ .menu__box {
+        visibility: visible;
+      }
+    }
+  }
+}
