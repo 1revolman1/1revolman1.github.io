@@ -81,9 +81,20 @@ nav {
       min-width: 625px;
       background: #343a40;
       z-index: -1;
-      transition: top 0.5s ease; }
+      transition: top 0.5s ease;
+      width: 100vw; }
     nav .wrapper-nav .menu__item {
       text-decoration: none;
       color: white; }
     nav .wrapper-nav #menu__toggle:checked ~ .menu__box {
       top: 100%; }
+    nav .wrapper-nav .menu__box::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -349px;
+      width: 350px;
+      height: 100%;
+      border: none;
+      border-radius: 0;
+      background: #343a40; }
