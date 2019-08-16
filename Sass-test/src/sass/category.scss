@@ -1,0 +1,20 @@
+@import "mix.scss";
+.wrapper-category {
+  margin: 0 auto;
+  max-width: 576px;
+  h1 {
+    @include text($size: 40px);
+    font-weight: 500;
+  }
+  &-table {
+    margin: 24px 0 24px 0;
+    li {
+      padding: 12px 20px;
+      list-style: none;
+      border: 1px solid rgba(0, 0, 0, 0.125);
+      a {
+        @include text($size: 16px, $color: #007bff);
+      }
+    }
+  }
+}

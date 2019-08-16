@@ -1,12 +1,15 @@
 @import "mix.scss";
 @import "nav.scss";
 @import "category.scss";
+@import "selector.scss";
 * {
   margin: 0;
   padding: 0;
-  font-family: "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, "Noto Sans",
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji",
+    sans-serif;
 }
 
 article {
-  margin-top: 80px;
+  margin-top: 70px;
 }
