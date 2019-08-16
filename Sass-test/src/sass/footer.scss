@@ -1,0 +1,5 @@
+footer {
+  @include flex($justify: center);
+  @include block($h: 120px, $bg: #343a40);
+  @include text(15px, $color: white, $W: normal);
+}

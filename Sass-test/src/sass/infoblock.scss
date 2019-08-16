@@ -1,0 +1,49 @@
+@import "mix.scss";
+
+.wrapper-content {
+  max-width: 576px;
+  margin: 0 auto;
+  padding: 0px 25px;
+  .wrapper-block-info {
+    @include flex($direction: column);
+    height: 500px;
+    margin: 25px 0;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    .image {
+      height: 59%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .text {
+      padding: 20px;
+      height: 32%;
+      h2 {
+        margin: 0 0 12px;
+      }
+      h2 > a {
+        @include text(24px, #007bff);
+      }
+      h2 > a:hover {
+        text-decoration: underline;
+      }
+      h5 {
+        @include text(20px);
+        font-weight: bold;
+        margin: 0 0 8px;
+      }
+      p {
+        @include text(16px);
+        margin: 0 0 8px;
+      }
+    }
+    .raitingblock {
+      width: 100%;
+      height: 9%;
+      background: rgba(0, 0, 0, 0.03);
+      padding: 12px 20px;
+    }
+  }
+}

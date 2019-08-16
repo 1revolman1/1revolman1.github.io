@@ -1,6 +1,7 @@
 @import "mix.scss";
 .wrapper-category {
   margin: 0 auto;
+  padding: 0 25px;
   max-width: 576px;
   h1 {
     @include text($size: 40px);

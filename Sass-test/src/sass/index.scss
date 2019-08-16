@@ -3,8 +3,10 @@
 @import "category.scss";
 @import "selector.scss";
 @import "infoblock.scss";
+@import "footer.scss";
 * {
   margin: 0;
+  box-sizing: border-box;
   padding: 0;
   font-family: "Segoe UI", "Helvetica Neue", Arial, "Noto Sans",
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji",
