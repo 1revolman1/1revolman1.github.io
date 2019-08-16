@@ -15,4 +15,100 @@
 
 article {
   margin-top: 70px;
+  display: block;
+}
+// @media (min-width: 1024px) {
+//   nav {
+//     background: red;
+//   }
+//   nav > .wrapper-nav.wrapper-nav {
+//     max-width: 1024px;
+//     li {
+//       max-width: 1024px;
+//     }
+//   }
+//   .wrapper-category.wrapper-category {
+//     max-width: 1024px;
+//   }
+//   .wrapper-content.wrapper-content {
+//     @include flex($justify: flex-start, $align: flex-start, $direction: row);
+//     flex-wrap: wrap;
+//     margin-top: 10px;
+//     max-width: 1024px;
+//     .wrapper-block-info {
+//       height: 422px;
+//       width: 202px;
+//       .image {
+//         height: 30%;
+//       }
+//       .text {
+//         height: 60%;
+//       }
+//       .raitingblock {
+//         height: 10%;
+//       }
+//     }
+//     .oneblock.oneblock,
+//     .fourblock.fourblock {
+//       // margin-right: 15px;
+//       margin: 20px 15px 20px 0;
+//     }
+//     .fiveblock.fiveblock,
+//     .twoblock.twoblock {
+//       margin: 20px 15px;
+//     }
+//     .threeblock.threeblock,
+//     .sixblock.sixblock {
+//       // margin-left: 15px;
+//       margin: 20px 0 15px 15px;
+//     }
+//   }
+//   .wrapper-selector.wrapper-selector {
+//     height: 320px;
+//   }
+// }
+@media (min-width: 768px) {
+  article {
+    display: block;
+  }
+  nav {
+    .wrapper-nav {
+      max-width: 768px;
+      padding: 20px;
+      li {
+        max-width: 768px;
+      }
+    }
+  }
+  .wrapper-category {
+    max-width: 768px;
+  }
+  .wrapper-content {
+    @include flex($justify: flex-start, $align: flex-start, $direction: row);
+    flex-wrap: wrap;
+    max-width: 768px;
+    .wrapper-block-info {
+      height: 422px;
+      width: 344px;
+      .text {
+        height: 45%;
+      }
+      .raitingblock {
+        height: 10%;
+      }
+    }
+    .oneblock,
+    .threeblock,
+    .fiveblock {
+      margin-right: 15px;
+    }
+    .twoblock,
+    .fourblock,
+    .sixblock {
+      margin-left: 15px;
+    }
+  }
+  .wrapper-selector {
+    height: 270px;
+  }
 }

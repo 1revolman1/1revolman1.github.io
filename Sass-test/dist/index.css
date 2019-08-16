@@ -126,7 +126,6 @@ nav {
 
 .wrapper-selector {
   margin: 0 auto;
-  max-width: 576px;
   height: 200px;
   overflow: hidden;
   position: relative;
@@ -187,6 +186,10 @@ nav {
     transform: translate(-200%); }
 
 .wrapper-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   max-width: 576px;
   margin: 0 auto;
   padding: 0px 25px; }
@@ -196,10 +199,12 @@ nav {
     align-items: center;
     flex-direction: column;
     height: 500px;
+    width: 100%;
     margin: 25px 0;
     border: 1px solid rgba(0, 0, 0, 0.125); }
     .wrapper-content .wrapper-block-info .image {
-      height: 59%; }
+      height: 59%;
+      width: 100%; }
       .wrapper-content .wrapper-block-info .image img {
         width: 100%;
         height: 100%;
@@ -234,6 +239,11 @@ nav {
       height: 9%;
       background: rgba(0, 0, 0, 0.03);
       padding: 12px 20px; }
+    .wrapper-content .wrapper-block-info .raitingblock > p {
+      font-size: 12.8px;
+      color: inherit;
+      font-weight: normal;
+      text-decoration: none; }
 
 footer {
   display: flex;
@@ -257,4 +267,40 @@ footer {
   font-family: "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif; }
 
 article {
-  margin-top: 70px; }
+  margin-top: 70px;
+  display: block; }
+
+@media (min-width: 768px) {
+  article {
+    display: block; }
+  nav .wrapper-nav {
+    max-width: 768px;
+    padding: 20px; }
+    nav .wrapper-nav li {
+      max-width: 768px; }
+  .wrapper-category {
+    max-width: 768px; }
+  .wrapper-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 768px; }
+    .wrapper-content .wrapper-block-info {
+      height: 422px;
+      width: 344px; }
+      .wrapper-content .wrapper-block-info .text {
+        height: 45%; }
+      .wrapper-content .wrapper-block-info .raitingblock {
+        height: 10%; }
+    .wrapper-content .oneblock,
+    .wrapper-content .threeblock,
+    .wrapper-content .fiveblock {
+      margin-right: 15px; }
+    .wrapper-content .twoblock,
+    .wrapper-content .fourblock,
+    .wrapper-content .sixblock {
+      margin-left: 15px; }
+  .wrapper-selector {
+    height: 270px; } }
