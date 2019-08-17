@@ -123,6 +123,8 @@ nav {
         color: #007bff;
         font-weight: normal;
         text-decoration: none; }
+      .wrapper-category-table li a:hover {
+        text-decoration: underline; }
 
 .wrapper-selector {
   margin: 0 auto;

@@ -16,6 +16,9 @@
       a {
         @include text($size: 16px, $color: #007bff);
       }
+      a:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
