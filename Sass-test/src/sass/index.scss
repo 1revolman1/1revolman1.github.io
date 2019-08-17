@@ -41,7 +41,7 @@ article {
   .wrapper-category.wrapper-category {
     width: 320px;
     padding: 0;
-    margin: 10px 10px 0 0;
+    margin: 10px 20px 0 0;
   }
   .wrapper-content.wrapper-content {
     @include flex($justify: center, $align: center, $direction: row);
