@@ -279,10 +279,11 @@ article {
     align-items: flex-start;
     flex-direction: row;
     max-width: 1024px;
-    margin: 60px auto; }
+    margin: 60px auto;
+    padding: 30px; }
   nav > .wrapper-nav.wrapper-nav {
     max-width: 1024px;
-    padding: 0; }
+    padding: 20px; }
     nav > .wrapper-nav.wrapper-nav .menu__btn {
       display: none; }
     nav > .wrapper-nav.wrapper-nav .menu__box {

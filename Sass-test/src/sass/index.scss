@@ -22,10 +22,11 @@ article {
     @include flex($justify: center, $align: flex-start, $direction: row);
     max-width: 1024px;
     margin: 60px auto;
+    padding: 30px;
   }
   nav > .wrapper-nav.wrapper-nav {
     max-width: 1024px;
-    padding: 0;
+    padding: 20px;
     .menu__btn {
       display: none;
     }
