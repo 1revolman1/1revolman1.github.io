@@ -318,11 +318,45 @@ section.fcontent .secondblock > div:not(:first-child) {
 .firstblock3 .block4 .ftext ul .img {
   width: 657px;
   height: 76px;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.img-roler {
+  position: absolute;
+  opacity: 0;
+  left: -3%;
+  top: 0;
+  transition: left 0.3s linear;
+}
+.img-roler.img-block1 {
+  width: 103%;
+  z-index: 9999;
+  height: 83%;
+}
+.img-roler.img-block3 {
+  width: 103%;
+  z-index: 9999;
+  height: 100%;
+}
+.img-roler.img-block4 {
+  width: 105%;
+  z-index: 9999;
+  height: 87%;
+}
+.firstblock {
+  z-index: 99999;
+}
+.img-roler:hover {
+  opacity: 1;
+  left: -8%;
+  top: 30%;
+}
+.ftext ul .img.img.img.img:hover {
+  /* opacity: 1; */
   top: -59%;
   left: -15%;
-}
-.ftext ul .img:hover {
-  opacity: 1;
+  opacity: 99;
 }
 .white_bl {
   background: white;
@@ -380,7 +414,9 @@ section.scontent .firstblock .firstblock1 div:not(:last-child) {
 }
 section.scontent .firstblock .firstblock1 .ftext {
   position: absolute;
-  margin: 30px auto auto 40px;
+  /* margin: 30px auto auto 40px; */
+  box-sizing: border-box;
+  padding: 30px;
 }
 section.scontent .firstblock .firstblock1 .ftext::after {
   background: url(/img/roler.svg);
@@ -446,7 +482,9 @@ section.scontent .firstblock .firstblock1 .ftext span img:last-child {
   margin-right: 8px;
 }
 section.scontent .firstblock .firstblock2 .ftext {
-  margin: 25px auto auto 39px;
+  /* margin: 25px auto auto 39px; */
+  box-sizing: border-box;
+  padding: 20px;
 }
 section.scontent .firstblock .firstblock2 {
   height: 98px;
@@ -496,7 +534,9 @@ section.scontent .firstblock .firstblock3 > div:not(:last-child) {
 }
 section.scontent .firstblock .firstblock3 .ftext {
   position: absolute;
-  margin: 28px auto auto 39px;
+  box-sizing: border-box;
+  padding: 20px;
+  /* margin: 28px auto auto 39px; */
 }
 section.scontent .firstblock .firstblock3 .ftext h2 {
   text-shadow: 0 1px 0 #ffffff;
