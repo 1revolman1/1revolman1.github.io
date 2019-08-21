@@ -21,7 +21,7 @@ header {
     border: none;
     border-radius: 0;
     background: #e6e6e6;
-    max-width: 576px; }
+    max-width: 768px; }
     header .wrapper-logo {
       font-family: "Roboto Condensed", sans-serif;
       line-height: 65px;
@@ -97,7 +97,8 @@ header {
         width: 100%;
         background: #545454;
         z-index: -1;
-        transition: top 0.7s linear; }
+        transition: top 0.7s linear;
+        opacity: 0; }
       header .wrapper-menu ul {
         padding: 5px;
         list-style: none; }
@@ -109,6 +110,7 @@ header {
             font-weight: normal;
             text-decoration: none; }
       header .wrapper-menu #menu__toggle:checked ~ .menu__box {
+        opacity: 10;
         top: 100%; }
 
 article .wrapper-banner {
@@ -120,8 +122,6 @@ article .wrapper-banner {
   margin-top: 125px;
   max-width: 576px;
   height: 170px;
-  background-image: url("assets/banner.jpg");
-  background-size: 100% 100%;
   padding: 5px 66px; }
   article .wrapper-banner p {
     line-height: 35px;
@@ -130,6 +130,14 @@ article .wrapper-banner {
     color: #f3f3f3;
     font-weight: 700;
     text-decoration: none; }
+  article .wrapper-banner .hideable {
+    font-size: 15px;
+    color: #a8a8a8;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: "Roboto Slab", sans-serif;
+    line-height: 35px;
+    display: none; }
   article .wrapper-banner a {
     width: 130px;
     height: 40px;
@@ -157,8 +165,8 @@ article .wrapper-blocks {
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    height: 233px;
-    width: 215px; }
+    width: 215px;
+    margin: 20px auto; }
     article .wrapper-blocks-block1 h3 {
       color: #4e4e4e;
       font-size: 18px;
@@ -254,20 +262,24 @@ article .wrapper-remark {
     font-weight: 400;
     line-height: 30px; }
 
+.baner {
+  background-image: url(assets/banner.jpg);
+  background-size: 100% 100%; }
+
 footer {
   background: #1d1d1d; }
   footer .wrapper {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    flex-direction: column; }
+    align-items: flex-start;
+    flex-direction: column;
+    max-width: 576px;
+    margin: 0 auto; }
     footer .wrapper .wrapper1 {
       display: flex;
       justify-content: space-around;
-      align-items: center;
-      flex-direction: column;
-      max-width: 576px;
-      margin: 0 auto; }
+      align-items: flex-start;
+      flex-direction: column; }
       footer .wrapper .wrapper1-touch {
         padding: 60px 40px 0; }
         footer .wrapper .wrapper1-touch h3 {
@@ -298,6 +310,8 @@ footer {
               margin-left: 10px;
               font-family: "Roboto", sans-serif;
               line-height: 24px; }
+      footer .wrapper .wrapper1-touch {
+        list-style: none; }
       footer .wrapper .wrapper1-touch > *:not(:last-child) {
         margin-bottom: 10px; }
       footer .wrapper .wrapper1-twitter {
@@ -379,10 +393,6 @@ footer {
   footer .wrapper-right {
     padding: 0 40px 40px; }
     footer .wrapper-right p {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: row;
       font-size: 14px;
       color: #cacaca;
       font-weight: 400;
@@ -395,3 +405,120 @@ footer {
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto Slab", sans-serif; }
+
+@media (min-width: 768px) {
+  header .wrapper {
+    max-width: 1024px; }
+  article .wrapper-banner {
+    max-width: 768px; }
+    article .wrapper-banner .hideable {
+      display: block; }
+  article .wrapper-blocks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-top: 30px; }
+    article .wrapper-blocks-block1 {
+      margin: 0; }
+    article .wrapper-blocks-block1:last-child {
+      margin: 0; }
+  article .wrapper-blocks::after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px; }
+  article .wrapper-remark {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column; } }
+
+@media (min-width: 1024px) {
+  header {
+    flex-direction: column;
+    position: unset; }
+    header .wrapper {
+      max-width: 1024px;
+      padding: 20px;
+      flex-direction: row;
+      align-items: center;
+      padding: 20px; }
+      header .wrapper .wrapper-menu {
+        background: transparent; }
+        header .wrapper .wrapper-menu label {
+          display: none; }
+        header .wrapper .wrapper-menu ul {
+          opacity: 1000;
+          top: 7%;
+          left: 50%;
+          width: initial;
+          display: flex;
+          z-index: 9999;
+          transition: top 0s linear;
+          background: transparent; }
+          header .wrapper .wrapper-menu ul a {
+            color: #4e4e4e; }
+          header .wrapper .wrapper-menu ul a:hover {
+            color: #47c4ac; }
+  .baner .wrapper-banner {
+    margin-top: 0;
+    height: 600px;
+    padding: 0;
+    justify-content: center;
+    align-items: center; }
+  .content .wrapper-blocks {
+    padding: 20px;
+    max-width: 1024px; }
+  .content .wrapper-text {
+    max-width: 1024px;
+    padding: 20px;
+    align-items: flex-start;
+    margin: 40px auto; }
+    .content .wrapper-text p {
+      margin: 0 0 20px; }
+    .content .wrapper-text-block {
+      width: 100%;
+      justify-content: flex-start;
+      flex-direction: row; }
+    .content .wrapper-text-block1.wrapper-text-block1 {
+      margin: 0;
+      margin-right: 20px;
+      flex-grow: 1; }
+  .content .wrapper-remark-block p {
+    font-size: 20px;
+    color: #a1a1a1;
+    font-weight: 400;
+    text-decoration: none;
+    font-family: "Roboto Slab", sans-serif;
+    line-height: 30px; }
+  footer .wrapper {
+    max-width: 1024px; }
+    footer .wrapper .wrapper1 {
+      padding: 20px;
+      position: relative;
+      flex-direction: row;
+      align-items: stretch; }
+      footer .wrapper .wrapper1 > * {
+        padding: 0;
+        padding-right: 10px;
+        flex: auto;
+        width: 25%; }
+    footer .wrapper .wrapper1::after {
+      display: none; }
+    footer .wrapper .wrapper-right {
+      padding: 0;
+      width: 100%; }
+      footer .wrapper .wrapper-right p {
+        padding-top: 30px; }
+    footer .wrapper .wrapper-right::before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 10px;
+      height: 2px;
+      background-color: #ffffff;
+      opacity: 0.11; } }

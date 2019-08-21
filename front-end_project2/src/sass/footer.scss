@@ -3,11 +3,20 @@
 footer {
   background: #1d1d1d;
   .wrapper {
-    @include flex($justify: space-around, $align: center, $direction: column);
+    @include flex(
+      $justify: space-around,
+      $align: flex-start,
+      $direction: column
+    );
+    max-width: 576px;
+    margin: 0 auto;
     .wrapper1 {
-      @include flex($justify: space-around, $align: center, $direction: column);
-      max-width: 576px;
-      margin: 0 auto;
+      @include flex(
+        $justify: space-around,
+        $align: flex-start,
+        $direction: column
+      );
+
       // height: 200px;
       &-touch {
         // padding: 60px 100px;
@@ -36,6 +45,9 @@ footer {
             }
           }
         }
+      }
+      &-touch {
+        list-style: none;
       }
       &-touch > *:not(:last-child) {
         margin-bottom: 10px;
@@ -117,7 +129,7 @@ footer {
   .wrapper-right {
     padding: 0 40px 40px;
     p {
-      @include flex($justify: center, $align: center, $direction: row);
+      // @include flex($justify: center, $align: center, $direction: row);
       @include text(14px, #cacaca, 400);
       font-family: "Roboto", sans-serif;
       line-height: 22px;

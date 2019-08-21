@@ -5,13 +5,17 @@ article {
     margin-top: 125px;
     max-width: 576px;
     height: 170px;
-    background-image: url("assets/banner.jpg");
-    background-size: 100% 100%;
     padding: 5px 66px;
     p {
       line-height: 35px;
       text-align: center;
       @include text(20px, $color: #f3f3f3, $W: 700);
+    }
+    .hideable {
+      @include text(15px, $color: #a8a8a8, $W: 700);
+      font-family: "Roboto Slab", sans-serif;
+      line-height: 35px;
+      display: none;
     }
     a {
       width: 130px;
@@ -38,8 +42,9 @@ article {
     margin: 0 auto;
     &-block1 {
       @include flex($justify: space-around, $align: center, $direction: column);
-      height: 233px;
+      // height: 233px;
       width: 215px;
+      margin: 20px auto;
       // background: red;
       h3 {
         color: #4e4e4e;
@@ -132,4 +137,8 @@ article {
       line-height: 30px;
     }
   }
+}
+.baner {
+  background-image: url(assets/banner.jpg);
+  background-size: 100% 100%;
 }

@@ -8,3 +8,198 @@
   box-sizing: border-box;
   font-family: "Roboto Slab", sans-serif;
 }
+// @media (min-width: 576px) {
+//   header {
+//     .wrapper {
+//       max-width: 768px;
+//     }
+//   }
+//   article {
+//     .wrapper-banner {
+//       max-width: 768px;
+//       .hideable {
+//         display: block;
+//       }
+//     }
+//     .wrapper-blocks {
+//       @include flex($justify: space-around, $align: center, $direction: row);
+//       flex-wrap: wrap;
+//       margin: 0 auto;
+//       padding-top: 30px;
+//       &-block1 {
+//         margin: 0;
+//       }
+//       &-block1:last-child {
+//         margin: 0;
+//       }
+//     }
+//     .wrapper-blocks::after {
+//       @include flex($justify: center, $align: center, $direction: column);
+//       margin-top: 60px;
+//     }
+//     .wrapper-remark {
+//       @include flex($justify: space-around, $align: center, $direction: column);
+//     }
+//   }
+//   footer {
+//     .wrapper {
+//       .wrapper1::after {
+//         width: 100%;
+//       }
+//     }
+//   }
+// }
+@media (min-width: 768px) {
+  header {
+    .wrapper {
+      max-width: 1024px;
+    }
+  }
+  article {
+    .wrapper-banner {
+      max-width: 768px;
+      .hideable {
+        display: block;
+      }
+    }
+    .wrapper-blocks {
+      @include flex($justify: space-around, $align: center, $direction: row);
+      flex-wrap: wrap;
+      margin: 0 auto;
+      padding-top: 30px;
+      &-block1 {
+        margin: 0;
+      }
+      &-block1:last-child {
+        margin: 0;
+      }
+    }
+    .wrapper-blocks::after {
+      @include flex($justify: center, $align: center, $direction: column);
+      margin-top: 60px;
+    }
+    .wrapper-remark {
+      @include flex($justify: space-around, $align: center, $direction: column);
+    }
+  }
+}
+@media (min-width: 1024px) {
+  header {
+    flex-direction: column;
+    position: unset;
+    .wrapper {
+      max-width: 1024px;
+      padding: 20px;
+      flex-direction: row;
+      align-items: center;
+      padding: 20px;
+      .wrapper-menu {
+        background: transparent;
+        label {
+          display: none;
+        }
+        ul {
+          opacity: 1000;
+          top: 7%;
+          left: 50%;
+          width: initial;
+          display: flex;
+          z-index: 9999;
+          transition: top 0s linear;
+          background: transparent;
+          a {
+            color: #4e4e4e;
+          }
+          a:hover {
+            color: #47c4ac;
+          }
+        }
+      }
+    }
+  }
+  .baner {
+    .wrapper-banner {
+      margin-top: 0;
+      height: 600px;
+      // padding: 150px 0;
+      padding: 0;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .content {
+    .wrapper-blocks {
+      padding: 20px;
+      max-width: 1024px;
+    }
+    .wrapper-text {
+      max-width: 1024px;
+      padding: 20px;
+      align-items: flex-start;
+      margin: 40px auto;
+      p {
+        margin: 0 0 20px;
+        // margin: 80px 0 20px;
+      }
+      &-block {
+        width: 100%;
+        justify-content: flex-start;
+        flex-direction: row;
+      }
+      &-block1.wrapper-text-block1 {
+        margin: 0;
+        margin-right: 20px;
+        flex-grow: 1;
+      }
+    }
+    .wrapper-remark {
+      &-block {
+        p {
+          @include text(20px, #a1a1a1, 400);
+          font-family: "Roboto Slab", sans-serif;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+  footer {
+    .wrapper {
+      max-width: 1024px;
+      .wrapper1 {
+        padding: 20px;
+        position: relative;
+        flex-direction: row;
+        align-items: stretch;
+        & > * {
+          padding: 0;
+          padding-right: 10px;
+          flex: auto;
+          width: 25%;
+        }
+      }
+      .wrapper1::after {
+        // position: absolute;
+        // top: 110%;
+        // width: 100%;
+        // margin: 0;
+        display: none;
+      }
+      .wrapper-right {
+        padding: 0;
+        width: 100%;
+        p {
+          padding-top: 30px;
+        }
+      }
+      .wrapper-right::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 10px;
+        height: 2px;
+        background-color: #ffffff;
+        opacity: 0.11;
+      }
+    }
+  }
+}
