@@ -1,0 +1,135 @@
+article {
+  .wrapper-banner {
+    @include flex($justify: space-around, $align: center, $direction: column);
+    margin: 0 auto;
+    margin-top: 125px;
+    max-width: 576px;
+    height: 170px;
+    background-image: url("assets/banner.jpg");
+    background-size: 100% 100%;
+    padding: 5px 66px;
+    p {
+      line-height: 35px;
+      text-align: center;
+      @include text(20px, $color: #f3f3f3, $W: 700);
+    }
+    a {
+      width: 130px;
+      height: 40px;
+      background: #3d8ec1;
+      box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.15);
+      text-decoration: none;
+      transition: background 0.6s ease;
+      p {
+        font-size: 13px;
+        text-align: center;
+        text-transform: uppercase;
+        color: white;
+      }
+    }
+
+    a:hover {
+      background: #bd3dc1;
+    }
+  }
+  .wrapper-blocks {
+    @include flex($justify: center, $align: center, $direction: column);
+    max-width: 576px;
+    margin: 0 auto;
+    &-block1 {
+      @include flex($justify: space-around, $align: center, $direction: column);
+      height: 233px;
+      width: 215px;
+      // background: red;
+      h3 {
+        color: #4e4e4e;
+        font-size: 18px;
+        font-weight: 700;
+        // line-height: 30px;
+      }
+      p {
+        color: #616161;
+        font-size: 12px;
+        text-align: center;
+        font-weight: 400;
+        line-height: 24px;
+      }
+    }
+    &-block1:last-child {
+      margin-bottom: 100px;
+    }
+  }
+  .wrapper-blocks::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    opacity: 0.11;
+  }
+  .wrapper-text {
+    @include flex($justify: space-around, $align: center, $direction: column);
+    max-width: 576px;
+    margin: 0 auto;
+    p {
+      @include text(18px, $color: #4e4e4e, $W: 700);
+      font-family: "Roboto Condensed", sans-serif;
+      line-height: 35px;
+      text-transform: uppercase;
+      margin: 80px 0 60px 0;
+    }
+    &-block {
+      @include flex($justify: space-around, $align: center, $direction: column);
+      .wrapper-text-block1 {
+        @include flex(
+          $justify: flex-start,
+          $align: flex-start,
+          $direction: column
+        );
+        margin: 30px;
+        // width: 380px;
+        // height: 400px;
+        width: 235px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+        h3 {
+          @include text(16px, $color: #4e4e4e, $W: 700);
+          font-family: "Roboto Slab", sans-serif;
+        }
+        span {
+          @include text(12px, $color: #a8a8a8, $W: 400);
+          font-family: "Roboto Slab", sans-serif;
+          line-height: 35px;
+        }
+        p {
+          @include text(13px, $color: #5c5c5c, $W: 400);
+          margin: 0;
+          font-family: "Roboto", sans-serif;
+          line-height: 25px;
+          text-transform: none;
+        }
+      }
+    }
+  }
+  .wrapper-remark {
+    height: 300px;
+    background: #f0f0f0;
+    padding: 40px;
+    &-block {
+      @include flex($justify: space-around, $align: center, $direction: column);
+      max-width: 576px;
+      margin: 0 auto;
+    }
+    p {
+      margin-top: 37px;
+      text-align: center;
+      color: #a1a1a1;
+      font-family: "Roboto Slab", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 30px;
+    }
+  }
+}
