@@ -293,6 +293,8 @@ article {
       left: 0;
       display: flex;
       position: relative; }
+  nav .wrapper-nav #menu__toggle:checked ~ .menu__box {
+    top: inherit; }
   .wrapper-category.wrapper-category {
     width: 320px;
     padding: 0;

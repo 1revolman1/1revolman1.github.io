@@ -469,6 +469,8 @@ footer {
             color: #4e4e4e; }
           header .wrapper .wrapper-menu ul a:hover {
             color: #47c4ac; }
+        header .wrapper .wrapper-menu #menu__toggle:checked ~ .menu__box {
+          top: inherit; }
   .baner .wrapper-banner {
     margin-top: 0;
     height: 600px;
