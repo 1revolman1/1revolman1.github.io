@@ -44,16 +44,12 @@ setInterval(() => {
       Math.round((Math.random() * (MAX_Y - STEP - STEP) + STEP) / STEP) * STEP;
     let foodX = food.findIndex(item => item.x == randX);
     let foodY = food.findIndex(item => item.y == randY);
-    if (foodX != -1) {
-      randX = 0;
+    if (foodX != -1)
       randX =
         Math.round((Math.random() * (MAX_X - STEP - STEP) + STEP) / 10) * 10;
-    }
-    if (foodY != -1) {
-      randY = 0;
+    if (foodY != -1)
       randY =
         Math.round((Math.random() * (MAX_Y - STEP - STEP) + STEP) / 10) * 10;
-    }
     food.push({
       x: randX,
       y: randY,
