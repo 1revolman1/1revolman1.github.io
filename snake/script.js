@@ -38,8 +38,22 @@ setInterval(() => {
   if (food.length < 6) {
     const div = document.createElement("div");
     div.className = "food";
-    const randX = Math.round((Math.random() * (MAX_X - STEP) + STEP) / 10) * 10;
-    const randY = Math.round((Math.random() * (MAX_Y - STEP) + STEP) / 10) * 10;
+    let randX =
+      Math.round((Math.random() * (MAX_X - STEP - STEP) + STEP) / STEP) * STEP;
+    let randY =
+      Math.round((Math.random() * (MAX_Y - STEP - STEP) + STEP) / STEP) * STEP;
+    let foodX = food.findIndex(item => item.x == randX);
+    let foodY = food.findIndex(item => item.y == randY);
+    if (foodX != -1) {
+      randX = 0;
+      randX =
+        Math.round((Math.random() * (MAX_X - STEP - STEP) + STEP) / 10) * 10;
+    }
+    if (foodY != -1) {
+      randY = 0;
+      randY =
+        Math.round((Math.random() * (MAX_Y - STEP - STEP) + STEP) / 10) * 10;
+    }
     food.push({
       x: randX,
       y: randY,
@@ -47,13 +61,14 @@ setInterval(() => {
     });
     div.style.top = `${food[food.length - 1].y}px`;
     div.style.left = `${food[food.length - 1].x}px`;
+    //ВВЕСТИ ФАЙНД В КОНСОЛЬ
     root.appendChild(div);
   }
 }, 1000);
 
 window.onkeyup = event => {
   if ([37, 38, 39, 40, 65, 87, 68, 83].includes(event.keyCode)) {
-    console.log(event.keyCode);
+    // console.log(event.keyCode);
     const x = snake[0].x;
     const y = snake[0].y;
 
