@@ -30,7 +30,13 @@
         position: absolute;
         border: 1px solid;
       }
-
+      .snake_head {
+        width: 10px;
+        height: 10px;
+        background: greenyellow;
+        position: absolute;
+        border: 1px solid;
+      }
       .control-panel {
         height: 100px;
         background: yellow;
@@ -45,7 +51,18 @@
     </style>
   </head>
   <body>
-    <h1 class="control-panel"></h1>
+    <div class="banner">
+      <div class="content-banner">
+        <h2>It's final!</h2>
+        <p></p>
+        <div class="btn">Click</div>
+      </div>
+    </div>
+    <h1 class="control-panel">
+      <p>direction: <span class="direction"></span></p>
+      <p>score: <span class="score">0</span></p>
+    </h1>
     <div id="root"></div>
+    <div id="item"></div>
   </body>
 </html>
