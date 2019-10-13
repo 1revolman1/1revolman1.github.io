@@ -1,4 +1,3 @@
-//PAUSE,INTERFACE MENU,SCORE
 let snake = [
   {
     x: 70,
@@ -13,6 +12,7 @@ let snake = [
     y: 30
   }
 ];
+let level = 0;
 let GAMEID = [0, 0];
 let food = [];
 const MAX_Y = 450;
@@ -24,6 +24,7 @@ let PAUSE = false;
 let _snake_direction = "top";
 
 document.querySelector(".banner").style.display = "none";
+document.querySelector(".level").innerText = level + 1;
 
 function add_snake_to_game_pad() {
   snake.forEach(e => {
@@ -71,27 +72,16 @@ function helpSwitchEndToHead(x, y) {
   snake[0].link.className = "block snake_head";
   snake[1].link.className = "block";
 }
-
-function game_start() {
-  (score = 0), (last_score = -1), (food = []);
-  snake = [
-    {
-      x: 70,
-      y: 20
-    },
-    {
-      x: 70,
-      y: 30
-    },
-    {
-      x: 80,
-      y: 30
-    }
-  ];
-  add_snake_to_game_pad();
+function snake_reposition(SPEED = 500) {
   GAMEID[0] = setInterval(() => {
+    console.log(SPEED);
     const x = snake[0].x;
     const y = snake[0].y;
+    if ((level + 1) * 10 == score) {
+      // level++;
+      document.querySelector(".level").innerText = ++level + 1;
+      new_level(level);
+    }
     if (last_score >= score) {
       gamer_die();
     }
@@ -122,7 +112,33 @@ function game_start() {
     document.querySelector(
       ".control-panel .direction"
     ).innerHTML = _snake_direction;
-  }, 500);
+  }, SPEED);
+}
+function new_level(lev) {
+  lev *= 50;
+  console.log("NEW LEVEL");
+  console.log(lev);
+  clearInterval(GAMEID[0]);
+  snake_reposition(500 - lev);
+}
+function game_start() {
+  (score = 0), (last_score = -1), (food = []);
+  snake = [
+    {
+      x: 70,
+      y: 20
+    },
+    {
+      x: 70,
+      y: 30
+    },
+    {
+      x: 80,
+      y: 30
+    }
+  ];
+  add_snake_to_game_pad();
+  new_level(level);
   GAMEID[1] = setInterval(() => {
     if (food.length < 6) {
       const div = document.createElement("div");
@@ -148,7 +164,10 @@ window.onkeydown = event => {
     if (KEY_CODE === 83 && event.keyCode === 87) return;
     if (KEY_CODE === 65 && event.keyCode === 68) return;
     if (KEY_CODE === 68 && event.keyCode === 65) return;
-    if (event.keyCode === 32) {
+    if (event.keyCode === 32 && PAUSE == true) {
+      PAUSE = false;
+      return;
+    } else if (event.keyCode === 32) {
       PAUSE = true;
       return;
     }
@@ -158,9 +177,7 @@ window.onkeydown = event => {
     KEY_CODE = event.keyCode;
   }
 };
-
-document.querySelector(".btn").addEventListener("click", function(event) {
-  console.log(event.target);
+document.querySelector(".btn").addEventListener("click", function() {
   document.querySelector(".banner").style.display = "none";
   game_start();
 });
@@ -171,6 +188,7 @@ function clear_game_pad() {
   });
 }
 function gamer_die() {
+  level = 0;
   clearInterval(GAMEID[0]);
   clearInterval(GAMEID[1]);
   document.querySelector(".banner").style.display = "flex";
