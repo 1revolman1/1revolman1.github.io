@@ -92,6 +92,7 @@ document.querySelector(".town-list").addEventListener("click", function(event) {
     info_zapros[0] = event.target.textContent;
   }
   console.log(info_zapros[0]);
+  document.querySelector(".wrapper-link").style.display = "";
   document.querySelector(
     ".code"
   ).textContent = ` <script src="widget.js" country="${info_zapros[1]}" town="${
