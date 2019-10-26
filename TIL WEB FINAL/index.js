@@ -58,3 +58,13 @@ document.querySelectorAll(".slider .block").forEach(e => {
     255
   )}, ${randomInteger(0, 255)})`;
 });
+
+let slideShow = 1;
+$(".slider").slick({
+  // dots: true,
+  arrows: true,
+  infinite: true,
+  centerMode: true,
+  slidesToShow: slideShow,
+  slidesToScroll: 3
+});
