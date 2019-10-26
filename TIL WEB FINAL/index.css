@@ -165,7 +165,7 @@ header {
   align-items: flex-end;
   flex-direction: row;
   height: 577px;
-  background-image: url("/assets/images/blue.png");
+  background-image: url("./assets/blue.png");
   background-size: 140% 100%;
   padding-bottom: 120px;
   max-width: 768px;
@@ -192,32 +192,46 @@ header {
     top: -5px;
     right: -5px; }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0; }
-
 .banner-information {
   height: 1270px;
   z-index: 999;
-  margin: 0 auto;
-  background: red; }
+  margin: 0 auto; }
   .banner-information .wrapper {
     position: relative;
     width: 100%;
     max-width: 768px;
     height: 100%;
-    margin: 0 auto;
-    background: gold; }
+    margin: 0 auto; }
     .banner-information .wrapper .block-line {
       position: absolute;
-      top: 366px;
-      left: -436.794098px;
-      width: 462px;
-      height: 967px;
-      transform: matrix(1.8, 0.69, -0.3, 0.67, 0.8, 0);
-      background: transparent url("/assets/images/Trazado 76.svg") 0% 0% no-repeat padding-box;
-      opacity: 1; }
+      background: transparent url("./assets/Trazado 76.svg") 0% 0% no-repeat padding-box;
+      opacity: 1;
+      top: -154px;
+      left: -342.794098px;
+      width: 780px;
+      height: 1006px;
+      transform: scale(0.65); }
+    .banner-information .wrapper .block-line2 {
+      position: absolute;
+      width: 205px;
+      height: 705px;
+      top: 295px;
+      transform: scale(0.8);
+      right: -20px;
+      background: transparent url("./assets/Trazado 75.svg") 0% 0% no-repeat padding-box; }
+    .banner-information .wrapper .block-line3 {
+      background: transparent url("./assets/Trazado 162.svg") 0% 0% no-repeat padding-box;
+      overflow: hidden;
+      content: "";
+      display: block;
+      position: absolute;
+      top: 61%;
+      right: -112px;
+      width: 735px;
+      height: 343px;
+      transform: rotate(76deg);
+      clear: both;
+      z-index: -1; }
     .banner-information .wrapper .block-about-script {
       display: flex;
       justify-content: center;
@@ -252,23 +266,23 @@ header {
       align-items: center;
       flex-direction: column; }
       .banner-information .wrapper .block-about-engage-students .block {
-        width: 339px;
+        width: 320px;
         height: 191px;
-        background: transparent url("/assets/images/Captura de pantalla 2019-07-30 a las 12.58.43.png") 0% 0% no-repeat padding-box; }
+        background: transparent url("./assets/Captura de pantalla 2019-07-30 a las 12.58.43.png") 0% 0% no-repeat padding-box; }
       .banner-information .wrapper .block-about-engage-students p {
-        width: 128px;
-        height: 24px;
         text-align: center;
         font-size: 17px;
         font-family: "Alegreya Sans", sans-serif;
         letter-spacing: 0;
         color: #ee6700;
-        opacity: 1; }
+        opacity: 1;
+        margin-top: 11px; }
     .banner-information .wrapper .block-with-video {
       position: absolute;
       z-index: 1000;
-      left: 0%;
+      left: 50%;
       top: 29%;
+      transform: translate(-50%, 4%);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -285,12 +299,10 @@ header {
         .banner-information .wrapper .block-with-video .block .image {
           width: 282px;
           height: 219px;
-          background: transparent url("/assets/images/Captura de pantalla 2019-07-30 a las 12.55.22.png") 0% 0% no-repeat padding-box;
+          background: transparent url("./assets/Captura de pantalla 2019-07-30 a las 12.55.22.png") 0% 0% no-repeat padding-box;
           opacity: 1; }
       .banner-information .wrapper .block-with-video p {
         margin-top: 11px;
-        width: 176px;
-        height: 24px;
         text-align: center;
         font-size: 17px;
         font-family: "Alegreya Sans", sans-serif;
@@ -299,4 +311,104 @@ header {
         opacity: 1; }
     .banner-information .wrapper .block-about-teachers {
       position: absolute;
-      top: 1340px; }
+      top: 53%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      .banner-information .wrapper .block-about-teachers .block {
+        width: 320px;
+        height: 191px;
+        background: transparent url("./assets/rawpixel-745949-unsplash.png") 0% 0% no-repeat padding-box; }
+      .banner-information .wrapper .block-about-teachers p {
+        margin-top: 11px;
+        text-align: center;
+        font-size: 17px;
+        font-family: "Alegreya Sans", sans-serif;
+        letter-spacing: 0;
+        color: #ee6700;
+        opacity: 1; }
+    .banner-information .wrapper .block-about-statistik {
+      height: 370px;
+      width: 100%;
+      position: relative;
+      top: 71%; }
+      .banner-information .wrapper .block-about-statistik-students {
+        z-index: 1;
+        position: absolute;
+        top: 10%;
+        right: 10%; }
+        .banner-information .wrapper .block-about-statistik-students p {
+          font-size: 20px;
+          text-align: center;
+          font-family: "Alegreya Sans" sans-serif;
+          letter-spacing: 0;
+          color: #ee6700;
+          opacity: 1; }
+        .banner-information .wrapper .block-about-statistik-students .counter {
+          font-size: 30px;
+          font-weight: 700; }
+      .banner-information .wrapper .block-about-statistik-schools {
+        z-index: 1;
+        position: absolute;
+        top: 35%;
+        left: 10%; }
+        .banner-information .wrapper .block-about-statistik-schools p {
+          font-size: 20px;
+          text-align: center;
+          font-family: "Alegreya Sans", sans-serif;
+          letter-spacing: 0;
+          color: #ee6700;
+          opacity: 1; }
+        .banner-information .wrapper .block-about-statistik-schools .counter {
+          font-size: 36px;
+          font-weight: 700; }
+      .banner-information .wrapper .block-about-statistik-videos {
+        z-index: 1;
+        position: absolute;
+        top: 60%;
+        left: 15%;
+        transform: translate(8%, -5%); }
+        .banner-information .wrapper .block-about-statistik-videos p {
+          font-size: 20px;
+          text-align: center;
+          font-family: "Alegreya Sans", sans-serif;
+          letter-spacing: 0;
+          color: #ee6700;
+          opacity: 1; }
+        .banner-information .wrapper .block-about-statistik-videos .counter {
+          font-weight: 900;
+          font-size: 65px; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.banner-with-lectors-word {
+  height: 730px;
+  margin: 0 auto;
+  background: green;
+  opacity: 1; }
+  .banner-with-lectors-word .wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 768px;
+    height: 100%;
+    margin: 0 auto;
+    background: red; }
+    .banner-with-lectors-word .wrapper .wrapper-fone {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      flex-direction: row;
+      width: 100%;
+      height: 100%;
+      background: #fdd000 0% 0% no-repeat padding-box; }
+      .banner-with-lectors-word .wrapper .wrapper-fone .element-visible {
+        position: absolute;
+        top: 7%;
+        width: 303px;
+        height: 478px;
+        background: #33a9df 0% 0% no-repeat padding-box;
+        opacity: 1; }
