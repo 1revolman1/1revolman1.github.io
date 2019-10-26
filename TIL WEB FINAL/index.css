@@ -4,11 +4,13 @@ header {
   align-items: center;
   flex-direction: column;
   position: fixed;
-  margin: 0 auto;
   width: 100%;
+  margin: auto;
+  left: 0;
+  right: 0;
   height: 120px;
   z-index: 99999;
-  top: 0;
+  max-width: 768px;
   background: #33a7db 0% 0% no-repeat padding-box; }
   header .wrapper {
     display: flex;
@@ -417,17 +419,17 @@ header {
           height: 20px;
           border-right: 1px solid #ffffff;
           border-bottom: 1px solid #ffffff;
-          transform: rotate(136deg);
+          transform: rotate(-45deg);
           position: relative;
-          left: 4%; }
+          right: 4%; }
         .banner-with-lectors-word .wrapper .wrapper-fone .element-visible .button-left {
           width: 20px;
           height: 20px;
           border-right: 1px solid #ffffff;
           border-bottom: 1px solid #ffffff;
-          transform: rotate(-45deg);
+          transform: rotate(136deg);
           position: relative;
-          right: 4%; }
+          left: 4%; }
         .banner-with-lectors-word .wrapper .wrapper-fone .element-visible .block-with-content {
           display: flex;
           justify-content: center;
@@ -537,9 +539,31 @@ header {
       left: 0;
       background: transparent url("./assets/Trazado 162.svg") 0% 0% no-repeat padding-box; }
     .banner-with-circle .wrapper .slider {
-      width: 100%;
-      height: 30%;
-      background: chocolate; }
+      position: relative;
+      top: 0;
+      right: 0;
+      width: 85%;
+      height: 188px;
+      z-index: 100; }
+      .banner-with-circle .wrapper .slider .gallery {
+        width: 100%;
+        height: 100%; }
+      .banner-with-circle .wrapper .slider .slick-slide {
+        /* margin: 0px 20px; */
+        margin: 0 10px 0 0; }
+      .banner-with-circle .wrapper .slider .block {
+        width: 188px;
+        height: 188px;
+        background: #7359e4 0% 0% no-repeat padding-box;
+        margin-right: 20px; }
+        .banner-with-circle .wrapper .slider .block p {
+          margin: 10px;
+          text-align: left;
+          font-size: 12px;
+          font-family: "Open Sans", sans-serif;
+          letter-spacing: -0.22px;
+          color: #ffffff;
+          opacity: 1; }
 
 * {
   box-sizing: border-box;
