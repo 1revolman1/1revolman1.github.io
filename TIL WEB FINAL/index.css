@@ -123,6 +123,10 @@ header {
     max-width: 768px;
     width: 100%; }
     header .wrapper-settings .wrapper-trial {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
       width: 70%;
       height: 100%;
       background: #04be64 0% 0% no-repeat padding-box; }
@@ -179,7 +183,7 @@ header {
     font-size: 25px;
     letter-spacing: 0;
     text-align: center;
-    font-size: "Open sans", sans-serif; }
+    font-family: "Alegreya Sans", sans-serif; }
   .banner-photo span {
     position: relative; }
   .banner-photo span:before {
@@ -339,9 +343,8 @@ header {
         top: 10%;
         right: 10%; }
         .banner-information .wrapper .block-about-statistik-students p {
-          font-size: 20px;
           text-align: center;
-          font-family: "Alegreya Sans" sans-serif;
+          font-family: "Alegreya Sans", sans-serif;
           letter-spacing: 0;
           color: #ee6700;
           opacity: 1; }
@@ -388,27 +391,124 @@ header {
 .banner-with-lectors-word {
   height: 730px;
   margin: 0 auto;
-  background: green;
   opacity: 1; }
   .banner-with-lectors-word .wrapper {
     position: relative;
     width: 100%;
     max-width: 768px;
     height: 100%;
-    margin: 0 auto;
-    background: red; }
+    margin: 0 auto; }
     .banner-with-lectors-word .wrapper .wrapper-fone {
       display: flex;
       justify-content: center;
       align-items: flex-end;
       flex-direction: row;
       width: 100%;
-      height: 100%;
+      height: 72%;
       background: #fdd000 0% 0% no-repeat padding-box; }
       .banner-with-lectors-word .wrapper .wrapper-fone .element-visible {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
         position: absolute;
         top: 7%;
-        width: 303px;
+        width: 300px;
         height: 478px;
         background: #33a9df 0% 0% no-repeat padding-box;
         opacity: 1; }
+        .banner-with-lectors-word .wrapper .wrapper-fone .element-visible .button-right {
+          width: 20px;
+          height: 20px;
+          border-right: 1px solid #ffffff;
+          border-bottom: 1px solid #ffffff;
+          transform: rotate(136deg);
+          position: relative;
+          left: 4%; }
+        .banner-with-lectors-word .wrapper .wrapper-fone .element-visible .button-left {
+          width: 20px;
+          height: 20px;
+          border-right: 1px solid #ffffff;
+          border-bottom: 1px solid #ffffff;
+          transform: rotate(-45deg);
+          position: relative;
+          right: 4%; }
+        .banner-with-lectors-word .wrapper .wrapper-fone .element-visible .block-with-content {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          width: 85%;
+          height: 80%; }
+          .banner-with-lectors-word .wrapper .wrapper-fone .element-visible .block-with-content img {
+            margin-bottom: 40px; }
+          .banner-with-lectors-word .wrapper .wrapper-fone .element-visible .block-with-content h3 {
+            width: 232px;
+            height: 125px;
+            margin: 0 24px 90px 24px;
+            text-align: center;
+            font-size: 24px;
+            font-family: "Alegreya Sans", sans-serif;
+            letter-spacing: 0;
+            color: #ffffff; }
+          .banner-with-lectors-word .wrapper .wrapper-fone .element-visible .block-with-content span {
+            font-weight: bold;
+            font-size: 14px;
+            text-align: center;
+            font: Black;
+            font-family: "Alegreya Sans", sans-serif;
+            color: #ffffff;
+            opacity: 1;
+            letter-spacing: -0.14px; }
+          .banner-with-lectors-word .wrapper .wrapper-fone .element-visible .block-with-content p {
+            width: 94px;
+            height: 31px;
+            font-size: 10px;
+            text-align: center;
+            font: Black;
+            font-family: "Alegreya Sans", sans-serif;
+            letter-spacing: 0;
+            color: #ffffff;
+            opacity: 1; }
+    .banner-with-lectors-word .wrapper .wrapper-block-with-social-media {
+      position: relative;
+      top: -10px;
+      height: 28%;
+      width: 100%;
+      background: #fdd000 0% 0% no-repeat padding-box; }
+      .banner-with-lectors-word .wrapper .wrapper-block-with-social-media .social-network-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 45px 5px 45px 20px;
+        position: absolute;
+        top: 45%;
+        width: 260px;
+        height: 195px;
+        background: #7359e4 0% 0% no-repeat padding-box;
+        opacity: 1; }
+        .banner-with-lectors-word .wrapper .wrapper-block-with-social-media .social-network-block h3 {
+          text-align: left;
+          font-size: 30px;
+          font-family: "Alegreya Sans", sans-serif;
+          letter-spacing: 0;
+          color: #ffffff;
+          opacity: 1; }
+        .banner-with-lectors-word .wrapper .wrapper-block-with-social-media .social-network-block .block {
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          flex-direction: row; }
+          .banner-with-lectors-word .wrapper .wrapper-block-with-social-media .social-network-block .block p {
+            text-align: left;
+            font-size: 16px;
+            font-family: "Alegreya Sans", sans-serif;
+            letter-spacing: 0;
+            color: #ffffff;
+            opacity: 1;
+            padding-right: 50px; }
+          .banner-with-lectors-word .wrapper .wrapper-block-with-social-media .social-network-block .block img {
+            width: inherit;
+            height: 15px;
+            padding-right: 10px; }
