@@ -39,6 +39,47 @@ header {
         color: #4e4e4e;
         font-weight: 700;
         text-decoration: none; }
+    header .wrapper .settings-country-selector {
+      display: none;
+      margin: 0 10px; }
+      header .wrapper .settings-country-selector .spain,
+      header .wrapper .settings-country-selector .france,
+      header .wrapper .settings-country-selector .italy,
+      header .wrapper .settings-country-selector .usa,
+      header .wrapper .settings-country-selector .england,
+      header .wrapper .settings-country-selector .china {
+        width: 34px;
+        height: 34px;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        opacity: 1;
+        border-radius: 50%;
+        margin: 0 6px;
+        border: 3px solid white; }
+      header .wrapper .settings-country-selector .spain {
+        border: 3px solid white;
+        background: url("./assets/es.svg") no-repeat;
+        background-size: 135%;
+        background-position: center; }
+      header .wrapper .settings-country-selector .france {
+        background: url("./assets/fr.svg") no-repeat;
+        background-size: 135%;
+        background-position: center; }
+      header .wrapper .settings-country-selector .italy {
+        background: url("./assets/it.svg") no-repeat;
+        background-size: 135%;
+        background-position: center; }
+      header .wrapper .settings-country-selector .usa {
+        background: url("./assets/us.svg") no-repeat;
+        background-size: 135%;
+        background-position: center; }
+      header .wrapper .settings-country-selector .england {
+        background: url("./assets/gb.svg") no-repeat;
+        background-size: 135%;
+        background-position: center; }
+      header .wrapper .settings-country-selector .china {
+        background: url("./assets/cn.svg") no-repeat;
+        background-size: 135%;
+        background-position: center; }
     header .wrapper-menu {
       font-size: 16px;
       color: #4e4e4e;
@@ -100,7 +141,7 @@ header {
         width: 100%;
         background: #33a7db 0% 0% no-repeat padding-box;
         z-index: -10;
-        transition: top 0.9s linear; }
+        transition: top 0.5s linear; }
       header .wrapper-menu ul {
         padding: 5px;
         list-style: none; }
@@ -114,14 +155,14 @@ header {
             font-weight: normal;
             text-decoration: none; }
       header .wrapper-menu #menu__toggle:checked ~ .menu__box {
-        top: 100%; }
+        top: 45%; }
   header .wrapper-settings {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
     height: 50%;
-    z-index: 9999;
+    z-index: 1000;
     max-width: 768px;
     width: 100%; }
     header .wrapper-settings .wrapper-trial {
@@ -208,6 +249,15 @@ header {
     max-width: 768px;
     height: 100%;
     margin: 0 auto; }
+    .banner-information .wrapper .wrapper-clock {
+      display: none;
+      position: absolute;
+      top: 5%;
+      z-index: 2000;
+      right: 5%;
+      width: 102px;
+      height: 101px;
+      background: transparent url("./assets/Grupo 86.svg") 0% 0% no-repeat padding-box; }
     .banner-information .wrapper .block-line {
       position: absolute;
       background: transparent url("./assets/Trazado 76.svg") 0% 0% no-repeat padding-box;
@@ -438,7 +488,9 @@ header {
           width: 85%;
           height: 80%; }
           .banner-with-lectors-word .wrapper .wrapper-fone .element-visible .block-with-content img {
-            margin-bottom: 40px; }
+            width: 30%;
+            height: 25%;
+            margin: 0 30px 40px 30px; }
           .banner-with-lectors-word .wrapper .wrapper-fone .element-visible .block-with-content h3 {
             width: 232px;
             height: 125px;
@@ -645,6 +697,7 @@ footer {
         justify-content: flex-start;
         align-items: flex-start;
         flex-direction: row;
+        position: relative;
         padding: 25px;
         width: 100%;
         height: 204px;
@@ -692,9 +745,13 @@ footer {
           height: 100%; }
           footer .footer-wrapper .footer-information .contacts .image-block img {
             width: 100%; }
-      footer .footer-wrapper .footer-information hr {
-        width: 95%;
-        background: transparent; }
+      footer .footer-wrapper .footer-information .contacts::after {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 80%;
+        background: white;
+        bottom: 0; }
       footer .footer-wrapper .footer-information .site-map {
         display: flex;
         justify-content: flex-start;
@@ -734,3 +791,208 @@ footer {
   box-sizing: border-box;
   margin: 0;
   padding: 0; }
+
+@media (min-width: 768px) {
+  header {
+    max-width: 1024px;
+    height: 180px;
+    align-items: flex-end;
+    background: transparent; }
+    header .wrapper {
+      max-width: 1024px; }
+      header .wrapper .wrapper-logo {
+        justify-content: flex-start; }
+        header .wrapper .wrapper-logo img {
+          margin-left: 50px; }
+      header .wrapper-menu #menu__toggle:checked ~ .menu__box {
+        top: 40%; }
+      header .wrapper-menu .menu__box {
+        top: -150%; }
+      header .wrapper .settings-country-selector {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        position: absolute;
+        left: 49%; }
+    header .wrapper-settings {
+      max-width: 1024px;
+      width: 50%; }
+  section.banner-photo {
+    max-width: 1024px;
+    height: 934px;
+    align-items: center; }
+    section.banner-photo h1 {
+      max-width: 768px; }
+  section.banner-information {
+    height: 1150px; }
+    section.banner-information .wrapper {
+      max-width: 1024px; }
+      section.banner-information .wrapper .block-about-script {
+        top: -55px;
+        left: 30px;
+        width: 365px;
+        height: 220px; }
+        section.banner-information .wrapper .block-about-script p {
+          font-size: 31px;
+          font-weight: bold;
+          width: 250px; }
+      section.banner-information .wrapper .wrapper-clock {
+        display: inline; }
+      section.banner-information .wrapper .block-about-engage-students {
+        top: 18%;
+        right: 56%;
+        transform: scale(0.9);
+        align-items: flex-start; }
+        section.banner-information .wrapper .block-about-engage-students p {
+          font-size: 20px; }
+      section.banner-information .wrapper .block-about-teachers {
+        top: 14%;
+        right: 7%;
+        transform: scale(1.2, 1.5);
+        align-items: flex-end; }
+        section.banner-information .wrapper .block-about-teachers p {
+          font-size: 17px; }
+      section.banner-information .wrapper .block-with-video {
+        left: 25%;
+        top: 30%;
+        transform: none; }
+      section.banner-information .wrapper .block-line {
+        z-index: 1001;
+        top: -620px;
+        left: -330.794098px;
+        width: 810px;
+        height: 1018px;
+        transform: scale(1); }
+      section.banner-information .wrapper .block-line2 {
+        position: absolute;
+        width: 350px;
+        height: 713px;
+        top: 50px;
+        transform: scale(1);
+        right: 0; }
+      section.banner-information .wrapper .block-line3 {
+        position: absolute;
+        transform: rotate(76deg) scale(1);
+        top: 51%;
+        right: 31%;
+        /* left: -26%; */
+        width: 739px;
+        height: 583px; }
+      section.banner-information .wrapper .block-about-statistik {
+        height: 450px;
+        top: 55%; }
+        section.banner-information .wrapper .block-about-statistik-students {
+          top: 10%; }
+          section.banner-information .wrapper .block-about-statistik-students .counter {
+            font-size: 50px; }
+          section.banner-information .wrapper .block-about-statistik-students p {
+            font-size: 30px; }
+        section.banner-information .wrapper .block-about-statistik-schools {
+          top: 25%; }
+          section.banner-information .wrapper .block-about-statistik-schools .counter {
+            font-size: 70px;
+            font-weight: 700; }
+          section.banner-information .wrapper .block-about-statistik-schools p {
+            font-size: 30px; }
+        section.banner-information .wrapper .block-about-statistik-videos {
+          top: 50%; }
+          section.banner-information .wrapper .block-about-statistik-videos .counter {
+            font-size: 130px; }
+          section.banner-information .wrapper .block-about-statistik-videos p {
+            font-size: 35px; }
+  section.banner-with-lectors-word {
+    height: 1053px; }
+    section.banner-with-lectors-word .wrapper {
+      max-width: 1024px; }
+      section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible {
+        width: 668px;
+        height: 699px; }
+        section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible .button-left,
+        section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible .button-right {
+          width: 55px;
+          height: 55px; }
+        section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible .block-with-content {
+          align-items: flex-start; }
+          section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible .block-with-content img {
+            width: 30%;
+            height: 30%; }
+          section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible .block-with-content h3 {
+            width: unset;
+            height: unset;
+            text-align: left;
+            font-size: 38px;
+            margin: 0 30px 90px 30px; }
+          section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible .block-with-content span {
+            margin: 0 30px;
+            font-weight: bold;
+            font-size: 26px;
+            text-align: left;
+            letter-spacing: -0.26px; }
+          section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible .block-with-content p {
+            width: 300px;
+            margin: 0 30px;
+            font-size: 16px;
+            text-align: left; }
+      section.banner-with-lectors-word .wrapper .wrapper-block-with-social-media .social-network-block {
+        padding: 65px 0 65px 60px;
+        width: 60%;
+        height: 90%;
+        top: 40%; }
+        section.banner-with-lectors-word .wrapper .wrapper-block-with-social-media .social-network-block h3 {
+          font-size: 50px; }
+        section.banner-with-lectors-word .wrapper .wrapper-block-with-social-media .social-network-block .block img {
+          width: 100%;
+          height: 100%; }
+        section.banner-with-lectors-word .wrapper .wrapper-block-with-social-media .social-network-block .block p {
+          font-size: 30px; }
+  section.banner-with-circle {
+    height: 440px; }
+    section.banner-with-circle .wrapper {
+      max-width: 1024px; }
+      section.banner-with-circle .wrapper .line1 {
+        top: -170px; }
+      section.banner-with-circle .wrapper .line2 {
+        width: 500px;
+        height: 500px;
+        top: 200px;
+        left: unset;
+        right: 0; }
+      section.banner-with-circle .wrapper .slider {
+        width: 92%; }
+  footer {
+    height: 650px; }
+    footer .footer-wrapper {
+      max-width: 1024px; }
+      footer .footer-wrapper .block-with-who-trusted-us .block-with-schools {
+        justify-content: space-around; }
+      footer .footer-wrapper .footer-information {
+        flex-direction: row-reverse;
+        align-items: unset; }
+        footer .footer-wrapper .footer-information .site-map {
+          height: unset; }
+          footer .footer-wrapper .footer-information .site-map .block-about h3 {
+            font-size: 16px; }
+          footer .footer-wrapper .footer-information .site-map .block-about ul li {
+            font-weight: 100;
+            font-size: 15px; }
+          footer .footer-wrapper .footer-information .site-map .block-second-para .block-for-teacher h3 {
+            font-size: 16px; }
+          footer .footer-wrapper .footer-information .site-map .block-second-para .block-for-teacher ul li {
+            font-weight: 100;
+            font-size: 15px; }
+          footer .footer-wrapper .footer-information .site-map .block-second-para .block-legal h3 {
+            font-size: 16px; }
+          footer .footer-wrapper .footer-information .site-map .block-second-para .block-legal ul li {
+            font-weight: 100;
+            font-size: 15px; }
+        footer .footer-wrapper .footer-information .contacts {
+          flex-direction: column;
+          margin-top: 20px; }
+          footer .footer-wrapper .footer-information .contacts .text-information h3 {
+            font-size: 16px; }
+        footer .footer-wrapper .footer-information .contacts::after {
+          height: 135%;
+          width: 1px;
+          left: 0;
+          top: 10px; } }

@@ -10,7 +10,7 @@ let element_visible = [
               <span>Ricardo Milos</span>
               <p>Dancer</p>`,
   ` 
-              <img src="./assets/Jess 73 v1a.png" alt="" />
+              <img src="./assets/Jess 73 v1a@2x.png" alt="" />
               <h3>
                 “There isn’t anything else out there that’s like
                 thisislanguage.com”
@@ -59,12 +59,30 @@ document.querySelectorAll(".slider .block").forEach(e => {
   )}, ${randomInteger(0, 255)})`;
 });
 
-let slideShow = 1;
 $(".slider").slick({
   // dots: true,
   arrows: true,
   infinite: true,
   centerMode: true,
-  slidesToShow: slideShow,
-  slidesToScroll: 3
+  slidesToScroll: 3,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 568,
+      settings: {
+        slidesToShow: 1
+      }
+    }
+  ]
 });
