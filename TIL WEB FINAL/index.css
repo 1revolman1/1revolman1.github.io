@@ -326,6 +326,14 @@ nav {
       transform: rotate(76deg);
       clear: both;
       z-index: -1; }
+    .banner-information .wrapper .block-line4 {
+      transform: scale(-1, -1) rotate(158deg);
+      background: transparent url("./assets/Trazado 75 (1).svg");
+      top: 93%;
+      position: absolute;
+      width: 587px;
+      height: 655px;
+      right: 40%; }
     .banner-information .wrapper .block-about-script {
       display: flex;
       justify-content: center;
@@ -491,6 +499,16 @@ nav {
       width: 100%;
       height: 72%;
       background: #fdd000 0% 0% no-repeat padding-box; }
+      .banner-with-lectors-word .wrapper .wrapper-fone .line1 {
+        display: none;
+        top: -23%;
+        z-index: 9999;
+        right: 0;
+        position: absolute;
+        width: 113px;
+        height: 655px;
+        background: url("./assets/Trazado 75 (1).svg") 0% 0% no-repeat padding-box;
+        transform: rotate(45deg), scale(-1, -1); }
       .banner-with-lectors-word .wrapper .wrapper-fone .element-visible {
         display: flex;
         justify-content: center;
@@ -656,7 +674,7 @@ nav {
           opacity: 1; }
 
 footer {
-  height: 939px;
+  height: 639px;
   margin: 0 auto;
   opacity: 1;
   background: #33a9df; }
@@ -671,64 +689,12 @@ footer {
     height: 100%;
     margin: 0 auto;
     background: navy; }
-    footer .footer-wrapper .block-with-who-trusted-us {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      height: 28%;
-      width: 100%;
-      background: #0093d6 0% 0% no-repeat padding-box;
-      opacity: 1;
-      padding: 10px; }
-      footer .footer-wrapper .block-with-who-trusted-us h3 {
-        font-family: "Open Sans", sans-serif;
-        font-size: 15px;
-        letter-spacing: -0.12px;
-        color: #ffffff;
-        opacity: 1; }
-      footer .footer-wrapper .block-with-who-trusted-us .block-with-schools {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        flex-wrap: wrap;
-        height: 100%;
-        width: 100%; }
-        footer .footer-wrapper .block-with-who-trusted-us .block-with-schools .oundle {
-          margin: 10px;
-          width: 67px;
-          height: 67px; }
-          footer .footer-wrapper .block-with-who-trusted-us .block-with-schools .oundle img {
-            width: 100%;
-            height: 100%; }
-        footer .footer-wrapper .block-with-who-trusted-us .block-with-schools .westminster {
-          margin: 10px;
-          width: 127px;
-          height: 35px; }
-          footer .footer-wrapper .block-with-who-trusted-us .block-with-schools .westminster img {
-            width: 100%;
-            height: 100%; }
-        footer .footer-wrapper .block-with-who-trusted-us .block-with-schools .nottingham {
-          margin: 10px;
-          width: 173px;
-          height: 34px; }
-          footer .footer-wrapper .block-with-who-trusted-us .block-with-schools .nottingham img {
-            width: 100%;
-            height: 100%; }
-        footer .footer-wrapper .block-with-who-trusted-us .block-with-schools .perse {
-          margin: 10px;
-          width: 83px;
-          height: 63px; }
-          footer .footer-wrapper .block-with-who-trusted-us .block-with-schools .perse img {
-            width: 100%;
-            height: 100%; }
     footer .footer-wrapper .footer-information {
       display: flex;
       justify-content: flex-start;
       align-items: center;
       flex-direction: column;
-      height: 72%;
+      height: 100%;
       width: 100%;
       background: #33a9df 0% 0% no-repeat padding-box; }
       footer .footer-wrapper .footer-information .contacts {
@@ -826,6 +792,63 @@ footer {
           footer .footer-wrapper .footer-information .site-map .block-second-para .block-legal h3 {
             margin-top: 10px; }
 
+section.foot {
+  margin: 0 auto;
+  opacity: 1;
+  background: #0093d6 0% 0% no-repeat padding-box; }
+  section.foot .block-with-who-trusted-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 28%;
+    width: 100%;
+    background: #0093d6 0% 0% no-repeat padding-box;
+    opacity: 1;
+    padding: 10px; }
+    section.foot .block-with-who-trusted-us h3 {
+      font-family: "Open Sans", sans-serif;
+      font-size: 15px;
+      letter-spacing: -0.12px;
+      color: #ffffff;
+      opacity: 1; }
+    section.foot .block-with-who-trusted-us .block-with-schools {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      height: 100%;
+      width: 100%; }
+      section.foot .block-with-who-trusted-us .block-with-schools .oundle {
+        margin: 10px;
+        width: 67px;
+        height: 67px; }
+        section.foot .block-with-who-trusted-us .block-with-schools .oundle img {
+          width: 100%;
+          height: 100%; }
+      section.foot .block-with-who-trusted-us .block-with-schools .westminster {
+        margin: 10px;
+        width: 127px;
+        height: 35px; }
+        section.foot .block-with-who-trusted-us .block-with-schools .westminster img {
+          width: 100%;
+          height: 100%; }
+      section.foot .block-with-who-trusted-us .block-with-schools .nottingham {
+        margin: 10px;
+        width: 173px;
+        height: 34px; }
+        section.foot .block-with-who-trusted-us .block-with-schools .nottingham img {
+          width: 100%;
+          height: 100%; }
+      section.foot .block-with-who-trusted-us .block-with-schools .perse {
+        margin: 10px;
+        width: 83px;
+        height: 63px; }
+        section.foot .block-with-who-trusted-us .block-with-schools .perse img {
+          width: 100%;
+          height: 100%; }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -868,6 +891,8 @@ footer {
     height: 1150px; }
     section.banner-information .wrapper {
       max-width: 1024px; }
+      section.banner-information .wrapper .block-line4 {
+        right: 50%; }
       section.banner-information .wrapper .block-about-script {
         top: -55px;
         left: 30px;
@@ -945,6 +970,8 @@ footer {
     height: 1053px; }
     section.banner-with-lectors-word .wrapper {
       max-width: 1024px; }
+      section.banner-with-lectors-word .wrapper .wrapper-fone .line1 {
+        display: block; }
       section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible {
         width: 668px;
         height: 699px; }
@@ -994,14 +1021,14 @@ footer {
         top: -170px; }
       section.banner-with-circle .wrapper .line2 {
         width: 500px;
-        height: 500px;
+        height: 240px;
         top: 200px;
         left: unset;
         right: 0; }
       section.banner-with-circle .wrapper .slider {
         width: 92%; }
   footer {
-    height: 650px; }
+    height: 460px; }
     footer .footer-wrapper {
       max-width: 1024px; }
       footer .footer-wrapper .block-with-who-trusted-us .block-with-schools {
@@ -1101,6 +1128,8 @@ footer {
       font-size: 33px; }
   section.banner-information .wrapper {
     max-width: unset; }
+    section.banner-information .wrapper .block-line4 {
+      right: 70%; }
     section.banner-information .wrapper .block-line {
       top: -619px;
       left: -336.794098px;
@@ -1133,6 +1162,8 @@ footer {
   section.banner-with-lectors-word .wrapper .wrapper-fone {
     width: 85%;
     height: 58%; }
+    section.banner-with-lectors-word .wrapper .wrapper-fone .line1 {
+      display: none; }
     section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible {
       width: 94%;
       height: 50%;
@@ -1143,5 +1174,10 @@ footer {
     section.banner-with-lectors-word .wrapper .wrapper-block-with-social-media .social-network-block {
       width: 609px;
       height: 355px; }
-  footer .footer-wrapper .footer-information .site-map .block-second-para {
-    flex-direction: row; } }
+  footer {
+    height: 350px; }
+    footer .footer-wrapper .footer-information .site-map .block-second-para {
+      flex-direction: row; }
+    footer .footer-wrapper .footer-information .contacts .image-block img {
+      margin-top: 30px;
+      width: 70%; } }
