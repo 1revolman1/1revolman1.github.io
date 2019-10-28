@@ -3,27 +3,25 @@ function randomInteger(min, max) {
   return Math.floor(rand);
 }
 let element_visible = [
-  `<img src="./assets/facebook.svg" alt="" />
-              <h3>
+  ` <div class="image"><img src="./assets/Jess 73 v1a@2x.png" alt=""></div>
+  <div class="content"> <h3>
                Lorem ipdasdsum dolor sit amet consectetur adipisicing elit. Esse in dolores ducimus
               </h3>
               <span>Ricardo Milos</span>
-              <p>Dancer</p>`,
-  ` 
-              <img src="./assets/Jess 73 v1a@2x.png" alt="" />
-              <h3>
+              <p>Dancer</p></div>`,
+  ` <div class="image"><img src="./assets/Jess 73 v1a@2x.png" alt="" /></div>
+           <div class="content"><h3>
                 “There isn’t anything else out there that’s like
                 thisislanguage.com”
               </h3>
               <span>Jess Lund</span>
-              <p>Head of MFL Michaela Community School</p>
+              <p>Head of MFL Michaela Community School</p></div> 
             `,
-  ` <img src="./assets/Instagram.svg" alt="" />
-              <h3>
+  `<div class="image"><img src="./assets/Jess 73 v1a@2x.png"" alt="" /></div> <div class="content"><h3>
                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse in dolores ducimus
               </h3>
               <span>Jessus Christ</span>
-              <p>Head of Earth</p>`
+              <p>Head of Earth</p></div>`
 ];
 let index = Math.round(element_visible.length / 2);
 document.querySelector(".block-with-content").innerHTML =
@@ -64,25 +62,28 @@ $(".slider").slick({
   arrows: true,
   infinite: true,
   centerMode: true,
-  slidesToScroll: 2,
+  slidesToScroll: 3,
   slidesToShow: 4,
   responsive: [
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 3
+        slidesToShow: 3,
+        slidesToScroll: 2
       }
     },
     {
       breakpoint: 768,
       settings: {
-        slidesToShow: 1
+        slidesToShow: 1,
+        slidesToScroll: 3
       }
     },
     {
       breakpoint: 1366,
       settings: {
-        slidesToShow: 4
+        slidesToShow: 4,
+        slidesToScroll: 2
       }
     }
     // },
@@ -111,9 +112,17 @@ window.addEventListener("scroll", function(e) {
 });
 window.addEventListener("scroll", function() {
   if (window.scrollY < 50 && window.innerWidth >= 1024) {
+    document.querySelector("nav .wrapper-user").style.width =
+      document.querySelector("header .wrapper-user").offsetWidth + "px";
     document.querySelector("nav .wrapper-settings").style.top = "0";
     document.querySelector("nav .wrapper-trial").style.width = "100%";
     document.querySelector("nav .wrapper-user").style.display = "none";
     document.querySelector("nav .wrapper-user").style.top = "0";
   }
+});
+
+document.querySelectorAll(".wrapper-user").forEach(function(e) {
+  e.addEventListener("click", function(e) {
+    console.log("login");
+  });
 });
