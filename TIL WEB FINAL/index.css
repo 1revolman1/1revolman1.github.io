@@ -1265,4 +1265,6 @@ section.foot {
         footer .footer-wrapper .footer-information .contacts .image-block {
           margin: 0; }
           footer .footer-wrapper .footer-information .contacts .image-block img {
-            width: 70%; } }
+            width: 70%; }
+      footer .footer-wrapper .footer-information .contacts::after {
+        height: 120%; } }
