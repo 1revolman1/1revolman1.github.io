@@ -1244,16 +1244,23 @@ section.foot {
       background: transparent;
       padding: 0 10%; }
       footer .footer-wrapper .footer-information .site-map {
-        margin-top: 20px;
+        justify-content: space-evenly;
+        margin-top: 60px;
         padding: 0; }
         footer .footer-wrapper .footer-information .site-map .block-about {
           margin: 0 10px; }
         footer .footer-wrapper .footer-information .site-map .block-second-para {
           margin: 0;
           flex-direction: row; }
-          footer .footer-wrapper .footer-information .site-map .block-second-para .block-legal h3 {
-            margin: 0; }
+          footer .footer-wrapper .footer-information .site-map .block-second-para .block-legal {
+            margin: 0 10px; }
+            footer .footer-wrapper .footer-information .site-map .block-second-para .block-legal h3 {
+              margin: 0; }
+          footer .footer-wrapper .footer-information .site-map .block-second-para .block-for-teachers {
+            margin: 0 10px; }
       footer .footer-wrapper .footer-information .contacts {
+        width: 65%;
+        margin-top: 60px;
         padding: 0 0 0 25px; }
         footer .footer-wrapper .footer-information .contacts .image-block {
           margin: 0; }
