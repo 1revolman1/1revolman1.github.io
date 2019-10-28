@@ -244,6 +244,7 @@ nav {
         opacity: 1;
         clip-path: circle(54% at center top); }
       nav .wrapper-settings .wrapper-user p {
+        display: none;
         font-family: "Open Sans", sans-serif;
         color: #ffffff;
         opacity: 1; }
@@ -1148,6 +1149,8 @@ section.foot {
         width: 100%; }
       nav .wrapper-settings .wrapper-user {
         display: none; }
+        nav .wrapper-settings .wrapper-user p {
+          display: block; }
   section.banner-photo {
     padding-bottom: 30%;
     align-items: flex-end; }
