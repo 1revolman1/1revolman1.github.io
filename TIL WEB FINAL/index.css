@@ -1221,6 +1221,8 @@ section.foot {
             section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible .block-with-content .image img {
               width: 100%; }
           section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible .block-with-content .content {
+            width: 90%;
+            height: 90%;
             padding: 20px; }
     section.banner-with-lectors-word .wrapper .wrapper-block-with-social-media {
       width: 85%; }
