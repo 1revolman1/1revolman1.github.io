@@ -1234,7 +1234,7 @@ section.foot {
       section.banner-with-circle .wrapper .line2 {
         width: 815px; }
   section.foot .block-with-who-trusted-us {
-    padding: 0 10%; }
+    padding: 20px 10% 0; }
     section.foot .block-with-who-trusted-us .block-with-schools {
       justify-content: space-between; }
   footer {
