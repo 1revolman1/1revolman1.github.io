@@ -71,8 +71,8 @@ $(".slider").slick({
   centerMode: true,
   autoplay: false,
   autoplaySpeed: 1000,
-  slidesToScroll: 3,
-  slidesToShow: 4,
+  slidesToScroll: 2,
+  slidesToShow: 3,
   responsive: [
     {
       breakpoint: 1024,
@@ -98,11 +98,11 @@ $(".slider").slick({
         slidesToScroll: 2
       }
     }
-    // },
     // {
     //   breakpoint: 1100,
     //   settings: {
-    //     slidesToShow: 4
+    //      slidesToShow: 3,
+    //     slidesToScroll: 2
     //   }
     // }
   ]
