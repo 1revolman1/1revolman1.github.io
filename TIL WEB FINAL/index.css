@@ -22,8 +22,10 @@ header {
     height: 100%;
     background: #33a7db 0% 0% no-repeat padding-box;
     z-index: 9999; }
+    header .wrapper .user-link {
+      height: 100%;
+      display: none; }
     header .wrapper .wrapper-user {
-      display: none;
       width: 107px;
       height: 100%;
       background: #0093d6 0% 0% no-repeat padding-box; }
@@ -71,12 +73,18 @@ header {
     header .wrapper .settings-country-selector {
       display: none;
       margin: 0 10px; }
+      header .wrapper .settings-country-selector a {
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        display: block; }
       header .wrapper .settings-country-selector .spain,
       header .wrapper .settings-country-selector .france,
       header .wrapper .settings-country-selector .italy,
       header .wrapper .settings-country-selector .usa,
       header .wrapper .settings-country-selector .england,
-      header .wrapper .settings-country-selector .china {
+      header .wrapper .settings-country-selector .china,
+      header .wrapper .settings-country-selector .germany {
         width: 34px;
         height: 34px;
         background: #ffffff 0% 0% no-repeat padding-box;
@@ -87,6 +95,10 @@ header {
       header .wrapper .settings-country-selector .spain {
         border: 3px solid white;
         background: url("./assets/es.svg") no-repeat;
+        background-size: 135%;
+        background-position: center; }
+      header .wrapper .settings-country-selector .germany {
+        background: url("./assets/de.svg") no-repeat;
         background-size: 135%;
         background-position: center; }
       header .wrapper .settings-country-selector .france {
@@ -117,10 +129,11 @@ header {
       height: 100%;
       background: #33a7db 0% 0% no-repeat padding-box;
       display: flex;
-      justify-content: flex-end;
+      justify-content: center;
       align-items: center;
       flex-direction: row;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      width: 90px; }
       header .wrapper-menu #menu__toggle {
         opacity: 0; }
       header .wrapper-menu .menu_btn {
@@ -212,7 +225,7 @@ nav {
       justify-content: center;
       align-items: center;
       flex-direction: row;
-      width: 70%;
+      width: inherit;
       height: 100%;
       background: #04be64 0% 0% no-repeat padding-box; }
       nav .wrapper-settings .wrapper-trial h2 {
@@ -222,32 +235,38 @@ nav {
         letter-spacing: 0;
         color: #ffffff;
         opacity: 1; }
-    nav .wrapper-settings .wrapper-user {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      width: 30%;
-      height: 100%;
-      background: #0093d6 0% 0% no-repeat padding-box; }
-      nav .wrapper-settings .wrapper-user .head {
-        border-radius: 50%;
-        width: 14px;
-        height: 14px;
-        border: 2px solid #ffffff;
-        opacity: 1; }
-      nav .wrapper-settings .wrapper-user .body {
-        border-radius: 50% 50% 0 0 / 100% 100% 0 0;
-        width: 29px;
-        height: 15px;
-        border: 2px solid #ffffff;
-        opacity: 1;
-        clip-path: circle(54% at center top); }
-      nav .wrapper-settings .wrapper-user p {
-        display: none;
-        font-family: "Open Sans", sans-serif;
-        color: #ffffff;
-        opacity: 1; }
+    nav .wrapper-settings a {
+      height: 100%; }
+      nav .wrapper-settings a .wrapper-user {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        width: 100px;
+        background: #0093d6 0% 0% no-repeat padding-box; }
+        nav .wrapper-settings a .wrapper-user .head {
+          border-radius: 50%;
+          width: 14px;
+          height: 14px;
+          border: 2px solid #ffffff;
+          opacity: 1; }
+        nav .wrapper-settings a .wrapper-user .body {
+          border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+          width: 29px;
+          height: 15px;
+          border: 2px solid #ffffff;
+          opacity: 1;
+          clip-path: circle(54% at center top); }
+        nav .wrapper-settings a .wrapper-user p {
+          display: none;
+          font-family: "Open Sans", sans-serif;
+          color: #ffffff;
+          opacity: 1; }
+    nav .wrapper-settings .button {
+      width: inherit;
+      display: block;
+      text-decoration: none; }
 
 .banner-photo {
   display: flex;
@@ -294,12 +313,14 @@ nav {
     .banner-information .wrapper .wrapper-clock {
       display: none;
       position: absolute;
-      top: 5%;
+      top: 12%;
       z-index: 2000;
-      right: 5%;
-      width: 102px;
-      height: 101px;
-      background: transparent url("./assets/Grupo 86.svg") 0% 0% no-repeat padding-box; }
+      right: 10%;
+      width: 72px;
+      height: 71px; }
+      .banner-information .wrapper .wrapper-clock img {
+        width: 100%;
+        height: 100%; }
     .banner-information .wrapper .block-line {
       position: absolute;
       background: transparent url("./assets/Trazado 76.svg") 0% 0% no-repeat padding-box;
@@ -351,6 +372,7 @@ nav {
       background: #ee6700 0% 0% no-repeat padding-box;
       opacity: 1; }
       .banner-information .wrapper .block-about-script p {
+        font-weight: bolder;
         margin-top: 11px;
         width: 212px;
         height: 116px;
@@ -372,9 +394,11 @@ nav {
       align-items: center;
       flex-direction: column; }
       .banner-information .wrapper .block-about-engage-students .block {
-        width: 320px;
-        height: 191px;
-        background: transparent url("./assets/Captura de pantalla 2019-07-30 a las 12.58.43.png") 0% 0% no-repeat padding-box; }
+        width: 339px;
+        height: 191px; }
+        .banner-information .wrapper .block-about-engage-students .block img {
+          width: 100%;
+          height: 100%; }
       .banner-information .wrapper .block-about-engage-students p {
         text-align: center;
         font-size: 17px;
@@ -402,11 +426,9 @@ nav {
         height: 236px;
         background: #dddddd 0% 0% no-repeat padding-box;
         opacity: 1; }
-        .banner-information .wrapper .block-with-video .block .image {
-          width: 282px;
-          height: 219px;
-          background: transparent url("./assets/Captura de pantalla 2019-07-30 a las 12.55.22.png") 0% 0% no-repeat padding-box;
-          opacity: 1; }
+        .banner-information .wrapper .block-with-video .block img {
+          width: 95%;
+          height: 95%; }
       .banner-information .wrapper .block-with-video p {
         margin-top: 11px;
         text-align: center;
@@ -423,9 +445,11 @@ nav {
       align-items: center;
       flex-direction: column; }
       .banner-information .wrapper .block-about-teachers .block {
-        width: 320px;
-        height: 191px;
-        background: transparent url("./assets/rawpixel-745949-unsplash.png") 0% 0% no-repeat padding-box; }
+        width: 338px;
+        height: 251px; }
+        .banner-information .wrapper .block-about-teachers .block img {
+          width: 100%;
+          height: 100%; }
       .banner-information .wrapper .block-about-teachers p {
         margin-top: 11px;
         text-align: center;
@@ -521,25 +545,24 @@ nav {
         position: absolute;
         top: 7%;
         width: 300px;
+        padding: 15px;
         height: 478px;
         background: #33a9df 0% 0% no-repeat padding-box;
         opacity: 1; }
         .banner-with-lectors-word .wrapper .wrapper-fone .element-visible .button-right {
+          cursor: pointer;
           width: 20px;
           height: 20px;
           border-right: 1px solid #ffffff;
           border-bottom: 1px solid #ffffff;
-          transform: rotate(-45deg);
-          position: relative;
-          right: 4%; }
+          transform: rotate(-45deg); }
         .banner-with-lectors-word .wrapper .wrapper-fone .element-visible .button-left {
+          cursor: pointer;
           width: 20px;
           height: 20px;
           border-right: 1px solid #ffffff;
           border-bottom: 1px solid #ffffff;
-          transform: rotate(136deg);
-          position: relative;
-          left: 4%; }
+          transform: rotate(136deg); }
         .banner-with-lectors-word .wrapper .wrapper-fone .element-visible .block-with-content {
           display: flex;
           justify-content: flex-start;
@@ -615,21 +638,24 @@ nav {
           opacity: 1; }
         .banner-with-lectors-word .wrapper .wrapper-block-with-social-media .social-network-block .block {
           display: flex;
-          justify-content: flex-start;
+          justify-content: space-between;
           align-items: flex-start;
-          flex-direction: row; }
-          .banner-with-lectors-word .wrapper .wrapper-block-with-social-media .social-network-block .block p {
+          flex-direction: row;
+          width: 100%; }
+          .banner-with-lectors-word .wrapper .wrapper-block-with-social-media .social-network-block .block .text a {
+            text-decoration: none;
             text-align: left;
             font-size: 16px;
             font-family: "Alegreya Sans", sans-serif;
             letter-spacing: 0;
             color: #ffffff;
-            opacity: 1;
-            padding-right: 50px; }
-          .banner-with-lectors-word .wrapper .wrapper-block-with-social-media .social-network-block .block img {
-            width: inherit;
-            height: 15px;
-            padding-right: 10px; }
+            opacity: 1; }
+          .banner-with-lectors-word .wrapper .wrapper-block-with-social-media .social-network-block .block .social-netowrk-links {
+            display: flex; }
+            .banner-with-lectors-word .wrapper .wrapper-block-with-social-media .social-network-block .block .social-netowrk-links img {
+              width: inherit;
+              height: 15px;
+              padding-right: 10px; }
 
 .banner-with-circle {
   height: 500px;
@@ -665,18 +691,19 @@ nav {
       width: 85%;
       height: 188px;
       z-index: 100; }
+      .banner-with-circle .wrapper .slider .video {
+        display: none; }
+      .banner-with-circle .wrapper .slider .holiday {
+        display: none; }
       .banner-with-circle .wrapper .slider .gallery {
         width: 100%;
         height: 100%; }
       .banner-with-circle .wrapper .slider .slick-slide {
-        /* margin: 0px 20px; */
         margin: 0 10px 0 0; }
-      .banner-with-circle .wrapper .slider .block {
+      .banner-with-circle .wrapper .slider .slick-slide > div {
         width: 188px;
-        height: 188px;
-        background: #7359e4 0% 0% no-repeat padding-box;
-        margin-right: 20px; }
-        .banner-with-circle .wrapper .slider .block p {
+        height: 188px; }
+        .banner-with-circle .wrapper .slider .slick-slide > div p {
           margin: 10px;
           text-align: left;
           font-size: 12px;
@@ -684,21 +711,93 @@ nav {
           letter-spacing: -0.22px;
           color: #ffffff;
           opacity: 1; }
+        .banner-with-circle .wrapper .slider .slick-slide > div #block1 {
+          background: #7359e4 0% 0% no-repeat padding-box; }
+        .banner-with-circle .wrapper .slider .slick-slide > div #block2 {
+          background: #04be64 0% 0% no-repeat padding-box; }
+        .banner-with-circle .wrapper .slider .slick-slide > div img {
+          width: 100%;
+          height: 100%; }
+      .banner-with-circle .wrapper .slider [data-slick-index="0"] {
+        background: #7359e4 0% 0% no-repeat padding-box; }
+      .banner-with-circle .wrapper .slider [data-slick-index="1"] {
+        background: #04be64 0% 0% no-repeat padding-box; }
 
 footer {
-  height: 639px;
+  height: 800px;
   margin: 0 auto;
   opacity: 1;
   background: #33a9df; }
-  footer .footer-wrapper {
+  footer .foot {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     position: relative;
+    height: 220px;
+    background: #0093d6 0% 0% no-repeat padding-box; }
+    footer .foot .block-with-who-trusted-us {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      max-width: 768px;
+      margin: 0 auto;
+      background: #0093d6 0% 0% no-repeat padding-box;
+      opacity: 1;
+      padding: 20px 18px 18px; }
+      footer .foot .block-with-who-trusted-us h3 {
+        font-family: "Open Sans", sans-serif;
+        font-size: 15px;
+        letter-spacing: -0.12px;
+        color: #ffffff;
+        opacity: 1; }
+      footer .foot .block-with-who-trusted-us .block-with-schools {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 100%;
+        width: 100%; }
+        footer .foot .block-with-who-trusted-us .block-with-schools .oundle {
+          margin: 10px;
+          width: 67px;
+          height: 67px; }
+          footer .foot .block-with-who-trusted-us .block-with-schools .oundle img {
+            width: 100%;
+            height: 100%; }
+        footer .foot .block-with-who-trusted-us .block-with-schools .westminster {
+          margin: 10px;
+          width: 127px;
+          height: 35px; }
+          footer .foot .block-with-who-trusted-us .block-with-schools .westminster img {
+            width: 100%;
+            height: 100%; }
+        footer .foot .block-with-who-trusted-us .block-with-schools .nottingham {
+          margin: 10px;
+          width: 173px;
+          height: 34px; }
+          footer .foot .block-with-who-trusted-us .block-with-schools .nottingham img {
+            width: 100%;
+            height: 100%; }
+        footer .foot .block-with-who-trusted-us .block-with-schools .perse {
+          margin: 10px;
+          width: 83px;
+          height: 63px; }
+          footer .foot .block-with-who-trusted-us .block-with-schools .perse img {
+            width: 100%;
+            height: 100%; }
+  footer .footer-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
     width: 100%;
+    height: 650px;
     max-width: 768px;
-    height: 100%;
     margin: 0 auto;
     background: navy; }
     footer .footer-wrapper .footer-information {
@@ -706,7 +805,7 @@ footer {
       justify-content: flex-start;
       align-items: center;
       flex-direction: column;
-      height: 100%;
+      height: 650px;
       width: 100%;
       background: #33a9df 0% 0% no-repeat padding-box; }
       footer .footer-wrapper .footer-information .contacts {
@@ -715,9 +814,9 @@ footer {
         align-items: flex-start;
         flex-direction: row;
         position: relative;
-        padding: 25px;
+        padding: 20px 40px 20px;
         width: 100%;
-        height: 204px;
+        height: 240px;
         text-align: left;
         font: Bold 12px/20px Open Sans;
         letter-spacing: 0;
@@ -728,7 +827,7 @@ footer {
           justify-content: space-around;
           align-items: flex-start;
           flex-direction: column;
-          width: 70%;
+          width: 100%;
           height: 100%; }
           footer .footer-wrapper .footer-information .contacts .text-information h3 {
             font-size: 12px;
@@ -738,6 +837,9 @@ footer {
             margin-bottom: 5px; }
             footer .footer-wrapper .footer-information .contacts .text-information ul li {
               font-size: 12px; }
+              footer .footer-wrapper .footer-information .contacts .text-information ul li a {
+                text-decoration: none;
+                color: white; }
           footer .footer-wrapper .footer-information .contacts .text-information .block-follow {
             display: flex;
             justify-content: flex-start;
@@ -750,9 +852,9 @@ footer {
               flex-direction: row;
               list-style-type: none; }
               footer .footer-wrapper .footer-information .contacts .text-information .block-follow ul li {
-                margin: 10px; }
-              footer .footer-wrapper .footer-information .contacts .text-information .block-follow ul li:nth-child(1) {
                 margin: 10px 10px 10px 0; }
+        footer .footer-wrapper .footer-information .contacts .text-information > ul {
+          margin: 15px 0; }
         footer .footer-wrapper .footer-information .contacts .image-block {
           display: flex;
           justify-content: flex-end;
@@ -772,95 +874,53 @@ footer {
       footer .footer-wrapper .footer-information .site-map {
         display: flex;
         justify-content: flex-start;
-        align-items: flex-start;
-        flex-direction: row;
+        align-items: normal;
+        flex-direction: column;
+        flex-wrap: wrap-reverse;
         width: 100%;
-        height: 70%;
-        padding: 10px; }
+        padding: 0 40px;
+        height: 70%; }
         footer .footer-wrapper .footer-information .site-map h3 {
           text-align: left;
-          font-size: 12px;
-          font-weight: bold;
-          font-family: "Open Sans", sans-serif;
+          font: Bold 12px/20px Open Sans;
           letter-spacing: -0.12px;
           color: #ffffff; }
         footer .footer-wrapper .footer-information .site-map ul {
           list-style-type: none; }
           footer .footer-wrapper .footer-information .site-map ul li {
-            font-size: 12px;
-            font-family: "Open Sans", sans-serif;
-            margin: 2px;
+            font: normal 12px/20px Open Sans;
+            margin: 2px 0;
             text-align: left;
             letter-spacing: -0.12px;
             color: #ffffff;
             opacity: 1; }
         footer .footer-wrapper .footer-information .site-map .block-about {
-          margin: 12px; }
-        footer .footer-wrapper .footer-information .site-map .block-second-para {
-          margin: 12px;
-          display: flex;
-          justify-content: flex-end;
-          align-items: initial;
-          flex-direction: column; }
-          footer .footer-wrapper .footer-information .site-map .block-second-para .block-legal h3 {
-            margin-top: 10px; }
-
-section.foot {
-  margin: 0 auto;
-  opacity: 1;
-  background: #0093d6 0% 0% no-repeat padding-box; }
-  section.foot .block-with-who-trusted-us {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 28%;
-    width: 100%;
-    background: #0093d6 0% 0% no-repeat padding-box;
-    opacity: 1;
-    padding: 10px; }
-    section.foot .block-with-who-trusted-us h3 {
-      font-family: "Open Sans", sans-serif;
-      font-size: 15px;
-      letter-spacing: -0.12px;
-      color: #ffffff;
-      opacity: 1; }
-    section.foot .block-with-who-trusted-us .block-with-schools {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: row;
-      flex-wrap: wrap;
-      height: 100%;
-      width: 100%; }
-      section.foot .block-with-who-trusted-us .block-with-schools .oundle {
-        margin: 10px;
-        width: 67px;
-        height: 67px; }
-        section.foot .block-with-who-trusted-us .block-with-schools .oundle img {
-          width: 100%;
-          height: 100%; }
-      section.foot .block-with-who-trusted-us .block-with-schools .westminster {
-        margin: 10px;
-        width: 127px;
-        height: 35px; }
-        section.foot .block-with-who-trusted-us .block-with-schools .westminster img {
-          width: 100%;
-          height: 100%; }
-      section.foot .block-with-who-trusted-us .block-with-schools .nottingham {
-        margin: 10px;
-        width: 173px;
-        height: 34px; }
-        section.foot .block-with-who-trusted-us .block-with-schools .nottingham img {
-          width: 100%;
-          height: 100%; }
-      section.foot .block-with-who-trusted-us .block-with-schools .perse {
-        margin: 10px;
-        width: 83px;
-        height: 63px; }
-        section.foot .block-with-who-trusted-us .block-with-schools .perse img {
-          width: 100%;
-          height: 100%; }
+          order: 1;
+          margin-top: 20px; }
+          footer .footer-wrapper .footer-information .site-map .block-about h3 a {
+            color: #ffffff;
+            text-decoration: none; }
+          footer .footer-wrapper .footer-information .site-map .block-about ul li a {
+            color: #ffffff;
+            text-decoration: none; }
+        footer .footer-wrapper .footer-information .site-map .block-for-teacher {
+          margin-top: 20px; }
+          footer .footer-wrapper .footer-information .site-map .block-for-teacher h3 a {
+            color: #ffffff;
+            text-decoration: none; }
+          footer .footer-wrapper .footer-information .site-map .block-for-teacher ul li {
+            margin: 2px 0; }
+            footer .footer-wrapper .footer-information .site-map .block-for-teacher ul li a {
+              color: #ffffff;
+              text-decoration: none; }
+        footer .footer-wrapper .footer-information .site-map .block-legal {
+          margin-top: 20px; }
+          footer .footer-wrapper .footer-information .site-map .block-legal h3 a {
+            color: #ffffff;
+            text-decoration: none; }
+          footer .footer-wrapper .footer-information .site-map .block-legal ul li a {
+            color: #ffffff;
+            text-decoration: none; }
 
 * {
   box-sizing: border-box;
@@ -873,20 +933,23 @@ section.foot {
     header .wrapper {
       max-width: 1024px; }
       header .wrapper .wrapper-logo {
+        width: 45%;
         justify-content: flex-start; }
         header .wrapper .wrapper-logo img {
-          margin-left: 50px; }
-      header .wrapper-menu #menu__toggle:checked ~ .menu__box {
-        top: 90%; }
-      header .wrapper-menu .menu__box {
-        top: -150%; }
+          margin-left: 25px; }
+      header .wrapper-menu {
+        display: flex;
+        justify-content: center;
+        width: 90px; }
+        header .wrapper-menu #menu__toggle:checked ~ .menu__box {
+          top: 90%; }
+        header .wrapper-menu .menu__box {
+          top: -150%; }
       header .wrapper .settings-country-selector {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        flex-direction: row;
-        position: absolute;
-        left: 49%; }
+        flex-direction: row; }
   nav {
     height: 90px;
     top: 90px;
@@ -894,9 +957,15 @@ section.foot {
     margin: 0 auto; }
     nav .wrapper-settings {
       max-width: 1024px;
-      width: 50%; }
+      width: 456px;
+      justify-content: flex-end; }
+      nav .wrapper-settings .wrapper-trial {
+        width: 366px; }
+      nav .wrapper-settings .wrapper-user {
+        width: 90px; }
   section.banner-photo {
     height: 934px;
+    background-size: 115% 101%;
     align-items: center; }
     section.banner-photo h1 {
       max-width: 768px; }
@@ -904,40 +973,64 @@ section.foot {
     height: 1150px; }
     section.banner-information .wrapper {
       max-width: 1024px; }
+      section.banner-information .wrapper .block-line3 {
+        transform: rotate(75deg) scale(2);
+        top: 46%;
+        left: 0px;
+        width: 579px;
+        height: 337px; }
       section.banner-information .wrapper .block-line4 {
-        right: 50%; }
+        left: -30%;
+        top: 81%;
+        transform: rotate(0deg); }
       section.banner-information .wrapper .block-about-script {
         top: -55px;
-        left: 30px;
-        width: 365px;
-        height: 220px; }
+        left: 60px;
+        width: 410px;
+        height: 300px;
+        padding: 24px 10px 24px 24px; }
         section.banner-information .wrapper .block-about-script p {
-          font-size: 31px;
-          font-weight: bold;
-          width: 250px; }
+          margin: 0;
+          width: unset;
+          height: unset;
+          font-size: 50px;
+          font-weight: bold; }
       section.banner-information .wrapper .wrapper-clock {
         display: inline; }
       section.banner-information .wrapper .block-about-engage-students {
-        top: 18%;
-        right: 56%;
-        transform: scale(0.9);
+        top: 25%;
+        right: unset;
+        left: 60px;
         align-items: flex-start; }
+        section.banner-information .wrapper .block-about-engage-students .block {
+          width: 262px;
+          height: 148px; }
+          section.banner-information .wrapper .block-about-engage-students .block img {
+            width: 100%;
+            height: 100%; }
         section.banner-information .wrapper .block-about-engage-students p {
           font-size: 20px; }
       section.banner-information .wrapper .block-about-teachers {
-        top: 14%;
+        top: 16%;
         right: 7%;
-        transform: scale(1.2, 1.5);
         align-items: flex-end; }
+        section.banner-information .wrapper .block-about-teachers .block {
+          width: 348px;
+          height: 258px; }
         section.banner-information .wrapper .block-about-teachers p {
-          font-size: 17px; }
+          font-size: 20px; }
       section.banner-information .wrapper .block-with-video {
-        left: 25%;
-        top: 30%;
+        left: 30%;
+        top: 35%;
         transform: none; }
+        section.banner-information .wrapper .block-with-video .block {
+          width: 228px;
+          height: 177px; }
+        section.banner-information .wrapper .block-with-video p {
+          font-size: 20px; }
       section.banner-information .wrapper .block-line {
         z-index: 1001;
-        top: -620px;
+        top: -585px;
         left: -330.794098px;
         width: 810px;
         height: 1018px;
@@ -949,14 +1042,6 @@ section.foot {
         top: 50px;
         transform: scale(1);
         right: 0; }
-      section.banner-information .wrapper .block-line3 {
-        position: absolute;
-        transform: rotate(76deg) scale(1);
-        top: 51%;
-        right: 31%;
-        /* left: -26%; */
-        width: 739px;
-        height: 583px; }
       section.banner-information .wrapper .block-about-statistik {
         height: 450px;
         top: 55%; }
@@ -987,13 +1072,13 @@ section.foot {
         display: block; }
       section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible {
         width: 668px;
-        height: 699px; }
+        height: 699px;
+        padding: 40px; }
         section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible .button-left,
         section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible .button-right {
           width: 55px;
           height: 55px; }
         section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible .block-with-content {
-          padding: 5px 30px;
           align-items: flex-start; }
           section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible .block-with-content .image {
             align-items: flex-start;
@@ -1019,75 +1104,124 @@ section.foot {
               text-align: left;
               margin: 0; }
       section.banner-with-lectors-word .wrapper .wrapper-block-with-social-media .social-network-block {
-        padding: 65px 0 65px 60px;
-        width: 60%;
-        height: 90%;
+        padding: 65px 10px 65px 60px;
+        width: 546px;
+        height: 300px;
         top: 40%; }
         section.banner-with-lectors-word .wrapper .wrapper-block-with-social-media .social-network-block h3 {
           font-size: 50px; }
-        section.banner-with-lectors-word .wrapper .wrapper-block-with-social-media .social-network-block .block img {
+        section.banner-with-lectors-word .wrapper .wrapper-block-with-social-media .social-network-block .block .social-netowrk-links img {
+          padding-right: 20px;
           width: 100%;
           height: 100%; }
-        section.banner-with-lectors-word .wrapper .wrapper-block-with-social-media .social-network-block .block p {
+        section.banner-with-lectors-word .wrapper .wrapper-block-with-social-media .social-network-block .block .text a {
           font-size: 30px; }
   section.banner-with-circle {
-    height: 440px; }
+    height: 595px; }
     section.banner-with-circle .wrapper {
       max-width: 1024px; }
       section.banner-with-circle .wrapper .line1 {
-        top: -170px; }
+        width: 274px;
+        height: 382px;
+        top: -129px; }
       section.banner-with-circle .wrapper .line2 {
         width: 500px;
         height: 240px;
-        top: 200px;
+        top: 360px;
         left: unset;
         right: 0; }
       section.banner-with-circle .wrapper .slider {
-        width: 92%; }
-  section.foot .block-with-who-trusted-us {
-    height: 160px; }
-  section.foot .block-with-who-trusted-us {
-    height: 210px; }
-    section.foot .block-with-who-trusted-us .block-with-schools {
-      justify-content: space-evenly; }
+        width: 92%;
+        height: 272px;
+        top: 7%; }
+        section.banner-with-circle .wrapper .slider .video {
+          display: inline-block; }
+        section.banner-with-circle .wrapper .slider .holiday {
+          display: inline-block; }
+        section.banner-with-circle .wrapper .slider .slick-slide > div {
+          width: 272px;
+          height: 272px; }
+          section.banner-with-circle .wrapper .slider .slick-slide > div p {
+            margin: 10px;
+            text-align: left;
+            font-size: 14px;
+            font-family: "Open Sans", sans-serif;
+            letter-spacing: -0.22px;
+            color: #ffffff;
+            opacity: 1; }
+          section.banner-with-circle .wrapper .slider .slick-slide > div img {
+            width: 100%;
+            height: 100%; }
   footer {
-    height: 460px; }
+    height: auto; }
+    footer .foot {
+      height: unset; }
+      footer .foot .block-with-who-trusted-us {
+        height: 210px;
+        max-width: 1024px; }
+        footer .foot .block-with-who-trusted-us .block-with-schools {
+          flex-wrap: nowrap;
+          justify-content: space-evenly; }
+          footer .foot .block-with-who-trusted-us .block-with-schools .oundle {
+            width: 84px;
+            height: 83px; }
+          footer .foot .block-with-who-trusted-us .block-with-schools .westminster {
+            width: 157px;
+            height: 43px; }
+          footer .foot .block-with-who-trusted-us .block-with-schools .nottingham {
+            width: 214px;
+            height: 42px; }
+          footer .foot .block-with-who-trusted-us .block-with-schools .perse {
+            width: 103px;
+            height: 78px; }
     footer .footer-wrapper {
+      height: unset;
       max-width: 1024px; }
-      footer .footer-wrapper .block-with-who-trusted-us .block-with-schools {
-        justify-content: space-around; }
+      footer .footer-wrapper .block-with-who-trusted-us {
+        height: 210px; }
+        footer .footer-wrapper .block-with-who-trusted-us .block-with-schools {
+          justify-content: space-around; }
       footer .footer-wrapper .footer-information {
+        height: 500px;
         flex-direction: row-reverse;
         align-items: unset; }
         footer .footer-wrapper .footer-information .site-map {
-          height: unset; }
+          height: unset;
+          width: 131%; }
           footer .footer-wrapper .footer-information .site-map .block-about h3 {
-            font-size: 16px; }
+            font: Bold 16px/23px Open Sans;
+            letter-spacing: -0.16px; }
           footer .footer-wrapper .footer-information .site-map .block-about ul li {
-            font-weight: 100;
-            font-size: 15px; }
-          footer .footer-wrapper .footer-information .site-map .block-second-para .block-for-teacher h3 {
-            font-size: 16px; }
-          footer .footer-wrapper .footer-information .site-map .block-second-para .block-for-teacher ul li {
-            font-weight: 100;
-            font-size: 15px; }
-          footer .footer-wrapper .footer-information .site-map .block-second-para .block-legal h3 {
-            font-size: 16px; }
-          footer .footer-wrapper .footer-information .site-map .block-second-para .block-legal ul li {
-            font-weight: 100;
-            font-size: 15px; }
-        footer .footer-wrapper .footer-information .contacts {
-          flex-direction: column;
-          margin-top: 20px; }
-          footer .footer-wrapper .footer-information .contacts .image-block {
+            font: normal 15px/23px Open Sans; }
+          footer .footer-wrapper .footer-information .site-map .block-for-teacher h3 {
+            font: Bold 16px/23px Open Sans;
+            letter-spacing: -0.16px; }
+          footer .footer-wrapper .footer-information .site-map .block-for-teacher ul li {
+            font: normal 15px/23px Open Sans; }
+          footer .footer-wrapper .footer-information .site-map .block-legal h3 {
+            font: Bold 16px/23px Open Sans;
+            letter-spacing: -0.16px; }
+          footer .footer-wrapper .footer-information .site-map .block-legal ul li {
+            font: normal 15px/23px Open Sans; }
+          footer .footer-wrapper .footer-information .site-map .block-legal .admin {
             margin-top: 20px; }
+        footer .footer-wrapper .footer-information .contacts {
+          width: 104%;
+          flex-direction: column;
+          margin-top: 20px;
+          padding: 0 0 0 40px; }
+          footer .footer-wrapper .footer-information .contacts .image-block {
+            margin-top: 20px;
+            width: 35%; }
           footer .footer-wrapper .footer-information .contacts .text-information h3 {
             font-size: 16px; }
+          footer .footer-wrapper .footer-information .contacts .text-information > ul {
+            margin: 20px 0; }
         footer .footer-wrapper .footer-information .contacts::after {
           height: 135%;
           width: 1px;
           left: 0;
-          top: 10px; } }
+          top: 0; } }
 
 @media (min-width: 1024px) {
   header {
@@ -1096,20 +1230,22 @@ section.foot {
     header .wrapper {
       max-width: unset; }
       header .wrapper .wrapper-logo {
-        width: unset; }
+        width: 40%; }
         header .wrapper .wrapper-logo p {
           margin-left: 10px;
+          margin-left: 5px;
           display: block;
           text-transform: capitalize;
           color: white;
           text-align: left;
-          font-size: 15px;
+          font-size: 12px;
           font-family: "Open Sans", sans-serif;
           letter-spacing: -0.24px;
           color: #ffffff; }
       header .wrapper .wrapper-list {
-        position: absolute;
-        left: 43%; }
+        right: 195px;
+        left: auto;
+        position: relative; }
         header .wrapper .wrapper-list ul {
           display: flex;
           justify-content: space-between;
@@ -1117,11 +1253,14 @@ section.foot {
           flex-direction: row; }
           header .wrapper .wrapper-list ul li {
             list-style-type: none;
-            color: white;
             margin: 0 10px;
             font-size: 16px; }
+            header .wrapper .wrapper-list ul li a {
+              text-decoration: none;
+              color: white; }
       header .wrapper .settings-country-selector {
-        right: 10%;
+        right: 107px;
+        position: absolute;
         left: unset; }
         header .wrapper .settings-country-selector .spain,
         header .wrapper .settings-country-selector .france,
@@ -1132,64 +1271,92 @@ section.foot {
           margin: 0 3px; }
       header .wrapper .wrapper-menu {
         display: none; }
-      header .wrapper .wrapper-user {
+      header .wrapper .user-link {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        position: absolute;
-        right: 0; }
+        height: 100%;
+        width: 100px; }
+        header .wrapper .user-link .wrapper-user {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          position: absolute;
+          right: 0;
+          width: 100px; }
   nav {
     z-index: 100000; }
     nav .wrapper-settings {
       justify-content: flex-end;
-      width: 35%;
       position: absolute; }
+      nav .wrapper-settings .button {
+        width: unset; }
       nav .wrapper-settings .wrapper-trial {
-        width: 100%; }
-      nav .wrapper-settings .wrapper-user {
-        display: none; }
-        nav .wrapper-settings .wrapper-user p {
+        width: 456px;
+        height: 90px; }
+      nav .wrapper-settings .user-link {
+        display: none;
+        text-decoration: none; }
+        nav .wrapper-settings .user-link .wrapper-user p {
           display: block; }
   section.banner-photo {
-    padding-bottom: 30%;
+    padding-bottom: 250px;
     align-items: flex-end; }
     section.banner-photo h1 {
       font-size: 33px; }
-  section.banner-information .wrapper {
-    max-width: unset; }
-    section.banner-information .wrapper .block-line4 {
-      right: 70%; }
-    section.banner-information .wrapper .block-line {
-      top: -700px;
-      left: -400.794098px;
-      transform: scale(1.1); }
-    section.banner-information .wrapper .block-line3 {
-      width: 514px;
-      height: 397px;
-      left: 0;
-      top: 22%;
-      transform: rotate(76deg) scale(3); }
-    section.banner-information .wrapper .block-about-script {
-      width: 501px;
-      height: 350px; }
-      section.banner-information .wrapper .block-about-script p {
-        font-size: 50px;
-        width: unset;
-        height: unset;
-        margin-left: 65px; }
-    section.banner-information .wrapper .block-about-engage-students {
-      top: 19%;
-      right: 56%;
-      transform: translate(0%, 10%); }
-    section.banner-information .wrapper .block-with-video {
-      left: 40%;
-      top: 30%;
-      transform: translate(-7%, -9%); }
-    section.banner-information .wrapper .block-about-teachers {
-      top: 12%;
-      right: 9%;
-      transform: translate(-5%, -5%) scale(1.5); }
+  section.banner-information .wrapper .block-line4 {
+    right: 70%; }
+  section.banner-information .wrapper .wrapper-clock {
+    right: 2%;
+    top: 7%; }
+  section.banner-information .wrapper .block-line {
+    top: -623px;
+    left: -345.794098px;
+    transform: scale(1); }
+  section.banner-information .wrapper .block-line3 {
+    width: 514px;
+    height: 397px;
+    left: 0;
+    top: 22%;
+    transform: rotate(76deg) scale(3); }
+  section.banner-information .wrapper .block-about-script {
+    width: 525px;
+    height: 340px;
+    left: 40px; }
+    section.banner-information .wrapper .block-about-script p {
+      font-size: 60px;
+      line-height: 60px;
+      width: unset;
+      height: unset;
+      margin-left: 30px; }
+  section.banner-information .wrapper .block-about-engage-students {
+    top: 21%;
+    left: 8%; }
+    section.banner-information .wrapper .block-about-engage-students .block {
+      width: 367px;
+      height: 207px; }
+    section.banner-information .wrapper .block-about-engage-students p {
+      font-size: 25px;
+      margin-top: 15px; }
+  section.banner-information .wrapper .block-with-video {
+    left: 40%;
+    top: 30%; }
+    section.banner-information .wrapper .block-with-video .block {
+      width: 300px;
+      height: 230px; }
+    section.banner-information .wrapper .block-with-video p {
+      font-size: 25px;
+      margin-top: 15px; }
+  section.banner-information .wrapper .block-about-teachers {
+    top: 6%;
+    right: 60px; }
+    section.banner-information .wrapper .block-about-teachers .block {
+      width: 360px;
+      height: 300px; }
+    section.banner-information .wrapper .block-about-teachers p {
+      font-size: 25px;
+      margin-top: 15px; }
+  section.banner-information .wrapper .block-about-statistik {
+    height: 340px; }
     section.banner-information .wrapper .block-about-statistik .block-about-statistik-students .counter {
       font-size: 70px; }
     section.banner-information .wrapper .block-about-statistik .block-about-statistik-schools .counter {
@@ -1200,73 +1367,97 @@ section.foot {
       transform: translate(-50%, 5%); }
       section.banner-information .wrapper .block-about-statistik .block-about-statistik-videos .counter {
         font-size: 140px; }
-  section.banner-with-lectors-word .wrapper {
-    max-width: unset; }
-    section.banner-with-lectors-word .wrapper .wrapper-fone {
-      width: 85%;
-      height: 58%; }
-      section.banner-with-lectors-word .wrapper .wrapper-fone .line1 {
-        display: none; }
-      section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible {
-        width: 94%;
-        height: 50%;
-        position: absolute;
-        left: 5%; }
-        section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible .block-with-content {
+  section.banner-with-lectors-word .wrapper .wrapper-fone {
+    width: 85%;
+    height: 58%; }
+    section.banner-with-lectors-word .wrapper .wrapper-fone .line1 {
+      display: none; }
+    section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible {
+      width: 90%;
+      height: 50%;
+      position: absolute;
+      left: 5%; }
+      section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible .block-with-content {
+        align-items: center;
+        flex-direction: row; }
+        section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible .block-with-content .image {
           align-items: center;
-          flex-direction: row; }
-          section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible .block-with-content .image {
-            align-items: center;
-            margin: 10px; }
-            section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible .block-with-content .image img {
-              width: 100%; }
-          section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible .block-with-content .content {
-            width: 90%;
-            height: 90%;
-            padding: 20px; }
-    section.banner-with-lectors-word .wrapper .wrapper-block-with-social-media {
-      width: 85%; }
-      section.banner-with-lectors-word .wrapper .wrapper-block-with-social-media .social-network-block {
-        width: 609px;
-        height: 355px; }
+          margin: 10px; }
+          section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible .block-with-content .image img {
+            width: 100%; }
+        section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible .block-with-content .content {
+          width: 90%;
+          height: 90%;
+          padding: 20px; }
+  section.banner-with-lectors-word .wrapper .wrapper-block-with-social-media {
+    width: 85%; }
+    section.banner-with-lectors-word .wrapper .wrapper-block-with-social-media .social-network-block {
+      width: 609px;
+      height: 355px;
+      padding: 65px 25px 65px 90px; }
   section.banner-with-circle {
-    height: 440px; }
-    section.banner-with-circle .wrapper {
-      max-width: unset; }
-      section.banner-with-circle .wrapper .line2 {
-        width: 815px; }
-  section.foot .block-with-who-trusted-us {
-    padding: 20px 10% 0; }
-    section.foot .block-with-who-trusted-us .block-with-schools {
+    height: 475px; }
+    section.banner-with-circle .wrapper .slider {
+      top: 0%;
+      width: 95%; }
+    section.banner-with-circle .wrapper .line1 {
+      width: 423px;
+      height: 523px;
+      top: -240px;
+      right: 0; }
+    section.banner-with-circle .wrapper .line2 {
+      width: 815px;
+      top: 260px; }
+  footer .foot .block-with-who-trusted-us {
+    padding: 20px 0; }
+    footer .foot .block-with-who-trusted-us .block-with-schools {
+      flex-wrap: nowrap;
       justify-content: space-between; }
-  footer {
-    height: 350px; }
-    footer .footer-wrapper {
-      max-width: unset;
-      background: transparent;
-      padding: 0 10%; }
+      footer .foot .block-with-who-trusted-us .block-with-schools .oundle {
+        width: 119px;
+        height: 118px; }
+      footer .foot .block-with-who-trusted-us .block-with-schools .westminster {
+        width: 223px;
+        height: 61px; }
+      footer .foot .block-with-who-trusted-us .block-with-schools .nottingham {
+        width: 305px;
+        height: 59px; }
+      footer .foot .block-with-who-trusted-us .block-with-schools .perse {
+        width: 119px;
+        height: 118px; }
+  footer .footer-wrapper {
+    max-width: 1024px;
+    background: transparent;
+    height: 405px; }
+    footer .footer-wrapper .footer-information {
+      padding-top: 30px; }
       footer .footer-wrapper .footer-information .site-map {
-        justify-content: space-evenly;
-        margin-top: 60px;
-        padding: 0; }
+        justify-content: space-between;
+        flex-direction: row;
+        padding: 0 10px; }
         footer .footer-wrapper .footer-information .site-map .block-about {
+          order: 0; }
+        footer .footer-wrapper .footer-information .site-map .block-legal h3 {
+          margin: 0; }
+        footer .footer-wrapper .footer-information .site-map .block-legal ul li {
+          font: normal 15px/23px Open Sans; }
+        footer .footer-wrapper .footer-information .site-map .block-for-teachers {
           margin: 0 10px; }
-        footer .footer-wrapper .footer-information .site-map .block-second-para {
-          margin: 0;
-          flex-direction: row; }
-          footer .footer-wrapper .footer-information .site-map .block-second-para .block-legal {
-            margin: 0 10px; }
-            footer .footer-wrapper .footer-information .site-map .block-second-para .block-legal h3 {
-              margin: 0; }
-          footer .footer-wrapper .footer-information .site-map .block-second-para .block-for-teachers {
-            margin: 0 10px; }
       footer .footer-wrapper .footer-information .contacts {
+        height: 220px;
         width: 65%;
-        margin-top: 60px;
-        padding: 0 0 0 25px; }
+        padding: 0 0 0 40px; }
+        footer .footer-wrapper .footer-information .contacts .text-information ul li {
+          font: Bold 16px/23px Open Sans; }
+        footer .footer-wrapper .footer-information .contacts .text-information .block-follow h4 {
+          font: Bold 16px/23px Open Sans; }
+          footer .footer-wrapper .footer-information .contacts .text-information .block-follow h4 .social-networks li {
+            margin: 10px 10px 10px 0; }
         footer .footer-wrapper .footer-information .contacts .image-block {
           margin: 0; }
           footer .footer-wrapper .footer-information .contacts .image-block img {
-            width: 70%; }
+            width: 100%; }
       footer .footer-wrapper .footer-information .contacts::after {
-        height: 120%; } }
+        height: 120%;
+        left: 20px;
+        top: 0; } }

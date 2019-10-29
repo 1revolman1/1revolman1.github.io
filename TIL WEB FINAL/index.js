@@ -23,6 +23,12 @@ let element_visible = [
               <span>Jessus Christ</span>
               <p>Head of Earth</p></div>`
 ];
+
+// document.querySelector("nav .wrapper-user").style.width =
+//   document.querySelector("header .wrapper-user").offsetWidth + "px";
+// document.querySelector("nav .wrapper-user").style.height =
+//   document.querySelector("header .wrapper-user").offsetHeight + "px";
+
 let index = Math.round(element_visible.length / 2);
 document.querySelector(".block-with-content").innerHTML =
   element_visible[index - 1];
@@ -44,11 +50,12 @@ document.querySelector(".button-right").addEventListener("click", function(e) {
       element_visible[index - 1];
   }
 });
+
 let text = "";
 for (let i = 0; i < 5; i++) {
   text += `<div class="block"><p>“Un bon ami. Je dirais que c’est quelqu’un qui me permet de progresser dans la vie, qui me donne envie de me surpasser. Euh quelqu’un avec lequel je passe de bons moments, je m’amuse.”</p><p>@thisislanguage</p></div>`;
 }
-document.querySelector(".slider").innerHTML = text;
+// document.querySelector(".slider").innerHTML = text;
 
 document.querySelectorAll(".slider .block").forEach(e => {
   e.style.background = `rgb(${randomInteger(0, 255)}, ${randomInteger(
@@ -59,10 +66,10 @@ document.querySelectorAll(".slider .block").forEach(e => {
 
 $(".slider").slick({
   // dots: true,
-  arrows: true,
+  arrows: false,
   infinite: true,
   centerMode: true,
-  autoplay: true,
+  autoplay: false,
   autoplaySpeed: 1000,
   slidesToScroll: 3,
   slidesToShow: 4,
@@ -71,8 +78,8 @@ $(".slider").slick({
       breakpoint: 1024,
       settings: {
         autoplay: false,
-        slidesToShow: 3,
-        slidesToScroll: 2
+        slidesToShow: 2,
+        slidesToScroll: 3
       }
     },
     {
@@ -87,7 +94,7 @@ $(".slider").slick({
       breakpoint: 1366,
       settings: {
         // autoplay: true,
-        slidesToShow: 4,
+        slidesToShow: 3,
         slidesToScroll: 2
       }
     }
@@ -102,27 +109,30 @@ $(".slider").slick({
 });
 document
   .querySelector(".wrapper-list ul")
-  .addEventListener("click", function(e) {
+  .addEventListener("mouseover", function(e) {
     e.stopPropagation();
-    console.log(e.target);
+    // console.log(e.target);
   });
+
 let ammound_of_scrols = 0;
 window.addEventListener("scroll", function(e) {
   if (window.innerWidth >= 1024) {
+    // console.log("отошел");
+    document.querySelector("nav .user-link").style.display = "flex";
+    document.querySelector("nav .wrapper-settings .wrapper-trial").style.width =
+      "330px";
+    // "356px"
     document.querySelector("nav .wrapper-settings").style.top = "-100%";
-    document.querySelector("nav .wrapper-trial").style.width = "70%";
-    document.querySelector("nav .wrapper-user").style.display = "flex";
-    document.querySelector("nav .wrapper-user").style.top = "-100%";
   }
 });
 window.addEventListener("scroll", function() {
   if (window.scrollY < 50 && window.innerWidth >= 1024) {
-    document.querySelector("nav .wrapper-user").style.width =
-      document.querySelector("header .wrapper-user").offsetWidth + "px";
-    document.querySelector("nav .wrapper-settings").style.top = "0";
-    document.querySelector("nav .wrapper-trial").style.width = "100%";
-    document.querySelector("nav .wrapper-user").style.display = "none";
-    document.querySelector("nav .wrapper-user").style.top = "0";
+    // console.log("подошел");
+    document.querySelector("nav .wrapper-settings").style.top = "";
+    document.querySelector("nav .user-link").style.display = "none";
+    document.querySelector("nav .wrapper-settings .wrapper-trial").style.width =
+      "426px";
+    // "456px";
   }
 });
 
