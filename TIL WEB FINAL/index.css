@@ -303,7 +303,8 @@ nav {
 .banner-information {
   height: 1270px;
   z-index: 999;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-bottom: 50px; }
   .banner-information .wrapper {
     position: relative;
     width: 100%;
@@ -334,7 +335,7 @@ nav {
       position: absolute;
       width: 205px;
       height: 705px;
-      top: 295px;
+      top: 340px;
       transform: scale(0.8);
       right: -20px;
       background: transparent url("./assets/Trazado 75.svg") 0% 0% no-repeat padding-box; }
@@ -344,7 +345,7 @@ nav {
       content: "";
       display: block;
       position: absolute;
-      top: 61%;
+      top: 65%;
       right: -112px;
       width: 735px;
       height: 343px;
@@ -352,13 +353,13 @@ nav {
       clear: both;
       z-index: -1; }
     .banner-information .wrapper .block-line4 {
-      transform: scale(-1, -1) rotate(158deg);
       background: transparent url("./assets/Trazado 75 (1).svg");
-      top: 93%;
+      transform: scale(-0.65, -0.65) rotate(180deg);
+      top: 94%;
       position: absolute;
-      width: 587px;
-      height: 655px;
-      right: 40%; }
+      width: 600px;
+      height: 180px;
+      right: 20%; }
     .banner-information .wrapper .block-about-script {
       display: flex;
       justify-content: center;
@@ -394,7 +395,7 @@ nav {
       align-items: center;
       flex-direction: column; }
       .banner-information .wrapper .block-about-engage-students .block {
-        width: 339px;
+        width: 320px;
         height: 191px; }
         .banner-information .wrapper .block-about-engage-students .block img {
           width: 100%;
@@ -445,7 +446,7 @@ nav {
       align-items: center;
       flex-direction: column; }
       .banner-information .wrapper .block-about-teachers .block {
-        width: 338px;
+        width: 320px;
         height: 251px; }
         .banner-information .wrapper .block-about-teachers .block img {
           width: 100%;
@@ -462,7 +463,7 @@ nav {
       height: 370px;
       width: 100%;
       position: relative;
-      top: 71%; }
+      top: 75%; }
       .banner-information .wrapper .block-about-statistik-students {
         z-index: 1;
         position: absolute;
@@ -688,7 +689,7 @@ nav {
       position: relative;
       top: 0;
       right: 0;
-      width: 85%;
+      width: 95%;
       height: 188px;
       z-index: 100; }
       .banner-with-circle .wrapper .slider .video {
@@ -699,7 +700,9 @@ nav {
         width: 100%;
         height: 100%; }
       .banner-with-circle .wrapper .slider .slick-slide {
-        margin: 0 10px 0 0; }
+        margin: 0 10px; }
+      .banner-with-circle .wrapper .slider .slick-list {
+        margin: 0 -10px; }
       .banner-with-circle .wrapper .slider .slick-slide > div {
         width: 188px;
         height: 188px; }
@@ -724,7 +727,7 @@ nav {
         background: #04be64 0% 0% no-repeat padding-box; }
 
 footer {
-  height: 800px;
+  height: 940px;
   margin: 0 auto;
   opacity: 1;
   background: #33a9df; }
@@ -734,13 +737,14 @@ footer {
     align-items: center;
     flex-direction: column;
     position: relative;
-    height: 220px;
+    height: 260px;
     background: #0093d6 0% 0% no-repeat padding-box; }
     footer .foot .block-with-who-trusted-us {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      height: 100%;
       width: 100%;
       max-width: 768px;
       margin: 0 auto;
@@ -814,7 +818,7 @@ footer {
         align-items: flex-start;
         flex-direction: row;
         position: relative;
-        padding: 20px 40px 20px;
+        padding: 20px 40px 5px;
         width: 100%;
         height: 240px;
         text-align: left;
@@ -831,7 +835,7 @@ footer {
           height: 100%; }
           footer .footer-wrapper .footer-information .contacts .text-information h3 {
             font-size: 12px;
-            margin-bottom: 5px; }
+            margin-bottom: 2px; }
           footer .footer-wrapper .footer-information .contacts .text-information ul {
             list-style-type: none;
             margin-bottom: 5px; }
@@ -870,7 +874,7 @@ footer {
         height: 1px;
         width: 80%;
         background: white;
-        bottom: 0; }
+        bottom: -15px; }
       footer .footer-wrapper .footer-information .site-map {
         display: flex;
         justify-content: flex-start;
@@ -878,7 +882,7 @@ footer {
         flex-direction: column;
         flex-wrap: wrap-reverse;
         width: 100%;
-        padding: 0 40px;
+        padding: 20px 40px 5px;
         height: 70%; }
         footer .footer-wrapper .footer-information .site-map h3 {
           text-align: left;
@@ -896,7 +900,7 @@ footer {
             opacity: 1; }
         footer .footer-wrapper .footer-information .site-map .block-about {
           order: 1;
-          margin-top: 20px; }
+          margin: 20px 10px 0 0; }
           footer .footer-wrapper .footer-information .site-map .block-about h3 a {
             color: #ffffff;
             text-decoration: none; }
@@ -981,7 +985,8 @@ footer {
         height: 337px; }
       section.banner-information .wrapper .block-line4 {
         left: -30%;
-        top: 81%;
+        height: 220px;
+        top: 86%;
         transform: rotate(0deg); }
       section.banner-information .wrapper .block-about-script {
         top: -55px;
@@ -1304,7 +1309,8 @@ footer {
     section.banner-photo h1 {
       font-size: 33px; }
   section.banner-information .wrapper .block-line4 {
-    right: 70%; }
+    right: 60%;
+    left: unset; }
   section.banner-information .wrapper .wrapper-clock {
     right: 2%;
     top: 7%; }
@@ -1313,11 +1319,11 @@ footer {
     left: -345.794098px;
     transform: scale(1); }
   section.banner-information .wrapper .block-line3 {
-    width: 514px;
-    height: 397px;
-    left: 0;
+    width: 635px;
+    height: 343px;
+    left: -159px;
     top: 22%;
-    transform: rotate(76deg) scale(3); }
+    transform: rotate(67deg) scale(3); }
   section.banner-information .wrapper .block-about-script {
     width: 525px;
     height: 340px;
