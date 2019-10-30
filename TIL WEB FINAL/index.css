@@ -984,9 +984,11 @@ body {
     section.banner-information .wrapper {
       max-width: 1024px; }
       section.banner-information .wrapper .block-line3 {
-        transform: rotate(116deg) scale(4.5);
+        transform: rotate(104deg) scale(3.9);
         right: -38px;
-        top: 97%; }
+        top: 82%;
+        width: 794px;
+        height: 768px; }
       section.banner-information .wrapper .block-line4 {
         left: -30%;
         height: 220px;
