@@ -275,7 +275,9 @@ nav {
   flex-direction: row;
   height: 577px;
   background-image: url("./assets/blue.png");
-  background-size: 140% 100%;
+  background-size: 209vw 100vh;
+  min-height: 500px;
+  background-position: -141px;
   padding-bottom: 120px;
   width: 100%;
   margin: 0 auto; }
@@ -345,12 +347,11 @@ nav {
       content: "";
       display: block;
       position: absolute;
-      top: 65%;
+      top: 86%;
       right: -112px;
-      width: 735px;
-      height: 343px;
-      transform: rotate(76deg);
-      clear: both;
+      width: 831px;
+      height: 768px;
+      transform: rotate(76deg) scale(3.3);
       z-index: -1; }
     .banner-information .wrapper .block-line4 {
       background: transparent url("./assets/Trazado 75 (1).svg");
@@ -395,7 +396,7 @@ nav {
       align-items: center;
       flex-direction: column; }
       .banner-information .wrapper .block-about-engage-students .block {
-        width: 320px;
+        width: 339px;
         height: 191px; }
         .banner-information .wrapper .block-about-engage-students .block img {
           width: 100%;
@@ -689,7 +690,7 @@ nav {
       position: relative;
       top: 0;
       right: 0;
-      width: 93%;
+      width: 95%;
       height: 188px;
       z-index: 100; }
       .banner-with-circle .wrapper .slider .video {
@@ -700,9 +701,7 @@ nav {
         width: 100%;
         height: 100%; }
       .banner-with-circle .wrapper .slider .slick-slide {
-        margin: 0 10px; }
-      .banner-with-circle .wrapper .slider .slick-list {
-        margin: 0 -10px; }
+        margin: 0 10px 0 0; }
       .banner-with-circle .wrapper .slider .slick-slide > div {
         width: 188px;
         height: 188px; }
@@ -931,6 +930,12 @@ footer {
   margin: 0;
   padding: 0; }
 
+html {
+  overflow-x: hidden; }
+
+body {
+  overflow-x: hidden; }
+
 @media (min-width: 768px) {
   header {
     height: 90px; }
@@ -969,8 +974,9 @@ footer {
         width: 90px; }
   section.banner-photo {
     height: 934px;
-    background-size: 115% 101%;
-    align-items: center; }
+    align-items: center;
+    background-size: 209vw 100%;
+    background-position: -360px; }
     section.banner-photo h1 {
       max-width: 768px; }
   section.banner-information {
@@ -978,11 +984,9 @@ footer {
     section.banner-information .wrapper {
       max-width: 1024px; }
       section.banner-information .wrapper .block-line3 {
-        transform: rotate(75deg) scale(2);
-        top: 46%;
-        left: 0px;
-        width: 579px;
-        height: 337px; }
+        transform: rotate(116deg) scale(4.5);
+        right: -38px;
+        top: 97%; }
       section.banner-information .wrapper .block-line4 {
         left: -30%;
         height: 220px;
@@ -1279,7 +1283,8 @@ footer {
       header .wrapper .user-link {
         display: flex;
         height: 100%;
-        width: 100px; }
+        width: 100px;
+        text-decoration: none; }
         header .wrapper .user-link .wrapper-user {
           display: flex;
           justify-content: center;
@@ -1305,6 +1310,8 @@ footer {
           display: block; }
   section.banner-photo {
     padding-bottom: 250px;
+    background-position: 0;
+    background-size: 125vw 100%;
     align-items: flex-end; }
     section.banner-photo h1 {
       font-size: 33px; }
@@ -1318,6 +1325,9 @@ footer {
     top: -623px;
     left: -345.794098px;
     transform: scale(1); }
+  section.banner-information .wrapper .block-line2 {
+    width: 597px;
+    right: -165px; }
   section.banner-information .wrapper .block-line3 {
     width: 635px;
     height: 343px;
@@ -1407,13 +1417,14 @@ footer {
       top: 0%;
       width: 95%; }
     section.banner-with-circle .wrapper .line1 {
-      width: 423px;
-      height: 523px;
-      top: -240px;
-      right: 0; }
+      width: 769px;
+      height: 620px;
+      top: -233px;
+      right: -382px; }
     section.banner-with-circle .wrapper .line2 {
       width: 815px;
-      top: 260px; }
+      top: 260px;
+      transform: scale(2); }
   footer .foot .block-with-who-trusted-us {
     padding: 20px 0; }
     footer .foot .block-with-who-trusted-us .block-with-schools {
@@ -1461,6 +1472,279 @@ footer {
             margin: 10px 10px 10px 0; }
         footer .footer-wrapper .footer-information .contacts .image-block {
           margin: 0; }
+          footer .footer-wrapper .footer-information .contacts .image-block img {
+            width: 100%; }
+      footer .footer-wrapper .footer-information .contacts::after {
+        height: 120%;
+        left: 20px;
+        top: 0; } }
+
+@media (min-width: 1366px) {
+  header {
+    max-width: unset;
+    height: 90px;
+    width: 100vw; }
+    header .wrapper {
+      max-width: 1366px;
+      margin: 0 auto;
+      position: relative; }
+      header .wrapper .wrapper-logo {
+        width: 40%; }
+        header .wrapper .wrapper-logo p {
+          margin-left: 10px;
+          margin-left: 5px;
+          display: block;
+          text-transform: capitalize;
+          color: white;
+          text-align: left;
+          font-size: 12px;
+          font-family: "Open Sans", sans-serif;
+          letter-spacing: -0.24px;
+          color: #ffffff; }
+      header .wrapper .wrapper-list {
+        right: 195px;
+        left: auto;
+        position: relative; }
+        header .wrapper .wrapper-list ul {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-direction: row; }
+          header .wrapper .wrapper-list ul li {
+            list-style-type: none;
+            margin: 0 10px;
+            font-size: 15px;
+            line-height: 15px; }
+            header .wrapper .wrapper-list ul li a {
+              text-decoration: none;
+              color: white; }
+      header .wrapper .settings-country-selector {
+        right: 107px;
+        position: absolute; }
+        header .wrapper .settings-country-selector .spain,
+        header .wrapper .settings-country-selector .france,
+        header .wrapper .settings-country-selector .italy,
+        header .wrapper .settings-country-selector .usa,
+        header .wrapper .settings-country-selector .england,
+        header .wrapper .settings-country-selector .china {
+          margin: 0 3px; }
+      header .wrapper .wrapper-menu {
+        display: none; }
+      header .wrapper .user-link {
+        position: unset;
+        display: flex;
+        height: 100%;
+        width: 100px; }
+        header .wrapper .user-link .wrapper-user {
+          position: unset;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          right: 0;
+          width: 100px; }
+  nav {
+    right: -1.3%;
+    width: 100vw;
+    max-width: 1366px;
+    margin: 0 auto;
+    z-index: 100000; }
+    nav .wrapper-settings {
+      justify-content: flex-end;
+      position: absolute; }
+      nav .wrapper-settings .button {
+        width: unset; }
+      nav .wrapper-settings .wrapper-trial {
+        width: 456px;
+        height: 90px; }
+      nav .wrapper-settings .user-link {
+        display: none;
+        text-decoration: none; }
+        nav .wrapper-settings .user-link .wrapper-user p {
+          display: block; }
+  section.banner-photo {
+    background-size: 125vw 100%;
+    background-position: 0px;
+    align-items: flex-end; }
+    section.banner-photo h1 {
+      font-size: 33px; }
+  section.banner-information .wrapper {
+    max-width: 1366px; }
+    section.banner-information .wrapper .block-line4 {
+      right: 60%;
+      left: unset; }
+    section.banner-information .wrapper .wrapper-clock {
+      right: 13%;
+      top: 9%; }
+      section.banner-information .wrapper .wrapper-clock img {
+        width: 102px;
+        height: 101px; }
+    section.banner-information .wrapper .block-line {
+      top: -623px;
+      left: -335.794098px;
+      transform: scale(1.1); }
+    section.banner-information .wrapper .block-line2 {
+      width: 595px;
+      height: 720px;
+      top: 6%;
+      right: -125px; }
+    section.banner-information .wrapper .block-line3 {
+      width: 864px;
+      height: 777px;
+      width: 864px;
+      height: 777px;
+      left: -320px;
+      top: 57%;
+      transform: rotate(61deg) scale(2.6); }
+    section.banner-information .wrapper .block-about-script {
+      width: 562px;
+      height: 379px;
+      left: 40px; }
+      section.banner-information .wrapper .block-about-script p {
+        font-size: 60px;
+        line-height: 60px;
+        width: unset;
+        height: unset;
+        font-weight: bolder;
+        margin-left: 30px; }
+    section.banner-information .wrapper .block-about-engage-students {
+      top: 23%;
+      left: 11%; }
+      section.banner-information .wrapper .block-about-engage-students .block {
+        width: 367px;
+        height: 207px; }
+      section.banner-information .wrapper .block-about-engage-students p {
+        font-size: 25px;
+        margin-top: 15px; }
+    section.banner-information .wrapper .block-with-video {
+      left: 34%;
+      top: 32%; }
+      section.banner-information .wrapper .block-with-video .block {
+        width: 341px;
+        height: 267px; }
+      section.banner-information .wrapper .block-with-video p {
+        font-size: 25px;
+        margin-top: 15px; }
+    section.banner-information .wrapper .block-about-teachers {
+      top: 6%;
+      right: 15%; }
+      section.banner-information .wrapper .block-about-teachers .block {
+        width: 486px;
+        height: 361px; }
+      section.banner-information .wrapper .block-about-teachers p {
+        font-size: 25px;
+        margin-top: 15px; }
+    section.banner-information .wrapper .block-about-statistik {
+      height: 340px; }
+      section.banner-information .wrapper .block-about-statistik .block-about-statistik-students .counter {
+        font-size: 70px; }
+      section.banner-information .wrapper .block-about-statistik .block-about-statistik-schools .counter {
+        font-size: 80px; }
+      section.banner-information .wrapper .block-about-statistik .block-about-statistik-videos {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 5%); }
+        section.banner-information .wrapper .block-about-statistik .block-about-statistik-videos .counter {
+          font-size: 140px; }
+  section.banner-with-lectors-word .wrapper {
+    max-width: 1366px; }
+    section.banner-with-lectors-word .wrapper .wrapper-fone {
+      width: 85%;
+      height: 63%; }
+      section.banner-with-lectors-word .wrapper .wrapper-fone .line1 {
+        display: none; }
+      section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible {
+        width: 93%;
+        height: 50%;
+        position: absolute;
+        left: 3%; }
+        section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible .block-with-content {
+          align-items: center;
+          flex-direction: row; }
+          section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible .block-with-content .image {
+            align-items: center;
+            margin: 10px; }
+            section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible .block-with-content .image img {
+              width: 100%; }
+          section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible .block-with-content .content {
+            width: 90%;
+            height: 90%;
+            padding: 20px; }
+    section.banner-with-lectors-word .wrapper .wrapper-block-with-social-media {
+      height: 17%;
+      width: 85%; }
+      section.banner-with-lectors-word .wrapper .wrapper-block-with-social-media .social-network-block {
+        width: 609px;
+        height: 355px;
+        padding: 65px 25px 65px 90px; }
+  section.banner-with-circle {
+    height: 475px; }
+    section.banner-with-circle .wrapper {
+      max-width: 1366px; }
+      section.banner-with-circle .wrapper .slider {
+        top: 0%;
+        width: 95%; }
+      section.banner-with-circle .wrapper .line1 {
+        z-index: 1;
+        width: 772px;
+        height: 615px;
+        top: -240px;
+        right: -379px; }
+      section.banner-with-circle .wrapper .line2 {
+        width: 870px;
+        top: 50%;
+        height: 355px;
+        transform: scale(3); }
+  footer .foot .block-with-who-trusted-us {
+    max-width: 1366px;
+    padding: 20px 0; }
+    footer .foot .block-with-who-trusted-us .block-with-schools {
+      flex-wrap: nowrap;
+      justify-content: space-around; }
+      footer .foot .block-with-who-trusted-us .block-with-schools .oundle {
+        width: 119px;
+        height: 118px; }
+      footer .foot .block-with-who-trusted-us .block-with-schools .westminster {
+        width: 223px;
+        height: 61px; }
+      footer .foot .block-with-who-trusted-us .block-with-schools .nottingham {
+        width: 305px;
+        height: 59px; }
+      footer .foot .block-with-who-trusted-us .block-with-schools .perse {
+        width: 119px;
+        height: 118px; }
+  footer .footer-wrapper {
+    max-width: 1366px;
+    background: transparent;
+    height: 405px; }
+    footer .footer-wrapper .footer-information {
+      padding-top: 30px; }
+      footer .footer-wrapper .footer-information .site-map {
+        justify-content: space-around;
+        flex-direction: row;
+        padding: 0 10px; }
+        footer .footer-wrapper .footer-information .site-map .block-about {
+          margin: 20px 0;
+          order: 0; }
+        footer .footer-wrapper .footer-information .site-map .block-legal h3 {
+          margin: 0; }
+        footer .footer-wrapper .footer-information .site-map .block-legal ul li {
+          font: normal 15px/23px Open Sans; }
+        footer .footer-wrapper .footer-information .site-map .block-for-teachers {
+          margin: 0 10px; }
+      footer .footer-wrapper .footer-information .contacts {
+        height: 220px;
+        width: 65%;
+        padding: 0 0 0 40px; }
+        footer .footer-wrapper .footer-information .contacts .text-information ul li {
+          font: Bold 16px/23px Open Sans; }
+        footer .footer-wrapper .footer-information .contacts .text-information .block-follow h4 {
+          font: Bold 16px/23px Open Sans; }
+          footer .footer-wrapper .footer-information .contacts .text-information .block-follow h4 .social-networks li {
+            margin: 10px 10px 10px 0; }
+        footer .footer-wrapper .footer-information .contacts .image-block {
+          margin: 0;
+          width: 90px; }
           footer .footer-wrapper .footer-information .contacts .image-block img {
             width: 100%; }
       footer .footer-wrapper .footer-information .contacts::after {
