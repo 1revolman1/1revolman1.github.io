@@ -85,6 +85,8 @@ header {
         width: 100%;
         height: 100%;
         display: block; }
+      header .wrapper .settings-country-selector ul {
+        display: flex; }
       header .wrapper .settings-country-selector .spain,
       header .wrapper .settings-country-selector .france,
       header .wrapper .settings-country-selector .italy,
@@ -96,38 +98,19 @@ header {
         height: 34px;
         background: #ffffff 0% 0% no-repeat padding-box;
         opacity: 1;
+        overflow: hidden;
         border-radius: 50%;
         margin: 0 6px;
         border: 3px solid white; }
-      header .wrapper .settings-country-selector .spain {
-        border: 3px solid white;
-        background: url("./assets/es.svg") no-repeat;
-        background-size: 135%;
-        background-position: center; }
-      header .wrapper .settings-country-selector .germany {
-        background: url("./assets/de.svg") no-repeat;
-        background-size: 135%;
-        background-position: center; }
-      header .wrapper .settings-country-selector .france {
-        background: url("./assets/fr.svg") no-repeat;
-        background-size: 135%;
-        background-position: center; }
-      header .wrapper .settings-country-selector .italy {
-        background: url("./assets/it.svg") no-repeat;
-        background-size: 135%;
-        background-position: center; }
-      header .wrapper .settings-country-selector .usa {
-        background: url("./assets/us.svg") no-repeat;
-        background-size: 135%;
-        background-position: center; }
-      header .wrapper .settings-country-selector .england {
-        background: url("./assets/gb.svg") no-repeat;
-        background-size: 135%;
-        background-position: center; }
-      header .wrapper .settings-country-selector .china {
-        background: url("./assets/cn.svg") no-repeat;
-        background-size: 135%;
-        background-position: center; }
+        header .wrapper .settings-country-selector .spain img,
+        header .wrapper .settings-country-selector .france img,
+        header .wrapper .settings-country-selector .italy img,
+        header .wrapper .settings-country-selector .usa img,
+        header .wrapper .settings-country-selector .england img,
+        header .wrapper .settings-country-selector .china img,
+        header .wrapper .settings-country-selector .germany img {
+          height: 100%;
+          transform: translate(-13%, 0%); }
     header .wrapper-menu {
       font-size: 16px;
       color: #4e4e4e;
