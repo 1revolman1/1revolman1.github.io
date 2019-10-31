@@ -117,7 +117,7 @@ document.querySelectorAll(".wrapper-user").forEach(function(e) {
 document
   .querySelector(".wrapper-list")
   .addEventListener("click", function(event) {
-    event.path[1].childNodes.forEach(function(e) {
+    event.srcElement.offsetParent.children[0].childNodes.forEach(function(e) {
       if (!(e.nodeName == "#text")) {
         e.style.background = "";
       }
