@@ -373,8 +373,7 @@ nav {
       align-items: center;
       /* justify-content: center; */
       flex-direction: column;
-      height: 100%;
-      width: 200px; }
+      height: 100%; }
       .hover-menu .wrapper .elem1 ul,
       .hover-menu .wrapper .elem2 ul,
       .hover-menu .wrapper .elem3 ul {
@@ -390,6 +389,7 @@ nav {
             font-size: 25px;
             font-family: "Open Sans", sans-serif;
             color: white;
+            line-height: 42px;
             border-bottom: 1px solid white;
             letter-spacing: -0.5px; }
         .hover-menu .wrapper .elem1 ul li:last-child a,
