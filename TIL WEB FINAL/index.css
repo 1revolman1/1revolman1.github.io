@@ -1059,8 +1059,6 @@ body {
         display: flex;
         justify-content: center;
         width: 90px; }
-        header .wrapper-menu #menu__toggle:checked ~ .menu__box {
-          top: 100%; }
         header .wrapper-menu .menu__box {
           top: -200vh;
           min-height: 768px; }
@@ -1714,7 +1712,7 @@ body {
             width: 90px;
             display: flex;
             justify-content: center;
-            margin: 0 10px;
+            margin: unset;
             font-size: 15px;
             line-height: 15px; }
             header .wrapper .wrapper-list ul li a {
