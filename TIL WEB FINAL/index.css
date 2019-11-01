@@ -1698,6 +1698,7 @@ body {
           letter-spacing: -0.24px;
           color: #ffffff; }
       header .wrapper .wrapper-list {
+        background: transparent;
         right: 195px;
         left: auto;
         position: relative; }
@@ -1710,13 +1711,14 @@ body {
             list-style-type: none;
             height: 90px;
             width: 90px;
+            margin: 0 5px;
             display: flex;
             justify-content: center;
-            margin: unset;
             font-size: 15px;
             line-height: 15px; }
             header .wrapper .wrapper-list ul li a {
               width: 100%;
+              background: transparent;
               height: 100%;
               display: flex;
               align-items: center;

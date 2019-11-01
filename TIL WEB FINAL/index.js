@@ -43,10 +43,10 @@ document.querySelector(".button-right").addEventListener("click", function(e) {
   }
 });
 
-let text = "";
-for (let i = 0; i < 5; i++) {
-  text += `<div class="block"><p>“Un bon ami. Je dirais que c’est quelqu’un qui me permet de progresser dans la vie, qui me donne envie de me surpasser. Euh quelqu’un avec lequel je passe de bons moments, je m’amuse.”</p><p>@thisislanguage</p></div>`;
-}
+// let text = "";
+// for (let i = 0; i < 5; i++) {
+//   text += `<div class="block"><p>“Un bon ami. Je dirais que c’est quelqu’un qui me permet de progresser dans la vie, qui me donne envie de me surpasser. Euh quelqu’un avec lequel je passe de bons moments, je m’amuse.”</p><p>@thisislanguage</p></div>`;
+// }
 
 document.querySelectorAll(".slider .block").forEach(e => {
   e.style.background = `rgb(${randomInteger(0, 255)}, ${randomInteger(
@@ -90,7 +90,8 @@ $(".slider").slick({
   ]
 });
 
-let ammound_of_scrols = 0;
+//This code generate listener of scrolling to create cute changer of .user-link
+
 window.addEventListener("scroll", function(e) {
   if (window.innerWidth >= 1024) {
     document.querySelector("nav .user-link").style.display = "flex";
@@ -108,25 +109,25 @@ window.addEventListener("scroll", function() {
   }
 });
 
-document.querySelectorAll(".wrapper-user").forEach(function(e) {
-  e.addEventListener("click", function(e) {
-    console.log("login");
-  });
-});
+//This code segment initialize listener of mouse on the element
+//and generate menu on the dekstop
 
 document
   .querySelector(".wrapper-list")
-  .addEventListener("click", function(event) {
+  .addEventListener("mouseover", function(event) {
     event.srcElement.offsetParent.children[0].childNodes.forEach(function(e) {
       if (!(e.nodeName == "#text")) {
-        e.style.background = "";
+        e.childNodes[0].style.background = "";
       }
     });
+    document.querySelector(".wrapper-list ul").style.background = "";
     let section = document.createElement("section");
     section.className = "hover-menu";
     section.style.top = `${document.querySelector("header").offsetHeight -
       1}px`;
     if (!!document.querySelector(".hover-menu")) {
+      //
+
       document.querySelector("header .wrapper").style.background = "";
       document.querySelector("header").style.background = "";
       event.target.style.background = "#33a7db";
@@ -155,6 +156,9 @@ document
       }
     }
   });
+
+//This function create link to the header in mobile resolution to .menu__box to make
+//'smart' relocation
 document.querySelector(".menu_btn").addEventListener("click", function(e) {
   if (
     !(
