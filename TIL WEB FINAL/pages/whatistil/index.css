@@ -55,7 +55,7 @@ section.content {
   section.content .block-with-text-content {
     width: 82.2%;
     position: relative;
-    right: calc(82.2% - 100%);
+    margin-left: auto;
     padding: 1px 0 119px 0;
     background: #f4872d 0% 0% no-repeat padding-box; }
     section.content .block-with-text-content .sustrac {
@@ -154,8 +154,7 @@ section.content {
   section.content .block-with-text-content {
     padding: 40px;
     height: 1850px;
-    width: 85.2%;
-    right: calc(3px - 15%); }
+    width: 85.2%; }
     section.content .block-with-text-content .text-block1,
     section.content .block-with-text-content .text-block2,
     section.content .block-with-text-content .text-block3,
@@ -275,7 +274,7 @@ section.content {
     padding-bottom: 155px;
     height: inherit;
     width: 85.2%;
-    right: calc(0px - 15%); }
+    margin-left: auto; }
     section.content .block-with-text-content .elem1 {
       display: flex; }
       section.content .block-with-text-content .elem1 .text-block1 {

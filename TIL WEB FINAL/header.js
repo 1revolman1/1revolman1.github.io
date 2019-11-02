@@ -65,6 +65,13 @@ document
           "flex-start";
       }
     }
+    setTimeout(function(e) {
+      document
+        .querySelector(".hover-menu")
+        .addEventListener("click", function(e) {
+          console.log(e);
+        });
+    }, 500);
   });
 
 //This function create link to the header in mobile resolution to .menu__box to make
