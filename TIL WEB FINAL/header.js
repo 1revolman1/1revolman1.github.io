@@ -1,3 +1,6 @@
+let text_location = document
+  .querySelector("script[location]")
+  .getAttribute("location");
 //This code generate listener of scrolling to create cute changer of .user-link
 
 window.addEventListener("scroll", function(e) {
@@ -23,9 +26,6 @@ window.addEventListener("scroll", function() {
 document
   .querySelector(".wrapper-list")
   .addEventListener("mouseover", function(event) {
-    let text_location = document
-      .querySelector("script[location]")
-      .getAttribute("location");
     event.srcElement.offsetParent.children[0].childNodes.forEach(function(e) {
       if (!(e.nodeName == "#text")) {
         e.childNodes[0].style.background = "";
@@ -46,14 +46,14 @@ document
     } else if (!(event.target.textContent == "Contact")) {
       document.querySelector(".wrapper-trial").style.display = "none";
       if (event.target.textContent == "About") {
-        section.innerHTML = `<div class="wrapper"> <div class="elem1"> <div class="img"><img src="${text_location}assets/Grupo 170.svg" alt=""></div> <ul> <li><a href="">What is TIL?</a></li> <li><a href="">Team</a></li> <li><a href="">Jobs</a></li> </ul> </div> <div class="elem2"> <div class="img"><img src="${text_location}assets/Grupo 121.svg" alt=""></div> <ul> <li><a href="">Results and Stats</a></li> <li><a href="">Pricing</a></li> </ul> </div> <div class="elem3"> <div class="img"><img src="${text_location}assets/Grupo 128.svg" alt=""></div> <ul> <li><a href="">TIL Events</a></li> <li><a href="">Testimonials</a></li> </ul> </div> </div>`;
+        section.innerHTML = `<div class="wrapper"> <div class="elem1"> <div class="img"><img src="${text_location}assets/Grupo 170.svg" alt=""></div> <ul> <li><a href="${text_location}pages/whatistil">What is TIL?</a></li> <li><a href="${text_location}pages/team">Team</a></li> <li><a href="${text_location}pages/jobs">Jobs</a></li> </ul> </div> <div class="elem2"> <div class="img"><img src="${text_location}assets/Grupo 121.svg" alt=""></div> <ul> <li><a href="${text_location}pages/results">Results and Stats</a></li> <li><a href="${text_location}pages/pricing">Pricing</a></li> </ul> </div> <div class="elem3"> <div class="img"><img src="${text_location}assets/Grupo 128.svg" alt=""></div> <ul> <li><a href="${text_location}pages/tilevents">TIL Events</a></li> <li><a href="${text_location}pages/testimonials">Testimonials</a></li> </ul> </div> </div>`;
         event.target.style.background = "#7d56e9";
         document.querySelector("header .wrapper").style.background = "#9879ED";
         document.querySelector("header").style.background = "#9879ED";
         section.style.background = "#7d56e9";
         document.body.append(section);
       } else if (event.target.textContent == "Teachers") {
-        section.innerHTML = `<div class="wrapper"> <div class="elem1"> <div class="img"><img src="${text_location}assets/Grupo 173.svg" alt=""></div> <ul> <li><a href="">Why TIL?</a></li> <li><a href="">Our Languages</a></li> <li><a href="">Our Videos</a></li> <li><a href="">Our Exercises</a></li> <li><a href="">Our Competitions</a></li> </ul> </div> <div class="elem2"> <div class="img"><img src="${text_location}assets/Grupo 136.svg" alt=""></div> <ul> <li><a href="">Training and PD</a></li> <li><a href="">Textbooks Alignments</a></li> </ul> </div> </div>`;
+        section.innerHTML = `<div class="wrapper"> <div class="elem1"> <div class="img"><img src="${text_location}assets/Grupo 173.svg" alt=""></div> <ul> <li><a href="${text_location}pages/whytil">Why TIL?</a></li> <li><a href="${text_location}pages/ourlanguages">Our Languages</a></li> <li><a href="${text_location}pages/ourvideos">Our Videos</a></li> <li><a href="${text_location}pages/ourexercises">Our Exercises</a></li> <li><a href="${text_location}pages/ourcompetitions">Our Competitions</a></li> </ul> </div> <div class="elem2"> <div class="img"><img src="${text_location}assets/Grupo 136.svg" alt=""></div> <ul> <li><a href="${text_location}pages/trainingandpd">Training and PD</a></li> <li><a href="${text_location}pages/textbooks">Textbooks Alignments</a></li> </ul> </div> </div>`;
         section.style.height = "381px";
         document.querySelector("header .wrapper").style.background = "#F16D94";
         document.querySelector("header").style.background = "#F16D94";
