@@ -49,7 +49,7 @@ section.content {
       margin-left: 35px;
       display: none;
       position: sticky;
-      top: 37%; }
+      top: 50%; }
       section.content .sticky-element .stick-element ul li {
         margin: 4px auto; }
   section.content .block-with-text-content {
