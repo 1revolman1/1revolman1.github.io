@@ -257,6 +257,9 @@ header {
             color: white;
             font-weight: normal;
             text-decoration: none; }
+      header .wrapper-menu #menu__toggle:checked ~ .menu__box {
+        z-index: -1;
+        top: 50px; }
 
 nav {
   display: flex;
@@ -847,12 +850,15 @@ footer {
             font-size: 15px;
             letter-spacing: -0.5px;
             font-family: "Open Sans", sans-serif;
-            margin: 0 10px;
+            margin: 0;
+            width: 90px;
             font-size: 16px; }
             header .wrapper .wrapper-list ul li a {
               height: 100%;
+              width: 100%;
               display: flex;
               align-items: center;
+              justify-content: center;
               text-decoration: none;
               color: white; }
       header .wrapper .settings-country-selector {
