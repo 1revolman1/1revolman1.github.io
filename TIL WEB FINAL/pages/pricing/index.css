@@ -502,6 +502,11 @@ section.content {
           font-weight: bold; } }
 
 @media (min-width: 1024px) {
+  section.text .wrapper {
+    margin: 0 auto;
+    max-width: 1366px; }
+    section.text .wrapper h1 {
+      margin: 0 0 140px 250px; }
   section.content .wrapper {
     max-width: 1366px; }
   section.content .sticky-element {

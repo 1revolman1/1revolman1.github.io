@@ -112,11 +112,19 @@ section.content {
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: row;
+  section.text .wrapper {
+    margin: 0 auto;
+    max-width: 1024px; }
+    section.text .wrapper h1 {
+      margin: 0 0 140px 150px;
+      font-size: 60px;
+      line-height: 60px;
+      font-family: "Algerya Sans", sans-serif; }
   section.content .wrapper {
     max-width: 1024px; }
   section.content .sticky-element {
     width: 394px;
-    height: 2800px; }
+    height: 120%; }
   section.content .block-with-text-content {
     padding: 35px 35px 119px 35px; }
     section.content .block-with-text-content .elem {
@@ -148,6 +156,11 @@ section.content {
         color: white; } }
 
 @media (min-width: 1024px) {
+  section.text .wrapper {
+    margin: 0 auto;
+    max-width: 1366px; }
+    section.text .wrapper h1 {
+      margin: 0 0 140px 250px; }
   section.content .wrapper {
     max-width: 1366px; }
   section.content .sticky-element {
@@ -216,6 +229,11 @@ section.content {
         color: white; } }
 
 @media (min-width: 1366px) {
+  section.text .wrapper {
+    margin: 0 auto;
+    max-width: 1366px; }
+    section.text .wrapper h1 {
+      margin: 0 0 140px 250px; }
   section.content .wrapper {
     max-width: 1366px; }
   section.content .sticky-element {
