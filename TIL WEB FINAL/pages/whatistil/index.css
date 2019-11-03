@@ -93,6 +93,14 @@ section.content {
       width: 90%; }
 
 @media (min-width: 768px) {
+  section.text .wrapper {
+    margin: 0 auto;
+    max-width: 1024px; }
+    section.text .wrapper h1 {
+      margin: 0 0 140px 80px;
+      font-size: 60px;
+      line-height: 60px;
+      font-family: "Algerya Sans", sans-serif; }
   section.content .wrapper {
     max-width: 1024px; }
   section.content .sticky-element {
@@ -128,6 +136,11 @@ section.content {
     width: 87%; } }
 
 @media (min-width: 1024px) {
+  section.text .wrapper {
+    margin: 0 auto;
+    max-width: 1366px; }
+    section.text .wrapper h1 {
+      margin: 0 0 140px 250px; }
   section.content .wrapper {
     max-width: 1366px; }
   section.content .sticky-element {
@@ -246,6 +259,11 @@ section.content {
       left: 0; } }
 
 @media (min-width: 1366px) {
+  section.text .wrapper {
+    margin: 0 auto;
+    max-width: 1366px; }
+    section.text .wrapper h1 {
+      margin: 0 0 140px 250px; }
   section.content .wrapper {
     max-width: 1366px; }
   section.content .sticky-element {
