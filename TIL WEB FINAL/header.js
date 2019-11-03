@@ -24,7 +24,7 @@ window.addEventListener("scroll", function() {
 //and generate menu on the dekstop
 
 document
-  .querySelector(".wrapper-list")
+  .querySelector("header .wrapper-list")
   .addEventListener("mouseover", function(event) {
     //cleaning background in the .wrapper-list ul childs
     event.srcElement.offsetParent.children[0].childNodes.forEach(function(e) {
