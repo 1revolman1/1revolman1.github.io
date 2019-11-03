@@ -15,8 +15,9 @@
     <script location="../../" src="../../header.js" defer></script>
     <link rel="stylesheet" href="headfoot.css" />
     <link rel="stylesheet" href="index.css" />
-    <title>What is Til?</title>
+    <title>Pricing</title>
   </head>
+
   <body>
     <header>
       <div class="wrapper">
@@ -128,7 +129,7 @@
     <section class="text">
       <div class="wrapper">
         <h1>
-          What is TIL?
+          Pricing
         </h1>
       </div>
     </section>
@@ -137,109 +138,140 @@
         <div class="sticky-element">
           <div class="stick-element">
             <ul>
-              <li class="head">What is TIL?</li>
+              <li><a href="../whatistil/">What is TIL?</a></li>
               <li><a href="../team">Team</a></li>
               <li><a href="../jobs">Jobs</a></li>
               <li><a href="../results">Results and Stats</a></li>
-              <li><a href="../pricing">Pricing</a></li>
+              <li><a href="../pricing" class="head">Pricing</a></li>
               <li><a href="../tilevents">TIL Events</a></li>
               <li><a href="../testimonials">Testimonials</a></li>
             </ul>
           </div>
         </div>
         <div class="block-with-text-content">
-          <img class="sustrac" src="../../assets/Sustracción 2.svg" alt="" />
-          <img class="trazado230" src="../../assets/Trazado 230.svg" alt="" />
-          <img class="trazado231" src="../../assets/Trazado 231.svg" alt="" />
-          <div class="elem1">
-            <div class="text-block1">
-              <h3>A fun language website with a serious mission.</h3>
-              <p>
-                thisislanguage.com produces authentic language videos based on
-                the themes you have to teach, so you don’t waste your time
-                searching for them online.
-              </p>
+          <img
+            class="sustrac"
+            src="../../assets/pricing/Sustracción 2.svg"
+            alt=""
+          />
+          <img
+            class="trazado"
+            src="../../assets/pricing/Trazado 233.svg"
+            alt=""
+          />
+          <div class="element elem1">
+            <h3>
+              Our community of teachers is already large. But counting on you
+              would be priceless.
+            </h3>
+            <div class="block">
+              <h3>800+</h3>
+              <p>schools</p>
+              <img src="../../assets/pricing/Grupo 198.svg" alt="" />
             </div>
-            <img
-              class="first"
-              src="../../assets/Captura de pantalla 2019-09-12 a las 10.04.20@2x.png"
-              alt=""
-            />
           </div>
-          <div class="elem2">
-            <div class="text-block2">
-              <h3>Use better language videos</h3>
-              <p>
-                Since we started in 2011 our idea has always been to create
-                better language videos for schools. How do we achieve this?
-              </p>
-              <p>
-                We only film young non-actors in the target language and we
-                don’t script what they say.
-              </p>
-              <p>
-                That’s what we mean by authenticity. And that’s why students
-                prefer our videos to anyone else’s; because they show real
-                people speaking in an entirely normal and natural way. TIL’s
-                magic is to make sure that all 5000+ videos fit into the themes
-                you have to teach.
-              </p>
+          <div class="element elem2">
+            <div class="dropdown">
+              <button class="dropbtn">
+                Change Currency
+                <img src="../../assets/pricing/Polígono 2.svg" alt="" />
+              </button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#euro">Euro</a>
+                <a href="#dollar">Dollar</a>
+              </div>
             </div>
-            <img
-              class="second"
-              src="../../assets/Captura de pantalla 2019-09-04 a las 10.34.28@2x.png"
-              alt=""
-            />
+            <script>
+              document
+                .querySelector(".dropbtn")
+                .addEventListener("click", function(e) {
+                  document
+                    .getElementById("myDropdown")
+                    .classList.toggle("show");
+                });
+              window.onclick = function(event) {
+                if (
+                  !event.target.matches(".dropbtn") &&
+                  !event.target.matches(".dropbtn img")
+                ) {
+                  var dropdowns = document.getElementsByClassName(
+                    "dropdown-content"
+                  );
+                  var i;
+                  for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains("show")) {
+                      openDropdown.classList.remove("show");
+                    }
+                  }
+                }
+              };
+            </script>
+            <div class="component">
+              <div class="block1">
+                <div class="text">
+                  <h3>1</h3>
+                  <p>How many languages do you need?</p>
+                </div>
+                <div class="ammount-of-lessons">
+                  <div class="lesson">
+                    <a href="">
+                      <p>1 LANGUAGES</p>
+                      <h2>€300</h2>
+                    </a>
+                  </div>
+                  <div class="lesson">
+                    <a href="">
+                      <p>2 LANGUAGES</p>
+                      <h2>€480</h2>
+                    </a>
+                  </div>
+                  <div class="lesson">
+                    <a href="">
+                      <p>3 LANGUAGES</p>
+                      <h2>€540</h2>
+                    </a>
+                  </div>
+                  <div class="lesson">
+                    <a href="">
+                      <p>4 LANGUAGES</p>
+                      <h2>€600</h2>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="block2">
+                <div class="text">
+                  <h3>2</h3>
+                  <p>How many logins would you like?</p>
+                </div>
+                <div class="ammount-of-logins">
+                  <a href="">
+                    <p>PER STUDENT*</p>
+                    <h2>€2.40</h2>
+                  </a>
+                </div>
+                <div class="information">
+                  <h3>All subscriptions lasta full 12 months</h3>
+                  <p>
+                    *Just want teacher access? Then only pay for the language
+                    price shown in Step 1 above.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="elem3">
-            <div class="text-block3">
-              <h3>Motivate your students</h3>
-              <p>
-                We create academically rigorous exercises based on our authentic
-                video content, all checked by experienced language teachers.
-              </p>
-              <p>
-                Our content covers both productive and receptive language
-                material as well as vocab and grammar.
-              </p>
-              <p>
-                What’s the next step? Through games, points, competition and
-                leaderboards we make sure that your students stay inspired and
-                motivated throughout.
-              </p>
+          <div class="element elem3">
+            <div class="button">
+              <a href="">Try it free now</a>
             </div>
-            <img
-              class="third"
-              src="../../assets/jeremy-mcknight-458529-unsplash@2x.png"
-              alt=""
-            />
-          </div>
-          <div class="elem4">
-            <div class="text-block4">
-              <h3>Save teachers time</h3>
-              <p>
-                We were founded by a language teacher, so saving teachers
-                time has always been one of our guiding principles. How do we do
-                this?
-              </p>
-              <p>
-                By putting loads of awesome, relevant language content in one
-                place, we make sure you don’t have to spend hours searching for
-                it online or worrying about whether the “OK” language video
-                you’ve found on YouTube is actually going to be suitable for
-                your class.
-              </p>
-              <p>
-                Monitoring student progress is really easy. Oh, and almost all
-                of our exercises are automatically marked/graded, which means
-                less time spent sitting in front of a stack of exercise books!
-              </p>
-            </div>
-            <img
-              class="four"
-              src="../../assets/rawpixel-760063-unsplash@2x.png"
-              alt=""
-            />
+            <p>
+              You can also call us on
+              <a href="tel:+01865579260">01865 579260</a> or email us at
+              <a href="mailto:schools@thisislanguage.com"
+                >schools@thisislanguage.com</a
+              >
+            </p>
           </div>
         </div>
       </div>
