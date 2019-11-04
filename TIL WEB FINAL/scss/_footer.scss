@@ -1,0 +1,283 @@
+footer {
+  // z-index: 5000;
+  // height: 800px;
+  height: 940px;
+  // height: 350px;
+  margin: 0 auto;
+  opacity: 1;
+  background: #33a9df;
+  // section.foot {
+  //   // z-index: 5000;
+  //   margin: 0 auto;
+  //   opacity: 1;
+  //   background: #0093d6 0% 0% no-repeat padding-box;
+  // }
+  .foot {
+    @include flex($justify: flex-start, $align: center, $direction: column);
+    position: relative;
+    // width: 100%;
+    // max-width: 768px;
+    // margin: 0 auto;
+
+    // height: 220px;
+    height: 260px;
+    background: #0093d6 0% 0% no-repeat padding-box;
+    .block-with-who-trusted-us {
+      @include flex($justify: center, $align: center, $direction: column);
+      // height: 239px;
+      // height: 28%;
+      // width: 100%;
+      height: 100%;
+      width: 100%;
+      max-width: 768px;
+      margin: 0 auto;
+      background: #0093d6 0% 0% no-repeat padding-box;
+      opacity: 1;
+      padding: 20px 18px 18px;
+      // padding: 10px;
+      h3 {
+        font-family: "Open Sans", sans-serif;
+        font-size: 15px;
+        letter-spacing: -0.12px;
+        color: #ffffff;
+        opacity: 1;
+      }
+      .block-with-schools {
+        // padding: 30px;
+        @include flex($justify: space-evenly, $align: center, $direction: row);
+        flex-wrap: wrap;
+        // flex-wrap: nowrap;
+        height: 100%;
+        width: 100%;
+        .oundle {
+          // margin: 0 10px;
+          margin: 10px;
+          width: 67px;
+          height: 67px;
+          // img {
+          //   width: 100%;
+          //   height: 100%;
+          // }
+        }
+        .westminster {
+          margin: 10px;
+          // margin: 0 10px;
+          width: 127px;
+          height: 35px;
+          // img {
+          //   width: 100%;
+          //   height: 100%;
+          // }
+        }
+        .nottingham {
+          margin: 10px;
+          // margin: 0 10px;
+          width: 173px;
+          height: 34px;
+          // img {
+          //   width: 100%;
+          //   height: 100%;
+          // }
+        }
+        .perse {
+          margin: 10px;
+          // margin: 0 10px;
+          width: 83px;
+          height: 63px;
+          // img {
+          //   width: 100%;
+          //   height: 100%;
+          // }
+        }
+      }
+    }
+  }
+  .footer-wrapper {
+    @include flex($justify: center, $align: center, $direction: column);
+    position: relative;
+    width: 100%;
+    height: 650px;
+    max-width: 768px;
+    // height: 100%;
+    margin: 0 auto;
+    background: navy;
+    .footer-information {
+      @include flex($justify: flex-start, $align: center, $direction: column);
+      // height: 100%;
+      height: 650px;
+      width: 100%;
+      background: #33a9df 0% 0% no-repeat padding-box;
+      .contacts {
+        @include flex(
+          $justify: flex-start,
+          $align: flex-start,
+          $direction: row
+        );
+        position: relative;
+        // padding: 20px 40px 0;
+        // padding: 20px 40px 20px;
+        padding: 20px 40px 5px;
+        width: 100%;
+        height: 240px;
+        text-align: left;
+        font: Bold 12px/20px Open Sans;
+        letter-spacing: 0;
+        color: #ffffff;
+        opacity: 1;
+        .text-information {
+          @include flex(
+            $justify: space-around,
+            $align: flex-start,
+            $direction: column
+          );
+          // width: 70%;
+          width: 100%;
+          height: 100%;
+          // background: rgb(97, 97, 57);
+          h3 {
+            font-size: 12px;
+            // margin-bottom: 5px;
+            margin-bottom: 2px;
+          }
+          ul {
+            list-style-type: none;
+            margin-bottom: 5px;
+            li {
+              font-size: 12px;
+              a {
+                text-decoration: none;
+                color: white;
+              }
+            }
+          }
+          .block-follow {
+            @include flex(
+              $justify: flex-start,
+              $align: flex-start,
+              $direction: column
+            );
+            ul {
+              @include flex(
+                $justify: space-around,
+                $align: flex-start,
+                $direction: row
+              );
+              list-style-type: none;
+              li {
+                // margin: 10px;
+                margin: 10px 10px 10px 0;
+              }
+              // li:nth-child(1) {
+              //   margin: 10px 10px 10px 0;
+              // }
+            }
+          }
+        }
+        .text-information > ul {
+          margin: 15px 0;
+        }
+        .image-block {
+          @include flex(
+            $justify: flex-end,
+            $align: flex-start,
+            $direction: column
+          );
+          width: 30%;
+          height: 100%;
+          // background: red;
+          img {
+            width: 100%;
+          }
+        }
+      }
+      .contacts::after {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 80%;
+        background: white;
+        // bottom: 0;
+        bottom: -15px;
+      }
+      .site-map {
+        @include flex($justify: flex-start, $align: normal, $direction: column);
+        flex-wrap: wrap-reverse;
+        width: 100%;
+        // padding: 0 40px;
+        padding: 20px 40px 5px;
+        height: 70%;
+        // padding: 10px;
+        h3 {
+          text-align: left;
+          font: Bold 12px/20px Open Sans;
+          letter-spacing: -0.12px;
+          // text-align: left;
+          // font-size: 12px;
+          // font-weight: bold;
+          // font-family: "Open Sans", sans-serif;
+          // letter-spacing: -0.12px;
+          color: #ffffff;
+        }
+        ul {
+          list-style-type: none;
+          li {
+            // font-size: 12px;
+            // font-family: "Open Sans", sans-serif;
+            // font: normal 15px/23px Open Sans;
+            font: normal 12px/20px Open Sans;
+            margin: 2px 0;
+            text-align: left;
+            letter-spacing: -0.12px;
+            color: #ffffff;
+            opacity: 1;
+          }
+        }
+        .block-about {
+          order: 1;
+          // margin-top: 20px;
+          margin: 20px 10px 0 0;
+          // margin: 12px;
+          h3 a {
+            color: #ffffff;
+            text-decoration: none;
+          }
+          ul {
+            li a {
+              color: #ffffff;
+              text-decoration: none;
+            }
+          }
+        }
+        .block-for-teacher {
+          margin-top: 20px;
+          h3 a {
+            color: #ffffff;
+            text-decoration: none;
+          }
+          ul {
+            li {
+              margin: 2px 0;
+              a {
+                color: #ffffff;
+                text-decoration: none;
+              }
+            }
+          }
+        }
+        .block-legal {
+          margin-top: 20px;
+          h3 a {
+            color: #ffffff;
+            text-decoration: none;
+          }
+          ul {
+            li a {
+              color: #ffffff;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
