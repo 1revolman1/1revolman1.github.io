@@ -374,7 +374,7 @@ section.whatistil-text { margin-top: 60px; position: relative; top: 125px; width
 
 section.whatistil-text .wrapper { margin: 0 auto; max-width: 768px; }
 
-section.whatistil-text .wrapper h1 { margin: 0 0 140px 36px; text-align: left; font-weight: 800; font-family: "Alegreya Sans", sans-serif; font-size: 40px; line-height: 60px; letter-spacing: 0; color: #0093d6; opacity: 1; }
+section.whatistil-text .wrapper h1 { margin: 0 0 170px 36px; font: 900 40px/60px Alegreya Sans; letter-spacing: 0; color: #0093d6; opacity: 1; }
 
 section.whatistil-content { margin-top: 80px; display: inline-block; width: 100%; }
 
@@ -403,7 +403,7 @@ section.whatistil-content .block-with-text-content .text-block1 p, section.whati
 section.whatistil-content .block-with-text-content img { width: 90%; }
 
 @media (min-width: 768px) { section.whatistil-text .wrapper { margin: 0 auto; max-width: 1024px; }
-  section.whatistil-text .wrapper h1 { margin: 0 0 140px 80px; font-size: 60px; line-height: 60px; font-family: "Algerya Sans", sans-serif; }
+  section.whatistil-text .wrapper h1 { margin: 90px 0 170px 140px; font: 900 60px/60px Alegreya Sans; }
   section.whatistil-content .wrapper { max-width: 1024px; }
   section.whatistil-content .sticky-element { width: 394px; }
   section.whatistil-content .block-with-text-content .text-block1, section.whatistil-content .block-with-text-content .text-block2, section.whatistil-content .block-with-text-content .text-block3, section.whatistil-content .block-with-text-content .text-block4 { margin: 0 213px 0 20px; }
@@ -412,13 +412,9 @@ section.whatistil-content .block-with-text-content img { width: 90%; }
   section.whatistil-content .block-with-text-content img { position: relative; right: 30px; width: 87%; } }
 
 @media (min-width: 1024px) { section.whatistil-text .wrapper { margin: 0 auto; max-width: 1366px; }
-  section.whatistil-text .wrapper h1 { margin: 0 0 140px 250px; }
+  section.whatistil-text .wrapper h1 { margin: 10px 0 170px 130px; font: 900 60px/60px Alegreya Sans; }
   section.whatistil-content .wrapper { max-width: 1366px; }
-  section.whatistil-content .sticky-element { width: 713px; height: 104%; }
-  section.whatistil-content .sticky-element .stick-element { display: block; }
-  section.whatistil-content .sticky-element .stick-element ul .head { font-size: 15px; letter-spacing: 17px; font-family: "Open Sans", sans-serif; letter-spacing: -0.15px; color: #ffffff; text-decoration: underline; }
-  section.whatistil-content .sticky-element .stick-element ul li { list-style-type: none; }
-  section.whatistil-content .sticky-element .stick-element ul li a { text-decoration: none; font-size: 15px; letter-spacing: 17px; font-family: "Open Sans", sans-serif; letter-spacing: -0.15px; color: #ffffff; }
+  section.whatistil-content .sticky-element { height: 115%; }
   section.whatistil-content .block-with-text-content { padding: 40px; height: 1850px; width: 85.2%; }
   section.whatistil-content .block-with-text-content .text-block1, section.whatistil-content .block-with-text-content .text-block2, section.whatistil-content .block-with-text-content .text-block3, section.whatistil-content .block-with-text-content .text-block4 { position: relative; margin: 0 257px 0 20px; }
   section.whatistil-content .block-with-text-content .text-block1 h3, section.whatistil-content .block-with-text-content .text-block2 h3, section.whatistil-content .block-with-text-content .text-block3 h3, section.whatistil-content .block-with-text-content .text-block4 h3 { margin: unset; font-family: "Open Sans", sans-serif; color: white; font-size: 30px; line-height: 35px; letter-spacing: 0.3px; }
@@ -443,23 +439,28 @@ section.whatistil-content .block-with-text-content img { width: 90%; }
   section.whatistil-text .wrapper h1 { margin: 0 0 140px 250px; }
   section.whatistil-content .wrapper { max-width: 1366px; }
   section.whatistil-content .sticky-element { width: 713px; height: 104%; }
-  section.whatistil-content .sticky-element .stick-element { display: block; }
+  section.whatistil-content .sticky-element .stick-element { display: block; width: 713px; height: 104%; position: fixed; top: 55%; z-index: 99999; }
   section.whatistil-content .sticky-element .stick-element ul .head { font-size: 15px; letter-spacing: 17px; font-family: "Open Sans", sans-serif; letter-spacing: -0.15px; color: #ffffff; text-decoration: underline; }
-  section.whatistil-content .sticky-element .stick-element ul li { list-style-type: none; }
+  section.whatistil-content .sticky-element .stick-element ul li { margin: 10px auto; list-style-type: none; }
   section.whatistil-content .sticky-element .stick-element ul li a { text-decoration: none; font-size: 15px; letter-spacing: 17px; font-family: "Open Sans", sans-serif; letter-spacing: -0.15px; color: #ffffff; }
-  section.whatistil-content .block-with-text-content { padding: 40px; padding-bottom: 155px; height: inherit; width: 85.2%; margin-left: auto; }
+  section.whatistil-content .block-with-text-content { padding: 78px 40px 155px 40px; height: inherit; width: 85.2%; margin-left: auto; }
   section.whatistil-content .block-with-text-content .elem1 { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
   section.whatistil-content .block-with-text-content .elem1 .text-block1 { float: unset; clear: unset; width: unset; height: unset; margin: 0px 150px 0 0; }
+  section.whatistil-content .block-with-text-content .elem1 .text-block1 h3 { font: 900 30px/35px Open Sans; }
+  section.whatistil-content .block-with-text-content .elem1 .text-block1 p { font: 400 20px/25px Open Sans; }
   section.whatistil-content .block-with-text-content .elem2 { margin-top: 150px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; position: relative; top: 18px; -webkit-box-orient: horizontal; -webkit-box-direction: reverse; -webkit-flex-direction: row-reverse; -ms-flex-direction: row-reverse; flex-direction: row-reverse; left: 0; }
   section.whatistil-content .block-with-text-content .elem2 .text-block2 { width: 600px; /* height: 479px; */ margin-top: 100px; margin-bottom: 100px; margin-right: 155px; }
-  section.whatistil-content .block-with-text-content .elem2 .text-block2 h3 { margin-right: 35%; }
+  section.whatistil-content .block-with-text-content .elem2 .text-block2 h3 { margin-right: 35%; font: 900 30px/35px Open Sans; }
+  section.whatistil-content .block-with-text-content .elem2 .text-block2 p { font: 400 20px/25px Open Sans; }
   section.whatistil-content .block-with-text-content .elem3 { -webkit-box-align: end; -webkit-align-items: flex-end; -ms-flex-align: end; align-items: flex-end; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
   section.whatistil-content .block-with-text-content .elem3 .text-block3 { width: unset; height: unset; margin: unset; margin-right: 60px; }
-  section.whatistil-content .block-with-text-content .elem3 .text-block3 h3 { margin-right: 35%; }
+  section.whatistil-content .block-with-text-content .elem3 .text-block3 h3 { font: 900 30px/35px Open Sans; margin-right: 35%; }
+  section.whatistil-content .block-with-text-content .elem3 .text-block3 p { font: 400 20px/25px Open Sans; }
   section.whatistil-content .block-with-text-content .elem3 .third { float: unset; clear: unset; width: unset; height: unset; right: unset; }
   section.whatistil-content .block-with-text-content .elem4 { margin-top: 101px; -webkit-box-orient: horizontal; -webkit-box-direction: reverse; -webkit-flex-direction: row-reverse; -ms-flex-direction: row-reverse; flex-direction: row-reverse; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
   section.whatistil-content .block-with-text-content .elem4 .text-block4 { width: unset; height: unset; margin: unset; float: unset; margin-right: 170px; }
-  section.whatistil-content .block-with-text-content .elem4 .text-block4 h3 { margin-right: 35%; }
+  section.whatistil-content .block-with-text-content .elem4 .text-block4 h3 { font: 900 30px/35px Open Sans; margin-right: 35%; }
+  section.whatistil-content .block-with-text-content .elem4 .text-block4 p { font: 400 20px/25px Open Sans; }
   section.whatistil-content .block-with-text-content .elem4 .third { float: unset; clear: unset; width: unset; height: unset; right: 65px; }
   section.whatistil-content .block-with-text-content .text-block1, section.whatistil-content .block-with-text-content .text-block2, section.whatistil-content .block-with-text-content .text-block3, section.whatistil-content .block-with-text-content .text-block4 { position: relative; margin: unset; }
   section.whatistil-content .block-with-text-content .text-block1 h3, section.whatistil-content .block-with-text-content .text-block2 h3, section.whatistil-content .block-with-text-content .text-block3 h3, section.whatistil-content .block-with-text-content .text-block4 h3 { margin: unset; font-family: "Open Sans", sans-serif; color: white; font-size: 30px; line-height: 35px; letter-spacing: 0.3px; }
@@ -474,9 +475,11 @@ section.whatistil-content .block-with-text-content img { width: 90%; }
   section.whatistil-content .block-with-text-content .four { width: 497px; height: 369px; right: 65px; }
   section.whatistil-content .block-with-text-content .first:after, section.whatistil-content .block-with-text-content .second ::after, section.whatistil-content .block-with-text-content .third::after, section.whatistil-content .block-with-text-content .four::after { content: "."; visibility: hidden; display: block; height: 0; clear: both; }
   section.whatistil-content .block-with-text-content img { width: unset; }
-  section.whatistil-content .block-with-text-content .sustrac { position: absolute; z-index: -0; left: 0; top: 600px; }
-  section.whatistil-content .block-with-text-content .trazado230 { right: 0; top: 1320px; }
-  section.whatistil-content .block-with-text-content .trazado231 { top: 80%; left: 0; } }
+  section.whatistil-content .block-with-text-content .sustrac { position: absolute; z-index: -0; left: 0; top: 640px; }
+  section.whatistil-content .block-with-text-content .trazado230 { right: 0; top: 1350px; }
+  section.whatistil-content .block-with-text-content .trazado231 { top: 78%; left: 0; }
+  .whatistil-footer .foot .block-with-who-trusted-us { max-width: 1024px; /* margin-left: auto; */ /* margin: unset; */ }
+  .whatistil-footer .footer-wrapper { max-width: 1024px; } }
 
 * { -webkit-box-sizing: border-box; box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -858,7 +861,7 @@ body { overflow-x: hidden; }
   header .wrapper-menu .menu__box > li:nth-child(2) .list > ul:nth-child(2) li { padding: 5px 140px 10px 0; }
   header .wrapper-menu .menu__box > li:nth-child(3) { padding: 20px 0 20px 37px; background: #0093d6 0% 0% no-repeat padding-box; height: 33%; text-transform: initial; }
   header .wrapper-menu .menu__box > li:nth-child(3) a { color: #ffffff; font-size: 22px; letter-spacing: -0.5px; font-family: "Open Sans", sans-serif; }
-  header .wrapper .settings-country-selector { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; background: #33a7db 0% 0% no-repeat padding-box; height: 100%; width: inherit; padding: 0 30px 0 0; margin: 0; }
+  header .wrapper .settings-country-selector { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; background: #33a7db 0% 0% no-repeat padding-box; height: 100%; width: -webkit-fit-content; width: -moz-fit-content; width: fit-content; padding: 0 50px 0 0; margin: 0; }
   nav { height: 90px; top: 90px; -webkit-box-align: end; -webkit-align-items: flex-end; -ms-flex-align: end; align-items: flex-end; margin: 0 auto; }
   nav .wrapper-settings { max-width: 1024px; width: 456px; -webkit-box-pack: end; -webkit-justify-content: flex-end; -ms-flex-pack: end; justify-content: flex-end; }
   nav .wrapper-settings .wrapper-trial { width: 366px; }
@@ -957,7 +960,7 @@ body { overflow-x: hidden; }
   header .wrapper .wrapper-list ul { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; }
   header .wrapper .wrapper-list ul li { list-style-type: none; color: #ffffff; margin: unset; width: 82px; font-size: 16px; }
   header .wrapper .wrapper-list ul li a { height: 100%; width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; font: Bold 15px/15px Open Sans; letter-spacing: -0.23px; text-decoration: none; color: white; }
-  header .wrapper .settings-country-selector { background: transparent; width: unset; right: 107px; position: absolute; left: unset; }
+  header .wrapper .settings-country-selector { background: transparent; width: unset; right: 107px; padding: 0 30px 0 0; position: absolute; left: unset; }
   header .wrapper .settings-country-selector aside section ul .lang-item-es, header .wrapper .settings-country-selector aside section ul .lang-item-fr, header .wrapper .settings-country-selector aside section ul .lang-item-de, header .wrapper .settings-country-selector aside section ul .lang-item-it, header .wrapper .settings-country-selector aside section ul .lang-item-en-us, header .wrapper .settings-country-selector aside section ul .lang-item-en-gb, header .wrapper .settings-country-selector aside section ul .lang-item-zh { margin: 0 3px; }
   header .wrapper .settings-country-selector aside section ul .lang-item-es { background: url("../img/es.svg") no-repeat; background-size: cover; background-position: center; }
   header .wrapper .settings-country-selector aside section ul .lang-item-fr { background: url("../img/fr.svg") no-repeat; background-size: cover; background-position: center; }

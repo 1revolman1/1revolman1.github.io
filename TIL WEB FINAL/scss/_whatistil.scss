@@ -19,12 +19,9 @@ section.whatistil-text {
     margin: 0 auto;
     max-width: 768px;
     h1 {
-      margin: 0 0 140px 36px;
-      text-align: left;
-      font-weight: 800;
-      font-family: "Alegreya Sans", sans-serif;
-      font-size: 40px;
-      line-height: 60px;
+      // margin: 0 0 140px 36px;
+      margin: 0 0 170px 36px;
+      font: 900 40px/60px Alegreya Sans;
       letter-spacing: 0;
       color: #0093d6;
       opacity: 1;
@@ -113,10 +110,8 @@ section.whatistil-content {
       margin: 0 auto;
       max-width: 1024px;
       h1 {
-        margin: 0 0 140px 80px;
-        font-size: 60px;
-        line-height: 60px;
-        font-family: "Algerya Sans", sans-serif;
+        margin: 90px 0 170px 140px;
+        font: 900 60px/60px Alegreya Sans;
       }
     }
   }
@@ -164,41 +159,18 @@ section.whatistil-content {
       margin: 0 auto;
       max-width: 1366px;
       h1 {
-        margin: 0 0 140px 250px;
+        margin: 10px 0 170px 130px;
+        font: 900 60px/60px Alegreya Sans;
       }
     }
   }
   section.whatistil-content {
     .wrapper {
       max-width: 1366px;
+      // max-width: 900px;
     }
     .sticky-element {
-      width: 713px;
-      height: 104%;
-      .stick-element {
-        display: block;
-        ul {
-          .head {
-            font-size: 15px;
-            letter-spacing: 17px;
-            font-family: "Open Sans", sans-serif;
-            letter-spacing: -0.15px;
-            color: #ffffff;
-            text-decoration: underline;
-          }
-          li {
-            list-style-type: none;
-            a {
-              text-decoration: none;
-              font-size: 15px;
-              letter-spacing: 17px;
-              font-family: "Open Sans", sans-serif;
-              letter-spacing: -0.15px;
-              color: #ffffff;
-            }
-          }
-        }
-      }
+      height: 115%;
     }
     .block-with-text-content {
       padding: 40px;
@@ -329,6 +301,11 @@ section.whatistil-content {
       height: 104%;
       .stick-element {
         display: block;
+        width: 713px;
+        height: 104%;
+        position: fixed;
+        top: 55%;
+        z-index: 99999;
         ul {
           .head {
             font-size: 15px;
@@ -339,6 +316,7 @@ section.whatistil-content {
             text-decoration: underline;
           }
           li {
+            margin: 10px auto;
             list-style-type: none;
             a {
               text-decoration: none;
@@ -353,8 +331,9 @@ section.whatistil-content {
       }
     }
     .block-with-text-content {
-      padding: 40px;
-      padding-bottom: 155px;
+      padding: 78px 40px 155px 40px;
+      // padding: 40px;
+      // padding-bottom: 155px;
       height: inherit;
       width: 85.2%;
       // right: calc(0px - 15%);
@@ -368,6 +347,12 @@ section.whatistil-content {
           height: unset;
           // margin: 0 200px 0 0;
           margin: 0px 150px 0 0;
+          h3 {
+            font: 900 30px/35px Open Sans;
+          }
+          p {
+            font: 400 20px/25px Open Sans;
+          }
         }
       }
       .elem2 {
@@ -389,6 +374,10 @@ section.whatistil-content {
           margin-right: 155px;
           h3 {
             margin-right: 35%;
+            font: 900 30px/35px Open Sans;
+          }
+          p {
+            font: 400 20px/25px Open Sans;
           }
         }
       }
@@ -401,7 +390,11 @@ section.whatistil-content {
           margin: unset;
           margin-right: 60px;
           h3 {
+            font: 900 30px/35px Open Sans;
             margin-right: 35%;
+          }
+          p {
+            font: 400 20px/25px Open Sans;
           }
         }
         .third {
@@ -424,7 +417,11 @@ section.whatistil-content {
           float: unset;
           margin-right: 170px;
           h3 {
+            font: 900 30px/35px Open Sans;
             margin-right: 35%;
+          }
+          p {
+            font: 400 20px/25px Open Sans;
           }
         }
         .third {
@@ -518,16 +515,33 @@ section.whatistil-content {
         position: absolute;
         z-index: -0;
         left: 0;
-        top: 600px;
+        top: 640px;
+        // top: 600px;
       }
       .trazado230 {
         right: 0;
-        top: 1320px;
+        // top: 1320px;
+        top: 1350px;
       }
       .trazado231 {
-        top: 80%;
+        // top: 80%;
+        top: 78%;
         left: 0;
       }
+    }
+  }
+  .whatistil-footer {
+    .foot {
+      .block-with-who-trusted-us {
+        // max-width: 900px;
+        max-width: 1024px;
+        /* margin-left: auto; */
+        /* margin: unset; */
+        // margin: 0 0 0 auto;
+      }
+    }
+    .footer-wrapper {
+      max-width: 1024px;
     }
   }
 }

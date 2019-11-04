@@ -23,68 +23,72 @@ window.addEventListener("scroll", function() {
 document
   .querySelector("header .wrapper-list")
   .addEventListener("mouseover", function(event) {
-    //cleaning background in the .wrapper-list ul childs
-    event.srcElement.offsetParent.children[0].childNodes.forEach(function(e) {
-      if (!(e.nodeName == "#text")) {
-        e.childNodes[0].style.background = "";
+    setTimeout(() => {
+      //cleaning background in the .wrapper-list ul childs
+      event.srcElement.offsetParent.children[0].childNodes.forEach(function(e) {
+        if (!(e.nodeName == "#text")) {
+          e.childNodes[0].style.background = "";
+        }
+      });
+      document.querySelector(".wrapper-list ul").style.background = "";
+      let section = document.createElement("section");
+      section.className = "hover-menu";
+      section.style.top = `${document.querySelector("header").offsetHeight -
+        1}px`;
+      //if .hover-menu EXIST - remove him
+      if (!!document.querySelector(".hover-menu")) {
+        document.querySelector("header .wrapper").style.background = "";
+        document.querySelector("header").style.background = "";
+        event.target.style.background = "#33a7db";
+        document.querySelector(".hover-menu").remove();
+        document.querySelector(".wrapper-trial").style.display = "";
       }
-    });
-    document.querySelector(".wrapper-list ul").style.background = "";
-    let section = document.createElement("section");
-    section.className = "hover-menu";
-    section.style.top = `${document.querySelector("header").offsetHeight -
-      1}px`;
-    //if .hover-menu EXIST - remove him
-    if (!!document.querySelector(".hover-menu")) {
-      document.querySelector("header .wrapper").style.background = "";
-      document.querySelector("header").style.background = "";
-      event.target.style.background = "#33a7db";
-      document.querySelector(".hover-menu").remove();
-      document.querySelector(".wrapper-trial").style.display = "";
-    }
-    //if li="Contact" - skip. Else - do
-    if (!(event.target.textContent == "Contact")) {
-      document.querySelector(".wrapper-trial").style.display = "none";
-      if (event.target.textContent == "About") {
-        section.innerHTML = `<div class="wrapper"> <div class="elem1"> <div class="img"><img src="./img/Grupo 170.svg" alt=""></div> <ul> <li><a href="whatistil.html">What is TIL?</a></li> <li><a href="team.html">Team</a></li> <li><a href="jobs.html">Jobs</a></li> </ul> </div> <div class="elem2"> <div class="img"><img src="./img/Grupo 121.svg" alt=""></div> <ul> <li><a href="results.html">Results and Stats</a></li> <li><a href="pricing.html">Pricing</a></li> </ul> </div> <div class="elem3"> <div class="img"><img src="./img/Grupo 128.svg" alt=""></div> <ul> <li><a href="tilevents.html">TIL Events</a></li> <li><a href="testimonials.html">Testimonials</a></li> </ul> </div> </div>`;
-        event.target.style.background = "#7d56e9";
-        document.querySelector("header .wrapper").style.background = "#9879ED";
-        document.querySelector("header").style.background = "#9879ED";
-        section.style.background = "#7d56e9";
-        document.body.append(section);
-        //Cleaning SECTION
-        //Listener, that check relocation from our creating section
-        //if it's true(we are relocating) we remove section
-        section.addEventListener("mouseleave", function(e) {
-          document.querySelector("header .wrapper").style.background = "";
-          document.querySelector("header").style.background = "";
-          event.target.style.background = "#33a7db";
-          document.querySelector(".hover-menu").remove();
-          document.querySelector(".wrapper-trial").style.display = "";
-        });
-      } else if (event.target.textContent == "Teachers") {
-        section.innerHTML = `<div class="wrapper"> <div class="elem1"> <div class="img"><img src="./img/Grupo 173.svg" alt=""></div> <ul> <li><a href="whytil.html">Why TIL?</a></li> <li><a href="ourlanguages.html">Our Languages</a></li> <li><a href="ourvideos.html">Our Videos</a></li> <li><a href="ourexercises.html">Our Exercises</a></li> <li><a href="ourcompetitions.html">Our Competitions</a></li> </ul> </div> <div class="elem2"> <div class="img"><img src="./img/Grupo 136.svg" alt=""></div> <ul> <li><a href="trainingandpd.html">Training and PD</a></li> <li><a href="textbooks.html">Textbooks Alignments</a></li> </ul> </div> </div>`;
-        section.style.height = "381px";
-        document.querySelector("header .wrapper").style.background = "#F16D94";
-        document.querySelector("header").style.background = "#F16D94";
-        section.style.background = "#EA4678";
-        event.target.style.background = "#EA4678";
-        document.body.append(section);
-        section.childNodes[0].childNodes[1].style.margin = "0 15%";
-        document.querySelector(".hover-menu .wrapper").style.justifyContent =
-          "flex-start";
-        //Cleaning SECTION
-        //Listener, that check relocation from our creating section
-        //if it's true(we are relocating) we remove section
-        section.addEventListener("mouseleave", function(e) {
-          document.querySelector("header .wrapper").style.background = "";
-          document.querySelector("header").style.background = "";
-          event.target.style.background = "#33a7db";
-          document.querySelector(".hover-menu").remove();
-          document.querySelector(".wrapper-trial").style.display = "";
-        });
+      //if li="Contact" - skip. Else - do
+      if (!(event.target.textContent == "Contact")) {
+        document.querySelector(".wrapper-trial").style.display = "none";
+        if (event.target.textContent == "About") {
+          section.innerHTML = `<div class="wrapper"> <div class="elem1"> <div class="img"><img src="./img/Grupo 170.svg" alt=""></div> <ul> <li><a href="whatistil.html">What is TIL?</a></li> <li><a href="team.html">Team</a></li> <li><a href="jobs.html">Jobs</a></li> </ul> </div> <div class="elem2"> <div class="img"><img src="./img/Grupo 121.svg" alt=""></div> <ul> <li><a href="results.html">Results and Stats</a></li> <li><a href="pricing.html">Pricing</a></li> </ul> </div> <div class="elem3"> <div class="img"><img src="./img/Grupo 128.svg" alt=""></div> <ul> <li><a href="tilevents.html">TIL Events</a></li> <li><a href="testimonials.html">Testimonials</a></li> </ul> </div> </div>`;
+          event.target.style.background = "#7d56e9";
+          document.querySelector("header .wrapper").style.background =
+            "#9879ED";
+          document.querySelector("header").style.background = "#9879ED";
+          section.style.background = "#7d56e9";
+          document.body.append(section);
+          //Cleaning SECTION
+          //Listener, that check relocation from our creating section
+          //if it's true(we are relocating) we remove section
+          section.addEventListener("mouseleave", function(e) {
+            document.querySelector("header .wrapper").style.background = "";
+            document.querySelector("header").style.background = "";
+            event.target.style.background = "#33a7db";
+            document.querySelector(".hover-menu").remove();
+            document.querySelector(".wrapper-trial").style.display = "";
+          });
+        } else if (event.target.textContent == "Teachers") {
+          section.innerHTML = `<div class="wrapper"> <div class="elem1"> <div class="img"><img src="./img/Grupo 173.svg" alt=""></div> <ul> <li><a href="whytil.html">Why TIL?</a></li> <li><a href="ourlanguages.html">Our Languages</a></li> <li><a href="ourvideos.html">Our Videos</a></li> <li><a href="ourexercises.html">Our Exercises</a></li> <li><a href="ourcompetitions.html">Our Competitions</a></li> </ul> </div> <div class="elem2"> <div class="img"><img src="./img/Grupo 136.svg" alt=""></div> <ul> <li><a href="trainingandpd.html">Training and PD</a></li> <li><a href="textbooks.html">Textbooks Alignments</a></li> </ul> </div> </div>`;
+          section.style.height = "381px";
+          document.querySelector("header .wrapper").style.background =
+            "#F16D94";
+          document.querySelector("header").style.background = "#F16D94";
+          section.style.background = "#EA4678";
+          event.target.style.background = "#EA4678";
+          document.body.append(section);
+          section.childNodes[0].childNodes[1].style.margin = "0 15%";
+          document.querySelector(".hover-menu .wrapper").style.justifyContent =
+            "flex-start";
+          //Cleaning SECTION
+          //Listener, that check relocation from our creating section
+          //if it's true(we are relocating) we remove section
+          section.addEventListener("mouseleave", function(e) {
+            document.querySelector("header .wrapper").style.background = "";
+            document.querySelector("header").style.background = "";
+            event.target.style.background = "#33a7db";
+            document.querySelector(".hover-menu").remove();
+            document.querySelector(".wrapper-trial").style.display = "";
+          });
+        }
       }
-    }
+    }, 80);
   });
 
 //This function create link to the header in mobile resolution to .menu__box to make
