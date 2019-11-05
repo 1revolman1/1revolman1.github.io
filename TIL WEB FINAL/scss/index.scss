@@ -515,7 +515,8 @@ menu {
         right: 0;
       }
       .slider {
-        width: 92%;
+        // width: 92%;
+        width: 100%;
         height: 272px;
         top: 7%;
         .video {
@@ -523,6 +524,12 @@ menu {
         }
         .holiday {
           display: inline-block;
+        }
+        .slick-slide {
+          margin: 0 15px;
+          width: 272px;
+          display: flex;
+          justify-content: center;
         }
         .slick-slide > div {
           width: 272px;
@@ -561,20 +568,20 @@ menu {
           flex-wrap: nowrap;
           justify-content: space-evenly;
           .oundle {
-            width: 84px;
-            height: 83px;
+            max-width: 84px;
+            max-height: 83px;
           }
           .westminster {
-            width: 157px;
-            height: 43px;
+            max-width: 157px;
+            max-height: 43px;
           }
           .nottingham {
-            width: 214px;
-            height: 42px;
+            max-width: 214px;
+            max-height: 42px;
           }
           .perse {
-            width: 103px;
-            height: 78px;
+            max-width: 103px;
+            max-height: 78px;
           }
         }
       }
@@ -1109,12 +1116,11 @@ menu {
         top: 260px;
         transform: scale(2);
       }
-      // .slider {
-      //   width: 92%;
-      // }
+      .slider {
+        width: 100%;
+      }
     }
   }
-
   footer {
     .foot {
       .block-with-who-trusted-us {
@@ -1124,20 +1130,20 @@ menu {
           flex-wrap: nowrap;
           justify-content: space-between;
           .oundle {
-            width: 119px;
-            height: 118px;
+            max-width: 119px;
+            max-height: 118px;
           }
           .westminster {
-            width: 223px;
-            height: 61px;
+            max-width: 223px;
+            max-height: 61px;
           }
           .nottingham {
-            width: 305px;
-            height: 59px;
+            max-width: 305px;
+            max-height: 59px;
           }
           .perse {
-            width: 119px;
-            height: 118px;
+            max-width: 119px;
+            max-height: 118px;
           }
         }
       }
@@ -1700,7 +1706,8 @@ menu {
       // }
       .slider {
         top: 0%;
-        width: 95%;
+        // width: 95%;
+        width: 100%;
       }
       .line1 {
         z-index: 1;
@@ -1749,20 +1756,20 @@ menu {
           // justify-content: space-between;
           justify-content: space-around;
           .oundle {
-            width: 119px;
-            height: 118px;
+            max-width: 119px;
+            max-height: 118px;
           }
           .westminster {
-            width: 223px;
-            height: 61px;
+            max-width: 223px;
+            max-height: 61px;
           }
           .nottingham {
-            width: 305px;
-            height: 59px;
+            max-width: 305px;
+            max-height: 59px;
           }
           .perse {
-            width: 119px;
-            height: 118px;
+            max-width: 119px;
+            max-height: 118px;
           }
         }
       }

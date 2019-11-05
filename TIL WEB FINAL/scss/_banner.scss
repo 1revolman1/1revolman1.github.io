@@ -578,7 +578,8 @@
       top: 0;
       right: 0;
       // width: 85%;
-      width: 95%;
+      // width: 95%;
+      width: 100%;
       height: 188px;
       z-index: 100;
       .video {
@@ -592,7 +593,8 @@
         height: 100%;
       }
       .slick-slide {
-        margin: 0 10px 0 0;
+        // margin: 0 10px 0 0;
+        margin: 0 7px;
       }
       .slick-slide > div {
         width: 188px;
