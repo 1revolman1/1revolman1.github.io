@@ -4,6 +4,21 @@
   margin: 0;
   padding: 0;
 }
+.none-display {
+  display: none;
+}
+.text-underline {
+  text-transform: underline;
+}
+.text-underline::after {
+  position: absolute;
+  top: 60px;
+  left: 25px;
+  content: "";
+  background: white;
+  width: 50px;
+  height: 2px;
+}
 header {
   top: 0;
 }
@@ -19,12 +34,17 @@ section.team-text {
     margin: 0 auto;
     max-width: 768px;
     h1 {
-      margin: 0 0 140px 36px;
+      // margin: 0 0 140px 36px;
+      // margin: 0 0 140px 36px;
+      margin: 0 0 130px 40px;
+      position: relative;
+      top: -10px;
       text-align: left;
-      font-weight: 800;
-      font-family: "Alegreya Sans", sans-serif;
-      font-size: 40px;
-      line-height: 60px;
+      font: 900 40px/60px Alegreya Sans;
+      // font-weight: 800;
+      // font-family: "Alegreya Sans", sans-serif;
+      // font-size: 40px;
+      // line-height: 60px;
       letter-spacing: 0;
       color: #0093d6;
       opacity: 1;
@@ -65,12 +85,13 @@ section.team-content {
   }
   .block-with-text-content {
     @include flex($justify: space-between, $align: flex-start, $direction: row);
-    width: 82.2%;
+    // width: 82.2%;
+    width: 90.2%;
     flex-wrap: wrap;
     position: relative;
     // right: calc(82.2% - 100%);
     margin-left: auto;
-    padding: 10px 0 119px 0;
+    padding: 45px 0px 119px 15px;
     background: #f4872d 0% 0% no-repeat padding-box;
     .sustrac {
       display: none;
@@ -135,10 +156,13 @@ section.team-content {
       margin: 0 auto;
       max-width: 1024px;
       h1 {
-        margin: 0 0 140px 150px;
-        font-size: 60px;
-        line-height: 60px;
-        font-family: "Algerya Sans", sans-serif;
+        position: unset;
+        // margin: 0 0 140px 150px;
+        margin: 90px 0 170px 140px;
+        font: 900 60px/60px Alegreya Sans;
+        // font-size: 60px;
+        // line-height: 60px;
+        // font-family: "Algerya Sans", sans-serif;
       }
     }
   }
@@ -151,7 +175,10 @@ section.team-content {
       height: 120%;
     }
     .block-with-text-content {
-      padding: 35px 35px 119px 35px;
+      padding: 35px 0;
+      width: 85.2%;
+      // padding: 35px 35px 119px 35px;
+      justify-content: flex-start;
       .elem {
         margin: 30px 20px;
         width: 232px;
@@ -190,6 +217,7 @@ section.team-content {
       margin: 0 auto;
       max-width: 1366px;
       h1 {
+        font: 900 60px/60px Alegreya Sans;
         margin: 0 0 140px 250px;
       }
     }
@@ -202,7 +230,7 @@ section.team-content {
       width: 713px;
       height: 104%;
       .stick-element {
-        display: block;
+        display: none;
         ul {
           .head {
             font-size: 15px;
@@ -290,12 +318,21 @@ section.team-content {
   section.team-content {
     .wrapper {
       max-width: 1366px;
+      .block-with-text-content {
+        padding: 70px 0;
+      }
     }
     .sticky-element {
       width: 713px;
       height: 104%;
       .stick-element {
         display: block;
+        // width: 713px;
+        width: 100px;
+        height: 104%;
+        position: fixed;
+        top: 55%;
+        z-index: 99999;
         ul {
           .head {
             font-size: 15px;
@@ -306,6 +343,7 @@ section.team-content {
             text-decoration: underline;
           }
           li {
+            margin: 10px auto;
             list-style-type: none;
             a {
               text-decoration: none;
@@ -328,14 +366,15 @@ section.team-content {
       // right: calc(0px - 15%);
       margin-left: auto;
       .trazado {
-        top: 10%;
+        top: 12%;
       }
       .sustrac {
         bottom: 10%;
       }
       .elem {
         position: relative;
-        margin: 10px 30px;
+        // margin: 10px 30px;
+        margin: 10px 35px;
         width: 237px;
         height: fit-content;
         .block {
@@ -363,6 +402,16 @@ section.team-content {
           color: white;
         }
       }
+    }
+  }
+  .team-footer {
+    .foot {
+      .block-with-who-trusted-us {
+        max-width: 1024px;
+      }
+    }
+    .footer-wrapper {
+      max-width: 1024px;
     }
   }
 }

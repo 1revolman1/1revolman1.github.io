@@ -16,6 +16,27 @@ html {
 body {
   overflow-x: hidden;
 }
+
+menu {
+  section.menu-about {
+    display: none;
+    background: #7d56e9;
+    height: 255px;
+  }
+  section.menu-teachers {
+    display: none;
+    background: #ea4678;
+    height: 381px;
+    .wrapper {
+      justify-content: flex-start;
+      .elem1,
+      .elem2 {
+        margin: 0px 15%;
+      }
+    }
+  }
+}
+
 @media (min-width: 768px) {
   header {
     // max-width: 1024px;
@@ -1504,7 +1525,7 @@ body {
       .block-about-script {
         width: 562px;
         height: 379px;
-
+        padding: 50px;
         left: 40px;
         p {
           font-size: 60px;
@@ -1580,10 +1601,16 @@ body {
           .counter {
             font-size: 70px;
           }
+          p {
+            margin: 15px 0;
+          }
         }
         .block-about-statistik-schools {
           .counter {
             font-size: 80px;
+          }
+          p {
+            margin: 15px 0;
           }
         }
         .block-about-statistik-videos {
@@ -1593,6 +1620,9 @@ body {
           transform: translate(-50%, 70%);
           .counter {
             font-size: 140px;
+          }
+          p {
+            margin: 15px 0;
           }
         }
       }
@@ -1634,7 +1664,7 @@ body {
               padding: 20px;
               h3 {
                 // font: Black 48px/56px Alegreya Sans;
-                font-size: 48px;
+                font: 900 48px/56px Alegreya Sans;
                 // font-weight: 900;
                 // font-family: "Algreya Sans", sans-serif;
               }

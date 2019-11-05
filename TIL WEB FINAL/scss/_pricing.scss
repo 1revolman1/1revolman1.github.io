@@ -19,12 +19,15 @@ section.pricing-text {
     margin: 0 auto;
     max-width: 768px;
     h1 {
-      margin: 0 0 140px 36px;
+      margin: 0 0 130px 40px;
+      position: relative;
+      top: -10px;
       text-align: left;
-      font-weight: 800;
-      font-family: "Alegreya Sans", sans-serif;
-      font-size: 40px;
-      line-height: 60px;
+      font: 900 40px/60px Alegreya Sans;
+      // font-weight: 800;
+      // font-family: "Alegreya Sans", sans-serif;
+      // font-size: 40px;
+      // line-height: 60px;
       letter-spacing: 0;
       color: #0093d6;
       opacity: 1;
@@ -65,7 +68,8 @@ section.pricing-content {
   }
   .block-with-text-content {
     @include flex($justify: space-between, $align: flex-start, $direction: row);
-    width: 91%;
+    // width: 91%;
+    width: 90.2%;
     flex-wrap: wrap;
     position: relative;
     margin-left: auto;
@@ -108,10 +112,10 @@ section.pricing-content {
         padding: 20px;
         h3 {
           margin: 0;
-          font-weight: bolder;
-          font-size: 60px;
-          line-height: 45px;
-          font-family: "Alegreya Sans", sans-serif;
+          font: 900 60px/45px Alegreya Sans;
+          // font-size: 60px;
+          // line-height: 45px;
+          // font-family: "Alegreya Sans", sans-serif;
         }
         p {
           font-family: "Alegreya Sans", sans-serif;
@@ -130,14 +134,17 @@ section.pricing-content {
       @include flex($justify: space-evenly, $align: center, $direction: column);
       width: 302px;
       padding: 25px;
+      padding-top: 70px;
       // height: 823px;
       background: #ee6700 0% 0% no-repeat padding-box;
       position: relative;
       .dropdown {
+        top: -35px;
         position: relative;
         display: inline-block;
         .dropbtn {
           display: flex;
+          align-items: center;
           background-color: white;
           color: white;
           width: 229px;
@@ -179,6 +186,7 @@ section.pricing-content {
       .block1 {
         // height: 300px;
         width: 260px;
+        margin: 20px 0;
         .text {
           margin: 10px auto;
           @include flex(
@@ -201,6 +209,7 @@ section.pricing-content {
           }
         }
         .ammount-of-lessons {
+          margin: 8px 0;
           @include flex(
             $justify: space-evenly,
             $align: center,
@@ -224,21 +233,25 @@ section.pricing-content {
               color: white;
               p {
                 font-size: 14px;
-                line-height: 35px;
+                // line-height: 35px;
+                line-height: 15px;
                 font-family: "Open Sans", sans-serif;
                 letter-spacing: 0.14px;
               }
-              h3 {
-                font-family: "Open Sans", sans-serif;
+              h2 {
+                font: 400 30px/25px Open Sans;
+                // font-family: "Open Sans", sans-serif;
                 letter-spacing: 0.3px;
-                font-size: 30px;
-                line-height: 35px;
+                // font-size: 30px;
+                // line-height: 35px;
+                // line-height: 25px;
               }
             }
           }
         }
       }
       .block2 {
+        margin: 20px 0;
         padding: 5px;
         @include flex(
           $justify: space-evenly,
@@ -271,6 +284,7 @@ section.pricing-content {
         }
         .ammount-of-logins {
           width: 247px;
+          margin: 8px 0;
           height: 105px;
           border: 1px solid #ffffff;
           a {
@@ -281,14 +295,17 @@ section.pricing-content {
             p {
               font-size: 14px;
               letter-spacing: 0.14px;
-              line-height: 35px;
+              // line-height: 35px;
+              line-height: 25px;
               color: white;
               font-family: "Open Sans", sans-serif;
             }
             h2 {
-              font-family: "Open Sans", sans-serif;
-              font-size: 30px;
-              line-height: 35px;
+              // font-family: "Open Sans", sans-serif;
+              // font-size: 30px;
+              font: 400 30px/25px Open Sans;
+              // line-height: 35px;
+              // line-height: 25px;
               letter-spacing: 0.3px;
               color: white;
             }
@@ -297,9 +314,11 @@ section.pricing-content {
         .information {
           margin-top: 77px;
           h3 {
-            font-size: 14px;
-            font-family: "Open Sans", sans-serif;
-            line-height: 18px;
+            text-transform: uppercase;
+            font: 700 14px/18px Open Sans;
+            // font-size: 14px;
+            // font-family: "Open Sans", sans-serif;
+            // line-height: 18px;
             color: white;
           }
           p {
@@ -363,10 +382,9 @@ section.pricing-content {
       margin: 0 auto;
       max-width: 1024px;
       h1 {
-        margin: 0 0 140px 150px;
-        font-size: 60px;
-        line-height: 60px;
-        font-family: "Algerya Sans", sans-serif;
+        position: unset;
+        margin: 90px 0 170px 140px;
+        font: 900 60px/60px Alegreya Sans;
       }
     }
   }
@@ -381,7 +399,8 @@ section.pricing-content {
     .block-with-text-content {
       // padding: 35px 35px 119px 35px;
       padding: 35px 35px 119px 0;
-      width: 88%;
+      // width: 88%;
+      width: 85.2%;
       flex-direction: column;
       align-items: center;
       .elem1 {
@@ -416,6 +435,7 @@ section.pricing-content {
       .elem2 {
         padding: 43px;
         width: 438px;
+        padding-top: 70px;
         .dropdown {
           position: relative;
           display: inline-block;
@@ -524,6 +544,7 @@ section.pricing-content {
           .information {
             margin-top: 77px;
             h3 {
+              text-transform: uppercase;
               font-size: 15px;
               font-family: "Open Sans", sans-serif;
               line-height: 25px;
@@ -585,7 +606,8 @@ section.pricing-content {
       margin: 0 auto;
       max-width: 1366px;
       h1 {
-        margin: 0 0 140px 250px;
+        margin: 10px 0 170px 130px;
+        font: 900 60px/60px Alegreya Sans;
       }
     }
   }
@@ -597,7 +619,7 @@ section.pricing-content {
       width: 713px;
       height: 120%;
       .stick-element {
-        display: block;
+        display: none;
         ul {
           .head {
             font-size: 15px;
@@ -682,12 +704,14 @@ section.pricing-content {
       .elem2 {
         position: relative;
         padding: 43px;
+        padding-top: 50px;
         width: 810px;
         flex-direction: column;
         align-items: flex-end;
         .dropdown {
           right: 2%;
-          top: -20px;
+          // top: -20px;
+          top: -15px;
           position: relative;
           display: inline-block;
           .dropbtn {
@@ -735,7 +759,8 @@ section.pricing-content {
           // width: 340px;
           width: 360px;
           .text {
-            margin: 10px auto;
+            // margin: 10px auto;
+            margin: 15px auto;
             @include flex(
               $justify: space-evenly,
               $align: center,
@@ -769,7 +794,10 @@ section.pricing-content {
           // width: 340px;
           width: 360px;
           .text {
-            margin: 10px auto;
+            // margin: 10px auto;
+            margin: 15px auto;
+            position: relative;
+            top: -3px;
             @include flex(
               $justify: space-evenly,
               $align: center,
@@ -784,10 +812,14 @@ section.pricing-content {
             }
           }
           .ammount-of-logins {
+            margin: 0;
+            margin-top: 2px;
             width: 338px;
             height: 105px;
           }
           .information {
+            position: relative;
+            top: 20px;
             margin-top: 77px;
             h3 {
               font-size: 15px;
@@ -863,6 +895,12 @@ section.pricing-content {
       height: 120%;
       .stick-element {
         display: block;
+        // width: 713px;
+        width: 100px;
+        height: 104%;
+        position: fixed;
+        top: 55%;
+        z-index: 99999;
         ul {
           .head {
             font-size: 15px;
@@ -872,6 +910,7 @@ section.pricing-content {
             color: #ffffff;
           }
           li {
+            margin: 10px auto;
             list-style-type: none;
             a {
               text-decoration: none;
@@ -995,7 +1034,8 @@ section.pricing-content {
           // width: 340px;
           width: 360px;
           .text {
-            margin: 10px auto;
+            // margin: 10px auto;
+            margin: 15px auto;
             @include flex(
               $justify: space-evenly,
               $align: center,
@@ -1029,7 +1069,10 @@ section.pricing-content {
           // width: 340px;
           width: 360px;
           .text {
-            margin: 10px auto;
+            // margin: 10px auto;
+            margin: 15px auto;
+            position: relative;
+            top: -5px;
             @include flex(
               $justify: space-evenly,
               $align: center,
@@ -1101,6 +1144,16 @@ section.pricing-content {
           }
         }
       }
+    }
+  }
+  .pricing-footer {
+    .foot {
+      .block-with-who-trusted-us {
+        max-width: 1024px;
+      }
+    }
+    .footer-wrapper {
+      max-width: 1024px;
     }
   }
 }
