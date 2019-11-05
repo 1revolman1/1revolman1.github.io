@@ -292,27 +292,13 @@ footer { height: 940px; margin: 0 auto; opacity: 1; background: #33a9df; }
 
 footer .foot { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: start; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; position: relative; height: 260px; background: #0093d6 0% 0% no-repeat padding-box; }
 
-footer .foot .block-with-who-trusted-us { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; height: 100%; width: 100%; max-width: 768px; margin: 0 auto; background: #0093d6 0% 0% no-repeat padding-box; opacity: 1; padding: 20px 18px 18px; }
+footer .foot .block-with-who-trusted-us { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; height: auto; width: 100%; max-width: 768px; margin: 0 auto; background: #0093d6 0% 0% no-repeat padding-box; opacity: 1; padding: 20px 18px 18px; }
 
 footer .foot .block-with-who-trusted-us h3 { font-family: "Open Sans", sans-serif; font-size: 15px; letter-spacing: -0.12px; color: #ffffff; opacity: 1; }
 
 footer .foot .block-with-who-trusted-us .block-with-schools { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: space-evenly; -webkit-justify-content: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; height: 100%; width: 100%; }
 
-footer .foot .block-with-who-trusted-us .block-with-schools .oundle { margin: 10px; max-width: 67px; max-height: 67px; }
-
-footer .foot .block-with-who-trusted-us .block-with-schools .oundle img { width: 100%; height: 100%; }
-
-footer .foot .block-with-who-trusted-us .block-with-schools .westminster { margin: 10px; max-width: 127px; max-height: 35px; }
-
-footer .foot .block-with-who-trusted-us .block-with-schools .westminster img { width: 100%; height: 100%; }
-
-footer .foot .block-with-who-trusted-us .block-with-schools .nottingham { margin: 10px; max-width: 173px; max-height: 34px; }
-
-footer .foot .block-with-who-trusted-us .block-with-schools .nottingham img { width: 100%; height: 100%; }
-
-footer .foot .block-with-who-trusted-us .block-with-schools .perse { margin: 10px; max-width: 83px; max-height: 63px; }
-
-footer .foot .block-with-who-trusted-us .block-with-schools .perse img { width: 100%; height: 100%; }
+footer .foot .block-with-who-trusted-us .block-with-schools div img { display: block; max-width: 114px; height: auto; }
 
 footer .footer-wrapper { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; position: relative; width: 100%; height: 650px; max-width: 768px; margin: 0 auto; background: navy; }
 
@@ -735,7 +721,7 @@ section.pricing-content .block-with-text-content .elem3 p a { text-decoration: n
 
 * { -webkit-box-sizing: border-box; box-sizing: border-box; margin: 0; padding: 0; }
 
-.none-display { display: none; }
+.none-display { display: inline-block; }
 
 .text-underline { text-transform: underline; }
 
@@ -1044,7 +1030,7 @@ menu section.menu-teachers .wrapper .elem1, menu section.menu-teachers .wrapper 
   section.banner-with-lectors-word { height: 1053px; }
   section.banner-with-lectors-word .wrapper { max-width: 1024px; }
   section.banner-with-lectors-word .wrapper .wrapper-fone .line1 { display: block; }
-  section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible { width: 668px; height: 699px; padding: 40px; }
+  section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible { width: 668px; height: 699px; padding: unset; }
   section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible .button-left, section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible .button-right { width: 55px; height: 55px; }
   section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible .block-with-content { -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; }
   section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible .block-with-content .image { -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; margin-bottom: 20px; }
@@ -1070,12 +1056,9 @@ menu section.menu-teachers .wrapper .elem1, menu section.menu-teachers .wrapper 
   section.banner-with-circle .wrapper .slider .slick-slide > div img { width: 100%; height: 100%; }
   footer { height: auto; }
   footer .foot { height: unset; }
-  footer .foot .block-with-who-trusted-us { height: 210px; max-width: 1024px; }
+  footer .foot .block-with-who-trusted-us { height: auto; max-width: 1024px; }
   footer .foot .block-with-who-trusted-us .block-with-schools { -webkit-flex-wrap: nowrap; -ms-flex-wrap: nowrap; flex-wrap: nowrap; -webkit-box-pack: space-evenly; -webkit-justify-content: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; }
-  footer .foot .block-with-who-trusted-us .block-with-schools .oundle { max-width: 84px; max-height: 83px; }
-  footer .foot .block-with-who-trusted-us .block-with-schools .westminster { max-width: 157px; max-height: 43px; }
-  footer .foot .block-with-who-trusted-us .block-with-schools .nottingham { max-width: 214px; max-height: 42px; }
-  footer .foot .block-with-who-trusted-us .block-with-schools .perse { max-width: 103px; max-height: 78px; }
+  footer .foot .block-with-who-trusted-us .block-with-schools div img { display: block; max-width: 114px; max-height: 90px; height: auto; }
   footer .footer-wrapper { height: unset; max-width: 1024px; }
   footer .footer-wrapper .block-with-who-trusted-us { height: 210px; }
   footer .footer-wrapper .block-with-who-trusted-us .block-with-schools { -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; }
@@ -1146,7 +1129,7 @@ menu section.menu-teachers .wrapper .elem1, menu section.menu-teachers .wrapper 
   section.banner-information .wrapper .block-about-statistik .block-about-statistik-videos .counter { font-size: 140px; }
   section.banner-with-lectors-word .wrapper .wrapper-fone { width: 85%; height: 58%; }
   section.banner-with-lectors-word .wrapper .wrapper-fone .line1 { display: none; }
-  section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible { width: 90%; height: 50%; position: absolute; left: 5%; }
+  section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible { width: 90%; height: 50%; padding: unset; position: absolute; left: 5%; }
   section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible .block-with-content { -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; }
   section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible .block-with-content .image { -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; margin: 10px; }
   section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible .block-with-content .image img { width: 100%; }
@@ -1162,10 +1145,7 @@ menu section.menu-teachers .wrapper .elem1, menu section.menu-teachers .wrapper 
   section.banner-with-circle .wrapper .slider { width: 100%; }
   footer .foot .block-with-who-trusted-us { padding: 20px 0; }
   footer .foot .block-with-who-trusted-us .block-with-schools { -webkit-flex-wrap: nowrap; -ms-flex-wrap: nowrap; flex-wrap: nowrap; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
-  footer .foot .block-with-who-trusted-us .block-with-schools .oundle { max-width: 119px; max-height: 118px; }
-  footer .foot .block-with-who-trusted-us .block-with-schools .westminster { max-width: 223px; max-height: 61px; }
-  footer .foot .block-with-who-trusted-us .block-with-schools .nottingham { max-width: 305px; max-height: 59px; }
-  footer .foot .block-with-who-trusted-us .block-with-schools .perse { max-width: 119px; max-height: 118px; }
+  footer .foot .block-with-who-trusted-us .block-with-schools div img { max-width: 170px; }
   footer .footer-wrapper { max-width: 1024px; background: transparent; height: 405px; }
   footer .footer-wrapper .footer-information { padding-top: 30px; }
   footer .footer-wrapper .footer-information .site-map { -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; padding: 0 10px; }
@@ -1181,7 +1161,8 @@ menu section.menu-teachers .wrapper .elem1, menu section.menu-teachers .wrapper 
   footer .footer-wrapper .footer-information .contacts .image-block img { width: 100%; }
   footer .footer-wrapper .footer-information .contacts::after { height: 120%; left: 20px; top: 0; } }
 
-@media (min-width: 1366px) { header { max-width: unset; height: 90px; }
+@media (min-width: 1366px) { .none-display { display: none; }
+  header { max-width: unset; height: 90px; }
   header .wrapper { max-width: 1366px; margin: 0 auto; position: relative; }
   header .wrapper .wrapper-logo { position: relative; right: unset; width: 40%; }
   header .wrapper .wrapper-logo p { margin-left: 10px; margin-left: 5px; display: block; text-transform: capitalize; color: white; text-align: left; font-size: 12px; font-family: "Open Sans", sans-serif; letter-spacing: -0.24px; color: #ffffff; }
@@ -1238,25 +1219,22 @@ menu section.menu-teachers .wrapper .elem1, menu section.menu-teachers .wrapper 
   section.banner-with-lectors-word .wrapper { max-width: 1366px; }
   section.banner-with-lectors-word .wrapper .wrapper-fone { width: 85%; height: 63%; }
   section.banner-with-lectors-word .wrapper .wrapper-fone .line1 { display: none; }
-  section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible { width: 93%; height: 50%; position: absolute; left: 3%; }
+  section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible { width: 93%; height: 50%; position: absolute; padding: unset; left: 3%; }
   section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible .block-with-content { -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; }
   section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible .block-with-content .image { -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; margin: 10px; }
   section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible .block-with-content .image img { width: 100%; }
   section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible .block-with-content .content { width: 90%; height: 90%; padding: 20px; }
   section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible .block-with-content .content h3 { font: 900 48px/56px Alegreya Sans; }
-  section.banner-with-lectors-word .wrapper .wrapper-block-with-social-media { height: 17%; width: 85%; }
-  section.banner-with-lectors-word .wrapper .wrapper-block-with-social-media .social-network-block { width: 609px; height: 355px; padding: 65px 25px 65px 90px; }
+  section.banner-with-lectors-word .wrapper .wrapper-block-with-social-media { position: relative; height: auto; }
+  section.banner-with-lectors-word .wrapper .wrapper-block-with-social-media .social-network-block { position: relative; width: 609px; min-height: 355px; height: auto; padding: 65px 25px 65px 90px; }
   section.banner-with-circle { height: 475px; }
   section.banner-with-circle .wrapper { max-width: 1366px; }
   section.banner-with-circle .wrapper .slider { top: 0%; width: 100%; }
   section.banner-with-circle .wrapper .line1 { z-index: 1; width: 772px; height: 615px; top: -240px; right: -379px; }
   section.banner-with-circle .wrapper .line2 { width: 870px; top: 50%; height: 355px; -webkit-transform: scale(3); -ms-transform: scale(3); transform: scale(3); }
-  footer .foot .block-with-who-trusted-us { max-width: 1366px; padding: 20px 0; }
+  footer .foot .block-with-who-trusted-us { max-width: 1366px; height: auto; padding: 50px 0; }
   footer .foot .block-with-who-trusted-us .block-with-schools { -webkit-flex-wrap: nowrap; -ms-flex-wrap: nowrap; flex-wrap: nowrap; -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; }
-  footer .foot .block-with-who-trusted-us .block-with-schools .oundle { max-width: 119px; max-height: 118px; }
-  footer .foot .block-with-who-trusted-us .block-with-schools .westminster { max-width: 223px; max-height: 61px; }
-  footer .foot .block-with-who-trusted-us .block-with-schools .nottingham { max-width: 305px; max-height: 59px; }
-  footer .foot .block-with-who-trusted-us .block-with-schools .perse { max-width: 119px; max-height: 118px; }
+  footer .foot .block-with-who-trusted-us .block-with-schools div img { display: block; max-width: 200px; max-height: 135px; height: auto; }
   footer .footer-wrapper { max-width: 1366px; background: transparent; height: 405px; }
   footer .footer-wrapper .footer-information { padding-top: 30px; }
   footer .footer-wrapper .footer-information .site-map { -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; padding: 0 10px; }

@@ -27,7 +27,8 @@ footer {
       // height: 239px;
       // height: 28%;
       // width: 100%;
-      height: 100%;
+      // height: 100%;
+      height: auto;
       width: 100%;
       max-width: 768px;
       margin: 0 auto;
@@ -49,44 +50,17 @@ footer {
         // flex-wrap: nowrap;
         height: 100%;
         width: 100%;
-        .oundle {
-          // margin: 0 10px;
-          margin: 10px;
-          max-width: 67px;
-          max-height: 67px;
+        div {
+          // height: auto;
+          // position: relative;
+          // max-width: 100px;
+          // max-height: 300px;
           img {
-            width: 100%;
-            height: 100%;
-          }
-        }
-        .westminster {
-          margin: 10px;
-          // margin: 0 10px;
-          max-width: 127px;
-          max-height: 35px;
-          img {
-            width: 100%;
-            height: 100%;
-          }
-        }
-        .nottingham {
-          margin: 10px;
-          // margin: 0 10px;
-          max-width: 173px;
-          max-height: 34px;
-          img {
-            width: 100%;
-            height: 100%;
-          }
-        }
-        .perse {
-          margin: 10px;
-          // margin: 0 10px;
-          max-width: 83px;
-          max-height: 63px;
-          img {
-            width: 100%;
-            height: 100%;
+            display: block;
+            max-width: 114px;
+            height: auto;
+            // width: 100%;
+            // max-height: 119px;
           }
         }
       }

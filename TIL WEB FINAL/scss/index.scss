@@ -411,7 +411,8 @@ menu {
         .element-visible {
           width: 668px;
           height: 699px;
-          padding: 40px;
+          // padding: 40px;
+          padding: unset;
           .button-left,
           .button-right {
             width: 55px;
@@ -562,26 +563,19 @@ menu {
     .foot {
       height: unset;
       .block-with-who-trusted-us {
-        height: 210px;
+        // height: 210px;
+        height: auto;
         max-width: 1024px;
         .block-with-schools {
           flex-wrap: nowrap;
           justify-content: space-evenly;
-          .oundle {
-            max-width: 84px;
-            max-height: 83px;
-          }
-          .westminster {
-            max-width: 157px;
-            max-height: 43px;
-          }
-          .nottingham {
-            max-width: 214px;
-            max-height: 42px;
-          }
-          .perse {
-            max-width: 103px;
-            max-height: 78px;
+          div {
+            img {
+              display: block;
+              max-width: 114px;
+              max-height: 90px;
+              height: auto;
+            }
           }
         }
       }
@@ -1034,6 +1028,7 @@ menu {
           // width: 94%;
           width: 90%;
           height: 50%;
+          padding: unset;
           position: absolute;
           left: 5%;
           .block-with-content {
@@ -1129,22 +1124,27 @@ menu {
         .block-with-schools {
           flex-wrap: nowrap;
           justify-content: space-between;
-          .oundle {
-            max-width: 119px;
-            max-height: 118px;
+          div {
+            img {
+              max-width: 170px;
+            }
           }
-          .westminster {
-            max-width: 223px;
-            max-height: 61px;
-          }
-          .nottingham {
-            max-width: 305px;
-            max-height: 59px;
-          }
-          .perse {
-            max-width: 119px;
-            max-height: 118px;
-          }
+          // .oundle {
+          //   max-width: 119px;
+          //   max-height: 118px;
+          // }
+          // .westminster {
+          //   max-width: 223px;
+          //   max-height: 61px;
+          // }
+          // .nottingham {
+          //   max-width: 305px;
+          //   max-height: 59px;
+          // }
+          // .perse {
+          //   max-width: 119px;
+          //   max-height: 118px;
+          // }
         }
       }
     }
@@ -1228,6 +1228,9 @@ menu {
 }
 @media (min-width: 1366px) {
   $mw: 1366px;
+  .none-display {
+    display: none;
+  }
   header {
     // max-width: none;
     max-width: unset;
@@ -1652,6 +1655,7 @@ menu {
           width: 93%;
           height: 50%;
           position: absolute;
+          padding: unset;
           // left: 5%;
           left: 3%;
           .block-with-content {
@@ -1684,11 +1688,15 @@ menu {
         }
       }
       .wrapper-block-with-social-media {
-        height: 17%;
-        width: 85%;
+        // height: 17%;
+        // width: 85%;
+        position: relative;
+        height: auto;
         .social-network-block {
+          position: relative;
           width: 609px;
-          height: 355px;
+          min-height: 355px;
+          height: auto;
           // padding: 65px 0 65px 90px;
           padding: 65px 25px 65px 90px;
         }
@@ -1749,27 +1757,27 @@ menu {
     .foot {
       .block-with-who-trusted-us {
         max-width: $mw;
+        height: auto;
         // padding: 20px 10% 0;
-        padding: 20px 0;
+        // padding: 20px 0;
+        padding: 50px 0;
         .block-with-schools {
           flex-wrap: nowrap;
           // justify-content: space-between;
           justify-content: space-around;
-          .oundle {
-            max-width: 119px;
-            max-height: 118px;
-          }
-          .westminster {
-            max-width: 223px;
-            max-height: 61px;
-          }
-          .nottingham {
-            max-width: 305px;
-            max-height: 59px;
-          }
-          .perse {
-            max-width: 119px;
-            max-height: 118px;
+          div {
+            // height: auto;
+            // position: relative;
+            // max-width: 300px;
+            // max-height: 300px;
+            // padding-top: 56.25%; /* 16:9 Aspect Ratio */
+            img {
+              display: block;
+              max-width: 200px;
+              // max-height: 100px;
+              max-height: 135px;
+              height: auto;
+            }
           }
         }
       }
