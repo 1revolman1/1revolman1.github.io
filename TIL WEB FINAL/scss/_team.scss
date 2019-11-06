@@ -13,7 +13,7 @@
 .text-underline::after {
   position: absolute;
   top: 60px;
-  left: 25px;
+  left: 20%;
   content: "";
   background: white;
   width: 50px;
@@ -398,16 +398,6 @@ section.team-content {
           }
         }
       }
-    }
-  }
-  .team-footer {
-    .foot {
-      .block-with-who-trusted-us {
-        max-width: 1024px;
-      }
-    }
-    .footer-wrapper {
-      max-width: 1024px;
     }
   }
 }

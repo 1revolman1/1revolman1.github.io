@@ -1,6 +1,6 @@
 .banner-photo {
   @include flex($justify: center, $align: flex-end, $direction: row);
-  height: 577px;
+  min-height: 577px;
   background-image: url("../img/blue.png");
   // background-size: 140% 100%;
   // background-size: 209vw 100vh;
@@ -8,10 +8,10 @@
   min-height: 500px;
   // background-position: -141px;
   background-position: -290px;
-  padding-bottom: 120px;
   // max-width: 768px;
   width: 100%;
   margin: 0 auto;
+  align-items: center;
   h1 {
     max-width: 320px;
     display: block;
@@ -328,9 +328,14 @@
     }
   }
 }
+section.window-slider {
+  position: relative;
+  height: auto;
+}
 .banner-with-lectors-word {
   // width: 375px;
-  height: 730px;
+  position: relative;
+  height: auto;
   margin: 0 auto;
   // background: green;
   opacity: 1;
@@ -341,150 +346,10 @@
     height: 100%;
     margin: 0 auto;
     // background: red;
-    .wrapper-fone {
-      @include flex($justify: center, $align: flex-end, $direction: row);
-      width: 100%;
-      height: 72%;
-      background: #fdd000 0% 0% no-repeat padding-box;
-      .line1 {
-        display: none;
-        top: -23%;
-        z-index: 9999;
-        right: 0;
-        position: absolute;
-        width: 113px;
-        height: 655px;
-        background: url("../img/Trazado 75 (1).svg") 0% 0% no-repeat padding-box;
-        transform: rotate(45deg), scale(-1, -1);
-      }
-      .element-visible {
-        @include flex($justify: center, $align: center, $direction: row);
-        position: absolute;
-        top: 7%;
-        width: 300px;
-        padding: 15px;
-        // width: 260px;
-        height: 478px;
-        background: #33a9df 0% 0% no-repeat padding-box;
-        opacity: 1;
-        .button-right {
-          cursor: pointer;
-          width: 20px;
-          height: 20px;
-          border-right: 1px solid #ffffff;
-          border-bottom: 1px solid #ffffff;
-          transform: rotate(-45deg);
-          // padding: 0px 20px;
-          // position: relative;
-          // right: 4%;
-        }
-        .button-left {
-          cursor: pointer;
-          width: 20px;
-          height: 20px;
-          border-right: 1px solid #ffffff;
-          border-bottom: 1px solid #ffffff;
-          transform: rotate(136deg);
-          // padding: 0px 20px;
-          // position: relative;
-          // left: 4%;
-        }
-        .block-with-content {
-          @include flex(
-            $justify: flex-start,
-            $align: center,
-            $direction: column
-          );
-          width: 85%;
-          height: 80%;
-          padding: 5px 10px;
-          .image {
-            @include flex($justify: center, $align: center, $direction: column);
-            // margin: 0 30px 40px 30px;
-            margin-bottom: 25px;
-            img {
-              // margin-bottom: 40px;
-              // width: 30%;
-              // height: 25%;
-              width: 50%;
-              // height: 100%;
-              // width: 100%;
-            }
-          }
-          .content {
-            @include flex($justify: center, $align: center, $direction: column);
-            h3 {
-              // width: 232px;
-              // height: 125px;
-              margin-bottom: 30px;
-              // margin: 0 24px 90px 24px;
-              text-align: center;
-              // font-size: 24px;
-              // font-family: "Alegreya Sans", sans-serif;
-              // font-weight: bolder;
-              letter-spacing: 0;
-              // font-weight: bolder;
-              font: 800 25px/32px Alegreya Sans;
-              color: #ffffff;
-            }
-            span {
-              font: Bold 15px/20px Open Sans;
-              // font-weight: bold;
-              // font-size: 14px;
-              text-align: center;
-              // font: Black;
-              font-family: "Alegreya Sans", sans-serif;
-              color: #ffffff;
-              opacity: 1;
-              letter-spacing: -0.14px;
-            }
-            p {
-              font: 400 12px/14px Open Sans;
-              // width: 94px;
-              // height: 31px;
-              // font-size: 10px;
-              text-align: center;
-              font: Black;
-              // font-family: "Alegreya Sans", sans-serif;
-              letter-spacing: 0;
-              color: #ffffff;
-              opacity: 1;
-            }
-          }
-        }
-        // .block-with-content:before {
-        //   content: "";
-        //   display: block;
-        //   // width: 20px;
-        //   // height: 20px;
-        //   // background: red;
-        //   position: absolute;
-        //   left: 3%;
-        //   border-right: 1px solid #ffffff;
-        //   border-bottom: 1px solid #ffffff;
-        //   height: 20px;
-        //   width: 20px;
-        //   transform: rotate(136deg);
-        // }
-        // .block-with-content:after {
-        //   content: "";
-        //   display: block;
-        //   position: absolute;
-        //   right: 3%;
-        //   border-right: 1px solid #ffffff;
-        //   border-bottom: 1px solid #ffffff;
-        //   height: 20px;
-        //   width: 20px;
-        //   transform: rotate(-45deg);
-        // }
-      }
-    }
     .wrapper-block-with-social-media {
       position: relative;
-      top: -10px;
       height: 28%;
       width: 100%;
-      background: #fdd000 0% 0% no-repeat padding-box;
       .social-network-block {
         @include flex(
           $justify: space-between,
@@ -492,7 +357,7 @@
           $direction: column
         );
         padding: 45px 5px 45px 20px;
-        position: absolute;
+        position: relative;
         top: 45%;
         width: 260px;
         z-index: 9999;
@@ -546,9 +411,9 @@
   }
 }
 .banner-with-circle {
-  min-height: 500px;
+  position: relative;
   height: auto;
-  margin: 0 auto;
+  margin: 70px 0;
   opacity: 1;
   // background: red;
   .wrapper {
@@ -584,7 +449,6 @@
       min-height: 188px;
       height: auto;
       position: unset;
-      margin-top: 190px;
       z-index: 100;
       .video {
         display: none;
@@ -615,9 +479,12 @@
           opacity: 1;
         }
         .block-in-slider {
-          height: 100%;
+          // height: 100%;
+          min-height: 188px;
+          height: auto;
           background: #7359e4 0% 0% no-repeat padding-box;
           .quotes {
+            min-height: 188px;
             position: relative;
             height: 100%;
             width: 100%;
