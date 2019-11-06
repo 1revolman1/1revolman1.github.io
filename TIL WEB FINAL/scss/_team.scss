@@ -87,6 +87,7 @@ section.team-content {
     @include flex($justify: space-between, $align: flex-start, $direction: row);
     // width: 82.2%;
     width: 90.2%;
+    height: auto;
     flex-wrap: wrap;
     position: relative;
     // right: calc(82.2% - 100%);
@@ -176,6 +177,7 @@ section.team-content {
     }
     .block-with-text-content {
       padding: 35px 0;
+      padding-bottom: 130px;
       width: 85.2%;
       // padding: 35px 35px 119px 35px;
       justify-content: flex-start;
@@ -258,7 +260,8 @@ section.team-content {
       //   padding: 40px;
       padding: 5px;
       justify-content: flex-start;
-      height: 1850px;
+      // height: 1850px;
+      height: auto;
       width: 85.2%;
       .sustrac {
         display: block;
@@ -320,6 +323,45 @@ section.team-content {
       max-width: 1366px;
       .block-with-text-content {
         padding: 70px 0;
+        padding-bottom: 150px;
+
+        .trazado {
+          top: 12%;
+        }
+        .sustrac {
+          bottom: 10%;
+        }
+        .elem {
+          position: relative;
+          // margin: 10px 30px;
+          margin: 10px 35px;
+          width: 237px;
+          height: fit-content;
+          .block {
+            @include flex($justify: center, $align: center, $direction: row);
+            width: 237px;
+            height: 233px;
+            border-radius: 50%;
+            img {
+              width: 90%;
+              height: 90%;
+            }
+          }
+          h3 {
+            font-size: 26px;
+            line-height: 32px;
+            font-family: "Open Sans", sans-serif;
+            letter-spacing: 0.26px;
+            color: white;
+          }
+          p {
+            font-size: 26px;
+            line-height: 32px;
+            font-family: "Open Sans", sans-serif;
+            letter-spacing: 0.26px;
+            color: white;
+          }
+        }
       }
     }
     .sticky-element {
@@ -354,52 +396,6 @@ section.team-content {
               color: #ffffff;
             }
           }
-        }
-      }
-    }
-    .block-with-text-content {
-      padding: 40px 230px 155px 40px;
-      //   padding: 40px;
-      //   padding-bottom: 155px;
-      //   height: inherit;
-      //   width: 85.2%;
-      // right: calc(0px - 15%);
-      margin-left: auto;
-      .trazado {
-        top: 12%;
-      }
-      .sustrac {
-        bottom: 10%;
-      }
-      .elem {
-        position: relative;
-        // margin: 10px 30px;
-        margin: 10px 35px;
-        width: 237px;
-        height: fit-content;
-        .block {
-          @include flex($justify: center, $align: center, $direction: row);
-          width: 237px;
-          height: 233px;
-          border-radius: 50%;
-          img {
-            width: 90%;
-            height: 90%;
-          }
-        }
-        h3 {
-          font-size: 26px;
-          line-height: 32px;
-          font-family: "Open Sans", sans-serif;
-          letter-spacing: 0.26px;
-          color: white;
-        }
-        p {
-          font-size: 26px;
-          line-height: 32px;
-          font-family: "Open Sans", sans-serif;
-          letter-spacing: 0.26px;
-          color: white;
         }
       }
     }
