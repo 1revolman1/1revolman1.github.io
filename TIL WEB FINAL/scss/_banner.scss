@@ -145,7 +145,7 @@
       right: 20%;
     }
     .block-about-script {
-      @include flex($justify: center, $align: center, $direction: row);
+      @include flex($justify: center, $align: center, $direction: column);
       position: absolute;
       top: -40px;
       left: 0px;
