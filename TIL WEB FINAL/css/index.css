@@ -1037,7 +1037,7 @@ menu section.menu-teachers .wrapper .elem1, menu section.menu-teachers .wrapper 
   section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible .block-with-content .content h3 { width: unset; height: unset; text-align: left; font-size: 38px; font-weight: 800; margin-bottom: 20px; }
   section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible .block-with-content .content span { letter-spacing: -0.26px; margin: 0; font: 700 26px/40px Open Sans; }
   section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible .block-with-content .content p { font: 400 16px/16px Open Sans; margin: 0 30px; font-size: 16px; text-align: left; margin: 0; }
-  section.banner-with-lectors-word .wrapper .wrapper-block-with-social-media .social-network-block { padding: 65px 10px 65px 60px; width: 546px; height: 300px; top: 40%; }
+  section.banner-with-lectors-word .wrapper .wrapper-block-with-social-media .social-network-block { padding: 65px 10px 65px 60px; width: 546px; min-height: 300px; height: auto; top: 40%; }
   section.banner-with-lectors-word .wrapper .wrapper-block-with-social-media .social-network-block h3 { font-size: 50px; font-weight: 900; }
   section.banner-with-lectors-word .wrapper .wrapper-block-with-social-media .social-network-block .block .social-netowrk-links { position: unset; }
   section.banner-with-lectors-word .wrapper .wrapper-block-with-social-media .social-network-block .block .social-netowrk-links img { padding-right: 20px; width: 100%; height: 100%; }
@@ -1134,7 +1134,7 @@ menu section.menu-teachers .wrapper .elem1, menu section.menu-teachers .wrapper 
   section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible .block-with-content .image img { width: 100%; }
   section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible .block-with-content .content { width: 90%; height: 90%; padding: 20px; }
   section.banner-with-lectors-word .wrapper .wrapper-block-with-social-media { width: 85%; }
-  section.banner-with-lectors-word .wrapper .wrapper-block-with-social-media .social-network-block { width: 609px; height: 355px; padding: 65px 25px 65px 90px; }
+  section.banner-with-lectors-word .wrapper .wrapper-block-with-social-media .social-network-block { width: 609px; min-height: 355px; height: auto; padding: 65px 25px 65px 90px; }
   section.banner-with-lectors-word .wrapper .wrapper-block-with-social-media .social-network-block h3 { font-size: 60px; }
   section.banner-with-lectors-word .wrapper .wrapper-block-with-social-media .social-network-block .block .text a { font-size: 40px; }
   section.banner-with-circle { min-height: 475px; height: auto; }

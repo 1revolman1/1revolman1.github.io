@@ -466,7 +466,9 @@ menu {
           // width: 60%;
           // height: 90%;
           width: 546px;
-          height: 300px;
+          // height: 300px;
+          min-height: 300px;
+          height: auto;
           top: 40%;
           h3 {
             font-size: 50px;
@@ -1068,7 +1070,9 @@ menu {
         width: 85%;
         .social-network-block {
           width: 609px;
-          height: 355px;
+          // height: 355px;
+          min-height: 355px;
+          height: auto;
           // padding: 65px 0 65px 90px;
           padding: 65px 25px 65px 90px;
           h3 {
