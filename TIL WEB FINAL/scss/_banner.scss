@@ -335,6 +335,27 @@ section.banner-with-lectors-word {
   .trazado {
     display: none;
   }
+  .prev {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 5%;
+    z-index: 999;
+  }
+  .next,
+  .prev {
+    width: 14px;
+    height: 28px;
+  }
+  .next {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 5%;
+    z-index: 999;
+  }
   .wrapper {
     position: relative;
     max-width: 768px;
@@ -362,13 +383,19 @@ section.banner-with-lectors-word {
         height: auto;
         position: relative;
         padding: 47px;
-        // left: 54px;
-        // min-height: 700px;
-        // margin-right: auto;
         background: #33a9df;
         max-width: 303px;
         min-height: 500px;
-        // min-width: 1300px;
+        div.container {
+          div.block {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+          }
+        }
+
         .image {
           max-width: 90px;
           height: auto;
@@ -378,6 +405,7 @@ section.banner-with-lectors-word {
           }
         }
         .text {
+          margin-top: 15px;
           height: auto;
           display: flex;
           flex-direction: column;

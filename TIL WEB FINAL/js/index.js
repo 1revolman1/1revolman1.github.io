@@ -42,4 +42,43 @@ $(document).on("ready", function() {
       }
     ]
   });
+  $(".element-visible").slick({
+    adaptiveHeight: true,
+    dots: false,
+    infinite: true,
+    slidesToShow: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          vertical: true,
+          adaptiveHeight: true
+        }
+      }
+    ]
+  });
 });
+
+// $(".element-visible").slick({
+//   adaptiveHeight: true
+//   // responsive: [
+//   //   {
+//   //     breakpoint: 368,
+//   //     settings: {
+//   //       vertical: true,
+//   //       adaptiveHeight: false
+//   //     }
+//   //   },
+//   //   {
+//   //     breakpoint: 600,
+//   //     settings: {
+//   //       // vertical: true
+//   //       // adaptiveHeight: false
+//   //     }
+//   //   }
+//   // ]
+// });
+
+// $(".element-visible").slick({
+//   adaptiveHeight: true
+// });

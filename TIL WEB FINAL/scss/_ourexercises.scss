@@ -187,9 +187,9 @@ footer {
           justify-content: center;
           align-items: center;
           max-width: 303px;
-          //   min-height: 169px;
-          //   height: auto;
-          height: 169px;
+          min-height: 169px;
+          height: auto;
+          // height: 169px;
           background: white;
           img {
             width: 85%;
@@ -339,12 +339,10 @@ footer {
         .block5 {
           .container {
             max-width: 93%;
-            max-height: unset;
+            min-height: 337px;
             height: auto;
             position: relative;
             right: 40px;
-            img {
-            }
           }
         }
         .block6 {

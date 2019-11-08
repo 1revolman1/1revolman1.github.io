@@ -414,6 +414,11 @@ menu {
         top: -230px;
         z-index: 999;
       }
+      .next,
+      .prev {
+        width: 29px;
+        height: 55px;
+      }
       .wrapper-fone {
         min-height: 1050px;
         .element-visible {
@@ -421,12 +426,24 @@ menu {
           max-width: 670px;
           min-height: 700px;
           padding: 80px;
+          div.container {
+            // display: flex;
+            // flex-direction: row;
+            div.block {
+              // flex-direction: row;
+              flex-direction: column;
+              align-items: flex-start;
+              margin: 0 2px;
+            }
+          }
           .image {
             max-width: 181px;
           }
           .text {
+            // margin-top: 50px;
             display: flex;
             align-items: flex-start;
+            max-width: 80%;
             h3 {
               margin: 20px 0;
               text-align: left;
@@ -605,13 +622,13 @@ menu {
         height: auto;
         max-width: 1024px;
         .block-with-schools {
-          flex-wrap: nowrap;
+          flex-wrap: wrap;
           justify-content: space-evenly;
           div {
             img {
               display: block;
-              max-width: 114px;
-              max-height: 90px;
+              max-width: 200px;
+              max-height: 83px;
               height: auto;
             }
           }
@@ -1744,29 +1761,40 @@ menu {
           justify-content: center;
           max-width: 1266px;
           min-height: 700px;
-          padding: 120px;
+          // padding: 120px;
+          padding: unset;
           left: 60px;
-          .image {
-            max-width: 363px;
-            margin-right: 30px;
-          }
-          .text {
-            margin-left: 30px;
-            max-width: 540px;
-            h3 {
-              margin: 20px 0;
-              text-align: left;
-              font: 900 48px/56px Alegreya Sans;
+          div.container {
+            display: flex;
+            flex-direction: row;
+            div.block {
+              flex-wrap: unset;
+              display: flex;
+              flex-direction: inherit;
+              padding: 152px;
             }
-            p.name {
-              margin: 2px 0;
-              text-align: left;
-              font: 800 26px/40px Open Sans;
-              letter-spacing: -0.26px;
+            .image {
+              max-width: 363px;
+              margin-right: 30px;
             }
-            p {
-              text-align: left;
-              font: 400 16px/20px Open Sans;
+            .text {
+              margin-left: 30px;
+              max-width: 540px;
+              h3 {
+                margin: 20px 0;
+                text-align: left;
+                font: 900 48px/56px Alegreya Sans;
+              }
+              p.name {
+                margin: 2px 0;
+                text-align: left;
+                font: 800 26px/40px Open Sans;
+                letter-spacing: -0.26px;
+              }
+              p {
+                text-align: left;
+                font: 400 16px/20px Open Sans;
+              }
             }
           }
         }
@@ -1895,18 +1923,17 @@ menu {
         // padding: 20px 0;
         padding: 50px 0;
         .block-with-schools {
+          margin: unset;
           // flex-wrap: nowrap;
           // justify-content: space-between;
-          justify-content: space-around;
+          justify-content: space-evenly;
           flex-wrap: wrap;
           div {
-            margin: 15px;
+            margin: 5px 15px;
             img {
               display: block;
-              // max-width: 300px;
-              max-width: 280px;
-              // max-height: 100px;
-              max-height: 135px;
+              max-width: 300px;
+              max-height: 120px;
               height: auto;
             }
           }
