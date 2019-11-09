@@ -434,14 +434,14 @@
       document
         .querySelector(".modal-window")
         .addEventListener("click", function(event) {
+          console.log(event);
           event.stopPropagation();
           if (
-            event.path[0].className !== "" &&
-            event.path[0].className != "content" &&
-            event.path[0].className != "text"
+            event.srcElement.className !== "" &&
+            event.srcElement.className != "content" &&
+            event.srcElement.className != "text"
           )
             CheckerModalWindow();
-          // console.log(event.path);
         });
     </script>
     <script
