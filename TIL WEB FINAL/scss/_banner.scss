@@ -487,7 +487,6 @@ section.banner-with-lectors-word {
     }
   }
 }
-
 .banner-with-circle {
   position: relative;
   height: auto;
@@ -556,9 +555,22 @@ section.banner-with-lectors-word {
           color: #ffffff;
           opacity: 1;
         }
+        .video-button:after {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 31px;
+          height: 31px;
+          background-size: cover;
+          background-image: url("../../img/testimonials/Grupo 175.svg");
+        }
         .block-in-slider {
           // height: 100%;
           min-height: 188px;
+          position: relative;
           height: auto;
           background: #7359e4 0% 0% no-repeat padding-box;
           .quotes {
@@ -591,6 +603,7 @@ section.banner-with-lectors-word {
         img {
           width: 100%;
           height: 100%;
+          min-height: 188px;
         }
       }
     }

@@ -537,7 +537,7 @@ footer {
     .sticky-element {
       .stick-element {
         display: block;
-        width: 100px;
+        width: auto;
         position: fixed;
         top: 55%;
         z-index: 99999;
