@@ -196,35 +196,6 @@ document.querySelectorAll(".slider .block").forEach(e => {
   )}, ${randomInteger(0, 255)})`;
 });
 
-function CheckerModalWindow() {
-  if (document.querySelector(".modal-window").style.display == "none") {
-    document.querySelector(".modal-window").style.display = "flex";
-    document.querySelector("header").style.zIndex = 1;
-    document.querySelector("nav").style.zIndex = 1;
-    document.querySelector(".stick-element").style.zIndex = 1;
-  } else {
-    document.querySelector(".modal-window").style.display = "none";
-    document.querySelector("header").style.zIndex = "";
-    document.querySelector("nav").style.zIndex = "";
-    document.querySelector(".stick-element").style.zIndex = "";
-  }
-}
-document.querySelectorAll(".elem").forEach(function(element) {
-  element.addEventListener("click", CheckerModalWindow);
-});
-document
-  .querySelector(".modal-window")
-  .addEventListener("click", function(event) {
-    event.stopPropagation();
-    if (
-      event.path[0].className !== "" &&
-      event.path[0].className != "content" &&
-      event.path[0].className != "text"
-    )
-      CheckerModalWindow();
-    // console.log(event.path);
-  });
-
 $(document).on("ready", function() {
   $(".slider").slick({
     arrows: false,
@@ -266,10 +237,18 @@ $(document).on("ready", function() {
     adaptiveHeight: true,
     dots: false,
     infinite: true,
+    // variableWidth: true,
     slidesToShow: 1,
     responsive: [
       {
         breakpoint: 768,
+        settings: {
+          vertical: true,
+          adaptiveHeight: true
+        }
+      },
+      {
+        breakpoint: 1024,
         settings: {
           vertical: true,
           adaptiveHeight: true
