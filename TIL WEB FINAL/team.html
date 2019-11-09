@@ -373,5 +373,33 @@
       defer
       type="text/javascript"
     ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        document.querySelector(".stick-element").style.top = `${
+          $(".elem").offset().top
+        }px`;
+      });
+      window.addEventListener("scroll", function() {
+        if (window.scrollY < 50) {
+          document.querySelector(".stick-element").style.bottom = "unset";
+          document.querySelector(".stick-element").style.top = `${
+            $(".elem").offset().top
+          }px`;
+        }
+        if (document.body.offsetHeight / 1.5 < window.scrollY) {
+          document.querySelector(".stick-element").style.top = "unset";
+          document.querySelector(".stick-element").style.bottom = `${$(
+            ".block-about"
+          ).height() -
+            ($(".block-about").height() - $(".block-about ul").height()) -
+            100}px`;
+        }
+      });
+    </script>
   </body>
 </html>

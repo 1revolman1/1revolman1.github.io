@@ -7,8 +7,6 @@ window.addEventListener("scroll", function(e) {
       "330px";
     document.querySelector("nav .wrapper-settings").style.top = "-100%";
   }
-});
-window.addEventListener("scroll", function() {
   if (window.scrollY < 50 && window.innerWidth >= 1024) {
     document.querySelector("nav .wrapper-settings").style.top = "";
     document.querySelector("nav .user-link").style.display = "none";
