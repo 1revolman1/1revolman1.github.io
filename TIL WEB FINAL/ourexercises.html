@@ -442,7 +442,7 @@
             $(".elem").offset().top
           }px`;
         }
-        if (document.body.offsetHeight / 1.5 < window.scrollY) {
+        if ($(".whatistil-footer").offset().top - 150 < window.scrollY) {
           document.querySelector(".stick-element").style.top = "unset";
           document.querySelector(".stick-element").style.bottom = `${$(
             ".block-about"
