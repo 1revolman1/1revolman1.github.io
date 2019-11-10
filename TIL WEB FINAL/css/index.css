@@ -280,7 +280,7 @@ section.banner-with-lectors-word .wrapper .social-network-block .block .social-n
 
 .banner-with-circle .wrapper .slider .slick-slide > div p { margin: 10px; text-align: left; font-size: 12px; font-family: "Open Sans", sans-serif; letter-spacing: -0.22px; color: #ffffff; opacity: 1; }
 
-.banner-with-circle .wrapper .slider .slick-slide > div .video-button:after { content: ""; display: block; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); width: 31px; height: 31px; background-size: cover; background-image: url("../../img/testimonials/Grupo 175.svg"); }
+.banner-with-circle .wrapper .slider .slick-slide > div .video-button:after { content: ""; display: block; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); width: 31px; height: 31px; background-size: cover; background-image: url("../img/testimonials/Grupo 175.svg"); }
 
 .banner-with-circle .wrapper .slider .slick-slide > div .block-in-slider { min-height: 188px; position: relative; height: auto; background: #7359e4 0% 0% no-repeat padding-box; }
 
