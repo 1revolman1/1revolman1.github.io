@@ -9,7 +9,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/index.css" />
-    <title>What is Til?</title>
+    <title>Trial</title>
   </head>
 
   <body>
@@ -401,6 +401,16 @@
       document.querySelector(".wrapper-trial").style.display = "none";
       $(".dropbtn").click(function(e) {
         e.currentTarget.parentNode.children[1].classList.toggle("show");
+        // console.log(event);
+      });
+      $(".dropdown-content a").click(function(e) {
+        console.log();
+        let img =
+          e.currentTarget.parentElement.parentElement.children[0].children[0]
+            .outerHTML;
+        e.currentTarget.parentElement.parentElement.children[0].textContent =
+          e.target.textContent;
+        e.currentTarget.parentElement.parentElement.children[0].innerHTML += img;
       });
       window.onclick = function(event) {
         if (
