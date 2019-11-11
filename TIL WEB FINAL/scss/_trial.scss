@@ -181,6 +181,12 @@
             font-size: 14px;
             color: white;
           }
+          input::placeholder {
+            color: transparent;
+          }
+          input:focus::placeholder {
+            color: white;
+          }
           .bar {
             position: relative;
             display: block;
