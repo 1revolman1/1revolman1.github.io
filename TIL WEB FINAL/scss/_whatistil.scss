@@ -80,15 +80,13 @@ section.whatistil-content {
       display: none;
     }
     .text-block {
-      margin: 0 44px 0 31px;
+      // margin: 0 44px 0 31px;
+      margin: 60px 36px 50px 31px;
       h3 {
         margin: 53px auto 25px auto;
         // font-family: "Open Sans", sans-serif;
         color: white;
-        // font-size: 26px;
-
         font: 900 26px/31px Open Sans;
-        // line-height: 31px;
         letter-spacing: 0.26px;
       }
       p {
@@ -131,9 +129,11 @@ section.whatistil-content {
     .block-with-text-content {
       width: 85.2%;
       .text-block {
-        margin: 0 213px 0 20px;
+        // margin: 0 213px 0 20px;
+        margin: 0 200px 40px 20px;
         h3 {
-          margin: 53px auto 25px auto;
+          // margin: 53px auto 25px auto;
+          margin: 53px 144px 25px auto;
           // font-family: "Open Sans", sans-serif;
           color: white;
           font: Bold 30px/35px Open Sans;
@@ -174,17 +174,14 @@ section.whatistil-content {
   section.whatistil-content {
     .wrapper {
       max-width: 1366px;
-      // max-width: 900px;
     }
     .sticky-element {
-      height: 110%;
+      height: calc(110% + 100px);
     }
     .block-with-text-content {
       padding: 40px;
       height: auto;
       width: 85.2%;
-      // right: calc(3px - 15%);
-      // right: calc(-24vh + -7px);
       .elem {
         display: flex;
         position: relative;
@@ -194,47 +191,59 @@ section.whatistil-content {
       .elem:nth-child(odd) {
         flex-direction: row-reverse;
       }
-      .text-block {
+      .element.elem:nth-child(odd) {
+        display: flex;
         position: relative;
-        margin: 0 257px 0 20px;
-        h3 {
-          margin: unset;
-          font-family: "Open Sans", sans-serif;
-          color: white;
-          font-size: 30px;
-          line-height: 35px;
-          letter-spacing: 0.3px;
+        margin-top: 101px;
+        margin-bottom: 90px;
+        align-items: flex-start;
+        .text-block {
+          width: 50%;
+          margin-left: unset;
+          margin-top: 50px;
+          h3 {
+            margin-top: unset;
+            font: 900 30px/35px Open Sans;
+          }
+          p {
+            font: 400 20px/25px Open Sans;
+          }
         }
-        p {
-          margin: 20px auto;
-          letter-spacing: 0;
-          color: white;
-          font-size: 20px;
-          line-height: 25px;
-          font-family: "Open Sans", sans-serif;
+        img {
+          width: 50%;
+          max-width: 500px;
+          position: relative;
+          right: 80px;
         }
       }
-      // .text-block1 {
-      //   width: 285px;
-      //   margin: unset;
-      // }
-      // .text-block2 {
-      //   width: 355px;
-      //   margin: unset;
-      // }
-      // .text-block3 {
-      //   width: 244px;
-      //   margin: unset;
-      // }
-      // .text-block4 {
-      //   width: 400px;
-      //   margin: unset;
-      // }
-      .img-block {
-        // position: absolute;
+      img {
         position: relative;
-        min-width: 500px;
-        max-height: 400px;
+        right: 50px;
+      }
+      .element.elem:nth-child(even) {
+        display: flex;
+        align-items: flex-start;
+        position: relative;
+        flex-direction: row;
+        margin: 10px 0 110px 0;
+        .text-block {
+          width: 50%;
+          margin: 0 115px 0 0px;
+          h3 {
+            margin: unset;
+          }
+        }
+        img {
+          width: 50%;
+          right: 50px;
+          max-width: 600px;
+        }
+      }
+
+      .text-block {
+        position: relative;
+        // margin: 0 257px 0 20px;
+        margin: 0 60px 0 20px;
       }
       .sustrac,
       .trazado230,
@@ -242,22 +251,6 @@ section.whatistil-content {
         display: block;
         position: absolute;
       }
-      // .first {
-      //   width: 44%;
-      //   position: relative;
-      //   left: 5px;
-      // }
-      // .second {
-      //   width: 51%;
-      //   right: 65px;
-      // }
-      // .third {
-      //   width: 53%;
-      // }
-      // .four {
-      //   width: 46%;
-      //   right: 65px;
-      // }
       img {
         width: unset;
       }
@@ -329,109 +322,63 @@ section.whatistil-content {
       }
     }
     .block-with-text-content {
-      padding: 78px 40px 155px 40px;
-      // padding: 40px;
-      // padding-bottom: 155px;
+      padding: 78px 25px 25px 25px;
       height: auto;
       width: 85.2%;
-      // right: calc(0px - 15%);
       margin-left: auto;
       .text-block {
         width: unset;
         height: unset;
-        margin: 0px 150px 0 0;
+        margin: 0 175px 0 5px;
         h3 {
+          width: 70%;
           font: 900 30px/35px Open Sans;
         }
         p {
           font: 400 20px/25px Open Sans;
         }
       }
-      .element.elem:nth-child(4n + 4) {
-        img {
-          min-width: 551px;
-          // height: 311px;
-        }
-      }
       .element.elem:nth-child(odd) {
-        flex-direction: row-reverse;
-      }
-      .element.elem:nth-child(5n + 5) {
-        margin-top: 150px;
         display: flex;
         position: relative;
-        top: 18px;
-        flex-direction: row-reverse;
-        left: 0;
-        .text-block {
-          // width: 600px;
-          width: unset;
-          margin-top: 100px;
-          margin-bottom: 100px;
-          margin-right: 155px;
-          h3 {
-            margin-right: 35%;
-            font: 900 30px/35px Open Sans;
-          }
-          p {
-            font: 400 20px/25px Open Sans;
-          }
-        }
-        img {
-          max-width: 497px;
-          max-height: 280px;
-          min-width: unset;
-          right: 65px;
-        }
-      }
-
-      .element.elem:nth-child(6n + 6) {
-        align-items: flex-end;
-        display: flex;
-        .text-block {
-          width: unset;
-          height: unset;
-          // width: 244px;
-          margin: unset;
-          margin-right: 110px;
-          h3 {
-            font: 900 30px/35px Open Sans;
-            margin-right: 35%;
-          }
-          p {
-            font: 400 20px/25px Open Sans;
-          }
-        }
-        img {
-          min-width: 555px;
-          max-height: 508px;
-        }
-      }
-
-      .element.elem:nth-child(7n + 7) {
         margin-top: 101px;
-        flex-direction: row-reverse;
-        display: flex;
+        margin-bottom: 90px;
+        align-items: flex-start;
         .text-block {
-          // width: unset;
-          height: unset;
-          margin: unset;
-          // width: 400px;
-          margin-right: 170px;
+          width: 50%;
+          margin-top: 50px;
           h3 {
-            font: 900 30px/35px Open Sans;
             margin-right: 35%;
+            font: 900 30px/35px Open Sans;
           }
           p {
             font: 400 20px/25px Open Sans;
           }
         }
         img {
-          right: 65px;
+          width: 50%;
+          max-width: 500px;
         }
       }
-      .img-block {
+      img {
         position: relative;
+        right: 50px;
+      }
+      .element.elem:nth-child(even) {
+        display: flex;
+        align-items: flex-start;
+        position: relative;
+        flex-direction: row;
+        margin: 10px 0 110px 0;
+        .text-block {
+          width: 50%;
+          margin: 0 115px 0 0px;
+        }
+        img {
+          width: 50%;
+          right: 50px;
+          max-width: 600px;
+        }
       }
       .sustrac,
       .trazado230,
@@ -446,14 +393,14 @@ section.whatistil-content {
         position: absolute;
         z-index: -0;
         left: 0;
-        top: 640px;
+        top: 590px;
       }
       .trazado230 {
         right: 0;
-        top: 1350px;
+        top: 1220px;
       }
       .trazado231 {
-        top: 78%;
+        top: 80%;
         left: 0;
       }
     }
