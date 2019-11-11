@@ -292,7 +292,7 @@ section.banner-with-lectors-word .wrapper .social-network-block .block .social-n
 
 .banner-with-circle .wrapper .slider .slick-slide > div img { width: 100%; height: 100%; min-height: 188px; }
 
-footer { height: 940px; margin: 0 auto; opacity: 1; background: #33a9df; }
+footer { position: relative; height: auto; padding-bottom: 40px; margin: 0 auto; opacity: 1; background: #33a9df; }
 
 footer .foot { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: start; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; position: relative; height: auto; background: #0093d6 0% 0% no-repeat padding-box; }
 
@@ -306,7 +306,7 @@ footer .foot .block-with-who-trusted-us .block-with-schools div { margin: 5px 15
 
 footer .foot .block-with-who-trusted-us .block-with-schools div img { display: block; max-height: 80px; width: auto; height: auto; max-width: 168px; }
 
-footer .footer-wrapper { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; position: relative; width: 100%; height: 650px; max-width: 768px; margin: 0 auto; background: navy; }
+footer .footer-wrapper { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; position: relative; width: 100%; height: auto; max-width: 768px; margin: 0 auto; background: navy; }
 
 footer .footer-wrapper .footer-information { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: start; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; height: 650px; width: 100%; background: #33a9df 0% 0% no-repeat padding-box; }
 
@@ -336,7 +336,7 @@ footer .footer-wrapper .footer-information .contacts .image-block img { width: 1
 
 footer .footer-wrapper .footer-information .contacts::after { content: ""; position: absolute; height: 1px; width: 80%; background: white; bottom: -15px; }
 
-footer .footer-wrapper .footer-information .site-map { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: start; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-align: normal; -webkit-align-items: normal; -ms-flex-align: normal; align-items: normal; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-flex-wrap: wrap-reverse; -ms-flex-wrap: wrap-reverse; flex-wrap: wrap-reverse; width: 100%; padding: 20px 40px 5px; height: 70%; }
+footer .footer-wrapper .footer-information .site-map { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: start; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-align: normal; -webkit-align-items: normal; -ms-flex-align: normal; align-items: normal; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-flex-wrap: wrap-reverse; -ms-flex-wrap: wrap-reverse; flex-wrap: wrap-reverse; width: 100%; padding: 20px 40px 0px; height: 70%; }
 
 footer .footer-wrapper .footer-information .site-map h3 { text-align: left; font: Bold 12px/20px Open Sans; letter-spacing: -0.12px; color: #ffffff; }
 
@@ -464,8 +464,8 @@ section.whatistil-content .block-with-text-content img { width: 90%; max-width: 
   section.whatistil-content .block-with-text-content .sustrac { position: absolute; z-index: -0; left: 0; top: 640px; }
   section.whatistil-content .block-with-text-content .trazado230 { right: 0; top: 1350px; }
   section.whatistil-content .block-with-text-content .trazado231 { top: 78%; left: 0; }
-  .whatistil-footer .foot .block-with-who-trusted-us { max-width: 1024px; }
-  .whatistil-footer .footer-wrapper { max-width: 1024px; } }
+  .whatistil-footer .foot .block-with-who-trusted-us { max-width: 1366px; }
+  .whatistil-footer .footer-wrapper { max-width: 1366px; } }
 
 * { -webkit-box-sizing: border-box; box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -875,6 +875,8 @@ footer { clear: both; }
 
 .testimonials-content .block-with-text-content .elem img { width: 100%; height: 100%; }
 
+.testimonials-content .block-with-text-content .elem a { height: 100%; }
+
 .testimonials-content .block-with-text-content .elem .block { padding: 13px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; position: absolute; width: 40%; height: 169px; background: #0093d6; }
 
 .testimonials-content .block-with-text-content .elem .block h3 { font-family: "Open Sans", sans-serif; font-size: 16px; line-height: 21px; letter-spacing: 0.16px; color: white; }
@@ -937,7 +939,7 @@ footer { clear: both; }
 @media (min-width: 1366px) { .testimonials-text .wrapper { margin: 0 auto; max-width: 1366px; }
   .testimonials-text .wrapper h1 { margin: 0 0 140px 200px; }
   .testimonials-content .wrapper { max-width: 1366px; }
-  .testimonials-content .sticky-element { width: 713px; height: 104%; }
+  .testimonials-content .sticky-element { width: 713px; height: -webkit-calc(105% + 100px); height: calc(105% + 100px); }
   .testimonials-content .sticky-element .stick-element { display: block; width: 100px; height: auto; position: fixed; top: 55%; z-index: 99999; }
   .testimonials-content .sticky-element .stick-element ul .head { font-size: 15px; letter-spacing: 17px; font-family: "Open Sans", sans-serif; letter-spacing: -0.15px; color: #ffffff; }
   .testimonials-content .sticky-element .stick-element ul li { margin: 10px auto; list-style-type: none; }
@@ -1082,7 +1084,9 @@ footer { clear: both; }
 
 .ourexercises-content .block-with-text-content .elem .block2 { -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; margin: 25px 0; width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; }
 
-.ourexercises-content .block-with-text-content .elem .block2 div { margin-right: 20px; height: auto; max-width: 55px; }
+.ourexercises-content .block-with-text-content .elem .block2 div { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; margin-right: 20px; height: auto; max-width: 55px; }
+
+.ourexercises-content .block-with-text-content .elem .block2 div a { text-decoration: none; cursor: pointer; }
 
 .ourexercises-content .block-with-text-content .elem .block2 div img { width: 100%; max-height: 55px; max-width: 55px; }
 
@@ -1104,7 +1108,9 @@ footer { clear: both; }
 
 .ourexercises-content .block-with-text-content .elem .block4 .block-with-img { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: start; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; margin: 20px auto; }
 
-.ourexercises-content .block-with-text-content .elem .block4 .block-with-img div { max-width: 55px; margin-right: 70px; height: auto; }
+.ourexercises-content .block-with-text-content .elem .block4 .block-with-img div { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; max-width: 55px; margin-right: 70px; height: auto; }
+
+.ourexercises-content .block-with-text-content .elem .block4 .block-with-img div a { text-decoration: none; cursor: pointer; }
 
 .ourexercises-content .block-with-text-content .elem .block4 .block-with-img div img { width: 100%; max-height: 55px; height: auto; }
 
@@ -1164,7 +1170,7 @@ footer { clear: both; }
   .ourexercises-content .block-with-text-content .elem .block4 .text { width: 70%; margin: unset; }
   .ourexercises-content .block-with-text-content .elem .block4 .text h3 { font: 700 30px/35px Open Sans; letter-spacing: 0.3px; }
   .ourexercises-content .block-with-text-content .elem .block4 .text p { font: 400 20px/25px Open Sans; letter-spacing: 0; }
-  .ourexercises-content .block-with-text-content .elem .block4 .block-with-img { -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; max-width: 75%; min-height: 168px; height: auto; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; margin: 30px 0; }
+  .ourexercises-content .block-with-text-content .elem .block4 .block-with-img { -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; max-width: 72%; min-height: 168px; height: auto; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; margin: 30px 0; }
   .ourexercises-content .block-with-text-content .elem .block4 .block-with-img div { max-width: 106px; }
   .ourexercises-content .block-with-text-content .elem .block4 .block-with-img div img { max-height: 106px; }
   .ourexercises-content .block-with-text-content .elem .block4 .block-with-img div p { font: 700 20px/25px Open Sans; letter-spacing: 0.2px; }
@@ -1665,14 +1671,14 @@ menu section.menu-teachers .wrapper .elem1, menu section.menu-teachers .wrapper 
   section.banner-with-circle .wrapper .slider .slick-slide > div .block-in-slider .quotes { min-height: 272px; }
   section.banner-with-circle .wrapper .slider .slick-slide > div img { width: 100%; height: 100%; min-height: 272px; }
   footer { height: auto; }
-  footer .foot { height: unset; }
+  footer .foot { height: auto; }
   footer .foot .block-with-who-trusted-us { height: auto; max-width: 1024px; }
   footer .foot .block-with-who-trusted-us .block-with-schools { -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: space-evenly; -webkit-justify-content: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; }
   footer .foot .block-with-who-trusted-us .block-with-schools div img { display: block; max-width: 200px; max-height: 83px; height: auto; }
-  footer .footer-wrapper { height: unset; max-width: 1024px; }
-  footer .footer-wrapper .block-with-who-trusted-us { height: 210px; }
+  footer .footer-wrapper { height: auto; max-width: 1024px; }
+  footer .footer-wrapper .block-with-who-trusted-us { height: auto; }
   footer .footer-wrapper .block-with-who-trusted-us .block-with-schools { -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; }
-  footer .footer-wrapper .footer-information { height: 500px; -webkit-box-orient: horizontal; -webkit-box-direction: reverse; -webkit-flex-direction: row-reverse; -ms-flex-direction: row-reverse; flex-direction: row-reverse; -webkit-box-align: unset; -webkit-align-items: unset; -ms-flex-align: unset; align-items: unset; }
+  footer .footer-wrapper .footer-information { max-height: 500px; height: auto; -webkit-box-orient: horizontal; -webkit-box-direction: reverse; -webkit-flex-direction: row-reverse; -ms-flex-direction: row-reverse; flex-direction: row-reverse; -webkit-box-align: unset; -webkit-align-items: unset; -ms-flex-align: unset; align-items: unset; }
   footer .footer-wrapper .footer-information .site-map { height: unset; width: 131%; }
   footer .footer-wrapper .footer-information .site-map .block-about h3 { font: Bold 16px/23px Open Sans; letter-spacing: -0.16px; }
   footer .footer-wrapper .footer-information .site-map .block-about ul li { font: normal 15px/23px Open Sans; }
@@ -1681,11 +1687,11 @@ menu section.menu-teachers .wrapper .elem1, menu section.menu-teachers .wrapper 
   footer .footer-wrapper .footer-information .site-map .block-legal h3 { font: Bold 16px/23px Open Sans; letter-spacing: -0.16px; }
   footer .footer-wrapper .footer-information .site-map .block-legal ul li { font: normal 15px/23px Open Sans; }
   footer .footer-wrapper .footer-information .site-map .block-legal .admin { margin-top: 20px; }
-  footer .footer-wrapper .footer-information .contacts { width: 104%; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; margin-top: 39px; padding: 0 0 0 40px; }
+  footer .footer-wrapper .footer-information .contacts { width: 104%; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; margin-top: 39px; padding: 0 0 0 40px; height: auto; max-height: 330px; }
   footer .footer-wrapper .footer-information .contacts .image-block { margin-top: 20px; width: 35%; }
   footer .footer-wrapper .footer-information .contacts .text-information h3 { font-size: 16px; }
   footer .footer-wrapper .footer-information .contacts .text-information > ul { margin: 20px 0; }
-  footer .footer-wrapper .footer-information .contacts::after { height: 135%; width: 1px; left: 0; top: 0; } }
+  footer .footer-wrapper .footer-information .contacts::after { height: 100%; width: 1px; left: 0; top: 0; } }
 
 @media (min-width: 1024px) { header { max-width: unset; height: 90px; }
   header .wrapper { max-width: unset; }
@@ -1755,23 +1761,24 @@ menu section.menu-teachers .wrapper .elem1, menu section.menu-teachers .wrapper 
   section.banner-with-circle .wrapper .line1 { width: 769px; height: 620px; top: -233px; right: -382px; }
   section.banner-with-circle .wrapper .line2 { width: 815px; top: 260px; -webkit-transform: scale(2); -ms-transform: scale(2); transform: scale(2); }
   section.banner-with-circle .wrapper .slider { position: relative; width: 100%; }
+  footer { padding-bottom: 110px; }
   footer .foot .block-with-who-trusted-us { padding: 20px 0; }
   footer .foot .block-with-who-trusted-us .block-with-schools { -webkit-flex-wrap: nowrap; -ms-flex-wrap: nowrap; flex-wrap: nowrap; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
   footer .foot .block-with-who-trusted-us .block-with-schools div img { max-width: 170px; }
-  footer .footer-wrapper { max-width: 1024px; background: transparent; height: 405px; }
+  footer .footer-wrapper { max-width: 1024px; background: transparent; height: auto; }
   footer .footer-wrapper .footer-information { padding-top: 30px; }
-  footer .footer-wrapper .footer-information .site-map { -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; padding: 0 10px; }
+  footer .footer-wrapper .footer-information .site-map { height: auto; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; padding: 0 10px; }
   footer .footer-wrapper .footer-information .site-map .block-about { -webkit-box-ordinal-group: 1; -webkit-order: 0; -ms-flex-order: 0; order: 0; }
   footer .footer-wrapper .footer-information .site-map .block-legal h3 { margin: 0; }
   footer .footer-wrapper .footer-information .site-map .block-legal ul li { font: normal 15px/23px Open Sans; }
   footer .footer-wrapper .footer-information .site-map .block-for-teachers { margin: 0 10px; }
-  footer .footer-wrapper .footer-information .contacts { height: 220px; width: 65%; margin-top: 20px; padding: 0 0 0 40px; }
+  footer .footer-wrapper .footer-information .contacts { height: auto; width: 65%; margin-top: 20px; padding: 0 0 0 40px; }
   footer .footer-wrapper .footer-information .contacts .text-information ul li { font: Bold 16px/23px Open Sans; }
   footer .footer-wrapper .footer-information .contacts .text-information .block-follow h4 { font: Bold 16px/23px Open Sans; }
   footer .footer-wrapper .footer-information .contacts .text-information .block-follow h4 .social-networks li { margin: 10px 10px 10px 0; }
   footer .footer-wrapper .footer-information .contacts .image-block { margin: 0; }
   footer .footer-wrapper .footer-information .contacts .image-block img { width: 100%; }
-  footer .footer-wrapper .footer-information .contacts::after { height: 120%; left: 20px; top: 0; } }
+  footer .footer-wrapper .footer-information .contacts::after { height: 100%; left: 20px; top: 0; } }
 
 @media (min-width: 1366px) { .none-display { display: none; }
   header { max-width: unset; height: 90px; }
@@ -1850,21 +1857,22 @@ menu section.menu-teachers .wrapper .elem1, menu section.menu-teachers .wrapper 
   section.banner-with-circle .wrapper .slider .slick-slide > div { min-height: 272px; }
   section.banner-with-circle .wrapper .line1 { z-index: 1; width: 772px; height: 615px; top: -240px; right: -379px; }
   section.banner-with-circle .wrapper .line2 { width: 870px; top: 50%; height: 355px; -webkit-transform: scale(3); -ms-transform: scale(3); transform: scale(3); }
-  footer .foot .block-with-who-trusted-us { max-width: 1366px; height: auto; padding: 50px 0; }
+  footer { padding-bottom: 100px; }
+  footer .foot .block-with-who-trusted-us { max-width: 1024px; height: auto; padding: 50px 0; }
   footer .foot .block-with-who-trusted-us .block-with-schools { margin: unset; -webkit-box-pack: space-evenly; -webkit-justify-content: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
   footer .foot .block-with-who-trusted-us .block-with-schools div { margin: 5px 15px; }
   footer .foot .block-with-who-trusted-us .block-with-schools div img { display: block; max-width: 300px; max-height: 120px; height: auto; }
-  footer .footer-wrapper { max-width: 1366px; background: transparent; height: 405px; }
+  footer .footer-wrapper { max-width: 1024px; background: transparent; height: auto; }
   footer .footer-wrapper .footer-information { padding-top: 30px; }
   footer .footer-wrapper .footer-information .site-map { -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; padding: 0 10px; }
   footer .footer-wrapper .footer-information .site-map .block-about { margin: 20px 0; -webkit-box-ordinal-group: 1; -webkit-order: 0; -ms-flex-order: 0; order: 0; }
   footer .footer-wrapper .footer-information .site-map .block-legal h3 { margin: 0; }
   footer .footer-wrapper .footer-information .site-map .block-legal ul li { font: normal 15px/23px Open Sans; }
   footer .footer-wrapper .footer-information .site-map .block-for-teachers { margin: 0 10px; }
-  footer .footer-wrapper .footer-information .contacts { height: 220px; width: 65%; padding: 0 0 0 40px; }
+  footer .footer-wrapper .footer-information .contacts { height: auto; width: 65%; padding: 0 0 0 40px; }
   footer .footer-wrapper .footer-information .contacts .text-information ul li { font: Bold 16px/23px Open Sans; }
   footer .footer-wrapper .footer-information .contacts .text-information .block-follow h4 { font: Bold 16px/23px Open Sans; }
   footer .footer-wrapper .footer-information .contacts .text-information .block-follow h4 .social-networks li { margin: 10px 10px 10px 0; }
   footer .footer-wrapper .footer-information .contacts .image-block { margin: 0; width: 90px; }
   footer .footer-wrapper .footer-information .contacts .image-block img { width: 100%; }
-  footer .footer-wrapper .footer-information .contacts::after { height: 120%; left: 20px; top: 0; } }
+  footer .footer-wrapper .footer-information .contacts::after { height: 100%; left: 20px; top: 0; } }

@@ -279,6 +279,7 @@ section.whatistil-content {
   }
 }
 @media (min-width: 1366px) {
+  $mw: 1366px;
   section.whatistil-text {
     .wrapper {
       margin: 0 auto;
@@ -460,11 +461,11 @@ section.whatistil-content {
   .whatistil-footer {
     .foot {
       .block-with-who-trusted-us {
-        max-width: 1024px;
+        max-width: $mw;
       }
     }
     .footer-wrapper {
-      max-width: 1024px;
+      max-width: $mw;
     }
   }
 }

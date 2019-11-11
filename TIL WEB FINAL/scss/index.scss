@@ -620,7 +620,7 @@ menu {
     // height: 685px;
     height: auto;
     .foot {
-      height: unset;
+      height: auto;
       .block-with-who-trusted-us {
         // height: 210px;
         height: auto;
@@ -640,11 +640,12 @@ menu {
       }
     }
     .footer-wrapper {
-      height: unset;
+      height: auto;
       max-width: 1024px;
       // margin: 0 auto;
       .block-with-who-trusted-us {
-        height: 210px;
+        // height: 210px;
+        height: auto;
         .block-with-schools {
           justify-content: space-around;
         }
@@ -652,7 +653,9 @@ menu {
       .footer-information {
         // height: 440px;
         // padding: 10px;
-        height: 500px;
+        // height: 500px;
+        max-height: 500px;
+        height: auto;
         flex-direction: row-reverse;
         align-items: unset;
         .site-map {
@@ -698,6 +701,8 @@ menu {
           // margin-top: 20px;
           margin-top: 39px;
           padding: 0 0 0 40px;
+          height: auto;
+          max-height: 330px;
           .image-block {
             margin-top: 20px;
             width: 35%;
@@ -712,7 +717,7 @@ menu {
           }
         }
         .contacts::after {
-          height: 135%;
+          height: 100%;
           width: 1px;
           left: 0;
           top: 0;
@@ -1224,6 +1229,7 @@ menu {
     }
   }
   footer {
+    padding-bottom: 110px;
     .foot {
       .block-with-who-trusted-us {
         // padding: 20px 10% 0;
@@ -1260,12 +1266,14 @@ menu {
       max-width: 1024px;
       background: transparent;
       // padding: 0 10%;
-      height: 405px;
+      // height: 405px;
+      height: auto;
       // padding: 0 3%;
       // padding: 0 5%;
       .footer-information {
         padding-top: 30px;
         .site-map {
+          height: auto;
           justify-content: space-between;
           flex-direction: row;
           // margin-top: 60px;
@@ -1290,7 +1298,8 @@ menu {
           }
         }
         .contacts {
-          height: 220px;
+          // height: 220px;
+          height: auto;
           // width: 50%;
           width: 65%;
           margin-top: 20px;
@@ -1325,7 +1334,7 @@ menu {
           }
         }
         .contacts::after {
-          height: 120%;
+          height: 100%;
           left: 20px;
           top: 0;
         }
@@ -1334,6 +1343,7 @@ menu {
   }
 }
 @media (min-width: 1366px) {
+  $mw1: 1024px;
   $mw: 1366px;
   .none-display {
     display: none;
@@ -1861,7 +1871,7 @@ menu {
     height: auto;
     margin-bottom: 120px;
     .wrapper {
-      max-width: $mw;
+      max-width: 1366px;
       height: auto;
       // max-width: unset;
       // .line1 {
@@ -1919,9 +1929,10 @@ menu {
     }
   }
   footer {
+    padding-bottom: 100px;
     .foot {
       .block-with-who-trusted-us {
-        max-width: $mw;
+        max-width: $mw1;
         height: auto;
         // padding: 20px 10% 0;
         // padding: 20px 0;
@@ -1946,10 +1957,11 @@ menu {
     }
     .footer-wrapper {
       // max-width: unset;
-      max-width: $mw;
+      max-width: $mw1;
       background: transparent;
       // padding: 0 10%;
-      height: 405px;
+      // height: 405px;
+      height: auto;
       // padding: 0 3%;
       // padding: 0 5%;
       .footer-information {
@@ -1981,7 +1993,8 @@ menu {
           }
         }
         .contacts {
-          height: 220px;
+          // height: 220px;
+          height: auto;
           // width: 50%;
           width: 65%;
           // margin-top: 60px;
@@ -2015,7 +2028,7 @@ menu {
           }
         }
         .contacts::after {
-          height: 120%;
+          height: 100%;
           left: 20px;
           top: 0;
         }

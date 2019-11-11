@@ -191,20 +191,28 @@
             </div>
             <div class="block2">
               <div>
-                <img src="./img/ourexercises/Grupo 144.svg" alt="" />
-                <p>Jigsaw</p>
+                <a href=""
+                  ><img src="./img/ourexercises/Grupo 144.svg" alt="" />
+                  <p>Jigsaw</p></a
+                >
               </div>
               <div>
-                <img src="./img/ourexercises/Grupo 146.svg" alt="" />
-                <p>Video Vocab</p>
+                <a href=""
+                  ><img src="./img/ourexercises/Grupo 146.svg" alt="" />
+                  <p>Video Vocab</p></a
+                >
               </div>
               <div>
-                <img src="./img/ourexercises/Grupo 153.svg" alt="" />
-                <p>Gap-fill</p>
+                <a href=""
+                  ><img src="./img/ourexercises/Grupo 153.svg" alt="" />
+                  <p>Gap-fill</p></a
+                >
               </div>
               <div>
-                <img src="./img/ourexercises/Grupo 156.svg" alt="" />
-                <p>Comprehension</p>
+                <a href=""
+                  ><img src="./img/ourexercises/Grupo 156.svg" alt="" />
+                  <p>Comprehension</p></a
+                >
               </div>
             </div>
             <div class="block3">
@@ -222,12 +230,16 @@
               </div>
               <div class="block-with-img">
                 <div>
-                  <img src="./img/ourexercises/Grupo 161.svg" alt="" />
-                  <p>Vocab Trainer</p>
+                  <a href=""
+                    ><img src="./img/ourexercises/Grupo 161.svg" alt="" />
+                    <p>Vocab Trainer</p></a
+                  >
                 </div>
                 <div>
-                  <img src="./img/ourexercises/Grupo 162.svg" alt="" />
-                  <p>Grammar</p>
+                  <a href="">
+                    <img src="./img/ourexercises/Grupo 162.svg" alt="" />
+                    <p>Grammar</p></a
+                  >
                 </div>
               </div>
             </div>
@@ -266,7 +278,7 @@
         </div>
       </div>
     </section>
-    <footer class="whatistil-footer">
+    <footer>
       <div class="foot">
         <div class="block-with-who-trusted-us">
           <h3 class="none-display">They trust in us</h3>
@@ -448,8 +460,11 @@
             ".block-about"
           ).height() -
             ($(".block-about").height() - $(".block-about ul").height()) -
-            100 +
-            20}px`;
+            ($(".block-about").height() -
+              $(".stick-element").height() +
+              (-5 +
+                parseInt($(".block-about").css("margin-bottom")) -
+                parseInt($(".block-about").css("margin-top"))))}px`;
         }
       });
     </script>

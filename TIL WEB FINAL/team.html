@@ -215,7 +215,7 @@
         </div>
       </div>
     </section>
-    <footer class="whatistil-footer">
+    <footer>
       <div class="foot">
         <div class="block-with-who-trusted-us">
           <h3 class="none-display">They trust in us</h3>
@@ -397,7 +397,11 @@
             ".block-about"
           ).height() -
             ($(".block-about").height() - $(".block-about ul").height()) -
-            99}px`;
+            ($(".block-about").height() -
+              $(".stick-element").height() +
+              (-5 +
+                parseInt($(".block-about").css("margin-bottom")) +
+                parseInt($(".block-about").css("margin-top"))))}px`;
         }
       });
     </script>

@@ -103,11 +103,16 @@ footer {
         width: 100%;
         @include flex($justify: center, $align: flex-start, $direction: row);
         div {
+          display: flex;
           margin-right: 20px;
           // max-width: 55px;
           // min-height: 55px;
           height: auto;
           max-width: 55px;
+          a {
+            text-decoration: none;
+            cursor: pointer;
+          }
           img {
             width: 100%;
             max-height: 55px;
@@ -162,9 +167,14 @@ footer {
           flex-wrap: wrap;
           margin: 20px auto;
           div {
+            display: flex;
             max-width: 55px;
             margin-right: 70px;
             height: auto;
+            a {
+              text-decoration: none;
+              cursor: pointer;
+            }
             img {
               width: 100%;
               max-height: 55px;
@@ -319,7 +329,7 @@ footer {
           }
           .block-with-img {
             flex-wrap: wrap;
-            max-width: 75%;
+            max-width: 72%;
             min-height: 168px;
             height: auto;
             justify-content: space-between;
