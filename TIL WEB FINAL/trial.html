@@ -197,13 +197,13 @@
           </div>
           <div class="input-form">
             <div class="group email">
-              <input type="text" required />
+              <input type="email" required />
               <span class="highlight"></span>
               <span class="bar"></span>
               <label>Your Email Adress</label>
             </div>
             <div class="group phone">
-              <input type="text" required />
+              <input type="tel" required />
               <span class="highlight"></span>
               <span class="bar"></span>
               <label>Your Phone Number</label>
@@ -400,9 +400,20 @@
     <script>
       document.querySelector(".wrapper-trial").style.display = "none";
       $(".dropbtn").click(function(e) {
+        if (document.querySelectorAll(".show").length > 0) {
+          $(".show").removeClass("show");
+        }
         e.currentTarget.parentNode.children[1].classList.toggle("show");
-        // console.log(event);
       });
+      // $(".phone input").on("input", function (e) { console.log(e) })
+      document
+        .querySelector(".phone input")
+        .addEventListener("input", function(e) {
+          e.target.value = e.target.value.replace(
+            /[^0-9+^(+)+^(()+^(\-)]/g,
+            ""
+          );
+        });
       $(".dropdown-content a").click(function(e) {
         console.log();
         let img =

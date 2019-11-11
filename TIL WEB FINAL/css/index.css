@@ -537,9 +537,9 @@ section.pricing-content .block-with-text-content .elem2 .block1 .ammount-of-less
 
 section.pricing-content .block-with-text-content .elem2 .block1 .ammount-of-lessons .lesson a { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; padding: 10px; width: 100%; height: 100%; text-decoration: none; color: white; }
 
-section.pricing-content .block-with-text-content .elem2 .block1 .ammount-of-lessons .lesson a p { font-size: 14px; line-height: 15px; font-family: "Open Sans", sans-serif; letter-spacing: 0.14px; }
+section.pricing-content .block-with-text-content .elem2 .block1 .ammount-of-lessons .lesson a p { margin-bottom: 4px; font-size: 14px; line-height: 15px; font-family: "Open Sans", sans-serif; letter-spacing: 0.14px; }
 
-section.pricing-content .block-with-text-content .elem2 .block1 .ammount-of-lessons .lesson a h2 { font: 400 30px/25px Open Sans; letter-spacing: 0.3px; }
+section.pricing-content .block-with-text-content .elem2 .block1 .ammount-of-lessons .lesson a h2 { margin-top: 4px; font: 600 30px/25px Open Sans; letter-spacing: 0.3px; }
 
 section.pricing-content .block-with-text-content .elem2 .block2 { margin: 20px 0; padding: 5px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: space-evenly; -webkit-justify-content: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; width: 260px; }
 
@@ -553,9 +553,9 @@ section.pricing-content .block-with-text-content .elem2 .block2 .ammount-of-logi
 
 section.pricing-content .block-with-text-content .elem2 .block2 .ammount-of-logins a { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; width: 100%; height: 100%; text-decoration: none; }
 
-section.pricing-content .block-with-text-content .elem2 .block2 .ammount-of-logins a p { font-size: 14px; letter-spacing: 0.14px; line-height: 25px; color: white; font-family: "Open Sans", sans-serif; }
+section.pricing-content .block-with-text-content .elem2 .block2 .ammount-of-logins a p { margin-bottom: 1px; font-size: 14px; letter-spacing: 0.14px; line-height: 25px; color: white; font-family: "Open Sans", sans-serif; }
 
-section.pricing-content .block-with-text-content .elem2 .block2 .ammount-of-logins a h2 { font: 400 30px/25px Open Sans; letter-spacing: 0.3px; color: white; }
+section.pricing-content .block-with-text-content .elem2 .block2 .ammount-of-logins a h2 { margin-top: 1px; font: 600 30px/25px Open Sans; letter-spacing: 0.3px; color: white; }
 
 section.pricing-content .block-with-text-content .elem2 .block2 .information { margin-top: 77px; }
 
@@ -1016,7 +1016,7 @@ footer { clear: both; }
   .contacts-content .block-with-text-content { width: 85%; background: #36cb83 0% 0% no-repeat padding-box; }
   .contacts-content .block-with-text-content .elem { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; padding: 85px 0; }
   .contacts-content .block-with-text-content .elem .map { right: 40px; position: relative; width: 600px; min-height: 300px; height: auto; }
-  .contacts-content .block-with-text-content .elem .map img { height: auto; width: 100%; }
+  .contacts-content .block-with-text-content .elem .map img { height: 300px; width: 100%; }
   .contacts-content .block-with-text-content .elem .text { padding: 40px 0 40px 20px; max-width: 360px; }
   .contacts-content .block-with-text-content .elem .text h3 { font: Bold 30px/35px Open Sans; letter-spacing: 0.3px; color: #ffffff; }
   .contacts-content .block-with-text-content .elem .text p.mail, .contacts-content .block-with-text-content .elem .text p.phone { font: Bold 25px/35px Open Sans; letter-spacing: 0; margin: 25px 0 0; }
@@ -1363,7 +1363,7 @@ body { overflow-x: hidden; }
 
 .trial-section .wrapper .input .input-form .dropdown .dropbtn img { position: absolute; top: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); right: 0; }
 
-.trial-section .wrapper .input .input-form .dropdown .dropdown-content { display: none; position: absolute; background-color: #f1f1f1; width: 100%; height: 85px; overflow: scroll; -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); z-index: 1; }
+.trial-section .wrapper .input .input-form .dropdown .dropdown-content { display: none; position: absolute; background-color: #f1f1f1; width: 100%; height: 85px; overflow-y: scroll; -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); z-index: 1; }
 
 .trial-section .wrapper .input .input-form .dropdown .dropdown-content a { color: black; padding: 12px 16px 12px 5px; text-decoration: none; display: block; }
 
@@ -1438,7 +1438,7 @@ body { overflow-x: hidden; }
   .trial-section .wrapper .input .input-form .group input { width: 100%; }
   .trial-section .wrapper .input .input-form .group label { font: 400 20px/25px Open Sans; }
   .trial-section .wrapper .input .input-form:nth-child(1) { position: relative; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
-  .trial-section .wrapper .input .input-form:nth-child(1) .group { max-width: 240px; }
+  .trial-section .wrapper .input .input-form:nth-child(1) .group { min-width: 240px; }
   .trial-section .wrapper .input .input-form:nth-child(1) .group input { width: 100%; }
   .trial-section .wrapper .input .input-form:nth-child(1) .dropdown .dropbtn { font: 400 20px/25px Open Sans; height: 41px; }
   .trial-section .wrapper .input .input-form:nth-child(1) .gender { position: absolute; top: -65px; }

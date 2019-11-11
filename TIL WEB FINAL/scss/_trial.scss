@@ -125,7 +125,7 @@
             width: 100%;
             //Можно удалить
             height: 85px; //
-            overflow: scroll; //
+            overflow-y: scroll; //
             // overflow: auto;
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
             z-index: 1;
@@ -406,7 +406,7 @@
           justify-content: space-between;
           flex-wrap: wrap;
           .group {
-            max-width: 240px;
+            min-width: 240px;
             input {
               width: 100%;
             }
