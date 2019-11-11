@@ -391,13 +391,13 @@
             $(".elem").offset().top
           }px`;
         }
-        if ($(".whatistil-footer").offset().top - 150 < window.scrollY) {
+        if ($("footer").offset().top - $("footer").height() < window.scrollY) {
           document.querySelector(".stick-element").style.top = "unset";
           document.querySelector(".stick-element").style.bottom = `${$(
             ".block-about"
           ).height() -
             ($(".block-about").height() - $(".block-about ul").height()) -
-            100}px`;
+            99}px`;
         }
       });
     </script>
