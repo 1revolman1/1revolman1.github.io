@@ -179,6 +179,20 @@ section.pricing-content {
             display: block;
           }
         }
+        select.form {
+          color: #ee6700;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          background-color: white;
+          width: 229px;
+          height: 29px;
+          text-transform: uppercase;
+          padding-left: 10px;
+          font-size: 14px;
+          font-family: "Open Sans", sans-serif;
+        }
         .show {
           display: block;
         }
@@ -478,6 +492,20 @@ section.pricing-content {
           .show {
             display: block;
           }
+          select.form {
+            color: #ee6700;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            background-color: white;
+            width: 330px;
+            height: 43px;
+            text-transform: uppercase;
+            padding-left: 10px;
+            font-size: 18px;
+            font-family: "Open Sans", sans-serif;
+          }
         }
         .block1 {
           width: 340px;
@@ -719,6 +747,13 @@ section.pricing-content {
           top: -15px;
           position: relative;
           display: inline-block;
+          select.form {
+            width: 330px;
+            height: 43px;
+            padding-left: 10px;
+            font-size: 18px;
+            line-height: 25px;
+          }
           .dropbtn {
             display: flex;
             background-color: white;
@@ -1024,6 +1059,13 @@ section.pricing-content {
               text-decoration: none;
               display: block;
             }
+          }
+          select.form {
+            width: 330px;
+            height: 43px;
+            padding-left: 10px;
+            font-size: 18px;
+            line-height: 25px;
           }
           .show {
             display: block;
