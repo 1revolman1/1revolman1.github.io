@@ -146,11 +146,11 @@ nav .wrapper-settings .button { width: inherit; display: block; text-decoration:
 
 .banner-photo { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: end; -webkit-align-items: flex-end; -ms-flex-align: end; align-items: flex-end; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; min-height: 577px; background-image: url("../img/blue.png"); background-size: cover; min-height: 500px; background-position: -290px; width: 100%; margin: 0 auto; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
 
-.banner-photo h1 { max-width: 320px; display: block; color: #ffffff; font: 700 25px/50px Open Sans; letter-spacing: 0; text-align: center; }
+.banner-photo h1 { position: relative; max-width: 320px; display: block; color: #ffffff; font: 700 25px/50px Open Sans; letter-spacing: 0; text-align: center; }
+
+.banner-photo h1::after { left: 102%; display: block; content: ""; width: 1px; height: 54px; background: #fdd000; position: absolute; top: 50px; }
 
 .banner-photo span { position: relative; }
-
-.banner-photo span:before { display: block; content: ""; width: 1px; height: 54px; background: #fdd000; position: absolute; top: -5px; right: -5px; }
 
 .banner-information { height: 1270px; z-index: 999; margin: 0 auto; margin-bottom: 50px; }
 
@@ -533,13 +533,11 @@ section.pricing-content .block-with-text-content .elem2 .block1 .text p { font-f
 
 section.pricing-content .block-with-text-content .elem2 .block1 .ammount-of-lessons { margin: 8px 0; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: space-evenly; -webkit-justify-content: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
-section.pricing-content .block-with-text-content .elem2 .block1 .ammount-of-lessons .lesson { margin: 5px 5px; width: 120px; height: 105px; border: 1px solid #ffffff; }
+section.pricing-content .block-with-text-content .elem2 .block1 .ammount-of-lessons .lesson { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; margin: 5px 5px; width: 120px; height: 105px; border: 1px solid #ffffff; padding: 10px; }
 
-section.pricing-content .block-with-text-content .elem2 .block1 .ammount-of-lessons .lesson a { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; padding: 10px; width: 100%; height: 100%; text-decoration: none; color: white; }
+section.pricing-content .block-with-text-content .elem2 .block1 .ammount-of-lessons .lesson p { margin-bottom: 4px; font-size: 14px; line-height: 15px; font-family: "Open Sans", sans-serif; letter-spacing: 0.14px; color: white; }
 
-section.pricing-content .block-with-text-content .elem2 .block1 .ammount-of-lessons .lesson a p { margin-bottom: 4px; font-size: 14px; line-height: 15px; font-family: "Open Sans", sans-serif; letter-spacing: 0.14px; }
-
-section.pricing-content .block-with-text-content .elem2 .block1 .ammount-of-lessons .lesson a h2 { margin-top: 4px; font: 600 30px/25px Open Sans; letter-spacing: 0.3px; }
+section.pricing-content .block-with-text-content .elem2 .block1 .ammount-of-lessons .lesson h2 { margin-top: 4px; font: 600 30px/25px Open Sans; letter-spacing: 0.3px; color: white; }
 
 section.pricing-content .block-with-text-content .elem2 .block2 { margin: 20px 0; padding: 5px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: space-evenly; -webkit-justify-content: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; width: 260px; }
 
@@ -549,13 +547,11 @@ section.pricing-content .block-with-text-content .elem2 .block2 .text h3 { margi
 
 section.pricing-content .block-with-text-content .elem2 .block2 .text p { font-family: "Open Sans", sans-serif; font-size: 20px; line-height: 25px; letter-spacing: 0.2px; color: white; }
 
-section.pricing-content .block-with-text-content .elem2 .block2 .ammount-of-logins { width: 247px; margin: 8px 0; height: 105px; border: 1px solid #ffffff; }
+section.pricing-content .block-with-text-content .elem2 .block2 .ammount-of-logins { width: 247px; margin: 8px 0; height: 105px; border: 1px solid #ffffff; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
 
-section.pricing-content .block-with-text-content .elem2 .block2 .ammount-of-logins a { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; width: 100%; height: 100%; text-decoration: none; }
+section.pricing-content .block-with-text-content .elem2 .block2 .ammount-of-logins p { margin-bottom: 1px; font-size: 14px; letter-spacing: 0.14px; line-height: 25px; color: white; font-family: "Open Sans", sans-serif; }
 
-section.pricing-content .block-with-text-content .elem2 .block2 .ammount-of-logins a p { margin-bottom: 1px; font-size: 14px; letter-spacing: 0.14px; line-height: 25px; color: white; font-family: "Open Sans", sans-serif; }
-
-section.pricing-content .block-with-text-content .elem2 .block2 .ammount-of-logins a h2 { margin-top: 1px; font: 600 30px/25px Open Sans; letter-spacing: 0.3px; color: white; }
+section.pricing-content .block-with-text-content .elem2 .block2 .ammount-of-logins h2 { margin-top: 1px; font: 600 30px/25px Open Sans; letter-spacing: 0.3px; color: white; }
 
 section.pricing-content .block-with-text-content .elem2 .block2 .information { margin-top: 77px; }
 
@@ -614,6 +610,8 @@ section.pricing-content .block-with-text-content .elem3 p a { text-decoration: n
   section.pricing-content .block-with-text-content .elem2 .block2 .text h3 { margin: auto 10px; font-family: "Open Sans", sans-serif; font-size: 70px; line-height: 30px; color: white; letter-spacing: 0.7px; }
   section.pricing-content .block-with-text-content .elem2 .block2 .text p { font-family: "Open Sans", sans-serif; font-size: 20px; line-height: 30px; letter-spacing: 0.25px; color: white; }
   section.pricing-content .block-with-text-content .elem2 .block2 .ammount-of-logins { width: 338px; height: 105px; }
+  section.pricing-content .block-with-text-content .elem2 .block2 .ammount-of-logins h2 { font: 600 30px/35px Open Sans; letter-spacing: 0.3px; }
+  section.pricing-content .block-with-text-content .elem2 .block2 .ammount-of-logins p { font: 600 14px/15px Open Sans; letter-spacing: 0.14px; }
   section.pricing-content .block-with-text-content .elem2 .block2 .information { margin-top: 77px; }
   section.pricing-content .block-with-text-content .elem2 .block2 .information h3 { text-transform: uppercase; font-size: 15px; font-family: "Open Sans", sans-serif; line-height: 25px; color: white; text-transform: uppercase; margin-bottom: 5px; }
   section.pricing-content .block-with-text-content .elem2 .block2 .information p { font-size: 15px; font-family: "Open Sans", sans-serif; line-height: 20px; color: white; }
@@ -653,7 +651,8 @@ section.pricing-content .block-with-text-content .elem3 p a { text-decoration: n
   section.pricing-content .block-with-text-content .elem2 .block1 .text { margin: 15px auto; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: space-evenly; -webkit-justify-content: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; }
   section.pricing-content .block-with-text-content .elem2 .block1 .text h3 { margin: auto 5px; }
   section.pricing-content .block-with-text-content .elem2 .block1 .ammount-of-lessons .lesson { margin: 7px 7px; width: 166px; height: 105px; }
-  section.pricing-content .block-with-text-content .elem2 .block1 .ammount-of-lessons .lesson h3 { font-size: 30px; line-height: 35px; font-family: "Open Sans", sans-serif; letter-spacing: 0.3px; }
+  section.pricing-content .block-with-text-content .elem2 .block1 .ammount-of-lessons .lesson h2 { margin-top: 1px; font-size: 30px; line-height: 35px; font-family: "Open Sans", sans-serif; letter-spacing: 0.3px; }
+  section.pricing-content .block-with-text-content .elem2 .block1 .ammount-of-lessons .lesson p { margin-bottom: 1px; }
   section.pricing-content .block-with-text-content .elem2 .block2 { padding: 5px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: space-evenly; -webkit-justify-content: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; width: 360px; }
   section.pricing-content .block-with-text-content .elem2 .block2 .text { margin: 15px auto; position: relative; top: -3px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: space-evenly; -webkit-justify-content: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; }
   section.pricing-content .block-with-text-content .elem2 .block2 .text p { font-family: "Open Sans", sans-serif; font-size: 25px; line-height: 30px; letter-spacing: 0.25px; color: white; }
@@ -1615,7 +1614,8 @@ menu section.menu-teachers .wrapper .elem1, menu section.menu-teachers .wrapper 
   nav .wrapper-settings a .wrapper-user { width: 90px; }
   nav .wrapper-settings a .wrapper-user p { display: block; }
   section.banner-photo { min-height: 934px; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; background-size: cover; background-position: -360px; }
-  section.banner-photo h1 { max-width: 768px; }
+  section.banner-photo h1 { bottom: 30px; position: relative; max-width: 768px; }
+  section.banner-photo h1::after { position: absolute; width: 2px; height: 77px; top: -10px; }
   section.banner-information { height: 1150px; }
   section.banner-information .wrapper { max-width: 1024px; }
   section.banner-information .wrapper .block-line3 { -webkit-transform: rotate(104deg) scale(3.9); -ms-transform: rotate(104deg) scale(3.9); transform: rotate(104deg) scale(3.9); right: -38px; top: 82%; width: 794px; height: 768px; }
@@ -1812,6 +1812,7 @@ menu section.menu-teachers .wrapper .elem1, menu section.menu-teachers .wrapper 
   nav .wrapper-settings .user-link { display: none; text-decoration: none; }
   nav .wrapper-settings .user-link .wrapper-user p { display: block; }
   section.banner-photo { background-size: 100vw 100%; background-position: 0px; }
+  section.banner-photo h1::after { width: 3px; height: 125px; top: -30px; }
   section.banner-information .wrapper { max-width: 1366px; }
   section.banner-information .wrapper .block-line4 { right: 60%; left: unset; }
   section.banner-information .wrapper .wrapper-clock { right: 13%; top: 9%; }

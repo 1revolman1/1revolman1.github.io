@@ -13,6 +13,7 @@
   margin: 0 auto;
   align-items: center;
   h1 {
+    position: relative;
     max-width: 320px;
     display: block;
     // font-family: "Open Sans", sans-serif;
@@ -23,19 +24,29 @@
     text-align: center;
     // font-family: "Alegreya Sans", sans-serif;
   }
-  span {
-    position: relative;
-  }
-  span:before {
+  h1::after {
+    left: 102%;
     display: block;
     content: "";
     width: 1px;
     height: 54px;
     background: #fdd000;
     position: absolute;
-    top: -5px;
-    right: -5px;
+    top: 50px;
   }
+  span {
+    position: relative;
+  }
+  // span:before {
+  //   display: block;
+  //   content: "";
+  //   width: 1px;
+  //   height: 54px;
+  //   background: #fdd000;
+  //   position: absolute;
+  //   top: -5px;
+  //   right: -5px;
+  // }
 }
 .banner-information {
   height: 1270px;

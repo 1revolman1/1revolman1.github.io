@@ -245,7 +245,15 @@ menu {
     background-size: cover;
     background-position: -360px;
     h1 {
+      bottom: 30px;
+      position: relative;
       max-width: 768px;
+    }
+    h1::after {
+      position: absolute;
+      width: 2px;
+      height: 77px;
+      top: -10px;
     }
   }
   section.banner-information {
@@ -1560,6 +1568,11 @@ menu {
     h1 {
       // font-size: 33px;
       // font-size: 50px;
+    }
+    h1::after {
+      width: 3px;
+      height: 125px;
+      top: -30px;
     }
   }
   section.banner-information {
