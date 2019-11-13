@@ -21,9 +21,15 @@ document
   .querySelector("header .wrapper-list")
   .addEventListener("mouseover", function(event) {
     setTimeout(() => {
-      event.stopPropagation();
+      // event.stopPropagation();
       //cleaning background in the .wrapper-list ul childs
       document.querySelector(".wrapper-trial").style.display = "";
+      document.querySelectorAll(".wrapper-list ul li a").forEach(function(e) {
+        e.style.background = "";
+      });
+      document.querySelectorAll(".wrapper-list ul li ").forEach(function(e) {
+        e.style.background = "";
+      });
       event.srcElement.offsetParent.children[0].childNodes.forEach(function(e) {
         if (!(e.nodeName == "#text")) {
           e.childNodes[0].style.background = "";
@@ -46,6 +52,11 @@ document
         //Fixing error of ending from UL
         if (event.target.tagName == "UL") {
           document.querySelector(".wrapper-trial").style.display = "";
+          document
+            .querySelectorAll(".wrapper-list ul li a")
+            .forEach(function(e) {
+              e.style.background = "";
+            });
         }
         if (event.target.textContent == "About") {
           document.querySelector(".menu-about").style.display = "flex";
@@ -68,6 +79,16 @@ document
               event.target.style.background = "#33a7db";
               document.querySelector(".menu-about").style.display = "none";
               document.querySelector(".wrapper-trial").style.display = "";
+              document
+                .querySelectorAll(".wrapper-list ul li a")
+                .forEach(function(e) {
+                  e.style.background = "";
+                });
+              document
+                .querySelectorAll(".wrapper-list ul li")
+                .forEach(function(e) {
+                  e.style.background = "";
+                });
             });
         } else if (event.target.textContent == "Teachers") {
           document.querySelector(".menu-teachers").style.display = "flex";
@@ -90,6 +111,16 @@ document
               event.target.style.background = "#33a7db";
               document.querySelector(".menu-teachers").style.display = "none";
               document.querySelector(".wrapper-trial").style.display = "";
+              document
+                .querySelectorAll(".wrapper-list ul li a")
+                .forEach(function(e) {
+                  e.style.background = "";
+                });
+              document
+                .querySelectorAll(".wrapper-list ul li")
+                .forEach(function(e) {
+                  e.style.background = "";
+                });
             });
         }
       }
@@ -100,11 +131,25 @@ document
   .addEventListener("click", function(event) {
     setTimeout(() => {
       event.stopPropagation();
-      //cleaning background in the .wrapper-list ul childs
+      // cleaning background in the .wrapper-list ul childs
       document.querySelector(".wrapper-trial").style.display = "";
+      // document.querySelectorAll(".wrapper-list ul li a").forEach(function(e) {
+      //   e.style.background = "";
+      // });
+      document.querySelectorAll(".wrapper-list ul li a").forEach(function(e) {
+        e.style.background = "";
+      });
+      document.querySelectorAll(".wrapper-list ul li ").forEach(function(e) {
+        e.style.background = "";
+      });
       event.srcElement.offsetParent.children[0].childNodes.forEach(function(e) {
         if (!(e.nodeName == "#text")) {
           e.childNodes[0].style.background = "";
+          // document
+          //   .querySelectorAll(".wrapper-list ul li a")
+          //   .forEach(function(e) {
+          //     e.style.background = "";
+          //   });
         }
       });
       document.querySelector(".wrapper-list ul").style.background = "";
@@ -144,6 +189,16 @@ document
             event.target.style.background = "#33a7db";
             document.querySelector(".menu-about").style.display = "none";
             document.querySelector(".wrapper-trial").style.display = "";
+            document
+              .querySelectorAll(".wrapper-list ul li a")
+              .forEach(function(e) {
+                e.style.background = "";
+              });
+            document
+              .querySelectorAll(".wrapper-list ul li")
+              .forEach(function(e) {
+                e.style.background = "";
+              });
           });
         } else if (event.target.textContent == "Teachers") {
           document.querySelector(".menu-teachers").style.display = "flex";
@@ -164,6 +219,16 @@ document
             event.target.style.background = "#33a7db";
             document.querySelector(".menu-teachers").style.display = "none";
             document.querySelector(".wrapper-trial").style.display = "";
+            document
+              .querySelectorAll(".wrapper-list ul li a")
+              .forEach(function(e) {
+                e.style.background = "";
+              });
+            document
+              .querySelectorAll(".wrapper-list ul li")
+              .forEach(function(e) {
+                e.style.background = "";
+              });
           });
         }
       }
