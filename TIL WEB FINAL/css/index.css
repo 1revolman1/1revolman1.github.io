@@ -28,6 +28,8 @@ header .wrapper-list ul { display: none; }
 
 header .wrapper-list ul li { position: relative; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; height: 100%; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; font-size: 15px; font-family: "Open Sans", sans-serif; }
 
+header .wrapper-list ul li a { position: relative; }
+
 header .wrapper .settings-country-selector { display: none; margin: 0 10px; background: transparent; }
 
 header .wrapper .settings-country-selector aside section ul { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
