@@ -455,32 +455,5 @@
       integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
       crossorigin="anonymous"
     ></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-        document.querySelector(".stick-element").style.top = `${
-          $(".elem").offset().top
-        }px`;
-      });
-      window.addEventListener("scroll", function() {
-        if (window.scrollY < 50) {
-          document.querySelector(".stick-element").style.bottom = "unset";
-          document.querySelector(".stick-element").style.top = `${
-            $(".elem").offset().top
-          }px`;
-        }
-        if ($("footer").offset().top - $("footer").height() < window.scrollY) {
-          document.querySelector(".stick-element").style.top = "unset";
-          document.querySelector(".stick-element").style.bottom = `${$(
-            ".block-about"
-          ).height() -
-            ($(".block-about").height() - $(".block-about ul").height()) -
-            ($(".block-about").height() -
-              $(".stick-element").height() +
-              (-5 +
-                parseInt($(".block-about").css("margin-bottom")) +
-                parseInt($(".block-about").css("margin-top"))))}px`;
-        }
-      });
-    </script>
   </body>
 </html>

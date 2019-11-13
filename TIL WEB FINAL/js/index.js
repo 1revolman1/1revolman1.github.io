@@ -4,7 +4,29 @@ document.querySelectorAll(".slider .block").forEach(e => {
     255
   )}, ${randomInteger(0, 255)})`;
 });
-
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelector(".stick-element").style.top = `${
+    $(".elem").offset().top
+  }px`;
+});
+window.addEventListener("scroll", function() {
+  if (window.scrollY < 50) {
+    document.querySelector(".stick-element").style.bottom = "unset";
+    document.querySelector(".stick-element").style.top = `${
+      $(".elem").offset().top
+    }px`;
+  }
+  if ($("footer").offset().top - $("footer").height() < window.scrollY) {
+    document.querySelector(".stick-element").style.top = "unset";
+    document.querySelector(".stick-element").style.bottom = `${$(
+      "footer"
+    ).offset().top +
+      $("footer").outerHeight() -
+      ($(".block-about ul").offset().top + $(".block-about ul").outerHeight()) +
+      ($(".block-about").outerHeight() - $(".stick-element").outerHeight()) -
+      25}px`;
+  }
+});
 $(document).on("ready", function() {
   $(".slider").slick({
     arrows: false,
