@@ -5,16 +5,23 @@ document.querySelectorAll(".slider .block").forEach(e => {
   )}, ${randomInteger(0, 255)})`;
 });
 document.addEventListener("DOMContentLoaded", function() {
-  document.querySelector(".stick-element").style.top = `${
-    $(".elem").offset().top
-  }px`;
+  if ($(".elem").offset() != undefined) {
+    document.querySelector(".stick-element").style.top = `${
+      $(".elem").offset().top
+    }px`;
+  } else document.querySelector(".stick-element").style.top = `${$(".element").offset().top}px`;
 });
 window.addEventListener("scroll", function() {
   if (window.scrollY < 50) {
     document.querySelector(".stick-element").style.bottom = "unset";
-    document.querySelector(".stick-element").style.top = `${
-      $(".elem").offset().top
-    }px`;
+    if ($(".elem").offset() != undefined) {
+      document.querySelector(".stick-element").style.top = `${
+        $(".elem").offset().top
+      }px`;
+    } else
+      document.querySelector(".stick-element").style.top = `${
+        $(".element").offset().top
+      }px`;
   }
   if ($("footer").offset().top - $("footer").height() < window.scrollY) {
     document.querySelector(".stick-element").style.top = "unset";

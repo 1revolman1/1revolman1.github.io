@@ -193,6 +193,16 @@ section.pricing-content {
           font-size: 14px;
           font-family: "Open Sans", sans-serif;
         }
+        option {
+          color: #404040;
+          font-size: 13px;
+          line-height: 15px;
+          font-family: "Open Sans", sans-serif;
+          letter-spacing: 0.14px;
+        }
+        option:nth-child(1) {
+          font-size: 14px;
+        }
         .show {
           display: block;
         }
@@ -487,7 +497,19 @@ section.pricing-content {
             text-transform: uppercase;
             padding-left: 10px;
             font-size: 18px;
+            padding-left: 10px;
+            line-height: 25px;
             font-family: "Open Sans", sans-serif;
+            option {
+              color: #404040;
+              font-size: 14px;
+              line-height: 15px;
+              font-family: "Open Sans", sans-serif;
+              letter-spacing: 0.14px;
+            }
+            option:nth-child(1) {
+              font-size: 16px;
+            }
           }
         }
         .block1 {
@@ -745,6 +767,16 @@ section.pricing-content {
             padding-left: 10px;
             font-size: 18px;
             line-height: 25px;
+            option {
+              color: #404040;
+              font-family: "Open Sans", sans-serif;
+              font-size: 16px;
+              font-size: 1rem;
+              line-height: 1.5;
+            }
+            option:nth-child(1) {
+              font-size: 17px;
+            }
           }
           .dropbtn {
             display: flex;
@@ -1062,6 +1094,16 @@ section.pricing-content {
             padding-left: 10px;
             font-size: 18px;
             line-height: 25px;
+            option {
+              color: #404040;
+              font-family: sans-serif;
+              font-size: 16px;
+              font-size: 1rem;
+              line-height: 1.5;
+            }
+            option:nth-child(1) {
+              font-size: 17px;
+            }
           }
           .show {
             display: block;
