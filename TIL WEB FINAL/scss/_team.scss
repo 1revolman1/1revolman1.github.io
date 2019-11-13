@@ -7,16 +7,18 @@
 .none-display {
   display: inline-block;
 }
-.text-underline {
+.active {
   text-transform: underline;
 }
-.text-underline::after {
+.active::after {
   position: absolute;
-  top: 60px;
-  left: 20%;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -60%);
   content: "";
   background: white;
-  width: 50px;
+  // width: 50px;
+  width: calc(3.5em - 0.5%);
   height: 2px;
 }
 header {

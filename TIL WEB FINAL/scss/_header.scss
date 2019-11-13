@@ -96,14 +96,15 @@ header {
       ul {
         display: none;
         li {
+          position: relative;
           display: flex;
           height: 100%;
           align-items: center;
           font-size: 15px;
           font-family: "Open Sans", sans-serif;
-          a {
-            position: relative;
-          }
+          // a {
+          //   position: relative;
+          // }
         }
       }
     }
