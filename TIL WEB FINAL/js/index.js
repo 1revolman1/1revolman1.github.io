@@ -4,7 +4,14 @@ function randomInteger(min, max) {
 }
 
 document.addEventListener("DOMContentLoaded", function(event) {
+  //Code that state color
+
+  document.querySelectorAll(".slider .block-in-slider[bg]").forEach(e => {
+    e.style.background = `${e.getAttribute("bg")}`;
+  });
+
   //Code that randomise color
+
   document.querySelectorAll(".slider .block-in-slider").forEach(e => {
     e.style.background = `rgb(${randomInteger(0, 255)}, ${randomInteger(
       0,
