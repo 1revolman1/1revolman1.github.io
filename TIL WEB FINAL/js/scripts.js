@@ -253,18 +253,27 @@ document.querySelector(".menu_btn").addEventListener("click", function(e) {
   }
 });
 
-document.querySelectorAll(".slider .block").forEach(e => {
-  e.style.background = `rgb(${randomInteger(0, 255)}, ${randomInteger(
-    0,
-    255
-  )}, ${randomInteger(0, 255)})`;
-});
-document.addEventListener("DOMContentLoaded", function() {
+function randomInteger(min, max) {
+  let rand = min - 0.5 + Math.random() * (max - min + 1);
+  return Math.round(rand);
+}
+
+document.addEventListener("DOMContentLoaded", function(event) {
+  document.querySelectorAll(".slider .block-in-slider").forEach(e => {
+    e.style.background = `rgb(${randomInteger(0, 255)}, ${randomInteger(
+      0,
+      255
+    )}, ${randomInteger(0, 255)})`;
+  });
   if ($(".elem").offset() != undefined) {
     document.querySelector(".stick-element").style.top = `${
       $(".elem").offset().top
     }px`;
-  } else document.querySelector(".stick-element").style.top = `${$(".element").offset().top}px`;
+  } else {
+    document.querySelector(".stick-element").style.top = `${
+      $(".element").offset().top
+    }px`;
+  }
 });
 window.addEventListener("scroll", function() {
   if (window.scrollY < 50) {
@@ -295,10 +304,11 @@ $(document).on("ready", function() {
     dots: false,
     infinite: true,
     variableWidth: true,
+    speed: 300,
     // centerMode: true,
-    // autoplay: true,
-    autoplaySpeed: 2000,
-    slidesToScroll: 3,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    slidesToScroll: 1,
     slidesToShow: 4,
     responsive: [
       {
@@ -306,7 +316,7 @@ $(document).on("ready", function() {
         settings: {
           autoplay: false,
           slidesToShow: 2,
-          slidesToScroll: 3
+          slidesToScroll: 1
         }
       },
       {
@@ -314,14 +324,14 @@ $(document).on("ready", function() {
         settings: {
           autoplay: false,
           slidesToShow: 1,
-          slidesToScroll: 3
+          slidesToScroll: 1
         }
       },
       {
         breakpoint: 1366,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 2
+          slidesToScroll: 1
         }
       }
     ]
