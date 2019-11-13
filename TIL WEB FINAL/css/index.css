@@ -722,7 +722,7 @@ section.pricing-content .block-with-text-content .elem3 p a { text-decoration: n
 
 .none-display { display: inline-block; }
 
-.active { text-transform: underline; }
+.active { text-transform: underline; color: white; }
 
 .active::after { position: absolute; top: 60%; left: 50%; -webkit-transform: translate(-50%, -60%); -ms-transform: translate(-50%, -60%); transform: translate(-50%, -60%); content: ""; background: white; width: -webkit-calc(3.5em - 0.5%); width: calc(3.5em - 0.5%); height: 2px; }
 

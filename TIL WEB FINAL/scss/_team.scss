@@ -9,6 +9,7 @@
 }
 .active {
   text-transform: underline;
+  color: white;
 }
 .active::after {
   position: absolute;
