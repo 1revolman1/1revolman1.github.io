@@ -7,21 +7,6 @@
 .none-display {
   display: inline-block;
 }
-.active {
-  text-transform: underline;
-  color: white;
-}
-.active::after {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -60%);
-  content: "";
-  background: white;
-  // width: 50px;
-  width: calc(3.5em - 0.5%);
-  height: 2px;
-}
 header {
   top: 0;
 }

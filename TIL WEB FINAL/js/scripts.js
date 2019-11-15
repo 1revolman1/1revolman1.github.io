@@ -17,9 +17,13 @@ window.addEventListener("scroll", function(e) {
 
 //This code segment initialize listener of mouse on the element
 //and generate menu on the dekstop
+document;
 document
   .querySelector("header .wrapper-list")
   .addEventListener("mouseover", function(event) {
+    if (event.target.tagName == "SPAN") {
+      return;
+    }
     setTimeout(() => {
       // event.stopPropagation();
       //cleaning background in the .wrapper-list ul childs
@@ -29,11 +33,6 @@ document
       });
       document.querySelectorAll(".wrapper-list ul li ").forEach(function(e) {
         e.style.background = "";
-      });
-      event.srcElement.offsetParent.children[0].childNodes.forEach(function(e) {
-        if (!(e.nodeName == "#text")) {
-          e.childNodes[0].style.background = "";
-        }
       });
       document.querySelector(".wrapper-list ul").style.background = "";
       //if .hover-menu EXIST - remove him
@@ -129,6 +128,9 @@ document
 document
   .querySelector("header .wrapper-list")
   .addEventListener("click", function(event) {
+    if (event.target.tagName == "SPAN") {
+      return;
+    }
     setTimeout(() => {
       event.stopPropagation();
       // cleaning background in the .wrapper-list ul childs
@@ -259,135 +261,123 @@ function randomInteger(min, max) {
 }
 
 document.addEventListener("DOMContentLoaded", function(event) {
-  //Code that state color
-
-  document.querySelectorAll(".slider .block-in-slider[bg]").forEach(e => {
-    e.style.background = `${e.getAttribute("bg")}`;
-  });
-
-  //Code that randomise color
-
-  document.querySelectorAll(".slider .block-in-slider").forEach(e => {
-    e.style.background = `rgb(${randomInteger(0, 255)}, ${randomInteger(
-      0,
-      255
-    )}, ${randomInteger(0, 255)})`;
-  });
-  if ($(".elem").offset() != undefined) {
-    document.querySelector(".stick-element").style.top = `${
-      $(".elem").offset().top
-    }px`;
-  } else {
-    document.querySelector(".stick-element").style.top = `${
-      $(".element").offset().top
-    }px`;
+  if (document.querySelectorAll(".active").length > 0) {
+    document.querySelectorAll(".active a").forEach(e => {
+      e.innerHTML = `<span style="background:transparent" class="active_span">${
+        document.querySelector(".active a").textContent
+      }</span>`;
+    });
   }
-});
-window.addEventListener("scroll", function() {
-  if (window.scrollY < 50) {
-    document.querySelector(".stick-element").style.bottom = "unset";
+  if (document.querySelectorAll(".slider").length > 0) {
+    $(".slider").slick({
+      arrows: false,
+      dots: false,
+      infinite: true,
+      variableWidth: true,
+      speed: 300,
+      // centerMode: true,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      slidesToScroll: 1,
+      slidesToShow: 4,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            // autoplay: false,
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            // autoplay: false,
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 1366,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+
+    //Code that state color
+    document.querySelectorAll(".slider .block-in-slider[bg]").forEach(e => {
+      e.style.background = `${e.getAttribute("bg")}`;
+    });
+
+    //Code that randomise color
+    document.querySelectorAll(".slider .block-in-slider").forEach(e => {
+      e.style.background = `rgb(${randomInteger(0, 255)}, ${randomInteger(
+        0,
+        255
+      )}, ${randomInteger(0, 255)})`;
+    });
+  }
+  if (document.querySelectorAll(".stick-element").length > 0) {
+    window.addEventListener("scroll", function() {
+      if (window.scrollY < 50) {
+        document.querySelector(".stick-element").style.bottom = "unset";
+        if ($(".elem").offset() != undefined) {
+          document.querySelector(".stick-element").style.top = `${
+            $(".elem").offset().top
+          }px`;
+        } else
+          document.querySelector(".stick-element").style.top = `${
+            $(".element").offset().top
+          }px`;
+      }
+      if ($("footer").offset().top - $("footer").height() < window.scrollY) {
+        document.querySelector(".stick-element").style.top = "unset";
+        document.querySelector(".stick-element").style.bottom = `${$(
+          "footer"
+        ).offset().top +
+          $("footer").outerHeight() -
+          ($(".block-about ul").offset().top +
+            $(".block-about ul").outerHeight()) +
+          ($(".block-about").outerHeight() -
+            $(".stick-element").outerHeight()) -
+          25}px`;
+      }
+    });
     if ($(".elem").offset() != undefined) {
       document.querySelector(".stick-element").style.top = `${
         $(".elem").offset().top
       }px`;
-    } else
+    } else {
       document.querySelector(".stick-element").style.top = `${
         $(".element").offset().top
       }px`;
+    }
   }
-  if ($("footer").offset().top - $("footer").height() < window.scrollY) {
-    document.querySelector(".stick-element").style.top = "unset";
-    document.querySelector(".stick-element").style.bottom = `${$(
-      "footer"
-    ).offset().top +
-      $("footer").outerHeight() -
-      ($(".block-about ul").offset().top + $(".block-about ul").outerHeight()) +
-      ($(".block-about").outerHeight() - $(".stick-element").outerHeight()) -
-      25}px`;
+  if (document.querySelectorAll(".element-visible").length > 0) {
+    $(".element-visible").slick({
+      adaptiveHeight: true,
+      dots: false,
+      infinite: true,
+      slidesToShow: 1,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            vertical: true,
+            adaptiveHeight: true
+          }
+        },
+        {
+          breakpoint: 1024,
+          settings: {
+            vertical: true,
+            adaptiveHeight: true
+          }
+        }
+      ]
+    });
   }
 });
-$(document).on("ready", function() {
-  $(".slider").slick({
-    arrows: false,
-    dots: false,
-    infinite: true,
-    variableWidth: true,
-    speed: 300,
-    // centerMode: true,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    slidesToScroll: 1,
-    slidesToShow: 4,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          autoplay: false,
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          autoplay: false,
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 1366,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  });
-  $(".element-visible").slick({
-    adaptiveHeight: true,
-    dots: false,
-    infinite: true,
-    slidesToShow: 1,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          vertical: true,
-          adaptiveHeight: true
-        }
-      },
-      {
-        breakpoint: 1024,
-        settings: {
-          vertical: true,
-          adaptiveHeight: true
-        }
-      }
-    ]
-  });
-});
-
-// $(".element-visible").slick({
-//   adaptiveHeight: true
-//   // responsive: [
-//   //   {
-//   //     breakpoint: 368,
-//   //     settings: {
-//   //       vertical: true,
-//   //       adaptiveHeight: false
-//   //     }
-//   //   },
-//   //   {
-//   //     breakpoint: 600,
-//   //     settings: {
-//   //       // vertical: true
-//   //       // adaptiveHeight: false
-//   //     }
-//   //   }
-//   // ]
-// });
-
-// $(".element-visible").slick({
-//   adaptiveHeight: true
-// });

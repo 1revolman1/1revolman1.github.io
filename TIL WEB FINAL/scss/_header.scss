@@ -373,6 +373,12 @@ header {
           // height: 240px;
           height: 33%;
           text-transform: initial;
+          ul {
+            padding: unset;
+            li {
+              padding: unset;
+            }
+          }
           a {
             color: #ffffff;
             font-size: 15px;
@@ -552,3 +558,24 @@ nav {
     }
   }
 }
+.active {
+  text-transform: underline;
+  color: white;
+  .active_span {
+    border-bottom: 1px solid white;
+    line-height: 30px;
+    // top: 1px;
+    position: relative;
+  }
+}
+// .active::after {
+//   position: absolute;
+//   top: 60%;
+//   left: 50%;
+//   transform: translate(-50%, -60%);
+//   content: "";
+//   background: white;
+//   // width: 50px;
+//   width: calc(3.5em - 0.5%);
+//   height: 2px;
+// }

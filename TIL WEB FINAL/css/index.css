@@ -100,6 +100,10 @@ header .wrapper-menu .menu__box > li:nth-child(2) .list > ul:nth-child(2) li { p
 
 header .wrapper-menu .menu__box > li:nth-child(3) { padding: 20px 0 20px 37px; background: #0093d6 0% 0% no-repeat padding-box; height: 33%; text-transform: initial; }
 
+header .wrapper-menu .menu__box > li:nth-child(3) ul { padding: unset; }
+
+header .wrapper-menu .menu__box > li:nth-child(3) ul li { padding: unset; }
+
 header .wrapper-menu .menu__box > li:nth-child(3) a { color: #ffffff; font-size: 15px; letter-spacing: -0.5px; font-family: "Open Sans", sans-serif; }
 
 header .wrapper-menu ul { padding: 5px; list-style: none; }
@@ -143,6 +147,10 @@ nav .wrapper-settings .button { width: inherit; display: block; text-decoration:
 .hover-menu .wrapper .elem1 ul li a, .hover-menu .wrapper .elem2 ul li a, .hover-menu .wrapper .elem3 ul li a { text-decoration: none; font-size: 25px; font-family: "Open Sans", sans-serif; color: white; line-height: 42px; border-bottom: 1px solid white; letter-spacing: -0.5px; }
 
 .hover-menu .wrapper .elem1 ul li:last-child a, .hover-menu .wrapper .elem2 ul li:last-child a, .hover-menu .wrapper .elem3 ul li:last-child a { border: none; }
+
+.active { text-transform: underline; color: white; }
+
+.active .active_span { border-bottom: 1px solid white; line-height: 30px; position: relative; }
 
 .banner-photo { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: end; -webkit-align-items: flex-end; -ms-flex-align: end; align-items: flex-end; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; min-height: 577px; background-image: url("../img/blue.png"); background-size: cover; min-height: 500px; background-position: -290px; width: 100%; margin: 0 auto; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
 
@@ -723,10 +731,6 @@ section.pricing-content .block-with-text-content .elem3 p a { text-decoration: n
 * { -webkit-box-sizing: border-box; box-sizing: border-box; margin: 0; padding: 0; }
 
 .none-display { display: inline-block; }
-
-.active { text-transform: underline; color: white; }
-
-.active::after { position: absolute; top: 60%; left: 50%; -webkit-transform: translate(-50%, -60%); -ms-transform: translate(-50%, -60%); transform: translate(-50%, -60%); content: ""; background: white; width: -webkit-calc(3.5em - 0.5%); width: calc(3.5em - 0.5%); height: 2px; }
 
 header { top: 0; }
 

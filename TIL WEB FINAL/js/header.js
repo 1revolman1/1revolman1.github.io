@@ -17,9 +17,13 @@ window.addEventListener("scroll", function(e) {
 
 //This code segment initialize listener of mouse on the element
 //and generate menu on the dekstop
+document;
 document
   .querySelector("header .wrapper-list")
   .addEventListener("mouseover", function(event) {
+    if (event.target.tagName == "SPAN") {
+      return;
+    }
     setTimeout(() => {
       // event.stopPropagation();
       //cleaning background in the .wrapper-list ul childs
@@ -29,11 +33,6 @@ document
       });
       document.querySelectorAll(".wrapper-list ul li ").forEach(function(e) {
         e.style.background = "";
-      });
-      event.srcElement.offsetParent.children[0].childNodes.forEach(function(e) {
-        if (!(e.nodeName == "#text")) {
-          e.childNodes[0].style.background = "";
-        }
       });
       document.querySelector(".wrapper-list ul").style.background = "";
       //if .hover-menu EXIST - remove him
@@ -129,6 +128,9 @@ document
 document
   .querySelector("header .wrapper-list")
   .addEventListener("click", function(event) {
+    if (event.target.tagName == "SPAN") {
+      return;
+    }
     setTimeout(() => {
       event.stopPropagation();
       // cleaning background in the .wrapper-list ul childs
