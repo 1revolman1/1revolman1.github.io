@@ -447,7 +447,7 @@ section.banner-with-lectors-word {
         $align: flex-start,
         $direction: column
       );
-      align-self: end;
+      align-self: flex-start;
       position: relative;
       top: 100px;
       padding: 45px 5px 45px 20px;

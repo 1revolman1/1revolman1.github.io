@@ -313,12 +313,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });
 
     //Code that randomise color
-    document.querySelectorAll(".slider .block-in-slider").forEach(e => {
-      e.style.background = `rgb(${randomInteger(0, 255)}, ${randomInteger(
-        0,
-        255
-      )}, ${randomInteger(0, 255)})`;
-    });
+    // document.querySelectorAll(".slider .block-in-slider").forEach(e => {
+    //   e.style.background = `rgb(${randomInteger(0, 255)}, ${randomInteger(
+    //     0,
+    //     255
+    //   )}, ${randomInteger(0, 255)})`;
+    // });
   }
   if (document.querySelectorAll(".stick-element").length > 0) {
     window.addEventListener("scroll", function() {
