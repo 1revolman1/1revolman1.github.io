@@ -2,11 +2,42 @@ function randomInteger(min, max) {
   let rand = min - 0.5 + Math.random() * (max - min + 1);
   return Math.round(rand);
 }
+function current_page() {
+  let text = location.pathname
+    .split("/")[1]
+    .split("-")
+    .join(" ");
+  if (text == "") return;
+  document.querySelectorAll("menu .wrapper li").forEach((e, i) => {
+    if (e.textContent.toLowerCase().includes(text)) {
+      if (i <= 6) {
+        document
+          .querySelectorAll(".wrapper-list li")[0]
+          .classList.add("active");
+        document.querySelectorAll("header .active a").forEach(element => {
+          element.innerHTML = `<span style="background:transparent" class="active_span">${
+            document.querySelector("header .active a").textContent
+          }</span>`;
+        });
+      } else {
+        document
+          .querySelectorAll(".wrapper-list li")[1]
+          .classList.add("active");
+        document.querySelectorAll("header .active a").forEach(element => {
+          element.innerHTML = `<span style="background:transparent" class="active_span">${
+            document.querySelector("header .active a").textContent
+          }</span>`;
+        });
+      }
+    }
+  });
+}
 
 document.addEventListener("DOMContentLoaded", function(event) {
+  current_page();
   if (document.querySelectorAll(".active").length > 0) {
-    document.querySelectorAll(".active a").forEach(e => {
-      e.innerHTML = `<span style="background:transparent" class="active_span">${
+    document.querySelectorAll(".active a").forEach(element => {
+      element.innerHTML = `<span style="background:transparent" class="active_span">${
         document.querySelector(".active a").textContent
       }</span>`;
     });
