@@ -67,14 +67,16 @@ footer {
       @include flex($justify: center, $align: flex-start, $direction: column);
       padding: 60px 0 100px;
       .map {
-        width: 302px;
+        // width: 302px;
+        max-width: 302px;
+        width: 100%;
         min-height: 149px;
         height: auto;
         // background: yellow;
         img {
           // height: auto;
-          // width: 100%;
-          width: 302px;
+          width: 100%;
+          // width: 302px;
           height: 149px;
         }
       }
@@ -148,6 +150,7 @@ footer {
           position: relative;
           width: 600px;
           min-height: 300px;
+          max-width: unset;
           height: auto;
           img {
             height: 300px;

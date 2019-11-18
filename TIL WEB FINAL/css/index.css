@@ -515,7 +515,7 @@ section.pricing-content .block-with-text-content .elem1 .block p { font-family: 
 
 section.pricing-content .block-with-text-content .elem1 .block img { position: absolute; left: 5%; bottom: 5%; }
 
-section.pricing-content .block-with-text-content .elem2 { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: space-evenly; -webkit-justify-content: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; width: 302px; padding: 25px; padding-top: 70px; background: #ee6700 0% 0% no-repeat padding-box; position: relative; }
+section.pricing-content .block-with-text-content .elem2 { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: space-evenly; -webkit-justify-content: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; width: 100%; max-width: 302px; padding: 25px; padding-top: 70px; background: #ee6700 0% 0% no-repeat padding-box; position: relative; }
 
 section.pricing-content .block-with-text-content .elem2 .dropdown { top: -35px; position: relative; display: inline-block; }
 
@@ -571,7 +571,7 @@ section.pricing-content .block-with-text-content .elem2 .block2 .information h3 
 
 section.pricing-content .block-with-text-content .elem2 .block2 .information p { font-size: 12px; font-family: "Open Sans", sans-serif; line-height: 16px; color: white; }
 
-section.pricing-content .block-with-text-content .elem3 { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: space-evenly; -webkit-justify-content: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; width: 302px; padding: 32px; }
+section.pricing-content .block-with-text-content .elem3 { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: space-evenly; -webkit-justify-content: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; width: 100%; max-width: 302px; padding: 32px; }
 
 section.pricing-content .block-with-text-content .elem3 .button { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: space-evenly; -webkit-justify-content: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; width: 237px; height: 52px; background: #ffffff 0% 0% no-repeat padding-box; margin-bottom: 40px; }
 
@@ -604,7 +604,7 @@ section.pricing-content .block-with-text-content .elem3 p a { text-decoration: n
   section.pricing-content .block-with-text-content .elem1 h3 { width: 324px; margin: auto 33px; color: #ffffff; letter-spacing: 0.3px; font-size: 30px; line-height: 35px; font-family: "Open Sans", sans-serif; }
   section.pricing-content .block-with-text-content .elem1 .block { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; width: 238px; height: 208px; background: #ee6700 0% 0% no-repeat padding-box; position: relative; padding: 20px; }
   section.pricing-content .block-with-text-content .elem1 .block h3 { width: unset; margin: 0; font-weight: bolder; font-size: 60px; line-height: 45px; font-family: "Alegreya Sans", sans-serif; }
-  section.pricing-content .block-with-text-content .elem2 { padding: 43px; width: 438px; padding-top: 70px; }
+  section.pricing-content .block-with-text-content .elem2 { padding: 43px; width: 438px; max-width: unset; padding-top: 70px; }
   section.pricing-content .block-with-text-content .elem2 .dropdown { position: relative; display: inline-block; }
   section.pricing-content .block-with-text-content .elem2 .dropdown .dropbtn { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; background-color: white; width: 330px; height: 43px; padding-left: 10px; font-size: 18px; line-height: 25px; font-size: "Open Sans", sans-serif; }
   section.pricing-content .block-with-text-content .elem2 .dropdown .dropbtn img { position: absolute; top: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); right: 0; }
@@ -629,7 +629,7 @@ section.pricing-content .block-with-text-content .elem3 p a { text-decoration: n
   section.pricing-content .block-with-text-content .elem2 .block2 .information { margin-top: 77px; }
   section.pricing-content .block-with-text-content .elem2 .block2 .information h3 { text-transform: uppercase; font-size: 15px; font-family: "Open Sans", sans-serif; line-height: 25px; color: white; text-transform: uppercase; margin-bottom: 5px; }
   section.pricing-content .block-with-text-content .elem2 .block2 .information p { font-size: 15px; font-family: "Open Sans", sans-serif; line-height: 20px; color: white; }
-  section.pricing-content .block-with-text-content .elem3 { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: space-evenly; -webkit-justify-content: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; width: 437px; padding: 0; }
+  section.pricing-content .block-with-text-content .elem3 { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: space-evenly; -webkit-justify-content: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; width: 437px; max-width: unset; padding: 0; }
   section.pricing-content .block-with-text-content .elem3 .button { width: 437px; height: 52px; margin-bottom: 40px; }
   section.pricing-content .block-with-text-content .elem3 .button a { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; width: 100%; height: 100%; font-size: 24px; line-height: 25px; font-family: "Open Sans", sans-serif; }
   section.pricing-content .block-with-text-content .elem3 p { font-size: 20px; line-height: 25px; font-family: "Open Sans"; color: white; }
@@ -996,9 +996,9 @@ footer { clear: both; }
 
 .contacts-content .block-with-text-content .elem { position: relative; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; padding: 60px 0 100px; }
 
-.contacts-content .block-with-text-content .elem .map { width: 302px; min-height: 149px; height: auto; }
+.contacts-content .block-with-text-content .elem .map { max-width: 302px; width: 100%; min-height: 149px; height: auto; }
 
-.contacts-content .block-with-text-content .elem .map img { width: 302px; height: 149px; }
+.contacts-content .block-with-text-content .elem .map img { width: 100%; height: 149px; }
 
 .contacts-content .block-with-text-content .elem .text { max-width: 270px; padding: 40px 0 40px 30px; }
 
@@ -1033,7 +1033,7 @@ footer { clear: both; }
   .contacts-content .wrapper { max-width: 1024px; }
   .contacts-content .block-with-text-content { width: 85%; background: #36cb83 0% 0% no-repeat padding-box; }
   .contacts-content .block-with-text-content .elem { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: start; -webkit-align-items: flex-start; -ms-flex-align: start; align-items: flex-start; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; padding: 85px 0; }
-  .contacts-content .block-with-text-content .elem .map { right: 40px; position: relative; width: 600px; min-height: 300px; height: auto; }
+  .contacts-content .block-with-text-content .elem .map { right: 40px; position: relative; width: 600px; min-height: 300px; max-width: unset; height: auto; }
   .contacts-content .block-with-text-content .elem .map img { height: 300px; width: 100%; }
   .contacts-content .block-with-text-content .elem .text { padding: 40px 0 40px 20px; max-width: 360px; }
   .contacts-content .block-with-text-content .elem .text h3 { font: Bold 30px/35px Open Sans; letter-spacing: 0.3px; color: #ffffff; }

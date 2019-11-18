@@ -351,7 +351,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
     //   )}, ${randomInteger(0, 255)})`;
     // });
   }
-  if (document.querySelectorAll(".stick-element").length > 0) {
+  if (
+    document.querySelectorAll(".stick-element").length > 0 &&
+    getComputedStyle(document.querySelector(".stick-element")).getPropertyValue(
+      "display"
+    ) != "none"
+  ) {
     window.addEventListener("scroll", function() {
       if (window.scrollY < 50) {
         document.querySelector(".stick-element").style.bottom = "unset";
