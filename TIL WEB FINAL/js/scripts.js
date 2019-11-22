@@ -293,10 +293,8 @@ function current_page() {
 document.addEventListener("DOMContentLoaded", function(event) {
   current_page();
   if (document.querySelectorAll(".active").length > 0) {
-    document.querySelectorAll(".active a").forEach(element => {
-      element.innerHTML = `<span style="background:transparent" class="active_span">${
-        document.querySelector(".active a").textContent
-      }</span>`;
+    document.querySelectorAll(".active a").forEach((element, index) => {
+      element.innerHTML = `<span style="background:transparent" class="active_span">${element.textContent}</span>`;
     });
   }
   if (document.querySelectorAll(".slider").length > 0) {

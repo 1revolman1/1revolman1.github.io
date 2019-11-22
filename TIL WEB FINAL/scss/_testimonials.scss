@@ -327,15 +327,6 @@ footer {
             letter-spacing: -0.15px;
             color: #ffffff;
           }
-          .head::after {
-            content: url("./../img/testimonials/iconmonstr-arrow-right-thin.svg");
-            width: 20px;
-            height: 20px;
-            position: absolute;
-            left: -25px;
-            color: white;
-            transform: scale(0.6);
-          }
           li {
             list-style-type: none;
             a {
@@ -346,6 +337,25 @@ footer {
               letter-spacing: -0.15px;
               color: #ffffff;
             }
+          }
+          .active {
+            a::after {
+              content: url("./../img/testimonials/iconmonstr-arrow-right-thin.svg");
+              width: 20px;
+              height: 20px;
+              position: absolute;
+              left: -25px;
+              color: white;
+              -webkit-transform: scale(0.6);
+              -ms-transform: scale(0.6);
+              transform: scale(0.6);
+              margin-top: 5px;
+            }
+          }
+        }
+        .active {
+          .active_span {
+            border-bottom: 0;
           }
         }
       }

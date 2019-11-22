@@ -810,7 +810,8 @@ menu {
         background: transparent;
         width: unset;
         right: 107px;
-        padding: 0 30px 0 0;
+        padding: 0 15px 0 0;
+        // padding: 0 30px 0 0;
         position: absolute;
         left: unset;
         aside {
@@ -878,7 +879,7 @@ menu {
           @include flex($justify: center, $align: center, $direction: column);
           position: absolute;
           right: 0;
-          width: 100px;
+          width: 90px;
         }
       }
     }
