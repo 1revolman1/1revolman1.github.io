@@ -566,6 +566,21 @@
           isPause = false;
           startProgressbar();
         },
+        touchstart: function() {
+          isPause = true;
+        },
+        touchmove: function() {
+          isPause = false;
+          $slick.slick("slickNext");
+          $rbar.fadeOut("slow");
+          percentTime = 0;
+        },
+        touchend: function() {
+          isPause = false;
+          $rbar.fadeOut("slow");
+          percentTime = 0;
+          startProgressbar();
+        },
         mousedown: function() {
           $rbar.fadeOut("slow");
           percentTime = 0;
