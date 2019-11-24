@@ -537,8 +537,14 @@
     ></script>
     <script>
       document.addEventListener("DOMContentLoaded", function() {
-        if (screen.width < 720) $(".progress-ring__circle").attr("r", "13");
-        else $(".progress-ring__circle").attr("r", "17");
+        $("nav .button").removeAttr("href");
+        if (screen.width < 720) {
+          $(".progress-ring__circle").attr("r", "13");
+          $(".progress-ring__circle").attr("stroke-width", "2");
+        } else {
+          $(".progress-ring__circle").attr("r", "17");
+          $(".progress-ring__circle").attr("stroke-width", "4");
+        }
       });
       $(".trial-section .head .wrap").slick({
         rows: 0,
