@@ -132,7 +132,133 @@
                   src="./img/trial/Jess 73 v1a@2x.png"
                   alt=""
                 />
-                <img class="roller" src="./img/pricing/Grupo 198.svg" alt="" />
+                <svg class="progress-ring" width="40" height="40">
+                  <circle
+                    class="progress-ring__circle"
+                    stroke="white"
+                    stroke-width="4"
+                    cx="20"
+                    cy="20"
+                    r="17"
+                    fill="transparent"
+                  />
+                </svg>
+              </div>
+              <div class="text-block">
+                <h3>
+                  “There isn’t anything else out there that’s like
+                  thisislanguage.com”
+                </h3>
+                <hr />
+                <p class="name">Jess Lund</p>
+                <p>Head of MFL Michaela Community School</p>
+              </div>
+            </div>
+            <div style="background: red;" class="block">
+              <div class="image">
+                <img
+                  class="photo"
+                  src="./img/trial/Jess 73 v1a@2x.png"
+                  alt=""
+                />
+                <svg class="progress-ring" width="40" height="40">
+                  <circle
+                    class="progress-ring__circle"
+                    stroke="white"
+                    stroke-width="4"
+                    cx="20"
+                    cy="20"
+                    r="17"
+                    fill="transparent"
+                  />
+                </svg>
+              </div>
+              <div class="text-block">
+                <h3>
+                  “There isn’t anything else out there that’s like
+                  thisislanguage.com”
+                </h3>
+                <hr />
+                <p class="name">Jess Lund</p>
+                <p>Head of MFL Michaela Community School</p>
+              </div>
+            </div>
+            <div style="background: green;" class="block">
+              <div class="image">
+                <img
+                  class="photo"
+                  src="./img/trial/Jess 73 v1a@2x.png"
+                  alt=""
+                />
+                <svg class="progress-ring" width="40" height="40">
+                  <circle
+                    class="progress-ring__circle"
+                    stroke="white"
+                    stroke-width="4"
+                    cx="20"
+                    cy="20"
+                    r="17"
+                    fill="transparent"
+                  />
+                </svg>
+              </div>
+              <div class="text-block">
+                <h3>
+                  “There isn’t anything else out there that’s like
+                  thisislanguage.com”
+                </h3>
+                <hr />
+                <p class="name">Jess Lund</p>
+                <p>Head of MFL Michaela Community School</p>
+              </div>
+            </div>
+            <div style="background: blue;" class="block">
+              <div class="image">
+                <img
+                  class="photo"
+                  src="./img/trial/Jess 73 v1a@2x.png"
+                  alt=""
+                />
+                <svg class="progress-ring" width="40" height="40">
+                  <circle
+                    class="progress-ring__circle"
+                    stroke="white"
+                    stroke-width="4"
+                    cx="20"
+                    cy="20"
+                    r="17"
+                    fill="transparent"
+                  />
+                </svg>
+              </div>
+              <div class="text-block">
+                <h3>
+                  “There isn’t anything else out there that’s like
+                  thisislanguage.com”
+                </h3>
+                <hr />
+                <p class="name">Jess Lund</p>
+                <p>Head of MFL Michaela Community School</p>
+              </div>
+            </div>
+            <div style="background: yellow;" class="block">
+              <div class="image">
+                <img
+                  class="photo"
+                  src="./img/trial/Jess 73 v1a@2x.png"
+                  alt=""
+                />
+                <svg class="progress-ring" width="40" height="40">
+                  <circle
+                    class="progress-ring__circle"
+                    stroke="white"
+                    stroke-width="4"
+                    cx="20"
+                    cy="20"
+                    r="17"
+                    fill="transparent"
+                  />
+                </svg>
               </div>
               <div class="text-block">
                 <h3>
@@ -404,6 +530,73 @@
       integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
       crossorigin="anonymous"
     ></script>
+    <script
+      src="libs/slick/slick.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        if (screen.width < 720) $(".progress-ring__circle").attr("r", "13");
+        else $(".progress-ring__circle").attr("r", "17");
+      });
+      $(".trial-section .head .wrap").slick({
+        rows: 0,
+        arrows: false,
+        dots: false,
+        autoplaySpeed: 5000,
+        speed: 500,
+        adaptiveHeight: true,
+        autoplay: true,
+        cssEase: "linear"
+      });
+
+      var time = 2;
+      var $slick,
+        isPause,
+        tick,
+        percentTime = 0;
+
+      $slick = $(".trial-section .head .wrap");
+      $slick.on({
+        mouseenter: function() {
+          isPause = true;
+        },
+        mouseleave: function() {
+          isPause = false;
+          startProgressbar();
+        },
+        mousedown: function() {
+          $rbar.fadeOut("slow");
+          percentTime = 0;
+        }
+      });
+
+      function startProgressbar() {
+        clearTimeout(tick);
+        isPause = false;
+        tick = setInterval(interval, 20);
+        $rbar.fadeIn("slow");
+      }
+      var $rbar = $(".progress-ring__circle");
+      var rlen = 2 * Math.PI * $rbar.attr("r");
+
+      function interval() {
+        if (isPause === false) {
+          percentTime += 1 / (time + 0.1);
+          $rbar.css({
+            strokeDasharray: rlen,
+            strokeDashoffset: rlen * (1 - percentTime / 100)
+          });
+          if (percentTime >= 100) {
+            $slick.slick("slickNext");
+            percentTime = 0;
+            startProgressbar();
+          }
+        }
+      }
+      startProgressbar();
+    </script>
     <script>
       document.querySelector(".wrapper-trial").style.opacity = "0";
       setInterval(function(e) {
