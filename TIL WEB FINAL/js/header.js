@@ -144,16 +144,16 @@ document
       document.querySelectorAll(".wrapper-list ul li ").forEach(function(e) {
         e.style.background = "";
       });
-      event.srcElement.offsetParent.children[0].childNodes.forEach(function(e) {
-        if (!(e.nodeName == "#text")) {
-          e.childNodes[0].style.background = "";
-          // document
-          //   .querySelectorAll(".wrapper-list ul li a")
-          //   .forEach(function(e) {
-          //     e.style.background = "";
-          //   });
-        }
-      });
+      // event.srcElement.offsetParent.children[0].childNodes.forEach(function(e) {
+      //   if (!(e.nodeName == "#text")) {
+      //     e.childNodes[0].style.background = "";
+      //     // document
+      //     //   .querySelectorAll(".wrapper-list ul li a")
+      //     //   .forEach(function(e) {
+      //     //     e.style.background = "";
+      //     //   });
+      //   }
+      // });
       document.querySelector(".wrapper-list ul").style.background = "";
       //if .hover-menu EXIST - remove him
       if (!!document.querySelector(".hover-menu")) {
