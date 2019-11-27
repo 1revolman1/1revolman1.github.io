@@ -289,7 +289,24 @@ function current_page() {
     }
   });
 }
+function countup(className) {
+  //className - имя класса, в котором есть число
+  var countBlockTop = $("." + className).offset().top; //смещение блока с числом относительно верхнего края
+  var windowHeight = window.innerHeight; //высота окна браузера
+  var show = true; // отвечает, что если один раз счетчик сработает, больше не срабатывал
 
+  $(window).scroll(function() {
+    if (show && countBlockTop < $(window).scrollTop() + windowHeight) {
+      show = false; //если мы видим число, то больше его не надо показывать
+
+      $("." + className).spincrement({
+        //вызов плагина с параметрами
+        from: 1, //начинать с 1
+        duration: 4000 //задержка счетчика
+      });
+    }
+  });
+}
 document.addEventListener("DOMContentLoaded", function(event) {
   current_page();
   if (document.querySelectorAll(".active").length > 0) {
@@ -537,5 +554,28 @@ document.addEventListener("DOMContentLoaded", function(event) {
       .pause(1000)
       .back(8, 100)
       .continue("language.", { min: 30, max: 150 });
+    let show = true;
+    window.addEventListener("scroll", function(e) {
+      if (
+        show &&
+        $(".block-about-statistik").offset().top <
+          $(window).scrollTop() + window.innerHeight
+      ) {
+        show = false;
+        $(".block-about-statistik .counter").spincrement({
+          from: 1,
+          duration: 4000,
+          complete: function(e) {
+            document
+              .querySelectorAll(".block-about-statistik .counter")
+              .forEach(e => {
+                if (!e.textContent.includes("+")) {
+                  e.textContent += "+";
+                }
+              });
+          }
+        });
+      }
+    });
   }
 });
