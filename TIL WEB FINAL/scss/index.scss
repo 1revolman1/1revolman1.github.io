@@ -245,16 +245,23 @@ menu {
     background-size: cover;
     background-position: -360px;
     h1 {
-      bottom: 30px;
+      bottom: 50px;
       position: relative;
       max-width: 768px;
+      .typer::after {
+        position: relative;
+        top: 30px;
+        width: 2px;
+        height: 77px;
+        background: #fdd000;
+      }
     }
-    h1::after {
-      position: absolute;
-      width: 2px;
-      height: 77px;
-      top: -10px;
-    }
+    // h1::after {
+    //   position: absolute;
+    //   width: 2px;
+    //   height: 77px;
+    //   top: -10px;
+    // }
   }
   section.banner-information {
     height: 1150px;
@@ -1570,6 +1577,12 @@ menu {
     h1 {
       // font-size: 33px;
       // font-size: 50px;
+      .typer::after {
+        top: 50px;
+        width: 3px;
+        height: 125px;
+        background: #fdd000;
+      }
     }
     h1::after {
       width: 3px;

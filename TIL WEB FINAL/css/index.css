@@ -154,11 +154,9 @@ nav .wrapper-settings .button { width: inherit; display: block; text-decoration:
 
 .banner-photo { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: end; -webkit-align-items: flex-end; -ms-flex-align: end; align-items: flex-end; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; min-height: 577px; background-image: url("../img/blue.png"); background-size: cover; min-height: 500px; background-position: -290px; width: 100%; margin: 0 auto; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
 
-.banner-photo h1 { position: relative; max-width: 320px; display: block; color: #ffffff; font: 700 25px/50px Open Sans; letter-spacing: 0; text-align: center; }
+.banner-photo h1 { z-index: 9999; position: relative; max-width: 320px; display: block; color: #ffffff; font: 700 25px/50px Open Sans; letter-spacing: 0; text-align: center; }
 
-.banner-photo h1::after { left: 102%; display: block; content: ""; width: 1px; height: 54px; background: #fdd000; position: absolute; top: 50px; }
-
-.banner-photo span { position: relative; }
+.banner-photo h1 .typer::after { width: 1px; height: 54px; background: #fdd000; }
 
 .banner-information { height: 1270px; z-index: 999; margin: 0 auto; margin-bottom: 50px; }
 
@@ -1646,8 +1644,8 @@ menu section.menu-teachers .wrapper .elem1, menu section.menu-teachers .wrapper 
   nav .wrapper-settings a .wrapper-user { width: 90px; }
   nav .wrapper-settings a .wrapper-user p { display: block; }
   section.banner-photo { min-height: 934px; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; background-size: cover; background-position: -360px; }
-  section.banner-photo h1 { bottom: 30px; position: relative; max-width: 768px; }
-  section.banner-photo h1::after { position: absolute; width: 2px; height: 77px; top: -10px; }
+  section.banner-photo h1 { bottom: 50px; position: relative; max-width: 768px; }
+  section.banner-photo h1 .typer::after { position: relative; top: 30px; width: 2px; height: 77px; background: #fdd000; }
   section.banner-information { height: 1150px; }
   section.banner-information .wrapper { max-width: 1024px; }
   section.banner-information .wrapper .block-line3 { -webkit-transform: rotate(104deg) scale(3.9); -ms-transform: rotate(104deg) scale(3.9); transform: rotate(104deg) scale(3.9); right: -38px; top: 82%; width: 794px; height: 768px; }
@@ -1844,6 +1842,7 @@ menu section.menu-teachers .wrapper .elem1, menu section.menu-teachers .wrapper 
   nav .wrapper-settings .user-link { display: none; text-decoration: none; }
   nav .wrapper-settings .user-link .wrapper-user p { display: block; }
   section.banner-photo { background-size: 100vw 100%; background-position: 0px; }
+  section.banner-photo h1 .typer::after { top: 50px; width: 3px; height: 125px; background: #fdd000; }
   section.banner-photo h1::after { width: 3px; height: 125px; top: -30px; }
   section.banner-information .wrapper { max-width: 1366px; }
   section.banner-information .wrapper .block-line4 { right: 60%; left: unset; }

@@ -521,4 +521,20 @@ document.addEventListener("DOMContentLoaded", function(event) {
       }
     };
   }
+  if (document.querySelectorAll(".page-template-home-page").length > 0) {
+    typer(".banner-photo .acitve")
+      .cursor({ block: false, blink: "hard", color: "red" })
+      .line("Inspire your classroom with authentic language.", {
+        min: 30,
+        max: 150
+      })
+      .back(9, 100)
+      .continue("teachers.", { min: 30, max: 150 })
+      .pause(1000)
+      .back(9, 100)
+      .continue("lessons.", { min: 30, max: 150 })
+      .pause(1000)
+      .back(8, 100)
+      .continue("language.", { min: 30, max: 150 });
+  }
 });

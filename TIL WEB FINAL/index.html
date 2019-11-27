@@ -15,10 +15,11 @@
     />
     <link rel="stylesheet" type="text/css" href="libs/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css" />
+    <link rel="stylesheet" href="https://unpkg.com/typer-js/typer.css">
     <title>Home</title>
   </head>
 
-  <body>
+  <body class="page-template-home-page">
     <header>
       <div class="wrapper">
         <div class="wrapper-logo">
@@ -117,7 +118,8 @@
       </div>
     </nav>
     <section class="banner-photo">
-      <h1>Inspire your classroom with authentic <span>language.</span></h1>
+      <h1 style="display: none;">Inspire your classroom with authentic language.</h1>
+      <h1 class="acitve"></h1>
     </section>
     <section class="banner-information">
       <div class="wrapper">
@@ -458,5 +460,6 @@
       defer
       type="text/javascript"
     ></script>
+    <script src="https://unpkg.com/typer-js@5.0.2/typer.min.js"></script>
   </body>
 </html>

@@ -13,6 +13,7 @@
   margin: 0 auto;
   align-items: center;
   h1 {
+    z-index: 9999;
     position: relative;
     max-width: 320px;
     display: block;
@@ -23,29 +24,21 @@
     letter-spacing: 0;
     text-align: center;
     // font-family: "Alegreya Sans", sans-serif;
+    .typer::after {
+      width: 1px;
+      height: 54px;
+      background: #fdd000;
+    }
   }
-  h1::after {
-    left: 102%;
-    display: block;
-    content: "";
-    width: 1px;
-    height: 54px;
-    background: #fdd000;
-    position: absolute;
-    top: 50px;
-  }
-  span {
-    position: relative;
-  }
-  // span:before {
+  // h1::after {
+  //   left: 102%;
   //   display: block;
   //   content: "";
   //   width: 1px;
   //   height: 54px;
   //   background: #fdd000;
   //   position: absolute;
-  //   top: -5px;
-  //   right: -5px;
+  //   top: 50px;
   // }
 }
 .banner-information {
