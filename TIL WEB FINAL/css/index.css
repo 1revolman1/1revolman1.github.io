@@ -152,7 +152,7 @@ nav .wrapper-settings .button { width: inherit; display: block; text-decoration:
 
 .active .active_span { border-bottom: 1px solid white; line-height: 30px; position: relative; }
 
-.banner-photo { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: end; -webkit-align-items: flex-end; -ms-flex-align: end; align-items: flex-end; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; min-height: 577px; background-image: url("../img/blue.png"); background-size: cover; min-height: 500px; background-position: -290px; width: 100%; margin: 0 auto; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+.banner-photo { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: end; -webkit-align-items: flex-end; -ms-flex-align: end; align-items: flex-end; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; min-height: 577px; background-image: url("../img/blue.png"); background-size: cover; min-height: 500px; background-position: 55%; width: 100%; margin: 0 auto; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
 
 .banner-photo h1 { z-index: 9999; position: relative; max-width: 320px; display: block; color: #ffffff; font: 700 25px/50px Open Sans; letter-spacing: 0; text-align: center; }
 
@@ -1643,7 +1643,7 @@ menu section.menu-teachers .wrapper .elem1, menu section.menu-teachers .wrapper 
   nav .wrapper-settings a { text-decoration: none; }
   nav .wrapper-settings a .wrapper-user { width: 90px; }
   nav .wrapper-settings a .wrapper-user p { display: block; }
-  section.banner-photo { min-height: 934px; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; background-size: cover; background-position: -360px; }
+  section.banner-photo { min-height: 934px; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; background-size: cover; background-position: 40%; }
   section.banner-photo h1 { bottom: 50px; position: relative; max-width: 768px; }
   section.banner-photo h1 .typer::after { position: relative; top: 30px; width: 2px; height: 77px; background: #fdd000; }
   section.banner-information { height: 1150px; }

@@ -528,6 +528,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         min: 30,
         max: 150
       })
+      .pause(1000)
       .back(9, 100)
       .continue("teachers.", { min: 30, max: 150 })
       .pause(1000)
