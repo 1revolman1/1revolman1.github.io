@@ -1754,7 +1754,7 @@ menu section.menu-teachers .wrapper .elem1, menu section.menu-teachers .wrapper 
   nav .wrapper-settings .user-link { display: none; text-decoration: none; }
   nav .wrapper-settings .user-link .wrapper-user p { display: block; }
   section.banner-photo { background-position: 0; background-size: 100vw 100%; }
-  section.banner-photo h1 { font: Bold 31px/50px Open Sans; margin-top: 320px; }
+  section.banner-photo h1 { font: Bold 31px/50px Open Sans; margin-top: 500px; }
   section.banner-information .wrapper .block-line4 { right: 60%; left: unset; }
   section.banner-information .wrapper .wrapper-clock { right: 2%; top: 7%; }
   section.banner-information .wrapper .block-line { top: -623px; left: -345.794098px; -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); }
