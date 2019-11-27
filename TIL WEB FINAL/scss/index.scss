@@ -250,8 +250,8 @@ menu {
       position: relative;
       max-width: 768px;
       .typer::after {
-        position: relative;
-        top: 30px;
+        position: absolute;
+        transform: translate(0, -10%);
         width: 2px;
         height: 77px;
         background: #fdd000;
@@ -1579,7 +1579,9 @@ menu {
       // font-size: 33px;
       // font-size: 50px;
       .typer::after {
-        top: 50px;
+        position: absolute;
+        transform: translate(0, -25%);
+        // top: 50px;
         width: 3px;
         height: 125px;
         background: #fdd000;
