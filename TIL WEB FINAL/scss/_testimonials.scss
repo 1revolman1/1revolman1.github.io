@@ -131,7 +131,7 @@ footer {
     position: relative;
     max-width: 768px;
   }
-  .sticky-element {
+  .sticky-element {padding:5% 0;
     position: absolute;
     top: -50px;
     left: 0;
@@ -170,7 +170,7 @@ footer {
       position: absolute;
       display: none;
     }
-    .elem {
+    .elem {    overflow: hidden;
       margin: 20px 40px 20px 0;
       position: relative;
       display: flex;
@@ -186,7 +186,7 @@ footer {
       a {
         height: 100%;
       }
-      .block {
+      .block { transition: transform 0.5s linear;
         padding: 13px;
         display: flex;
         justify-content: space-between;
@@ -195,6 +195,7 @@ footer {
         position: absolute;
         width: 40%;
         height: 169px;
+        transform: translate(-100%);
         background: #0093d6;
         h3 {
           font-family: "Open Sans", sans-serif;
@@ -221,6 +222,12 @@ footer {
         left: 50%;
         height: 31px;
         transform: translate(-50%, -50%);
+      }
+    }
+    .elem:hover,
+    .elem:active{
+      .block{
+        transform: translate(0);
       }
     }
   }
@@ -448,15 +455,15 @@ footer {
     .sticky-element {
       width: 713px;
       // height: 104%;
-      height: calc(105% + 100px);
+      height: 105%;
       .stick-element {
         display: block;
         // width: 713px;
         width: 100px;
         height: auto;
-        position: fixed;
+        position: sticky;
         top: 55%;
-        z-index: 99999;
+        // z-index: 99999;
         ul {
           .head {
             font-size: 15px;

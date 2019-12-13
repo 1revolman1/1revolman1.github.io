@@ -1550,7 +1550,8 @@ menu {
       }
       .wrapper-trial {
         // width: 100%;
-        width: 456px;
+        // width: 456px;
+        width: 425px;
         height: 90px;
         // position: relative;
         // right: 8px;
@@ -1964,7 +1965,8 @@ menu {
     padding-bottom: 100px;
     .foot {
       .block-with-who-trusted-us {
-        max-width: $mw1;
+        // max-width: $mw1;
+        max-width: 1366px;
         height: auto;
         // padding: 20px 10% 0;
         // padding: 20px 0;
@@ -1989,7 +1991,8 @@ menu {
     }
     .footer-wrapper {
       // max-width: unset;
-      max-width: $mw1;
+      // max-width: $mw1;
+      max-width: 1366px;
       background: transparent;
       // padding: 0 10%;
       // height: 405px;
@@ -2001,11 +2004,14 @@ menu {
         .site-map {
           // justify-content: space-between;
           justify-content: space-around;
+          align-items: flex-end;
           flex-direction: row;
           // margin-top: 60px;
           padding: 0 10px;
           .block-about {
-            margin: 20px 0;
+            height: fit-content;
+            // margin: 20px 0;
+            margin: 20px 0 0;
             // margin: 0 10px;
             order: 0;
           }

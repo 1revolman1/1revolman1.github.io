@@ -46,6 +46,7 @@ body {
     max-width: 768px;
   }
   .sticky-element {
+    padding: 5% 0;
     position: absolute;
     top: -50px;
     left: 0;
@@ -293,9 +294,9 @@ body {
         margin-left: 50px;
         width: 100px;
         height: auto;
-        position: fixed;
+        position: sticky;
         top: 55%;
-        z-index: 99999;
+        // z-index: 99999;
         ul {
           .head {
             font-size: 15px;

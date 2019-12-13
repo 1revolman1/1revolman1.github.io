@@ -40,6 +40,7 @@ footer {
     max-width: 768px;
   }
   .sticky-element {
+    padding: 5% 0;
     position: absolute;
     top: -50px;
     left: 0;
@@ -570,9 +571,10 @@ footer {
       .stick-element {
         display: block;
         width: auto;
-        position: fixed;
+        // position: fixed;
+        position: sticky;
         top: 55%;
-        z-index: 99999;
+        // z-index: 99999;
         margin-left: 50px;
         li {
           margin: 10px auto;

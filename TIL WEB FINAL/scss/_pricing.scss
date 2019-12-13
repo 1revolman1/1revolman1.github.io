@@ -45,7 +45,7 @@ section.pricing-content {
     position: relative;
     max-width: 768px;
   }
-  .sticky-element {
+  .sticky-element {padding:5% 0;
     position: absolute;
     top: -50px;
     left: 0;
@@ -110,6 +110,11 @@ section.pricing-content {
         background: #ee6700 0% 0% no-repeat padding-box;
         position: relative;
         padding: 20px;
+        .image{
+          position: absolute;
+  left: 20px;
+  bottom: 10px;
+        }
         h3 {
           margin: 0;
           font: 900 60px/45px Alegreya Sans;
@@ -966,15 +971,16 @@ section.pricing-content {
     }
     .sticky-element {
       width: 713px;
-      height: 120%;
+      height: 108%;
       .stick-element {
         display: block;
         // width: 713px;
         width: 100px;
         height: auto;
-        position: fixed;
+        // position: fixed;
+        position: sticky;
         top: 55%;
-        z-index: 99999;
+        // z-index: 99999;
         ul {
           .head {
             font-size: 15px;
@@ -1038,7 +1044,9 @@ section.pricing-content {
           width: 397px;
           height: 166px;
           padding: 20px;
+
           h3 {
+            position: unset;
             width: unset;
             margin: 0;
             font-weight: bolder;

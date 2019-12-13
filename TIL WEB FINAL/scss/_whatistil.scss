@@ -42,7 +42,7 @@ section.whatistil-content {
     position: relative;
     max-width: 768px;
   }
-  .sticky-element {
+  .sticky-element {padding:5% 0;
     position: absolute;
     top: -50px;
     left: 0;
@@ -294,9 +294,9 @@ section.whatistil-content {
         // width: 713px;
         width: 100px;
         height: auto;
-        position: fixed;
+        // position: fixed;
         top: 55%;
-        z-index: 99999;
+        // z-index: 99999;
         ul {
           .head {
             font-size: 15px;
@@ -408,11 +408,11 @@ section.whatistil-content {
   .whatistil-footer {
     .foot {
       .block-with-who-trusted-us {
-        max-width: $mw;
+        // max-width: $mw;
       }
     }
     .footer-wrapper {
-      max-width: $mw;
+      // max-width: $mw;
     }
   }
 }
