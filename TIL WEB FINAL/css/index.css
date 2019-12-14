@@ -58,13 +58,15 @@ header .wrapper-menu #menu__toggle { opacity: 0; }
 
 header .wrapper-menu .menu_btn { position: relative; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; width: 50px; height: 100%; border: none; border-radius: 0; background: #33a7db 0% 0% no-repeat padding-box; -webkit-box-sizing: border-box; box-sizing: border-box; cursor: pointer; }
 
+header .wrapper-menu #menu__toggle:checked ~ .mobile-menu ul { top: 100%; }
+
 header .wrapper-menu .burg { width: 64%; height: 2%; border: none; border-radius: 0; background: rgba(255, 255, 255, 0.644); }
 
 header .wrapper-menu .burg::after { width: 64%; height: 2%; border: none; border-radius: 0; background: rgba(255, 255, 255, 0.644); position: absolute; top: 35%; left: 18%; content: ""; }
 
 header .wrapper-menu .burg::before { width: 64%; height: 2%; border: none; border-radius: 0; background: rgba(255, 255, 255, 0.644); position: absolute; top: 64%; left: 18%; content: ""; }
 
-header .wrapper-menu .menu__box { list-style-type: none; position: absolute; padding: 0; top: -200vh; left: 0; width: 100%; height: 100vh; min-height: 568px; background: #33a7db 0% 0% no-repeat padding-box; z-index: -10; -webkit-transition: top 0.5s linear; -o-transition: top 0.5s linear; transition: top 0.5s linear; }
+header .wrapper-menu .menu__box { list-style-type: none; position: absolute; padding: 0; top: -200vh; left: 0; width: 100%; height: 100vh; min-height: 568px; background: #33a7db 0% 0% no-repeat padding-box; z-index: -10; -webkit-transition: top 0.9543s linear; -o-transition: top 0.9543s linear; transition: top 0.9543s linear; }
 
 header .wrapper-menu .menu__box > li:nth-child(1) { padding: 20px 0 20px 37px; background: #7d56e9 0% 0% no-repeat padding-box; height: 32%; }
 
@@ -151,6 +153,15 @@ nav .wrapper-settings .button { width: inherit; display: block; text-decoration:
 .active { text-transform: underline; color: white; }
 
 .active .active_span { border-bottom: 1px solid white; line-height: 30px; position: relative; }
+
+@media (orientation: landscape) { header .wrapper .wrapper-menu .menu__box { min-height: unset; }
+  header .wrapper .wrapper-menu .menu__box > li:nth-child(1) { padding: 10px 0 10px 37px; }
+  header .wrapper .wrapper-menu .menu__box > li:nth-child(1) .list { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; }
+  header .wrapper .wrapper-menu .menu__box > li:nth-child(1) .list ul { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+  header .wrapper .wrapper-menu .menu__box > li:nth-child(1) .list ul li { padding: 5px 10px 5px 0; border-bottom: 1px solid white; }
+  header .wrapper .wrapper-menu .menu__box > li:nth-child(2) { padding: 10px 0 10px 37px; }
+  header .wrapper .wrapper-menu .menu__box > li:nth-child(2) .list ul { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+  header .wrapper .wrapper-menu .menu__box > li:nth-child(2) .list ul li { padding: 5px 10px 5px 0; border-bottom: 1px solid white; } }
 
 .banner-photo { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: end; -webkit-align-items: flex-end; -ms-flex-align: end; align-items: flex-end; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; min-height: 577px; background-image: url("../img/blue.png"); background-size: cover; min-height: 500px; background-position: 55%; width: 100%; margin: 0 auto; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
 

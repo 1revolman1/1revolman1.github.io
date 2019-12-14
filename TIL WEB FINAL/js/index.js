@@ -108,20 +108,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
       "display"
     ) != "none"
   ) {   
-    // document.querySelector(".sticky-element").style.height=`${$(".block-with-text-content").outerHeight()+Number(getComputedStyle(document.querySelector(".sticky-element")).getPropertyValue(
-    //   "padding-top"
-    // ).split("px")[0])}px`;
-
-    // if(screen.width<1024){
-    //   document.querySelector(".sticky-element").style.height=`${$(".block-with-text-content").outerHeight()+Number(getComputedStyle(document.querySelector(".sticky-element")).getPropertyValue(
-    //     "padding-top"
-    //   ).split("px")[0])+(-Number(getComputedStyle(document.querySelector(".sticky-element")).getPropertyValue(
-    //     "top"
-    //   ).split("px")[0]))}px`;
-    // }else  document.querySelector(".sticky-element").style.height=`${$(".block-with-text-content").outerHeight()+Number(getComputedStyle(document.querySelector(".sticky-element")).getPropertyValue(
-    //   "padding-top"
-    // ).split("px")[0])}px`;
-
     document.querySelector(".stick-element").style.bottom = "unset";
     if ($(".elem").offset() != undefined) {
       document.querySelector(".stick-element").style.top = `${
@@ -131,23 +117,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
       document.querySelector(".stick-element").style.top = `${
         $(".element").offset().top
       }px`;
-    // window.addEventListener("scroll", function() {
-    //   if (window.scrollY < 50) {
-    //     document.querySelector(".stick-element").style.bottom = "unset";
-    //     if ($(".elem").offset() != undefined) {
-    //       document.querySelector(".stick-element").style.top = `${
-    //         $(".elem").offset().top
-    //       }px`;
-    //     } else
-    //       document.querySelector(".stick-element").style.top = `${
-    //         $(".element").offset().top
-    //       }px`;
-    //   }
-      // if ($("footer").offset().top - $("footer").height() < window.scrollY) {
-      //   document.querySelector(".stick-element").style.top = "unset";
-      //   document.querySelector(".stick-element").style.bottom = `${$(".block-about ul").outerHeight()-15}px`;
-      // }
-    // });
     if ($(".elem").offset() != undefined) {
       document.querySelector(".stick-element").style.top = `${
         $(".elem").offset().top
