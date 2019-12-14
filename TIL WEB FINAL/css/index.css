@@ -158,10 +158,12 @@ nav .wrapper-settings .button { width: inherit; display: block; text-decoration:
   header .wrapper .wrapper-menu .menu__box > li:nth-child(1) { padding: 10px 0 10px 37px; }
   header .wrapper .wrapper-menu .menu__box > li:nth-child(1) .list { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; }
   header .wrapper .wrapper-menu .menu__box > li:nth-child(1) .list ul { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
-  header .wrapper .wrapper-menu .menu__box > li:nth-child(1) .list ul li { padding: 5px 10px 5px 0; border-bottom: 1px solid white; }
+  header .wrapper .wrapper-menu .menu__box > li:nth-child(1) .list ul li { padding: 5px 10px 5px 0; border: 0; }
+  header .wrapper .wrapper-menu .menu__box > li:nth-child(1) .list ul li a { border-bottom: 1px solid white; }
   header .wrapper .wrapper-menu .menu__box > li:nth-child(2) { padding: 10px 0 10px 37px; }
   header .wrapper .wrapper-menu .menu__box > li:nth-child(2) .list ul { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
-  header .wrapper .wrapper-menu .menu__box > li:nth-child(2) .list ul li { padding: 5px 10px 5px 0; border-bottom: 1px solid white; } }
+  header .wrapper .wrapper-menu .menu__box > li:nth-child(2) .list ul li { padding: 5px 10px 5px 0; border: 0; }
+  header .wrapper .wrapper-menu .menu__box > li:nth-child(2) .list ul li a { border-bottom: 1px solid white; } }
 
 .banner-photo { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: end; -webkit-align-items: flex-end; -ms-flex-align: end; align-items: flex-end; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; min-height: 577px; background-image: url("../img/blue.png"); background-size: cover; min-height: 500px; background-position: 55%; width: 100%; margin: 0 auto; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
 
