@@ -392,11 +392,24 @@ footer {
         height: 269px;
         left: 0;
         .block {
-          display: none;
+          // display: none;
+          width: 45%;
+          height: 100%;
+          // h3{
+          //   font-size: 150%;
+          // }
+          // p{
+          //   font-size: 70%;
+          // }
+          // :last-child{
+          //   font-size: 100%;
+          // }
         }
         .play-button {
-          width: 69px;
-          height: 69px;
+          width: 35px;
+          height: 35px;
+          // width: 69px;
+          // height: 69px;
         }
       }
       .big-block {
@@ -514,7 +527,16 @@ footer {
           height: 100%;
         }
         .block {
-          display: none;
+          // display: none;
+           h3{
+            font-size: 150%;
+          }
+          .text{
+            font-size: 90%;
+          }
+          p{
+            font-size: 100%;
+          }
         }
       }
       .big-block {

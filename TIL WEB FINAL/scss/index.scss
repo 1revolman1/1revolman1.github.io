@@ -1537,6 +1537,7 @@ menu {
     z-index: 100000;
     // position: relative;
     .wrapper-settings {
+      transition: top 2s linear;
       // margin: 0 auto;
       justify-content: flex-end;
       // width: 33%;
