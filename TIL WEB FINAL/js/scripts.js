@@ -369,15 +369,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
     //   "padding-top"
     // ).split("px")[0])}px`;
 
-    if(screen.width<1024){
-      document.querySelector(".sticky-element").style.height=`${$(".block-with-text-content").outerHeight()+Number(getComputedStyle(document.querySelector(".sticky-element")).getPropertyValue(
-        "padding-top"
-      ).split("px")[0])+(-Number(getComputedStyle(document.querySelector(".sticky-element")).getPropertyValue(
-        "top"
-      ).split("px")[0]))}px`;
-    }else  document.querySelector(".sticky-element").style.height=`${$(".block-with-text-content").outerHeight()+Number(getComputedStyle(document.querySelector(".sticky-element")).getPropertyValue(
-      "padding-top"
-    ).split("px")[0])}px`;
+    // if(screen.width<1024){
+    //   document.querySelector(".sticky-element").style.height=`${$(".block-with-text-content").outerHeight()+Number(getComputedStyle(document.querySelector(".sticky-element")).getPropertyValue(
+    //     "padding-top"
+    //   ).split("px")[0])+(-Number(getComputedStyle(document.querySelector(".sticky-element")).getPropertyValue(
+    //     "top"
+    //   ).split("px")[0]))}px`;
+    // }else  document.querySelector(".sticky-element").style.height=`${$(".block-with-text-content").outerHeight()+Number(getComputedStyle(document.querySelector(".sticky-element")).getPropertyValue(
+    //   "padding-top"
+    // ).split("px")[0])}px`;
 
     document.querySelector(".stick-element").style.bottom = "unset";
     if ($(".elem").offset() != undefined) {
@@ -664,5 +664,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
       .pause(1000)
       .back(8, 100)
       .continue("language.", { min: 30, max: 150 });
+  }
+  if(document.querySelectorAll(".sticky-element").length>0){
+     if(screen.width<1024){
+      document.querySelector(".sticky-element").style.height=`${$(".block-with-text-content").outerHeight()+Number(getComputedStyle(document.querySelector(".sticky-element")).getPropertyValue(
+        "padding-top"
+      ).split("px")[0])+(-Number(getComputedStyle(document.querySelector(".sticky-element")).getPropertyValue(
+        "top"
+      ).split("px")[0]))}px`;
+    }else  document.querySelector(".sticky-element").style.height=`${$(".block-with-text-content").outerHeight()+Number(getComputedStyle(document.querySelector(".sticky-element")).getPropertyValue(
+      "padding-top"
+    ).split("px")[0])}px`;
   }
 });
