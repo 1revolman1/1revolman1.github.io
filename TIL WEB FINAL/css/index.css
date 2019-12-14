@@ -1083,7 +1083,7 @@ footer { clear: both; }
 
 .ourexercises-content .wrapper { height: inherit; margin: 0 auto; position: relative; max-width: 768px; }
 
-.ourexercises-content .sticky-element { padding: 5% 0; position: absolute; top: -50px; left: 0; width: 49%; height: 105%; background: #ea4678 0% 0% no-repeat padding-box; opacity: 1; }
+.ourexercises-content .sticky-element { padding: 5% 0; position: absolute; top: -50px; left: 0; width: 49%; height: 103%; background: #ea4678 0% 0% no-repeat padding-box; opacity: 1; }
 
 .ourexercises-content .sticky-element .stick-element { display: none; }
 
