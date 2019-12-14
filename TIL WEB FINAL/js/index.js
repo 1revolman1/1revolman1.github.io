@@ -420,3 +420,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
   //   ).split("px")[0])}px`;
   // }
 });
+
+ if(document.querySelectorAll(".sticky-element").length>0){
+     if(screen.width<1024){
+      document.querySelector(".sticky-element").style.height=`${$(".block-with-text-content").outerHeight()+Number(getComputedStyle(document.querySelector(".sticky-element")).getPropertyValue(
+        "padding-top"
+      ).split("px")[0])+(-Number(getComputedStyle(document.querySelector(".sticky-element")).getPropertyValue(
+        "top"
+      ).split("px")[0]))}px`;
+    }else  document.querySelector(".sticky-element").style.height=`${$(".block-with-text-content").outerHeight()+Number(getComputedStyle(document.querySelector(".sticky-element")).getPropertyValue(
+      "padding-top"
+    ).split("px")[0])}px`;
+  }
