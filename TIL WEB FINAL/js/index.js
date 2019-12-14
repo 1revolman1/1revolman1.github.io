@@ -278,6 +278,93 @@ document.addEventListener("DOMContentLoaded", function(event) {
       }
     };
   }
+  if(document.querySelectorAll(".page-template-pricing-page").length>0){
+    if (screen.width < 720) {
+      $(".progress-ring__circle").attr("r", "13");
+      $(".progress-ring__circle").attr("stroke-width", "2");
+    } else {
+      $(".progress-ring__circle").attr("r", "17");
+      $(".progress-ring__circle").attr("stroke-width", "4");
+    }
+    function startProgressbar() {
+      clearTimeout(tick);
+      isPause = false;
+      tick = setInterval(interval, 20);
+      $rbar.fadeIn("slow");
+    }
+    function interval() {
+      if (isPause === false) {
+        percentTime += 1 / (time + 0.1);
+        $rbar.css({
+          strokeDasharray: rlen,
+          strokeDashoffset: rlen * (1 - percentTime / 100)
+        });
+        if (percentTime >= 100) {
+          $slick.slick("slickNext");
+          percentTime = 0;
+          startProgressbar();
+        }
+      }
+    }
+    $(".slider-container").slick({
+      rows: 0,
+      arrows: false,
+      dots: false,
+      fade: true,
+      autoplaySpeed: 5000,
+      speed: 500,
+      adaptiveHeight: true,
+      autoplay: true,
+      cssEase: "linear"
+    });
+
+    let time = 2;
+    let $slick,
+      isPause,
+      tick,
+      percentTime = 0;
+    let $rbar = $(".progress-ring__circle");
+    let rlen = 2 * Math.PI * $rbar.attr("r");
+    $slick = $(".slider-container");
+    $slick.on({
+      mouseenter: function() {
+        isPause = true;
+      },
+      mouseleave: function() {
+        isPause = false;
+        startProgressbar();
+      },
+      touchstart: function() {
+        isPause = true;
+      },
+      touchmove: function() {
+        isPause = false;
+        $slick.slick("slickNext");
+        $rbar.fadeOut("slow");
+        percentTime = 0;
+      },
+      touchend: function() {
+        isPause = false;
+        $rbar.fadeOut("slow");
+        percentTime = 0;
+        startProgressbar();
+      },
+      mousedown: function() {
+        $rbar.fadeOut("slow");
+        percentTime = 0;
+      }
+    });
+    startProgressbar();
+    if(screen.width<1024){
+      document.querySelector(".sticky-element").style.height=`${$(".block-with-text-content").outerHeight()+Number(getComputedStyle(document.querySelector(".sticky-element")).getPropertyValue(
+        "padding-top"
+      ).split("px")[0])+(-Number(getComputedStyle(document.querySelector(".sticky-element")).getPropertyValue(
+        "top"
+      ).split("px")[0]))}px`;
+    }else  document.querySelector(".sticky-element").style.height=`${$(".block-with-text-content").outerHeight()+Number(getComputedStyle(document.querySelector(".sticky-element")).getPropertyValue(
+      "padding-top"
+    ).split("px")[0])}px`;
+  }
   if (document.querySelectorAll(".page-template-home-page").length > 0) {
     animation(".block-about-statistik", function() {
       $(".block-about-statistik .counter").spincrement({
