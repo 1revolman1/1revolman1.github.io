@@ -365,9 +365,20 @@ document.addEventListener("DOMContentLoaded", function(event) {
       "display"
     ) != "none"
   ) {   
-    document.querySelector(".sticky-element").style.height=`${$(".block-with-text-content").outerHeight()+Number(getComputedStyle(document.querySelector(".sticky-element")).getPropertyValue(
+    // document.querySelector(".sticky-element").style.height=`${$(".block-with-text-content").outerHeight()+Number(getComputedStyle(document.querySelector(".sticky-element")).getPropertyValue(
+    //   "padding-top"
+    // ).split("px")[0])}px`;
+
+    if(screen.width<1024){
+      document.querySelector(".sticky-element").style.height=`${$(".block-with-text-content").outerHeight()+Number(getComputedStyle(document.querySelector(".sticky-element")).getPropertyValue(
+        "padding-top"
+      ).split("px")[0])+(-Number(getComputedStyle(document.querySelector(".sticky-element")).getPropertyValue(
+        "top"
+      ).split("px")[0]))}px`;
+    }else  document.querySelector(".sticky-element").style.height=`${$(".block-with-text-content").outerHeight()+Number(getComputedStyle(document.querySelector(".sticky-element")).getPropertyValue(
       "padding-top"
     ).split("px")[0])}px`;
+
     document.querySelector(".stick-element").style.bottom = "unset";
     if ($(".elem").offset() != undefined) {
       document.querySelector(".stick-element").style.top = `${
