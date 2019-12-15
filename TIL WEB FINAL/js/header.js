@@ -2,18 +2,23 @@
 
 window.addEventListener("scroll", function(e) {
   if (window.innerWidth >= 1024) {
-    document.querySelector("nav .user-link").style.display = "flex";
-    document.querySelector("nav .wrapper-settings .wrapper-trial").style.width =
-      "330px";
-    document.querySelector("nav .wrapper-settings").style.top = "-100%";
+    document.querySelector(".wrapper-trial-new").style.transition = "transform 0.6s";
+    document.querySelector("aside").style.transition = "transform 0.6s";
+    document.querySelector(".wrapper-trial-new p").style.transition = "all 0.6s";
+   document.querySelector(".wrapper-trial-new").style.transform="translate(0,0%)";
+   document.querySelector("aside").style.transform="translate(0, -200%)";
+   document.querySelector(".wrapper-trial-new p").style.left="";
   }
   if (window.scrollY < 50 && window.innerWidth >= 1024) {
-    document.querySelector("nav .wrapper-settings").style.top = "";
-    document.querySelector("nav .user-link").style.display = "none";
-    document.querySelector("nav .wrapper-settings .wrapper-trial").style.width =
-      "425px";
+    document.querySelector(".wrapper-trial-new").style.transition = "transform 0.6s";
+    document.querySelector("aside").style.transition = "transform 0.6s";
+    document.querySelector(".wrapper-trial-new p").style.transition = "all 0.6s";
+    document.querySelector(".wrapper-trial-new").style.transform="translate(0,100%)";
+    document.querySelector("aside").style.transform="translate(0, 0)";
+    document.querySelector(".wrapper-trial-new p").style.left="131px";
   }
 });
+// 425px
 
 //This code segment initialize listener of mouse on the element
 //and generate menu on the dekstop

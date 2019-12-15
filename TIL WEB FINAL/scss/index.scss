@@ -892,7 +892,7 @@ menu {
       }
     }
   }
-  nav {
+  nav {display: none;
     z-index: 100000;
     .wrapper-settings {
       justify-content: flex-end;
@@ -1499,7 +1499,7 @@ menu {
       .wrapper-menu {
         display: none;
       }
-      .user-link {
+      .user-link {z-index: 1;
         position: unset;
         display: flex;
         height: 100%;
@@ -1530,6 +1530,7 @@ menu {
     }
   }
   nav {
+    display: none;
     // right: -1.3%;
     width: 100vw;
     max-width: $mw;

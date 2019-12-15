@@ -625,15 +625,38 @@ header{
   }
 }
 }
-
-// .active::after {
-//   position: absolute;
-//   top: 60%;
-//   left: 50%;
-//   transform: translate(-50%, -60%);
-//   content: "";
-//   background: white;
-//   // width: 50px;
-//   width: calc(3.5em - 0.5%);
-//   height: 2px;
-// }
+.wrapper-trial-new{
+  display: none;
+  a{
+    width: 100%;
+    height: 100%;
+  }
+}
+@media(min-width:1024px){
+  .wrapper-trial-new{
+    display: flex;
+    position: absolute;
+    width: 425px;
+    height: 90px;
+    background: #04be64 0% 0% no-repeat padding-box;
+    left:-25px;
+    transform: translate(0,100%);
+    a{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      p{
+        position: absolute;
+        left: 100px;
+        color: white;
+        font: 600 30px/50px Open Sans;
+      }
+    }
+      
+  }
+}
+@media(min-width:1366px){
+  .wrapper-trial-new{
+    left:-32px;
+}
+}
