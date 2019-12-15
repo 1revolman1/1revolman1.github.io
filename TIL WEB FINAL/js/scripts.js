@@ -1,7 +1,8 @@
 //This code generate listener of scrolling to create cute changer of .user-link
 
 window.addEventListener("scroll", function(e) {
-  if (window.innerWidth >= 1024) {
+  if(document.querySelectorAll(".page-template-start-a-trial-page").length<=0){
+     if (window.innerWidth >= 1024) {
     document.querySelector(".wrapper-trial-new").style.transition = "transform 0.6s";
     document.querySelector("aside").style.transition = "transform 0.6s";
     document.querySelector(".wrapper-trial-new p").style.transition = "all 0.6s";
@@ -16,6 +17,7 @@ window.addEventListener("scroll", function(e) {
     document.querySelector(".wrapper-trial-new").style.transform="translate(0,100%)";
     document.querySelector("aside").style.transform="translate(0, 0)";
     document.querySelector(".wrapper-trial-new p").style.left="131px";
+    }
   }
 });
 // 425px
@@ -397,6 +399,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   if (
     document.querySelectorAll(".page-template-start-a-trial-page").length > 0
   ) {
+    document.querySelector(".wrapper-trial-new").style.display="none";
     if (screen.width < 720) {
       $(".progress-ring__circle").attr("r", "13");
       $(".progress-ring__circle").attr("stroke-width", "2");

@@ -154,6 +154,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   if (
     document.querySelectorAll(".page-template-start-a-trial-page").length > 0
   ) {
+    document.querySelector(".wrapper-trial-new").style.display="none";
     if (screen.width < 720) {
       $(".progress-ring__circle").attr("r", "13");
       $(".progress-ring__circle").attr("stroke-width", "2");
