@@ -236,6 +236,7 @@ menu {
     }
   }
   section.banner-photo {
+    margin-top: 90px;
     // max-width: 1024px;
     min-height: 934px;
     // background-size: 100vw 100%;
@@ -927,7 +928,7 @@ menu {
       }
     }
   }
-  section.banner-photo {
+  section.banner-photo {    min-height: 776px;
     // padding-bottom: 30%;
     background-position: 0;
     // background-size: 125vw 100%;
@@ -1572,7 +1573,8 @@ menu {
       }
     }
   }
-  section.banner-photo {
+  section.banner-photo {    
+    min-height: 776px;
     // padding-bottom: 30%;
     // padding-bottom: 250px;
     // background-size: 209vw 100vh;

@@ -45,6 +45,7 @@ function animation(clas, func) {
 }
 document.addEventListener("DOMContentLoaded", function(event) {
   current_page();
+  document.querySelector(".wrapper-trial-new p").style.left="131px";
   if (document.querySelectorAll(".active").length > 0) {
     document.querySelectorAll(".active a").forEach((element, index) => {
       element.innerHTML = `<span style="background:transparent" class="active_span">${element.textContent}</span>`;
