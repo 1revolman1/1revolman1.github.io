@@ -1878,12 +1878,12 @@ menu section.menu-teachers .wrapper .elem1, menu section.menu-teachers .wrapper 
   section.banner-photo h1 .typer::after { position: absolute; -webkit-transform: translate(0, -25%); -ms-transform: translate(0, -25%); transform: translate(0, -25%); width: 3px; height: 125px; background: #fdd000; }
   section.banner-photo h1::after { width: 3px; height: 125px; top: -30px; }
   section.banner-information .wrapper { max-width: 1366px; }
-  section.banner-information .wrapper .block-line4 { right: 60%; left: unset; }
+  section.banner-information .wrapper .block-line4 { right: 72%; height: 580px; top: 90%; left: unset; -webkit-transform: scale(1.2); -ms-transform: scale(1.2); transform: scale(1.2); }
   section.banner-information .wrapper .wrapper-clock { right: 13%; top: 9%; }
   section.banner-information .wrapper .wrapper-clock img { width: 102px; height: 101px; }
-  section.banner-information .wrapper .block-line { top: -623px; left: -335.794098px; -webkit-transform: scale(1.1); -ms-transform: scale(1.1); transform: scale(1.1); }
+  section.banner-information .wrapper .block-line { height: 966px; width: 796px; top: -623px; left: -335.794098px; -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); }
   section.banner-information .wrapper .block-line2 { width: 595px; height: 720px; top: 6%; right: -125px; }
-  section.banner-information .wrapper .block-line3 { width: 864px; height: 777px; width: 864px; height: 777px; left: -320px; top: 57%; -webkit-transform: rotate(61deg) scale(2.6); -ms-transform: rotate(61deg) scale(2.6); transform: rotate(61deg) scale(2.6); }
+  section.banner-information .wrapper .block-line3 { width: 864px; height: 777px; width: 864px; height: 777px; left: -148px; top: 86%; -webkit-transform: rotate(90deg) scale(4); -ms-transform: rotate(90deg) scale(4); transform: rotate(90deg) scale(4); }
   section.banner-information .wrapper .block-about-script { width: 562px; min-height: 379px; height: auto; padding: 50px; left: 40px; }
   section.banner-information .wrapper .block-about-script p { font-size: 60px; line-height: 60px; width: unset; height: unset; font-weight: 900; margin-left: 30px; }
   section.banner-information .wrapper .block-about-engage-students { top: 23%; left: 11%; }
@@ -1896,8 +1896,10 @@ menu section.menu-teachers .wrapper .elem1, menu section.menu-teachers .wrapper 
   section.banner-information .wrapper .block-about-teachers .block { width: 486px; height: 361px; }
   section.banner-information .wrapper .block-about-teachers p { font-size: 25px; margin-top: 15px; }
   section.banner-information .wrapper .block-about-statistik { height: 340px; }
+  section.banner-information .wrapper .block-about-statistik .block-about-statistik-students { top: 25%; }
   section.banner-information .wrapper .block-about-statistik .block-about-statistik-students .counter { font-size: 70px; }
   section.banner-information .wrapper .block-about-statistik .block-about-statistik-students p { margin: 15px 0; }
+  section.banner-information .wrapper .block-about-statistik .block-about-statistik-schools { top: 40%; }
   section.banner-information .wrapper .block-about-statistik .block-about-statistik-schools .counter { font-size: 80px; }
   section.banner-information .wrapper .block-about-statistik .block-about-statistik-schools p { margin: 15px 0; }
   section.banner-information .wrapper .block-about-statistik .block-about-statistik-videos { top: 50%; left: 50%; -webkit-transform: translate(-50%, 70%); -ms-transform: translate(-50%, 70%); transform: translate(-50%, 70%); }
@@ -1914,7 +1916,7 @@ menu section.menu-teachers .wrapper .elem1, menu section.menu-teachers .wrapper 
   section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible div.container .text h3 { margin: 20px 0; text-align: left; font: 900 48px/56px Alegreya Sans; }
   section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible div.container .text p.name { margin: 2px 0; text-align: left; font: 800 26px/40px Open Sans; letter-spacing: -0.26px; }
   section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible div.container .text p { text-align: left; font: 400 16px/20px Open Sans; }
-  section.banner-with-lectors-word .wrapper .social-network-block { position: relative; width: 609px; min-height: 355px; height: auto; padding: 65px 25px 65px 90px; }
+  section.banner-with-lectors-word .wrapper .social-network-block { position: relative; width: 609px; min-height: 355px; height: auto; padding: 65px 25px 50px 90px; }
   section.banner-with-lectors-word .wrapper .social-network-block h3 { font: 900 60px/60px Alegreya Sans; }
   section.banner-with-lectors-word .wrapper .social-network-block .block .text a { font: 400 40px/60px Alegreya Sans; }
   section.banner-with-lectors-word .wrapper .social-network-block .block .social-netowrk-links div a img { padding-right: 20px; width: 100%; height: 100%; }
@@ -1923,7 +1925,7 @@ menu section.menu-teachers .wrapper .elem1, menu section.menu-teachers .wrapper 
   section.banner-with-circle .wrapper .slider { top: 0%; height: auto; margin: unset; margin-top: 20px; }
   section.banner-with-circle .wrapper .slider .slick-slide { height: auto; min-height: 100%; }
   section.banner-with-circle .wrapper .slider .slick-slide > div { min-height: 272px; }
-  section.banner-with-circle .wrapper .line1 { z-index: 1; width: 772px; height: 615px; top: -240px; right: -379px; }
+  section.banner-with-circle .wrapper .line1 { z-index: 1; width: 772px; height: 615px; top: -295px; right: -379px; -webkit-transform: scale(1.5); -ms-transform: scale(1.5); transform: scale(1.5); }
   section.banner-with-circle .wrapper .line2 { width: 870px; top: 50%; height: 355px; -webkit-transform: scale(3); -ms-transform: scale(3); transform: scale(3); }
   footer { padding-bottom: 100px; }
   footer .foot .block-with-who-trusted-us { max-width: 1366px; height: auto; padding: 50px 0; }

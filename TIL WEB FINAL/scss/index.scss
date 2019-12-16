@@ -1603,8 +1603,11 @@ menu {
       .block-line4 {
         // right: 70%;
         // left: -20%;
-        right: 60%;
+        right: 72%;
+        height: 580px;
+        top: 90%;
         left: unset;
+        transform: scale(1.2);
       }
       .wrapper-clock {
         right: 13%;
@@ -1622,9 +1625,13 @@ menu {
         // top: -655px;
         // left: -300.794098px;
         // transform: scale(1.1);
+        height: 966px;
+        width: 796px;
         top: -623px;
         left: -335.794098px;
-        transform: scale(1.1);
+        transform: scale(1);
+        // transform: scale(0.88889);
+        // transform: scale(1.02);
       }
       .block-line2 {
         width: 595px;
@@ -1662,11 +1669,20 @@ menu {
         // top: 22%;
         // transform: rotate(76deg) scale(3);
 
+        // ЛУЧШИЙ ВАРИАНТ
+        // width: 864px;
+        // height: 777px;
+        // left: -320px;
+        // top: 57%;
+        // transform: rotate(61deg) scale(2.6);
+
+
         width: 864px;
         height: 777px;
-        left: -320px;
-        top: 57%;
-        transform: rotate(61deg) scale(2.6);
+        // left: -260px;
+        left:-148px;
+        top: 86%;
+        transform: rotate(90deg) scale(4);
 
         // width: 635px;
         // height: 343px;
@@ -1761,6 +1777,7 @@ menu {
         // height: 523px;
         height: 340px;
         .block-about-statistik-students {
+          top: 25%;
           .counter {
             font-size: 70px;
           }
@@ -1769,6 +1786,7 @@ menu {
           }
         }
         .block-about-statistik-schools {
+          top: 40%;
           .counter {
             font-size: 80px;
           }
@@ -1853,7 +1871,8 @@ menu {
         width: 609px;
         min-height: 355px;
         height: auto;
-        padding: 65px 25px 65px 90px;
+        // padding: 65px 25px 65px 90px;
+        padding: 65px 25px 50px 90px;
         h3 {
           font: 900 60px/60px Alegreya Sans;
         }
@@ -1931,8 +1950,10 @@ menu {
         z-index: 1;
         width: 772px;
         height: 615px;
-        top: -240px;
+        // top: -240px;
+        top:-295px;
         right: -379px;
+        transform: scale(1.5);
         // width: 423px;
         // height: 523px;
         // top: -240px;
