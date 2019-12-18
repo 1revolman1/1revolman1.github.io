@@ -181,9 +181,9 @@ nav .wrapper-settings .button { width: inherit; display: block; text-decoration:
 
 @media (min-width: 1366px) { .wrapper-trial-new { left: -32px; } }
 
-.banner-photo { width: 100%; max-width: unset; min-height: unset; position: relative; }
+.banner-photo { width: 100%; max-width: unset; min-height: unset; position: relative; max-height: 589px; }
 
-.banner-photo video { width: 100%; height: 577px; max-height: 776px; -o-object-fit: cover; object-fit: cover; }
+.banner-photo video { width: 100%; height: 589px; max-height: 776px; -o-object-fit: cover; object-fit: cover; }
 
 .banner-photo .overlay { background: #0d55f89e; position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 
@@ -1684,7 +1684,8 @@ menu section.menu-teachers .wrapper .elem1, menu section.menu-teachers .wrapper 
   nav .wrapper-settings a { text-decoration: none; }
   nav .wrapper-settings a .wrapper-user { width: 90px; }
   nav .wrapper-settings a .wrapper-user p { display: block; }
-  section.banner-photo video { width: 100%; max-height: 934px; height: 934px; -o-object-fit: cover; object-fit: cover; }
+  section.banner-photo { max-height: 938px; }
+  section.banner-photo video { width: 100%; max-height: 938px; height: 938px; -o-object-fit: cover; object-fit: cover; }
   section.banner-photo h1 { position: absolute; width: 100%; top: 45%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); max-width: 768px; }
   section.banner-photo h1 .typer::after { position: absolute; -webkit-transform: translate(0, -10%); -ms-transform: translate(0, -10%); transform: translate(0, -10%); width: 2px; height: 77px; background: #fdd000; }
   section.banner-information { height: 1150px; }
@@ -1794,6 +1795,8 @@ menu section.menu-teachers .wrapper .elem1, menu section.menu-teachers .wrapper 
   nav .wrapper-settings .wrapper-trial h2 { font: 600 30px/50px Open Sans; }
   nav .wrapper-settings .user-link { display: none; text-decoration: none; }
   nav .wrapper-settings .user-link .wrapper-user p { display: block; }
+  section.banner-photo { max-height: 776px; }
+  section.banner-photo video { max-height: 776px; height: 776px; }
   section.banner-photo h1 { font: Bold 31px/50px Open Sans; margin-top: 500px; position: absolute; margin: 0 auto; top: 65%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
   section.banner-information .wrapper .block-line4 { right: 60%; left: unset; }
   section.banner-information .wrapper .wrapper-clock { right: 2%; top: 7%; }

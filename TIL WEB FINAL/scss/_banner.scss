@@ -17,10 +17,11 @@
   width: 100%;
 max-width: unset;
 min-height: unset;
-position: relative;
+position: relative;    max-height: 589px;
+
 video{
   width: 100%;
-  height: 577px;
+  height: 589px;
 max-height: 776px;
 // object-fit: fill;
 object-fit: cover;

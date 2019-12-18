@@ -236,6 +236,7 @@ menu {
     }
   }
   section.banner-photo {
+    max-height: 938px;
     // margin-top: 90px;
     // // max-width: 1024px;
     // min-height: 934px;
@@ -248,7 +249,7 @@ menu {
     // background-position: 40%;
     video{
       width: 100%;
-    max-height: 934px;height: 934px;
+    max-height: 938px;height: 938px;
     object-fit: cover;
     }
     h1 {
@@ -937,7 +938,11 @@ menu {
       }
     }
   }
-  section.banner-photo {    
+  section.banner-photo {        max-height: 776px;
+    video{
+      max-height: 776px;
+    height: 776px;
+    }
     h1 {
       font: Bold 31px/50px Open Sans;
       margin-top: 500px;
@@ -1586,7 +1591,7 @@ widows: 100%;
 max-width: unset;
 min-height: unset;
 position: relative;
-
+// max-height: 938px;
     // min-height: 776px;
     // padding-bottom: 30%;
     // padding-bottom: 250px;
