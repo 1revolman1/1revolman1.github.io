@@ -236,19 +236,28 @@ menu {
     }
   }
   section.banner-photo {
-    margin-top: 90px;
-    // max-width: 1024px;
-    min-height: 934px;
-    // background-size: 100vw 100%;
-    // background-size: 115% 101%;
-    align-items: center;
-    // background-size: 209vw 100%;
-    background-size: cover;
-    // background-position: -360px;
-    background-position: 40%;
+    // margin-top: 90px;
+    // // max-width: 1024px;
+    // min-height: 934px;
+    // // background-size: 100vw 100%;
+    // // background-size: 115% 101%;
+    // align-items: center;
+    // // background-size: 209vw 100%;
+    // background-size: cover;
+    // // background-position: -360px;
+    // background-position: 40%;
+    video{
+      width: 100%;
+    max-height: 934px;height: 934px;
+    object-fit: cover;
+    }
     h1 {
-      bottom: 50px;
-      position: relative;
+      // bottom: 50px;
+      // position: relative;
+      position: absolute;width: 100%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
       max-width: 768px;
       .typer::after {
         position: absolute;
@@ -928,16 +937,15 @@ menu {
       }
     }
   }
-  section.banner-photo {    min-height: 776px;
-    // padding-bottom: 30%;
-    background-position: 0;
-    // background-size: 125vw 100%;
-    background-size: 100vw 100%;
+  section.banner-photo {    
     h1 {
       font: Bold 31px/50px Open Sans;
-      // margin-top: 320px;
       margin-top: 500px;
-      // font-size: 50px;
+      position: absolute;
+      margin: 0 auto;
+      top: 65%;
+      left: 50%;
+      transform: translate(-50%,-50%);
     }
   }
   section.banner-information {
@@ -1573,15 +1581,41 @@ menu {
       }
     }
   }
-  section.banner-photo {    
-    min-height: 776px;
+  section.banner-photo { 
+widows: 100%;
+max-width: unset;
+min-height: unset;
+position: relative;
+
+    // min-height: 776px;
     // padding-bottom: 30%;
     // padding-bottom: 250px;
     // background-size: 209vw 100vh;
     // background-position: -360px;
-    background-size: 100vw 100%;
-    background-position: 0px;
+    // background-size: 100vw 100%;
+    // background-position: 0px;
+    // video{
+    //   width: 100%;
+    // max-height: 776px;
+    // object-fit: cover;
+    // }
+    // .overlay{
+    //   background: #0d55f89e;
+    //   // background: rgba(0,0,0,0.6);
+    // position: absolute;
+    // top:0;
+    // left:0;
+    // width: 100%;
+    // height: 100%;
+    // // z-index: 4;
+    // }
     h1 {
+      position: absolute;
+    margin: 0 auto;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    bottom: unset;
       // font-size: 33px;
       // font-size: 50px;
       .typer::after {
@@ -1599,6 +1633,7 @@ menu {
       top: -30px;
     }
   }
+
   section.banner-information {
     .wrapper {
       max-width: $mw;

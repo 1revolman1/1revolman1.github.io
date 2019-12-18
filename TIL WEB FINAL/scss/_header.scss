@@ -104,10 +104,13 @@ header {
           font-family: "Open Sans", sans-serif;
           a {
             position: relative;
+            span{outline: none;}
           }
         }
         li:hover{
-          span{    line-height: 30px;
+          span{
+            background: none;    
+            line-height: 30px;
             border-bottom: 1px solid;
           }
         }

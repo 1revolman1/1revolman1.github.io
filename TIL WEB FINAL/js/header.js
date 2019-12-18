@@ -154,9 +154,9 @@ document
     document.querySelector(".wrapper-trial-new").style.display="none";
     document.querySelector("aside").style.transition="";
     document.querySelector("aside").style.transform="";
-    if (event.target.tagName == "SPAN") {
-      return;
-    }
+    // if (event.target.tagName == "SPAN") {
+    //   return;
+    // }
     setTimeout(() => {
       event.stopPropagation();
       // cleaning background in the .wrapper-list ul childs
@@ -173,11 +173,8 @@ document
         document.querySelector(".wrapper-trial-new").style.display="none";
         document.querySelector("header .wrapper").style.background = "";
         document.querySelector("header").style.background = "";
-        event.target.style.background = "#33a7db";
+        // event.target.style.background = "#33a7db";
         document.querySelector(".wrapper-trial").style.display = "";
-        document.querySelectorAll(".hover-menu").forEach(function(e) {
-          e.style.display = "none";
-        });
       }
       //if li="Contact" - skip. Else - do
       if (!(event.target.textContent == "Contact")) {
@@ -192,7 +189,8 @@ document
             ".hover-menu"
           ).style.top = `${document.querySelector("header").offsetHeight -
             1}px`;
-          event.target.style.background = "#7d56e9";
+          // event.target.style.background = "#7d56e9"; 
+          document.querySelectorAll(".wrapper-list ul li")[0].style.background = "#7d56e9";
           document.querySelector("header .wrapper").style.background =
             "#9879ED";
           document.querySelector("header").style.background = "#9879ED";
@@ -203,7 +201,8 @@ document
             document.querySelector(".wrapper-trial-new").style.display="";
             document.querySelector("header .wrapper").style.background = "";
             document.querySelector("header").style.background = "";
-            event.target.style.background = "#33a7db";
+            // event.target.style.background = "#33a7db";
+            document.querySelectorAll(".wrapper-list ul li")[0].style.background = "#7d56e9";
             document.querySelector(".menu-about").style.display = "none";
             document.querySelector(".wrapper-trial").style.display = "";
             document
@@ -226,7 +225,9 @@ document
           document.querySelector("header .wrapper").style.background =
             "#F16D94";
           document.querySelector("header").style.background = "#F16D94";
-          event.target.style.background = "#EA4678";
+          // event.target.style.background = "#EA4678"; 
+          document.querySelectorAll(".wrapper-list ul li")[1].style.background = "#EA4678";
+         
           //Cleaning SECTION
           //Listener, that check relocation from our creating section
           //if it's true(we are relocating) we remove section
@@ -234,7 +235,8 @@ document
             document.querySelector(".wrapper-trial-new").style.display="";
             document.querySelector("header .wrapper").style.background = "";
             document.querySelector("header").style.background = "";
-            event.target.style.background = "#33a7db";
+            // event.target.style.background = "#33a7db";
+            document.querySelectorAll(".wrapper-list ul li")[1].style.background = "#33a7db"
             document.querySelector(".menu-teachers").style.display = "none";
             document.querySelector(".wrapper-trial").style.display = "";
             document
@@ -251,4 +253,9 @@ document
         }
         }
      },80)
+    //  $("header span").css("background","none")
+    document.querySelectorAll("header span").forEach(e=>{
+          e.style.background = "none";
+      
+    })
 })

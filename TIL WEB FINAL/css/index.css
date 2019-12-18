@@ -30,7 +30,9 @@ header .wrapper-list ul li { position: relative; display: -webkit-box; display: 
 
 header .wrapper-list ul li a { position: relative; }
 
-header .wrapper-list ul li:hover span { line-height: 30px; border-bottom: 1px solid; }
+header .wrapper-list ul li a span { outline: none; }
+
+header .wrapper-list ul li:hover span { background: none; line-height: 30px; border-bottom: 1px solid; }
 
 header .wrapper .settings-country-selector { display: none; margin: 0 10px; background: transparent; }
 
@@ -179,9 +181,13 @@ nav .wrapper-settings .button { width: inherit; display: block; text-decoration:
 
 @media (min-width: 1366px) { .wrapper-trial-new { left: -32px; } }
 
-.banner-photo { margin-top: 120px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: end; -webkit-align-items: flex-end; -ms-flex-align: end; align-items: flex-end; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; min-height: 577px; background-image: url("../img/blue.png"); background-size: cover; min-height: 500px; background-position: 55%; width: 100%; margin: 0 auto; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+.banner-photo { width: 100%; max-width: unset; min-height: unset; position: relative; }
 
-.banner-photo h1 { z-index: 9999; position: relative; max-width: 320px; display: block; color: #ffffff; font: 700 25px/50px Open Sans; letter-spacing: 0; text-align: center; }
+.banner-photo video { width: 100%; height: 577px; max-height: 776px; -o-object-fit: fill; object-fit: fill; }
+
+.banner-photo .overlay { background: #0d55f89e; position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+.banner-photo h1 { position: absolute; top: 75%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); width: 100%; color: #ffffff; font: 700 25px/50px Open Sans; text-align: center; }
 
 .banner-photo h1 .typer::after { width: 1px; height: 54px; background: #fdd000; }
 
@@ -1678,8 +1684,8 @@ menu section.menu-teachers .wrapper .elem1, menu section.menu-teachers .wrapper 
   nav .wrapper-settings a { text-decoration: none; }
   nav .wrapper-settings a .wrapper-user { width: 90px; }
   nav .wrapper-settings a .wrapper-user p { display: block; }
-  section.banner-photo { margin-top: 90px; min-height: 934px; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; background-size: cover; background-position: 40%; }
-  section.banner-photo h1 { bottom: 50px; position: relative; max-width: 768px; }
+  section.banner-photo video { width: 100%; max-height: 934px; height: 934px; -o-object-fit: cover; object-fit: cover; }
+  section.banner-photo h1 { position: absolute; width: 100%; top: 45%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); max-width: 768px; }
   section.banner-photo h1 .typer::after { position: absolute; -webkit-transform: translate(0, -10%); -ms-transform: translate(0, -10%); transform: translate(0, -10%); width: 2px; height: 77px; background: #fdd000; }
   section.banner-information { height: 1150px; }
   section.banner-information .wrapper { max-width: 1024px; }
@@ -1788,8 +1794,7 @@ menu section.menu-teachers .wrapper .elem1, menu section.menu-teachers .wrapper 
   nav .wrapper-settings .wrapper-trial h2 { font: 600 30px/50px Open Sans; }
   nav .wrapper-settings .user-link { display: none; text-decoration: none; }
   nav .wrapper-settings .user-link .wrapper-user p { display: block; }
-  section.banner-photo { min-height: 776px; background-position: 0; background-size: 100vw 100%; }
-  section.banner-photo h1 { font: Bold 31px/50px Open Sans; margin-top: 500px; }
+  section.banner-photo h1 { font: Bold 31px/50px Open Sans; margin-top: 500px; position: absolute; margin: 0 auto; top: 65%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
   section.banner-information .wrapper .block-line4 { right: 60%; left: unset; }
   section.banner-information .wrapper .wrapper-clock { right: 2%; top: 7%; }
   section.banner-information .wrapper .block-line { top: -623px; left: -345.794098px; -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); }
@@ -1876,7 +1881,8 @@ menu section.menu-teachers .wrapper .elem1, menu section.menu-teachers .wrapper 
   nav .wrapper-settings .wrapper-trial { width: 425px; height: 90px; }
   nav .wrapper-settings .user-link { display: none; text-decoration: none; }
   nav .wrapper-settings .user-link .wrapper-user p { display: block; }
-  section.banner-photo { min-height: 776px; background-size: 100vw 100%; background-position: 0px; }
+  section.banner-photo { widows: 100%; max-width: unset; min-height: unset; position: relative; }
+  section.banner-photo h1 { position: absolute; margin: 0 auto; top: 65%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); bottom: unset; }
   section.banner-photo h1 .typer::after { position: absolute; -webkit-transform: translate(0, -25%); -ms-transform: translate(0, -25%); transform: translate(0, -25%); width: 3px; height: 125px; background: #fdd000; }
   section.banner-photo h1::after { width: 3px; height: 125px; top: -30px; }
   section.banner-information .wrapper { max-width: 1366px; }

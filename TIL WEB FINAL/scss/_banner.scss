@@ -1,29 +1,54 @@
 .banner-photo {
-  margin-top: 120px;
-  @include flex($justify: center, $align: flex-end, $direction: row);
-  min-height: 577px;
-  background-image: url("../img/blue.png");
-  // background-size: 140% 100%;
-  // background-size: 209vw 100vh;
-  background-size: cover;
-  min-height: 500px;
-  // background-position: -141px;
-  // background-position: -290px;
-  background-position: 55%;
-  // max-width: 768px;
+  // margin-top: 120px;
+  // @include flex($justify: center, $align: flex-end, $direction: row);
+  // min-height: 577px;
+  // background-image: url("../img/blue.png");
+  // // background-size: 140% 100%;
+  // // background-size: 209vw 100vh;
+  // background-size: cover;
+  // min-height: 500px;
+  // // background-position: -141px;
+  // // background-position: -290px;
+  // background-position: 55%;
+  // // max-width: 768px;
+  // width: 100%;
+  // margin: 0 auto;
+  // align-items: center;
   width: 100%;
-  margin: 0 auto;
-  align-items: center;
+max-width: unset;
+min-height: unset;
+position: relative;
+video{
+  width: 100%;
+  height: 577px;
+max-height: 776px;
+object-fit: fill;
+}
+.overlay{
+  background: #0d55f89e;
+  // background: rgba(0,0,0,0.6);
+position: absolute;
+top:0;
+left:0;
+width: 100%;
+height: 100%;
+// z-index: 4;
+}
   h1 {
-    z-index: 9999;
-    position: relative;
-    max-width: 320px;
-    display: block;
+    position: absolute;
+    top:75%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    // z-index: 9999;
+    // position: relative;
+    // max-width: 320px;
+    // display: block;
     // font-family: "Open Sans", sans-serif;
     color: #ffffff;
     font: 700 25px/50px Open Sans;
     // font-size: 25px;
-    letter-spacing: 0;
+    // letter-spacing: 0;
     text-align: center;
     // font-family: "Alegreya Sans", sans-serif;
     .typer::after {
