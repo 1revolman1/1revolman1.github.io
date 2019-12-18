@@ -256,7 +256,7 @@ menu {
       // bottom: 50px;
       // position: relative;
       position: absolute;width: 100%;
-    top: 45%;
+    top: 45%;z-index: 99999;
     left: 50%;
     transform: translate(-50%,-50%);
       max-width: 768px;
@@ -282,9 +282,17 @@ menu {
       .block-line3 {
         transform: rotate(104deg) scale(3.9);
         right: -38px;
-        top: 82%;
-        width: 794px;
-        height: 768px;
+        // top: 82%;
+        // top:58%;
+        // top:65%;
+        // top:70%;
+        // top:37%;
+        top:42%;
+        // top:59%;
+        width: 700px;
+    height: 675px;
+        // width: 794px;
+        // height: 768px;
       }
       .block-line4 {
         // right: 50%;
@@ -293,8 +301,10 @@ menu {
         // transform: rotate(0deg);
 
         left: -30%;
-        height: 220px;
-        top: 86%;
+        // height: 220px;
+        height: 100%;
+        // top: 86%;
+        top: 109%;
         transform: rotate(0deg);
       }
       .block-about-script {
@@ -328,7 +338,7 @@ menu {
         // top: 20%;
         // right: 55%;
         // top: 18%;
-        top: 25%;
+        top: 25%;z-index: 9999;
         right: unset;
         // right: 56%;
         left: 60px;
@@ -389,7 +399,9 @@ menu {
         position: absolute;
         width: 350px;
         height: 713px;
-        top: 50px;
+        // top: 50px;
+        // top:-5%;
+        top:0;
         transform: scale(1);
         right: 0;
       }
@@ -397,7 +409,8 @@ menu {
         height: 450px;
         top: 55%;
         &-students {
-          top: 10%;
+          // top: 10%;
+          top:20%;
           .counter {
             font-weight: 900;
             font-size: 50px;
@@ -582,7 +595,8 @@ menu {
       .line2 {
         width: 500px;
         // height: 500px;
-        height: 240px;
+        // height: 240px;
+        height: 550px;
         // top: 200px;
         // top: 265px;
         top: 360px;
@@ -1647,7 +1661,7 @@ position: relative;
         // left: -20%;
         right: 72%;
         height: 580px;
-        top: 90%;
+        top: 95%;
         left: unset;
         transform: scale(1.2);
       }
@@ -1723,7 +1737,8 @@ position: relative;
         height: 777px;
         // left: -260px;
         left:-148px;
-        top: 86%;
+        // top: 86%;
+        top:40%;
         transform: rotate(90deg) scale(4);
 
         // width: 635px;
@@ -1993,7 +2008,9 @@ position: relative;
         width: 772px;
         height: 615px;
         // top: -240px;
-        top:-295px;
+        // top:-295px;
+        top:-0px;
+        // top:-210%;
         right: -379px;
         transform: scale(1.5);
         // width: 423px;
@@ -2017,8 +2034,12 @@ position: relative;
         // height: 1000px;
         // transform: scale(3);
         width: 870px;
-        top: 50%;
+        // top: 50%;
+        // top:225%;
+        top:-50%;
+        top:-90%;
         height: 355px;
+        // height: 220px;
         transform: scale(3);
       }
       // .slider {

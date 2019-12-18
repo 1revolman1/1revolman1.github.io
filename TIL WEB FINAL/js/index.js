@@ -45,6 +45,9 @@ function animation(clas, func) {
 }
 document.addEventListener("DOMContentLoaded", function(event) {
   current_page();
+  console.log(getComputedStyle(document.querySelector(".block-line2")).getPropertyValue(
+    "transform"
+  ) )
   document.querySelector(".wrapper-trial-new p").style.left="131px";
   if (document.querySelectorAll(".active").length > 0) {
     document.querySelectorAll(".active a").forEach((element, index) => {
@@ -404,4 +407,52 @@ window.onload = function() {
      "padding-top"
    ).split("px")[0])}px`;
  }
+ 
 };
+var rellax = new Rellax('.rellax', {
+  speed: -15,
+  center: true,
+  round: true,
+  vertical: true,
+  horizontal: false,
+  callback: function(positions) {
+    // scale(1.5) scale(3)
+    if(!!document.querySelector(".page-template-home-page"))
+    {
+      if(screen.width>=320 && screen.width>=720 && screen.width>=1366){
+        $(".block-line").css("transform",`${$(".block-line").css("transform")+" scale(1)"}`)
+      $(".line1").css("transform",`${$(".line1").css("transform")+" scale(1.5)"}`)
+      $(".line2").css("transform",`${$(".line2").css("transform")+" scale(3)"}`)
+      }
+      if(screen.width>=320 && screen.width<=720 && screen.width<=1366){
+        $(".block-line").css("transform",`${$(".block-line").css("transform")+" scale(0.65)"}`)
+        $(".block-line2").css("transform",`${$(".block-line2").css("transform")+" scale(0.8)"}`)
+        $(".block-line4").css("transform",`${$(".block-line4").css("transform")+" scale(-0.65, -0.65) rotate(180deg)"}`)
+      }
+      if(screen.width>=720 && screen.width<1280){
+
+      }
+    }
+  }
+});
+var BlockLine3 = new Rellax('.rellax-block', {
+  speed: -15,
+  center: true,
+  round: true,
+  vertical: true,
+  horizontal: false,
+  callback: function() {
+    if(!!document.querySelector(".page-template-home-page"))
+    {
+      if(screen.width>=320 && screen.width>=720 && screen.width>=1366){
+        $(".block-line3").css("transform",`${$(".block-line3").css("transform")+" rotate(90deg) scale(3.4)"}`)
+      }
+      if(screen.width>=320 && screen.width<=720 && screen.width<=1366){
+        $(".block-line3").css("transform",`${$(".block-line3").css("transform")+" rotate(69deg) scale(3.3)"}`)
+       }
+       if(screen.width>=720 && screen.width<1280){
+        $(".block-line3").css("transform",`${$(".block-line3").css("transform")+" rotate(90deg) scale(5)"}`)
+      }
+    }
+  }
+});
