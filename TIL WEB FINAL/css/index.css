@@ -269,7 +269,7 @@ section.banner-with-lectors-word .wrapper { position: relative; max-width: 768px
 
 section.banner-with-lectors-word .wrapper .wrapper-fone { min-height: 730px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: space-evenly; -webkit-justify-content: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; background: #fdd000; height: 100%; width: 100%; margin-right: auto; }
 
-section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible { -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; position: relative; top: 50px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: space-evenly; -webkit-justify-content: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; height: auto; position: relative; padding: 47px; background: #33a9df; max-width: 303px; min-height: 500px; }
+section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible { z-index: 1; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; position: relative; top: 50px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: space-evenly; -webkit-justify-content: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; height: auto; position: relative; padding: 47px; background: #33a9df; max-width: 303px; min-height: 500px; }
 
 section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible div.container div.block { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
 
@@ -1802,7 +1802,7 @@ menu section.menu-teachers .wrapper .elem1, menu section.menu-teachers .wrapper 
   section.banner-information .wrapper .wrapper-clock { right: 2%; top: 7%; }
   section.banner-information .wrapper .block-line { top: -623px; left: -345.794098px; -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); }
   section.banner-information .wrapper .block-line2 { width: 597px; right: -165px; }
-  section.banner-information .wrapper .block-line3 { width: 635px; height: 343px; left: -159px; top: 22%; -webkit-transform: rotate(67deg) scale(3); -ms-transform: rotate(67deg) scale(3); transform: rotate(67deg) scale(3); }
+  section.banner-information .wrapper .block-line3 { width: 635px; height: 80%; left: -49%; top: 20%; -webkit-transform: rotate(67deg) scale(3); -ms-transform: rotate(67deg) scale(3); transform: rotate(67deg) scale(3); }
   section.banner-information .wrapper .block-about-script { width: 525px; min-height: 340px; height: auto; left: 40px; }
   section.banner-information .wrapper .block-about-script p { font-weight: 900; font-size: 60px; line-height: 60px; width: unset; height: unset; margin-left: 30px; }
   section.banner-information .wrapper .block-about-engage-students { top: 21%; left: 8%; }
@@ -1835,7 +1835,7 @@ menu section.menu-teachers .wrapper .elem1, menu section.menu-teachers .wrapper 
   section.banner-with-circle { position: relative; height: auto; }
   section.banner-with-circle .wrapper .slider { top: 0%; width: 95%; }
   section.banner-with-circle .wrapper .line1 { width: 769px; height: 620px; top: -233px; right: -382px; }
-  section.banner-with-circle .wrapper .line2 { width: 815px; top: 260px; -webkit-transform: scale(2); -ms-transform: scale(2); transform: scale(2); }
+  section.banner-with-circle .wrapper .line2 { -webkit-transform: scale(2); -ms-transform: scale(2); transform: scale(2); top: 260px; left: 40%; }
   section.banner-with-circle .wrapper .slider { position: relative; width: 100%; }
   footer { padding-bottom: 110px; }
   footer .foot .block-with-who-trusted-us { padding: 20px 0; }

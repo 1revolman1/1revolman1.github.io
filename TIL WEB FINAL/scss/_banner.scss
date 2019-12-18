@@ -418,6 +418,7 @@ section.banner-with-lectors-word {
       width: 100%;
       margin-right: auto;
       .element-visible {
+        z-index: 1;
         flex-wrap: wrap;
         position: relative;
         top: 50px;

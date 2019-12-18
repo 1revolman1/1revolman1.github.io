@@ -429,8 +429,8 @@ var rellax = new Rellax('.rellax', {
         $(".block-line2").css("transform",`${$(".block-line2").css("transform")+" scale(0.8)"}`)
         $(".block-line4").css("transform",`${$(".block-line4").css("transform")+" scale(-0.65, -0.65) rotate(180deg)"}`)
       }
-      if(screen.width>=720 && screen.width<1280){
-
+      if(screen.width>=1024 && screen.width<1366){
+        $(".line2").css("transform",`${$(".line2").css("transform")+" scale(2)"}`)
       }
     }
   }
@@ -450,8 +450,11 @@ var BlockLine3 = new Rellax('.rellax-block', {
       if(screen.width>=320 && screen.width<=720 && screen.width<=1366){
         $(".block-line3").css("transform",`${$(".block-line3").css("transform")+" rotate(69deg) scale(3.3)"}`)
        }
-       if(screen.width>=720 && screen.width<1280){
+       if(screen.width>=720 && screen.width<1024){
         $(".block-line3").css("transform",`${$(".block-line3").css("transform")+" rotate(90deg) scale(5)"}`)
+      }
+      if(screen.width>=1024 && screen.width<1366){
+        $(".block-line3").css("transform",`${$(".block-line3").css("transform")+" rotate(67deg) scale(3)"}`)
       }
     }
   }
