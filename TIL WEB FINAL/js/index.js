@@ -45,10 +45,16 @@ function animation(clas, func) {
 }
 document.addEventListener("DOMContentLoaded", function(event) {
   current_page();
-  console.log(getComputedStyle(document.querySelector(".block-line2")).getPropertyValue(
-    "transform"
-  ) )
   document.querySelector(".wrapper-trial-new p").style.left="131px";
+  if(!document.querySelector(".page-template-home-page") &&document.querySelectorAll(".rellax").length>0){
+    var rellax = new Rellax('.rellax', {
+      speed: -15,
+      center: true,
+      round: true,
+      vertical: true,
+      horizontal: false,
+    });
+  }
   if (document.querySelectorAll(".active").length > 0) {
     document.querySelectorAll(".active a").forEach((element, index) => {
       element.innerHTML = `<span style="background:transparent" class="active_span">${element.textContent}</span>`;
@@ -158,6 +164,21 @@ document.addEventListener("DOMContentLoaded", function(event) {
   if (
     document.querySelectorAll(".page-template-start-a-trial-page").length > 0
   ) {
+    var trial = new Rellax('.rellax-trial', {
+      speed: -15,
+      center: true,
+      round: true,
+      vertical: true,
+      horizontal: false,
+      callback: function() {
+        if(!!document.querySelector(".page-template-start-a-trial-page"))
+        {
+          $(".sustrac").css("transform",`${$(".sustrac").css("transform")+" scale(1)"}`)
+          $(".trazado").css("transform",`${$(".trazado").css("transform")+" scale(-1, -1)"}`)
+        }
+      }
+    });
+    
     // document.querySelector(".wrapper-trial-new").style.display="none";
     if (screen.width < 720) {
       $(".progress-ring__circle").attr("r", "13");
@@ -350,7 +371,57 @@ document.addEventListener("DOMContentLoaded", function(event) {
     //   "padding-top"
     // ).split("px")[0])}px`;
   }
-  if (document.querySelectorAll(".page-template-home-page").length > 0) {
+  if (document.querySelectorAll(".page-template-home-page").length > 0) {    
+    var rellax = new Rellax('.rellax', {
+      speed: -15,
+      center: true,
+      round: true,
+      vertical: true,
+      horizontal: false,
+      callback: function(positions) {
+        // scale(1.5) scale(3)
+        if(!!document.querySelector(".page-template-home-page"))
+        {
+          if(screen.width>=320 && screen.width>=720 && screen.width>=1366){
+            $(".block-line").css("transform",`${$(".block-line").css("transform")+" scale(1)"}`)
+          $(".line1").css("transform",`${$(".line1").css("transform")+" scale(1.5)"}`)
+          $(".line2").css("transform",`${$(".line2").css("transform")+" scale(3)"}`)
+          }
+          if(screen.width>=320 && screen.width<=720 && screen.width<=1366){
+            $(".block-line").css("transform",`${$(".block-line").css("transform")+" scale(0.65)"}`)
+            $(".block-line2").css("transform",`${$(".block-line2").css("transform")+" scale(0.8)"}`)
+            $(".block-line4").css("transform",`${$(".block-line4").css("transform")+" scale(-0.65, -0.65) rotate(180deg)"}`)
+          }
+          if(screen.width>=1024 && screen.width<1366){
+            $(".line2").css("transform",`${$(".line2").css("transform")+" scale(2)"}`)
+          }
+        }
+      }
+    });
+    var BlockLine3 = new Rellax('.rellax-block', {
+      speed: -15,
+      center: true,
+      round: true,
+      vertical: true,
+      horizontal: false,
+      callback: function() {
+        if(!!document.querySelector(".page-template-home-page"))
+        {
+          if(screen.width>=320 && screen.width>=720 && screen.width>=1366){
+            $(".block-line3").css("transform",`${$(".block-line3").css("transform")+" rotate(90deg) scale(3.4)"}`)
+          }
+          if(screen.width>=320 && screen.width<=720 && screen.width<=1366){
+            $(".block-line3").css("transform",`${$(".block-line3").css("transform")+" rotate(69deg) scale(3.3)"}`)
+           }
+           if(screen.width>=720 && screen.width<1024){
+            $(".block-line3").css("transform",`${$(".block-line3").css("transform")+" rotate(90deg) scale(5)"}`)
+          }
+          if(screen.width>=1024 && screen.width<1366){
+            $(".block-line3").css("transform",`${$(".block-line3").css("transform")+" rotate(67deg) scale(3)"}`)
+          }
+        }
+      }
+    });
     animation(".block-about-statistik", function() {
       $(".block-about-statistik .counter").spincrement({
         from: 1,
@@ -382,17 +453,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
       .back(8, 100)
       .continue("language.", { min: 30, max: 150 });
   }
-  // if(document.querySelectorAll(".sticky-element").length>0){
-  //    if(screen.width<=1024){
-  //     document.querySelector(".sticky-element").style.height=`${$(".block-with-text-content").outerHeight()+Number(getComputedStyle(document.querySelector(".sticky-element")).getPropertyValue(
-  //       "padding-top"
-  //     ).split("px")[0])+(-Number(getComputedStyle(document.querySelector(".sticky-element")).getPropertyValue(
-  //       "top"
-  //     ).split("px")[0]))}px`;
-  //   }else  document.querySelector(".sticky-element").style.height=`${$(".block-with-text-content").outerHeight()+Number(getComputedStyle(document.querySelector(".sticky-element")).getPropertyValue(
-  //     "padding-top"
-  //   ).split("px")[0])}px`;
-  // }
 });
 
 window.onload = function() {
@@ -407,55 +467,6 @@ window.onload = function() {
      "padding-top"
    ).split("px")[0])}px`;
  }
- 
+ if(document.querySelectorAll(".page-template-home-page").length>0){
+ }
 };
-var rellax = new Rellax('.rellax', {
-  speed: -15,
-  center: true,
-  round: true,
-  vertical: true,
-  horizontal: false,
-  callback: function(positions) {
-    // scale(1.5) scale(3)
-    if(!!document.querySelector(".page-template-home-page"))
-    {
-      if(screen.width>=320 && screen.width>=720 && screen.width>=1366){
-        $(".block-line").css("transform",`${$(".block-line").css("transform")+" scale(1)"}`)
-      $(".line1").css("transform",`${$(".line1").css("transform")+" scale(1.5)"}`)
-      $(".line2").css("transform",`${$(".line2").css("transform")+" scale(3)"}`)
-      }
-      if(screen.width>=320 && screen.width<=720 && screen.width<=1366){
-        $(".block-line").css("transform",`${$(".block-line").css("transform")+" scale(0.65)"}`)
-        $(".block-line2").css("transform",`${$(".block-line2").css("transform")+" scale(0.8)"}`)
-        $(".block-line4").css("transform",`${$(".block-line4").css("transform")+" scale(-0.65, -0.65) rotate(180deg)"}`)
-      }
-      if(screen.width>=1024 && screen.width<1366){
-        $(".line2").css("transform",`${$(".line2").css("transform")+" scale(2)"}`)
-      }
-    }
-  }
-});
-var BlockLine3 = new Rellax('.rellax-block', {
-  speed: -15,
-  center: true,
-  round: true,
-  vertical: true,
-  horizontal: false,
-  callback: function() {
-    if(!!document.querySelector(".page-template-home-page"))
-    {
-      if(screen.width>=320 && screen.width>=720 && screen.width>=1366){
-        $(".block-line3").css("transform",`${$(".block-line3").css("transform")+" rotate(90deg) scale(3.4)"}`)
-      }
-      if(screen.width>=320 && screen.width<=720 && screen.width<=1366){
-        $(".block-line3").css("transform",`${$(".block-line3").css("transform")+" rotate(69deg) scale(3.3)"}`)
-       }
-       if(screen.width>=720 && screen.width<1024){
-        $(".block-line3").css("transform",`${$(".block-line3").css("transform")+" rotate(90deg) scale(5)"}`)
-      }
-      if(screen.width>=1024 && screen.width<1366){
-        $(".block-line3").css("transform",`${$(".block-line3").css("transform")+" rotate(67deg) scale(3)"}`)
-      }
-    }
-  }
-});

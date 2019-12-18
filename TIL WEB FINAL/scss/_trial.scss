@@ -703,7 +703,9 @@
       .sustrac {
         display: block;
         // bottom: -13%;
-        bottom: -170px;
+        // bottom: -170px;
+        top: 200%;
+        // bottom: 0px;
       }
       .elem {
         position: relative;
