@@ -220,7 +220,8 @@ footer {
         width: 31px;
         top: 50%;
         left: 50%;
-        height: 31px;
+        height: 31px;        transition: transform 0.3s linear;
+
         // transform: translate(-50%, -50%);
         transform: scale(2) translate(-25%,-25%);
       }
@@ -231,7 +232,6 @@ footer {
         transform: translate(0);
       }
       .play-button{
-        transition: transform 0.3s linear;
         transform: scale(1) translate(-50%, -50%);
       }
     }
