@@ -90,12 +90,14 @@ header {
       }
     }
     &-list {
+      // cursor: pointer;
       height: 100%;
       display: flex;
       // background: transparent;
       ul {
         display: none;
         li {
+          cursor: pointer;
           position: relative;
           display: flex;
           height: 100%;
@@ -523,7 +525,6 @@ nav {
   }
 }
 
-
 .hover-menu {
   @include flex($justify: center, $align: center, $direction: column);
   position: fixed;
@@ -589,6 +590,11 @@ nav {
     position: relative;
   }
 }
+
+menu{
+  li{cursor: pointer;}
+}
+
 @media (orientation:landscape){
 header{
   .wrapper{

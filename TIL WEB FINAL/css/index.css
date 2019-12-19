@@ -26,7 +26,7 @@ header .wrapper-list { height: 100%; display: -webkit-box; display: -webkit-flex
 
 header .wrapper-list ul { display: none; }
 
-header .wrapper-list ul li { position: relative; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; height: 100%; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; font-size: 15px; font-family: "Open Sans", sans-serif; }
+header .wrapper-list ul li { cursor: pointer; position: relative; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; height: 100%; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; font-size: 15px; font-family: "Open Sans", sans-serif; }
 
 header .wrapper-list ul li a { position: relative; }
 
@@ -157,6 +157,8 @@ nav .wrapper-settings .button { width: inherit; display: block; text-decoration:
 .active { text-transform: underline; color: white; }
 
 .active .active_span { border-bottom: 1px solid white; line-height: 30px; position: relative; }
+
+menu li { cursor: pointer; }
 
 @media (orientation: landscape) { header .wrapper .wrapper-menu .menu__box { min-height: unset; }
   header .wrapper .wrapper-menu .menu__box > li:nth-child(1) { padding: 10px 0 10px 37px; }
