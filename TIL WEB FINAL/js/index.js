@@ -371,7 +371,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     //   "padding-top"
     // ).split("px")[0])}px`;
   }
-  if (document.querySelectorAll(".page-template-home-page").length > 0) {    
+  if (document.querySelectorAll(".page-template-home-page").length > 0) {   
+    document.querySelector("html").style.overflowX="hidden";
     var rellax = new Rellax('.rellax', {
       speed: -15,
       center: true,

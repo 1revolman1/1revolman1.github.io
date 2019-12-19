@@ -1305,10 +1305,6 @@ footer { clear: both; }
 
 @font-face { font-family: "Helvetica Neue"; src: url("../font/HelveticaNeueCyr-Thin.ttf"); font-weight: 400; font-style: italic; }
 
-html { overflow-x: hidden; }
-
-body { overflow-x: hidden; }
-
 .terms-text { margin-top: 60px; position: relative; top: 125px; width: 100%; }
 
 .terms-text .wrapper { margin: 0 auto; max-width: 768px; }
@@ -1644,9 +1640,7 @@ body { overflow-x: hidden; }
 
 * { -webkit-box-sizing: border-box; box-sizing: border-box; margin: 0; padding: 0; }
 
-html { overflow-x: hidden; }
-
-body { overflow-x: hidden; }
+.page-template-home-page { overflow-x: hidden; }
 
 menu section.menu-about { display: none; background: #7d56e9; height: 255px; }
 
