@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     // });
   }
   if (
-    document.querySelectorAll(".stick-element").length > 0 &&
+    !document.querySelector(".page-template-contact-page") &&document.querySelectorAll(".stick-element").length > 0 &&
     getComputedStyle(document.querySelector(".stick-element")).getPropertyValue(
       "display"
     ) != "none"
