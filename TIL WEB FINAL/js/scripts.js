@@ -298,7 +298,7 @@ function animation(clas, func) {
 document.addEventListener("DOMContentLoaded", function(event) {
   // current_page();
   document.querySelector(".wrapper-trial-new p").style.left="131px";
-  if(!document.querySelector(".page-template-home-page") &&document.querySelectorAll(".rellax").length>0){
+  if(!document.querySelector(".page-template-home-page") &&document.querySelectorAll(".rellax").length>0 && screen.width>=1024){
     var rellax = new Rellax('.rellax', {
       speed: -15,
       center: true,
