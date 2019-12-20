@@ -154,10 +154,6 @@ nav .wrapper-settings .button { width: inherit; display: block; text-decoration:
 
 .hover-menu .wrapper .elem1 ul li:hover a, .hover-menu .wrapper .elem1 ul li:active a, .hover-menu .wrapper .elem2 ul li:hover a, .hover-menu .wrapper .elem2 ul li:active a, .hover-menu .wrapper .elem3 ul li:hover a, .hover-menu .wrapper .elem3 ul li:active a { border-bottom: 1px solid white; }
 
-.active { text-transform: underline; color: white; }
-
-.active .active_span { border-bottom: 1px solid white; line-height: 30px; position: relative; }
-
 menu li { cursor: pointer; }
 
 @media (orientation: landscape) { header .wrapper .wrapper-menu .menu__box { min-height: unset; }
