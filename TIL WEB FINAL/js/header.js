@@ -151,6 +151,9 @@ window.addEventListener("scroll",scroll_event);
 document
   .querySelector("header .wrapper-list")
   .addEventListener("click", function(event) {
+    if (event.target.tagName == "UL") {
+      return
+     }
     document.querySelector(".wrapper-trial-new").style.display="none";
     document.querySelector("aside").style.transition="";
     document.querySelector("aside").style.transform="";
@@ -160,7 +163,6 @@ document
     setTimeout(() => {
       event.stopPropagation();
       // cleaning background in the .wrapper-list ul childs
-      document.querySelector(".wrapper-trial").style.display = "";
       document.querySelectorAll(".wrapper-list ul li a").forEach(function(e) {
         e.style.background = "";
       });
@@ -173,16 +175,9 @@ document
         document.querySelector(".wrapper-trial-new").style.display="none";
         document.querySelector("header .wrapper").style.background = "";
         document.querySelector("header").style.background = "";
-        // event.target.style.background = "#33a7db";
-        document.querySelector(".wrapper-trial").style.display = "";
       }
       //if li="Contact" - skip. Else - do
       if (!(event.target.textContent == "Contact")) {
-        document.querySelector(".wrapper-trial").style.display = "none";
-        //Fixing error of ending from UL
-        if (event.target.tagName == "UL") {
-          document.querySelector(".wrapper-trial").style.display = "";
-        }
         if (event.target.textContent == "About") {
           document.querySelector(".menu-about").style.display = "flex";
           document.querySelector(
@@ -201,10 +196,8 @@ document
             document.querySelector(".wrapper-trial-new").style.display="";
             document.querySelector("header .wrapper").style.background = "";
             document.querySelector("header").style.background = "";
-            // event.target.style.background = "#33a7db";
             document.querySelectorAll(".wrapper-list ul li")[0].style.background = "#7d56e9";
             document.querySelector(".menu-about").style.display = "none";
-            document.querySelector(".wrapper-trial").style.display = "";
             document
               .querySelectorAll(".wrapper-list ul li a")
               .forEach(function(e) {
@@ -225,7 +218,6 @@ document
           document.querySelector("header .wrapper").style.background =
             "#F16D94";
           document.querySelector("header").style.background = "#F16D94";
-          // event.target.style.background = "#EA4678"; 
           document.querySelectorAll(".wrapper-list ul li")[1].style.background = "#EA4678";
          
           //Cleaning SECTION
@@ -235,10 +227,8 @@ document
             document.querySelector(".wrapper-trial-new").style.display="";
             document.querySelector("header .wrapper").style.background = "";
             document.querySelector("header").style.background = "";
-            // event.target.style.background = "#33a7db";
             document.querySelectorAll(".wrapper-list ul li")[1].style.background = "#33a7db"
             document.querySelector(".menu-teachers").style.display = "none";
-            document.querySelector(".wrapper-trial").style.display = "";
             document
               .querySelectorAll(".wrapper-list ul li a")
               .forEach(function(e) {
