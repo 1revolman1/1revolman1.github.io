@@ -93,6 +93,9 @@
   }
 }
 
+.fancybox-container.fancybox-container.fancybox-container.fancybox-container.fancybox-container{
+  z-index: 9999999;
+}
 header {
   top: 0;
 }
@@ -147,6 +150,11 @@ footer {
       ul {
         li {
           margin: 4px auto;
+        }
+        li:hover{
+         a{
+          text-decoration: underline;
+         }
         }
       }
     }
@@ -351,18 +359,18 @@ footer {
             }
           }
           .active {
-            a::after {
-              content: url("./../img/testimonials/iconmonstr-arrow-right-thin.svg");
-              width: 20px;
-              height: 20px;
-              position: absolute;
-              left: -25px;
-              color: white;
-              -webkit-transform: scale(0.6);
-              -ms-transform: scale(0.6);
-              transform: scale(0.6);
-              margin-top: 5px;
-            }
+            // a::after {
+            //   content: url("./../img/testimonials/iconmonstr-arrow-right-thin.svg");
+            //   width: 20px;
+            //   height: 20px;
+            //   position: absolute;
+            //   left: -25px;
+            //   color: white;
+            //   -webkit-transform: scale(0.6);
+            //   -ms-transform: scale(0.6);
+            //   transform: scale(0.6);
+            //   margin-top: 5px;
+            // }
           }
         }
         .active {

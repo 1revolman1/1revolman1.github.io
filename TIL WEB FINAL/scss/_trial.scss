@@ -1,8 +1,15 @@
 .page-template-start-a-trial-page {
   nav {
     .wrapper-settings {
-      .wrapper-trial {
+      .button {
         display: none;
+        .wrapper-trial {
+          display: none;
+        }
+      }
+      .user-link {
+        position: absolute;
+        right: 0;
       }
     }
   }
@@ -32,6 +39,7 @@
           color: #ffffff;
         }
         p {
+          word-wrap: break-word;
           margin: 30px 0;
           font: 400 16px/21px Open Sans;
           letter-spacing: 0;
@@ -39,6 +47,8 @@
         }
       }
       .wrap {
+        max-width: 302px;
+        margin: 0 auto;
         overflow: hidden;
         // display: flex;
         // flex-direction: row;
@@ -46,9 +56,9 @@
           user-select: none;
           position: relative;
           padding: 15px;
-          margin: 40px auto;
+          // margin: 40px auto;
           @include flex($justify: center, $align: flex-start, $direction: row);
-          max-width: 302px;
+          // max-width: 302px;
           min-height: 206px;
           height: 100%;
           background: #7d56e9 0% 0% no-repeat padding-box;
@@ -382,19 +392,19 @@
         }
         .wrap {
           max-width: 553px;
-          margin: 40px auto;
+          margin: 0 auto;
           .block {
             // display: flex;
             // align-items: normal;
             // margin: unset;
-            margin: 10px auto;
+            // margin: 10px auto;
             padding: 25px;
             @include flex(
               $justify: center,
               $align: flex-start,
               $direction: row
             );
-            max-width: 497px;
+            // max-width: 497px;
             min-height: 271px;
             .text-block {
               margin-left: 10px;
@@ -726,20 +736,23 @@
           margin: unset;
         }
         .wrap {
+          max-width: 400px;
           // max-width: 553px;
-          max-width: 500px;
+          // max-width: 500px;
           //   margin: 40px auto;
           margin: unset;
           .block {
             // margin: unset;
-            margin: 10px auto;
+            // margin: 10px auto;
             padding: 25px;
             @include flex(
               $justify: center,
               $align: flex-start,
               $direction: row
             );
-            max-width: 397px;
+            // max-width: 397px;
+            max-width: unset;
+            margin: 0 auto !important;
             min-height: 254px;
             .text-block {
               margin-left: 10px;

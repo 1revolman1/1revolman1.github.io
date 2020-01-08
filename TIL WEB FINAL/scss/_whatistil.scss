@@ -59,6 +59,9 @@ section.whatistil-content {
         li {
           margin: 4px auto;
         }
+        li:hover{
+          text-decoration: underline;
+        }
       }
     }
   }

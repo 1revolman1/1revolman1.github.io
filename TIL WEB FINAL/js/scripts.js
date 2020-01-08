@@ -297,14 +297,18 @@ function animation(clas, func) {
 }
 document.addEventListener("DOMContentLoaded", function(event) {
   // current_page();
-  document.querySelector(".wrapper-trial-new p").style.left="131px";
-  if(!document.querySelector(".page-template-home-page") &&document.querySelectorAll(".rellax").length>0 && screen.width>=1024){
-    var rellax = new Rellax('.rellax', {
+  document.querySelector(".wrapper-trial-new p").style.left = "131px";
+  if (
+    !document.querySelector(".page-template-home-page") &&
+    document.querySelectorAll(".rellax").length > 0 &&
+    screen.width >= 1024
+  ) {
+    var rellax = new Rellax(".rellax", {
       speed: -15,
       center: true,
       round: true,
       vertical: true,
-      horizontal: false,
+      horizontal: false
     });
   }
   if (document.querySelectorAll(".active").length > 0) {
@@ -365,11 +369,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
     // });
   }
   if (
-    !document.querySelector(".page-template-contact-page") &&document.querySelectorAll(".stick-element").length > 0 &&
+    !document.querySelector(".page-template-contact-page") &&
+    document.querySelectorAll(".stick-element").length > 0 &&
     getComputedStyle(document.querySelector(".stick-element")).getPropertyValue(
       "display"
     ) != "none"
-  ) {   
+  ) {
     document.querySelector(".stick-element").style.bottom = "unset";
     if ($(".elem").offset() != undefined) {
       document.querySelector(".stick-element").style.top = `${
@@ -416,21 +421,26 @@ document.addEventListener("DOMContentLoaded", function(event) {
   if (
     document.querySelectorAll(".page-template-start-a-trial-page").length > 0
   ) {
-    var trial = new Rellax('.rellax-trial', {
+    var trial = new Rellax(".rellax-trial", {
       speed: -15,
       center: true,
       round: true,
       vertical: true,
       horizontal: false,
       callback: function() {
-        if(!!document.querySelector(".page-template-start-a-trial-page"))
-        {
-          $(".sustrac").css("transform",`${$(".sustrac").css("transform")+" scale(1)"}`)
-          $(".trazado").css("transform",`${$(".trazado").css("transform")+" scale(-1, -1)"}`)
+        if (!!document.querySelector(".page-template-start-a-trial-page")) {
+          $(".sustrac").css(
+            "transform",
+            `${$(".sustrac").css("transform") + " scale(1)"}`
+          );
+          $(".trazado").css(
+            "transform",
+            `${$(".trazado").css("transform") + " scale(-1, -1)"}`
+          );
         }
       }
     });
-    
+
     // document.querySelector(".wrapper-trial-new").style.display="none";
     if (screen.width < 720) {
       $(".progress-ring__circle").attr("r", "13");
@@ -536,7 +546,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       }
     };
   }
-  if(document.querySelectorAll(".page-template-pricing-page").length>0){
+  if (document.querySelectorAll(".page-template-pricing-page").length > 0) {
     if (screen.width < 720) {
       $(".progress-ring__circle").attr("r", "13");
       $(".progress-ring__circle").attr("stroke-width", "2");
@@ -623,9 +633,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
     //   "padding-top"
     // ).split("px")[0])}px`;
   }
-  if (document.querySelectorAll(".page-template-home-page").length > 0) {   
-    document.querySelector("html").style.overflowX="hidden";
-    var rellax = new Rellax('.rellax', {
+  if (document.querySelectorAll(".page-template-home-page").length > 0) {
+    document.querySelector("html").style.overflowX = "hidden";
+    var rellax = new Rellax(".rellax", {
       speed: -5,
       center: true,
       round: true,
@@ -633,50 +643,111 @@ document.addEventListener("DOMContentLoaded", function(event) {
       horizontal: false,
       callback: function(positions) {
         // scale(1.5) scale(3)
-        if(!!document.querySelector(".page-template-home-page"))
-        {
-          if(screen.width>=320 && screen.width>=720 && screen.width>=1366){
-            $(".block-line").css("transform",`${$(".block-line").css("transform")+" scale(1)"}`)
-          $(".line1").css("transform",`${$(".line1").css("transform")+" scale(1.5)"}`)
-          // $(".line2").css("transform",`${$(".line2").css("transform")+" scale(3)"}`)
+        if (!!document.querySelector(".page-template-home-page")) {
+          if (
+            screen.width >= 320 &&
+            screen.width >= 720 &&
+            screen.width >= 1366
+          ) {
+            $(".block-line").css(
+              "transform",
+              `${$(".block-line").css("transform") + " scale(1)"}`
+            );
+            $(".line1").css(
+              "transform",
+              `${$(".line1").css("transform") + " scale(1.5)"}`
+            );
+            // $(".line2").css("transform",`${$(".line2").css("transform")+" scale(3)"}`)
           }
-          if(screen.width>=1024 && screen.width<=1366){
-            $(".line1").css("transform",`${$(".line1").css("transform")+" scale(1.5)"}`)
+          if (screen.width >= 1024 && screen.width <= 1366) {
+            $(".line1").css(
+              "transform",
+              `${$(".line1").css("transform") + " scale(1.5)"}`
+            );
           }
-          if(screen.width>=320 && screen.width<=720 && screen.width<=1366){
-            $(".block-line").css("transform",`${$(".block-line").css("transform")+" scale(0.65)"}`)
-            $(".block-line2").css("transform",`${$(".block-line2").css("transform")+" scale(0.8)"}`)
-            $(".block-line4").css("transform",`${$(".block-line4").css("transform")+" scale(-0.65, -0.65) rotate(180deg)"}`)
+          if (
+            screen.width >= 320 &&
+            screen.width <= 720 &&
+            screen.width <= 1366
+          ) {
+            $(".block-line").css(
+              "transform",
+              `${$(".block-line").css("transform") + " scale(0.65)"}`
+            );
+            $(".block-line2").css(
+              "transform",
+              `${$(".block-line2").css("transform") + " scale(0.8)"}`
+            );
+            $(".block-line4").css(
+              "transform",
+              `${$(".block-line4").css("transform") +
+                " scale(-0.65, -0.65) rotate(180deg)"}`
+            );
           }
-          if(screen.width>=720 && screen.width<1024){
-            $(".line1").css("transform",`${$(".line1").css("transform")+" scale(1.25)"}`)
+          if (screen.width >= 720 && screen.width < 1024) {
+            $(".line1").css(
+              "transform",
+              `${$(".line1").css("transform") + " scale(1.25)"}`
+            );
           }
         }
       }
     });
-    var BlockLine3 = new Rellax('.rellax-block', {
+    var BlockLine3 = new Rellax(".rellax-block", {
       speed: -3,
       center: true,
       round: true,
       vertical: true,
       horizontal: false,
       callback: function() {
-        if(!!document.querySelector(".page-template-home-page"))
-        {
-          if(screen.width>=320 && screen.width>=720 && screen.width>=1366){
-            $(".block-line3").css("transform",`${$(".block-line3").css("transform")+" rotate(96deg) scale(4)"}`)
-            $(".line2").css("transform",`${$(".line2").css("transform")+" scale(3)"}`)
+        if (!!document.querySelector(".page-template-home-page")) {
+          if (
+            screen.width >= 320 &&
+            screen.width >= 720 &&
+            screen.width >= 1366
+          ) {
+            $(".block-line3").css(
+              "transform",
+              `${$(".block-line3").css("transform") +
+                " rotate(96deg) scale(4)"}`
+            );
+            $(".line2").css(
+              "transform",
+              `${$(".line2").css("transform") + " scale(3)"}`
+            );
           }
-          if(screen.width>=320 && screen.width<=720 && screen.width<=1366){
-            $(".block-line3").css("transform",`${$(".block-line3").css("transform")+" rotate(69deg) scale(3.3)"}`)
-           }
-           if(screen.width>=720 && screen.width<1024){
-            $(".block-line3").css("transform",`${$(".block-line3").css("transform")+" rotate(90deg) scale(5)"}`)
-            $(".line2").css("transform",`${$(".line2").css("transform")+" scale(2.5)"}`)
+          if (
+            screen.width >= 320 &&
+            screen.width <= 720 &&
+            screen.width <= 1366
+          ) {
+            $(".block-line3").css(
+              "transform",
+              `${$(".block-line3").css("transform") +
+                " rotate(69deg) scale(3.3)"}`
+            );
           }
-          if(screen.width>=1024 && screen.width<1366){
-            $(".block-line3").css("transform",`${$(".block-line3").css("transform")+" rotate(67deg) scale(4)"}`)
-            $(".line2").css("transform",`${$(".line2").css("transform")+" scale(3)"}`)
+          if (screen.width >= 720 && screen.width < 1024) {
+            $(".block-line3").css(
+              "transform",
+              `${$(".block-line3").css("transform") +
+                " rotate(90deg) scale(5)"}`
+            );
+            $(".line2").css(
+              "transform",
+              `${$(".line2").css("transform") + " scale(2.5)"}`
+            );
+          }
+          if (screen.width >= 1024 && screen.width < 1366) {
+            $(".block-line3").css(
+              "transform",
+              `${$(".block-line3").css("transform") +
+                " rotate(67deg) scale(4)"}`
+            );
+            $(".line2").css(
+              "transform",
+              `${$(".line2").css("transform") + " scale(3)"}`
+            );
           }
         }
       }
@@ -696,36 +767,84 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }
       });
     });
-    typer(".banner-photo .acitve")
-      .cursor({ block: false, blink: "hard", color: "red" })
-      .line("Inspire your classroom with authentic language.", {
-        min: 30,
-        max: 150
-      })
-      .pause(1000)
-      .back(9, 100)
-      .continue("teachers.", { min: 30, max: 150 })
-      .pause(1000)
-      .back(9, 100)
-      .continue("lessons.", { min: 30, max: 150 })
-      .pause(1000)
-      .back(8, 100)
-      .continue("language.", { min: 30, max: 150 });
+    //recursion function of  type animation
+    function type(index, stop) {
+      let increment = index + 1;
+      if (stop == 1) {
+        let active = typer(".banner-photo .acitve")
+          .cursor({ block: false, blink: "hard", color: "red" })
+          .line(
+            document.querySelectorAll(".for-typer span")[index].textContent,
+            {
+              min: 30,
+              max: 150
+            }
+          );
+        return;
+      }
+      let active = typer(".banner-photo .acitve")
+        .cursor({ block: false, blink: "hard", color: "red" })
+        .line(document.querySelectorAll(".for-typer span")[index].textContent, {
+          min: 30,
+          max: 150
+        })
+        .pause(1000)
+        .back("all")
+        .pause(1000)
+        .end(function(el) {
+          el.innerHTML = "";
+          if (increment < stop) {
+            type(increment, stop);
+          } else {
+            let new_active = typer(".banner-photo .acitve")
+              .cursor({ block: false, blink: "hard", color: "red" })
+              .line(
+                document.querySelectorAll(".for-typer span")[0].textContent,
+                {
+                  min: 30,
+                  max: 150
+                }
+              );
+          }
+          active.kill();
+        });
+    }
+    let stop = document.querySelectorAll(".for-typer span").length; //index of element that might be the last
+    type(0, stop);
   }
 });
 
 window.onload = function() {
-  if(document.querySelectorAll(".sticky-element").length>0){
-    if(screen.width<1024){
-     document.querySelector(".sticky-element").style.height=`${$(".block-with-text-content").outerHeight()+Number(getComputedStyle(document.querySelector(".sticky-element")).getPropertyValue(
-       "padding-top"
-     ).split("px")[0])+(-Number(getComputedStyle(document.querySelector(".sticky-element")).getPropertyValue(
-       "top"
-     ).split("px")[0]))}px`;
-   }else  document.querySelector(".sticky-element").style.height=`${$(".block-with-text-content").outerHeight()+Number(getComputedStyle(document.querySelector(".sticky-element")).getPropertyValue(
-     "padding-top"
-   ).split("px")[0])}px`;
- }
- if(document.querySelectorAll(".page-template-home-page").length>0){
- }
+  if (
+    document.querySelectorAll(".sticky-element").length > 0 &&
+    getComputedStyle(document.querySelector(".stick-element")).getPropertyValue(
+      "display"
+    ) != "none"
+  ) {
+    if (screen.width < 1024) {
+      document.querySelector(".sticky-element").style.height = `${$(
+        ".block-with-text-content"
+      ).outerHeight() +
+        Number(
+          getComputedStyle(document.querySelector(".sticky-element"))
+            .getPropertyValue("padding-top")
+            .split("px")[0]
+        ) +
+        -Number(
+          getComputedStyle(document.querySelector(".sticky-element"))
+            .getPropertyValue("top")
+            .split("px")[0]
+        )}px`;
+    } else
+      document.querySelector(".sticky-element").style.height = `${$(
+        ".block-with-text-content"
+      ).outerHeight() +
+        Number(
+          getComputedStyle(document.querySelector(".sticky-element"))
+            .getPropertyValue("padding-top")
+            .split("px")[0]
+        )}px`;
+  }
+  if (document.querySelectorAll(".page-template-home-page").length > 0) {
+  }
 };

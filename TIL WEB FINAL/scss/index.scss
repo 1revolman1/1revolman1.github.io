@@ -27,11 +27,13 @@
 
 menu {
   section.menu-about {
+    // z-index: 999999;
     display: none;
     background: #7d56e9;
     height: 255px;
   }
   section.menu-teachers {
+    // z-index: 999999;
     display: none;
     background: #ea4678;
     height: 381px;

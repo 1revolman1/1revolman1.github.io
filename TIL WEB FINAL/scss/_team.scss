@@ -68,6 +68,9 @@ section.team-content {
         li {
           margin: 4px auto;
         }
+        li:hover{
+          text-decoration: underline;
+        }
       }
     }
   }

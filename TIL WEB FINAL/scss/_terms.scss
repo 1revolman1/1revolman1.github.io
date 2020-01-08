@@ -56,6 +56,9 @@
     opacity: 1;
     .stick-element {
       display: none;
+      li:hover{
+        text-decoration: underline;
+      }
     }
   }
   .block-with-text-content {
