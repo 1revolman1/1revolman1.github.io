@@ -50,7 +50,7 @@ main .content .img-logo img {
 
 main .content .img-text {
   height: 184px;
-  width: 90%;
+  width: 93.5%;
   margin: 0 auto;
   display: -webkit-box;
   display: -webkit-flex;
@@ -79,6 +79,11 @@ main .content .img-text h1 {
   color: #ffffff;
 }
 
+main .content .img-info {
+  margin: 0 auto;
+  padding: 0 6px;
+}
+
 main .content .img-info p {
   margin: unset;
   font-family: "Helvetica";
@@ -87,7 +92,7 @@ main .content .img-info p {
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
-  letter-spacing: 0.57px;
+  letter-spacing: 0.29px;
   text-align: center;
   color: #484848;
 }
