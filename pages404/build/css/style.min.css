@@ -579,7 +579,13 @@ template {
 
 @media screen and (max-width: 480px) {
   main .content .img-info p {
-    color: #ffffff;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.29px;
+    text-align: center;
+    color: #000000;
   }
 }
 
