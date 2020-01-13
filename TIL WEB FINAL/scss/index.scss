@@ -1150,16 +1150,18 @@ menu {
         // min-height: 700pxx;
         // max-width: 900px;
         width: 88%;
-
+        // margin: 0 auto;
         .element-visible {
           padding: 0 3.5%;
           div.container {
             width: 940px;
-            padding: 168px 45px;
+            // padding: 168px 45px;
+            padding: 18% 10%;
             flex-direction: row;
           }
           .slick-list {
-            width: 940px !important;
+            // width: 940px !important;
+            width: calc(100% + 100px) !important;
           }
           .arrow-slick-slider {
             transform: scale(2);

@@ -461,7 +461,8 @@ section.banner-with-lectors-word {
           justify-content: center;
           img {
             width: 100%;
-            // height: auto;
+            height: intrinsic !important;
+            height: auto;
           }
         }
         .text {

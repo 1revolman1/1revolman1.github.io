@@ -279,7 +279,7 @@ section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible .second
 
 section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible .image { margin: 0 auto; max-width: 90px; height: auto; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
 
-section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible .image img { width: 100%; }
+section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible .image img { width: 100%; height: intrinsic !important; height: auto; }
 
 section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible .text { margin-top: 37px; }
 
@@ -1847,8 +1847,8 @@ menu section.menu-teachers .wrapper .elem1, menu section.menu-teachers .wrapper 
   section.banner-with-lectors-word .wrapper .trazado { display: none; position: absolute; right: -61%; top: -230px; z-index: 999; }
   section.banner-with-lectors-word .wrapper .wrapper-fone { width: 88%; }
   section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible { padding: 0 3.5%; }
-  section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible div.container { width: 940px; padding: 168px 45px; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; }
-  section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible .slick-list { width: 940px !important; }
+  section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible div.container { width: 940px; padding: 18% 10%; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; }
+  section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible .slick-list { width: -webkit-calc(100% + 100px) !important; width: calc(100% + 100px) !important; }
   section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible .arrow-slick-slider { -webkit-transform: scale(2); -ms-transform: scale(2); transform: scale(2); }
   section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible .prev-arrow { left: 5%; }
   section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible .second-arrow { right: -5%; }
