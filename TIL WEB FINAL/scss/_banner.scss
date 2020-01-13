@@ -407,61 +407,75 @@ section.banner-with-lectors-word {
   .wrapper {
     position: relative;
     max-width: 768px;
-    height: auto;
     margin: 0 auto;
     margin-bottom: 165px;
     .wrapper-fone {
+      padding-top: 66px;
       min-height: 730px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-evenly;
+      padding-top: 66px;
       background: #fdd000;
-      height: 100%;
-      width: 100%;
-      margin-right: auto;
       .element-visible {
-        // padding: 30px;
-        max-width: 320px;
         z-index: 1;
-        flex-wrap: wrap;
-        position: relative;
-        top: 50px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        height: auto;
-        position: relative;
-        padding: 47px;
-        background: #33a9df;
-        max-width: 303px;
-        min-height: 500px;
-        div.container {
-          div.block {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
-          }
+        // flex-wrap: wrap;
+        // position: relative;
+        // top: 50px;
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+        // justify-content: space-evenly;
+        // height: auto;
+        // position: relative;
+        padding: 0 8.5%;
+        .slick-list {
+          margin: 0 auto;
         }
-
+        div.container {
+          position: relative;
+          background: #33a9df;
+          padding: 41px 35px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 320px;
+          margin: 0 auto;
+          background: #33a9df;
+        }
+        .prev-arrow {
+          z-index: 1;
+          position: absolute;
+          left: 9%;
+          top: 50%;
+        }
+        .second-arrow {
+          z-index: 1;
+          position: absolute;
+          right: 9%;
+          top: 50%;
+        }
         .image {
+          margin: 0 auto;
           max-width: 90px;
           height: auto;
+          display: flex;
+          justify-content: center;
           img {
             width: 100%;
-            height: auto;
+            // height: auto;
           }
         }
         .text {
-          margin-top: 15px;
-          height: auto;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
+          // margin-top: 35px;
+          // height: auto;
+          // display: flex;
+          // flex-direction: column;
+          // align-items: center;
+          margin-top: 37px;
+          .included-block {
+            margin-top: 90px;
+          }
           h3 {
+            word-break: break-word;
             font: 900 24px/32px Alegreya Sans;
             color: white;
             text-align: center;
@@ -665,11 +679,18 @@ section.banner-with-lectors-word {
   section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible {
     padding: 0 !important;
   }
-  section.banner-with-lectors-word
-    .wrapper
-    .wrapper-fone
-    .element-visible
-    .slick-list.draggable {
-    width: 320px !important;
+  section.banner-with-lectors-word .wrapper .wrapper-fone .element-visible {
+    .prev-arrow {
+      z-index: 1;
+      position: absolute;
+      left: 3%;
+      top: 50%;
+    }
+    .second-arrow {
+      z-index: 1;
+      position: absolute;
+      right: 3%;
+      top: 50%;
+    }
   }
 }
