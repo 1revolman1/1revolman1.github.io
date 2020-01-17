@@ -31,6 +31,7 @@
     }
     .head {
       .text {
+        width: 100%;
         max-width: 302px;
         margin: 0 auto;
         h3 {
@@ -534,10 +535,13 @@
         padding-left: 160px;
         display: flex;
         // justify-content: space-between;
-        justify-content: space-around;
+        // justify-content: space-around;
+        justify-content: space-between;
+
         // justify-content: center;
         .text {
-          max-width: 605px;
+          // max-width: 605px;
+          max-width: 425px;
           //   margin: 0 auto;
           margin: unset;
         }
@@ -593,7 +597,7 @@
       .input {
         margin: 50px 0;
         padding: 0 50px;
-        padding-left: 155px;
+        padding-left: 160px;
         max-width: 1105px;
         .input-form {
           margin: unset;
@@ -712,10 +716,12 @@
       }
       .sustrac {
         display: block;
-        // bottom: -13%;
-        // bottom: -170px;
-        top: 200%;
-        // bottom: 0px;
+        position: absolute;
+
+        // top: 200%;
+        top: 120%;
+
+        // top: 150%;
       }
       .elem {
         position: relative;
@@ -728,19 +734,27 @@
         padding-left: 145px;
         display: flex;
         // justify-content: space-between;
-        justify-content: space-around;
+        // justify-content: space-around;
+        justify-content: space-between;
+
         // justify-content: center;
         .text {
           max-width: 605px;
+          // max-width: 555px;
           //   margin: 0 auto;
           margin: unset;
+          h3 {
+            padding-right: 55px;
+          }
         }
         .wrap {
+          margin-right: 40px;
+          margin-left: auto;
           max-width: 400px;
           // max-width: 553px;
           // max-width: 500px;
           //   margin: 40px auto;
-          margin: unset;
+          // margin: unset;
           .block {
             // margin: unset;
             // margin: 10px auto;
@@ -800,7 +814,7 @@
       }
       .input {
         margin: 50px 0;
-        padding: 0 100px 0 160px;
+        padding: 0 100px 0 145px;
         // padding: 0 50px;
         // padding-left: 200px;
         max-width: 1105px;
