@@ -28,11 +28,9 @@ header .wrapper-list ul { display: none; }
 
 header .wrapper-list ul li { cursor: pointer; position: relative; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; height: 100%; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; font-size: 15px; font-family: "Open Sans", sans-serif; }
 
-header .wrapper-list ul li a { position: relative; }
+header .wrapper-list ul li a { position: relative; height: 30px; width: auto; outline: none; }
 
-header .wrapper-list ul li a span { outline: none; }
-
-header .wrapper-list ul li:hover span { background: none; line-height: 30px; border-bottom: 1px solid; }
+header .wrapper-list ul li:hover a { background: none; line-height: 30px !important; border-bottom: 1px solid; }
 
 header .wrapper .settings-country-selector { display: none; margin: 0 10px; background: transparent; }
 
@@ -1799,8 +1797,8 @@ menu section.menu-teachers .wrapper .elem1, menu section.menu-teachers .wrapper 
   header .wrapper .wrapper-logo p { margin-left: 10px; margin-left: 5px; display: block; text-transform: capitalize; color: white; text-align: left; font: Bold 12px/15px Open Sans; letter-spacing: -0.24px; color: #ffffff; }
   header .wrapper .wrapper-list { background: transparent; right: 195px; left: auto; position: relative; }
   header .wrapper .wrapper-list ul { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; }
-  header .wrapper .wrapper-list ul li { list-style-type: none; color: #ffffff; margin: unset; width: 82px; font-size: 16px; }
-  header .wrapper .wrapper-list ul li a { height: 100%; width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; font: Bold 15px/15px Open Sans; letter-spacing: -0.23px; text-decoration: none; color: white; }
+  header .wrapper .wrapper-list ul li { list-style-type: none; color: #ffffff; margin: unset; width: 82px; font-size: 16px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
+  header .wrapper .wrapper-list ul li a { height: unset; width: unset; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; font: Bold 15px/15px Open Sans; letter-spacing: -0.23px; text-decoration: none; color: white; }
   header .wrapper .settings-country-selector { background: transparent; width: unset; right: 107px; padding: 0 15px 0 0; position: absolute; left: unset; }
   header .wrapper .settings-country-selector aside section ul .lang-item-es, header .wrapper .settings-country-selector aside section ul .lang-item-fr, header .wrapper .settings-country-selector aside section ul .lang-item-de, header .wrapper .settings-country-selector aside section ul .lang-item-it, header .wrapper .settings-country-selector aside section ul .lang-item-en-us, header .wrapper .settings-country-selector aside section ul .lang-item-en-gb, header .wrapper .settings-country-selector aside section ul .lang-item-zh { margin: 0 3px; }
   header .wrapper .settings-country-selector aside section ul .lang-item-es { background: url("../img/es.svg") no-repeat; background-size: cover; background-position: center; }
@@ -1896,7 +1894,7 @@ menu section.menu-teachers .wrapper .elem1, menu section.menu-teachers .wrapper 
   header .wrapper .wrapper-list { background: transparent; right: 195px; left: auto; position: relative; }
   header .wrapper .wrapper-list ul { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; }
   header .wrapper .wrapper-list ul li { list-style-type: none; height: 90px; width: 90px; margin: 0 5px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; font-size: 15px; line-height: 15px; }
-  header .wrapper .wrapper-list ul li a { width: 100%; background: transparent; height: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; text-decoration: none; color: white; }
+  header .wrapper .wrapper-list ul li a { background: transparent; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; text-decoration: none; color: white; }
   header .wrapper .settings-country-selector { right: 100px; position: absolute; }
   header .wrapper .settings-country-selector aside section ul .lang-item-es, header .wrapper .settings-country-selector aside section ul .lang-item-fr, header .wrapper .settings-country-selector aside section ul .lang-item-de, header .wrapper .settings-country-selector aside section ul .lang-item-it, header .wrapper .settings-country-selector aside section ul .lang-item-en-us, header .wrapper .settings-country-selector aside section ul .lang-item-en-gb, header .wrapper .settings-country-selector aside section ul .lang-item-zh { margin: 0 3px; }
   header .wrapper .settings-country-selector aside section ul .lang-item-es { background: url("../img/es.svg") no-repeat; background-size: cover; background-position: center; }

@@ -106,13 +106,16 @@ header {
           font-family: "Open Sans", sans-serif;
           a {
             position: relative;
-            span{outline: none;}
+            height: 30px;
+            width: auto;
+            outline: none;
           }
         }
-        li:hover{
-          span{
-            background: none;    
-            line-height: 30px;
+        li:hover {
+          // background: red;
+          a {
+            background: none;
+            line-height: 30px !important;
             border-bottom: 1px solid;
           }
         }
@@ -254,8 +257,8 @@ header {
       // #menu__toggle:checked ~.menu_btn{
       //   background:red;
       // }
-      #menu__toggle:checked ~.mobile-menu ul{
-        top:100%;
+      #menu__toggle:checked ~ .mobile-menu ul {
+        top: 100%;
       }
       .burg {
         @include block($w: 64%, $h: 2%, $bg: rgba(255, 255, 255, 0.644));
@@ -560,14 +563,14 @@ nav {
             font-family: "Open Sans", sans-serif;
             color: white;
             line-height: 42px;
-           
+
             // font: Semibold 25px/42px Open Sans;
             letter-spacing: -0.5px;
           }
         }
         li:hover,
-        li:active{
-          a{
+        li:active {
+          a {
             border-bottom: 1px solid white;
           }
         }
@@ -591,45 +594,51 @@ nav {
 //   }
 // }
 
-menu{
-  li{cursor: pointer;}
+menu {
+  li {
+    cursor: pointer;
+  }
 }
 
-@media (orientation:landscape){
-header{
-  .wrapper{
-    .wrapper-menu{
-      .menu__box{
-        min-height: unset;
-        > li:nth-child(1){    
-          padding: 10px 0 10px 37px;
-          .list{
-            flex-direction: row;
-            ul{
-              display: flex;
+@media (orientation: landscape) {
+  header {
+    .wrapper {
+      .wrapper-menu {
+        .menu__box {
+          min-height: unset;
+          > li:nth-child(1) {
+            padding: 10px 0 10px 37px;
+            .list {
               flex-direction: row;
-              // justify-content: space-between;
-              flex-wrap: wrap;
-               li{padding: 5px 10px 5px 0;
-                border: 0;
-               a{
-                border-bottom: 1px solid white;
-               }
+              ul {
+                display: flex;
+                flex-direction: row;
+                // justify-content: space-between;
+                flex-wrap: wrap;
+                li {
+                  padding: 5px 10px 5px 0;
+                  border: 0;
+                  a {
+                    border-bottom: 1px solid white;
+                  }
+                }
               }
             }
           }
-        }
-        > li:nth-child(2){   
-           padding: 10px 0 10px 37px;
-          .list{
-            ul{
-              display: flex;
-              flex-direction: row;
-              // justify-content: space-between;
-              flex-wrap: wrap;
-              li{padding: 5px 10px 5px 0;border: 0;
-                a{
-                  border-bottom: 1px solid white;
+          > li:nth-child(2) {
+            padding: 10px 0 10px 37px;
+            .list {
+              ul {
+                display: flex;
+                flex-direction: row;
+                // justify-content: space-between;
+                flex-wrap: wrap;
+                li {
+                  padding: 5px 10px 5px 0;
+                  border: 0;
+                  a {
+                    border-bottom: 1px solid white;
+                  }
                 }
               }
             }
@@ -639,31 +648,30 @@ header{
     }
   }
 }
-}
-.page-template-start-a-trial-page .wrapper-trial-new{
+.page-template-start-a-trial-page .wrapper-trial-new {
   display: none;
 }
-.wrapper-trial-new{
+.wrapper-trial-new {
   display: none;
-  a{
+  a {
     width: 100%;
     height: 100%;
   }
 }
-@media(min-width:1024px){
-  .wrapper-trial-new{
+@media (min-width: 1024px) {
+  .wrapper-trial-new {
     display: flex;
     position: absolute;
     width: 425px;
     height: 90px;
     background: #04be64 0% 0% no-repeat padding-box;
-    left:-25px;
-    transform: translate(0,100%);
-    a{
+    left: -25px;
+    transform: translate(0, 100%);
+    a {
       display: flex;
       align-items: center;
       justify-content: center;
-      p{
+      p {
         position: absolute;
         left: 100px;
         // left: 131px;
@@ -671,11 +679,10 @@ header{
         font: 600 30px/50px Open Sans;
       }
     }
-      
   }
 }
-@media(min-width:1366px){
-  .wrapper-trial-new{
-    left:-32px;
-}
+@media (min-width: 1366px) {
+  .wrapper-trial-new {
+    left: -32px;
+  }
 }
