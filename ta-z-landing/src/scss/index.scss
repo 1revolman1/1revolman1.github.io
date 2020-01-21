@@ -177,8 +177,8 @@ header {
     }
     @media screen and (max-width: $smalDekstop) {
       width: 100%;
-      position: initial;
-      top: initial;
+      position: static;
+      top: 0;
       margin: 0;
       right: 0;
     }

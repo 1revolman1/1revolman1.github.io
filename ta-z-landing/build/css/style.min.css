@@ -671,8 +671,8 @@ template {
 
   .content .sticky {
     width: 100%;
-    position: initial;
-    top: initial;
+    position: static;
+    top: 0;
     margin: 0;
     right: 0;
   }
