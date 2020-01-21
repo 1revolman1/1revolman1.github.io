@@ -1,0 +1,284 @@
+@import "help/vars_and_mixins";
+
+$smalDekstop: 1024px;
+$bigMobile: 425px;
+
+header {
+  background: url("../img/Group 3.svg");
+  background-size: cover;
+}
+.wrapper {
+  padding: 85px 125px;
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
+  @media screen and (max-width: $smalDekstop) {
+    max-width: 768px;
+    padding: 85px 85px;
+  }
+  @media screen and (max-width: $bigMobile) {
+    max-width: $bigMobile;
+    padding: 0 20px;
+  }
+}
+.header {
+  padding: 85px 125px 130px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .text {
+    color: white;
+    h1 {
+      margin: 0;
+      font-family: "PromptBold", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 55px;
+      line-height: 83px;
+    }
+    p {
+      margin: 0;
+      font-family: "PromptSemiBold", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 36px;
+      opacity: 0.7;
+    }
+  }
+  @media screen and (max-width: $smalDekstop) {
+    padding: 40px 80px 40px;
+  }
+  @media screen and (max-width: $bigMobile) {
+    padding: 40px 20px !important;
+    height: auto;
+    min-height: 450px;
+  }
+}
+.content {
+  padding-top: 30px;
+  position: relative;
+  display: flex;
+  .block-with-text {
+    // width: 673px;
+    // width: 55%;
+    width: 50%;
+    h3 {
+      font-family: "PromptBold", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 42px;
+    }
+    p {
+      font-family: "PromptRegular", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 27px;
+      margin-bottom: 65px;
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+    @media screen and (max-width: $smalDekstop) {
+      width: inherit;
+    }
+  }
+  .sticky {
+    z-index: 1;
+    width: 33%;
+    height: fit-content;
+    background: #ffe900;
+    box-shadow: 0px 32px 48px rgba(0, 0, 0, 0.06);
+    position: fixed;
+    margin: 0 auto;
+    padding: 0 42px;
+    bottom: 0;
+    right: 8%;
+    .head {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      h3 {
+        text-align: center;
+        font-family: "PromptSemiBold", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 42px;
+      }
+    }
+    .inputs-form {
+      margin-bottom: 25px;
+      .input {
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+
+        label {
+          margin-bottom: 5px;
+          font-family: "PromptRegular", sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 24px;
+        }
+        input {
+          height: 52px;
+          background: #ffffff;
+          border: 1px solid #adadad;
+          box-sizing: border-box;
+          padding: 10px 22px;
+          font-family: "PromptRegular", sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 30px;
+          color: black;
+        }
+        input::placeholder {
+          font-family: "PromptRegular", sans-serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 30px;
+          color: black;
+        }
+      }
+      input[type="submit"] {
+        cursor: pointer;
+        height: 58px;
+        width: 100%;
+        background: black;
+        font-family: "PromptSemiBold", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        color: white;
+        //   display: flex;
+        //   align-items: center;
+        //   text-align: center;
+      }
+    }
+    .text {
+      p {
+        font-family: "PromptRegular", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+        color: black;
+      }
+    }
+    @media screen and (max-width: $smalDekstop) {
+      width: 100%;
+      position: initial;
+      top: initial;
+      margin: 0;
+      right: 0;
+    }
+  }
+  @media screen and (max-width: $smalDekstop) {
+    flex-direction: column;
+  }
+  @media screen and (max-width: $bigMobile) {
+    margin-bottom: 100px;
+    margin-top: 50px;
+  }
+}
+main {
+  position: relative;
+}
+
+footer {
+  margin-top: auto;
+  background: #f9f9f9;
+  //   background: red;
+  width: 100%;
+  height: 100px;
+
+  .footer {
+    padding: 0 125px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    transition: padding 0.4s linear;
+    justify-content: space-between;
+    align-items: center;
+    .text {
+      z-index: 0;
+      transition: margin 1s linear, transform 0.7s linear;
+      // transition: transform 0.7s linear;
+      display: flex;
+      p {
+        font-family: "PromptRegular", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 23px;
+        color: black;
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+      }
+      .text-1 {
+        max-width: 235px;
+        // margin-right: 54px
+        margin-right: 13%;
+        @media screen and (max-width: $bigMobile) {
+          margin-right: 0;
+          max-width: 180px;
+        }
+      }
+      .text-2 {
+        max-width: 180px;
+      }
+      .text-1,
+      .text-2 {
+        width: 100%;
+      }
+      @media screen and (max-width: $bigMobile) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    .logo {
+      position: relative;
+      z-index: 0;
+    }
+    .logo::after {
+      content: "";
+      z-index: -1;
+      position: absolute;
+      height: 100%;
+      width: 5px;
+      right: 1%;
+      background: yellow;
+    }
+    .icon {
+      position: relative;
+      transition: left 0.1s linear;
+    }
+    @media screen and (max-width: $smalDekstop) {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      max-width: 768px;
+      padding: 0 85px;
+    }
+    @media screen and (max-width: $bigMobile) {
+      display: flex;
+      flex-direction: column;
+      padding: 10px 23px;
+    }
+  }
+  @media screen and (max-width: $bigMobile) {
+    height: auto;
+  }
+}
