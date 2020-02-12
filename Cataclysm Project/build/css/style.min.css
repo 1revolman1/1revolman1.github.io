@@ -242,7 +242,6 @@ body {
 }
 
 .block-content .block-with-employee .parent .child .text {
-  overflow-y: scroll;
   padding: 15%;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -312,6 +311,66 @@ body {
   background: rgba(0, 0, 0, 0.6);
 }
 
+.block-content .block-with-employee .block-faq {
+  margin: 10px 0;
+}
+
+.block-content .block-with-employee .block-faq .collapsible {
+  background-color: #252525;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  letter-spacing: 1.5px;
+}
+
+.block-content .block-with-employee .block-faq .collapsible:after {
+  content: "\002B";
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.block-content .block-with-employee .block-faq .active:after {
+  content: "\2212";
+}
+
+.block-content .block-with-employee .block-faq .active,
+.block-content .block-with-employee .block-faq .collapsible:hover {
+  background-color: #181818;
+}
+
+.block-content .block-with-employee .block-faq .content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  -o-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+  background: white;
+}
+
+.block-content .block-with-employee .block-faq .content p {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  letter-spacing: 1.5px;
+}
+
 .block-content .block-with-employee .parent:hover .child,
 .block-content .block-with-employee .parent:focus .child {
   background-size: 250%;
@@ -362,6 +421,7 @@ body {
 }
 
 .foot .start-game .text {
+  margin: 0 auto;
   z-index: 1;
 }
 
@@ -444,6 +504,16 @@ body {
 .empty {
   margin: 0 !important;
   height: 0 !important;
+}
+
+.slick-prev {
+  left: 2% !important;
+  z-index: 1;
+}
+
+.slick-next {
+  right: 2% !important;
+  z-index: 1;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap");
