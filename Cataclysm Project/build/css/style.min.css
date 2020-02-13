@@ -16,6 +16,7 @@ body {
 }
 
 .header .wrapper {
+  z-index: 1;
   position: absolute;
   top: 0;
   right: 50%;
@@ -35,7 +36,6 @@ body {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  background: rgba(0, 0, 0, 0.6);
   width: 100%;
   padding: 0 15%;
   height: 100%;
@@ -196,6 +196,16 @@ body {
   }
 }
 
+.header::before {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
 .main-content {
   width: 100%;
   background: #050505;
@@ -228,7 +238,7 @@ body {
 }
 
 .block-content {
-  max-width: 500px;
+  max-width: 675px;
   margin: 0 auto;
   margin-bottom: 75px;
 }
@@ -856,7 +866,7 @@ template {
   display: none;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 675px) {
   .header .wrapper .login-form {
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
@@ -866,7 +876,7 @@ template {
     -ms-flex-item-align: start;
     align-self: flex-start;
     position: absolute;
-    right: 9%;
+    right: 0;
     top: 81px;
   }
 
@@ -903,7 +913,7 @@ template {
     -ms-flex-item-align: start;
     align-self: flex-start;
     position: absolute;
-    left: 9%;
+    left: 0;
     top: 81px;
   }
 
@@ -917,7 +927,9 @@ template {
   }
 
   .header .wrapper {
-    padding: 0 9%;
+    padding: 0;
+    width: 78%;
+    margin: 0 auto;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
@@ -954,7 +966,7 @@ template {
   }
 
   .block-content .block-with-employee .parent .child .text h3 {
-    font-size: 15px;
+    font-size: 100%;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -965,7 +977,7 @@ template {
   }
 
   .block-content .block-with-employee .parent .child .text p {
-    font-size: 13px;
+    font-size: 90%;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -980,7 +992,7 @@ template {
   }
 
   .block-content .block-with-employee .parent {
-    width: 30%;
+    width: 24%;
     height: 138px;
   }
 
@@ -1027,7 +1039,7 @@ template {
     -ms-flex-pack: justify;
     justify-content: space-between;
     overflow-x: auto;
-    max-height: 500px;
+    max-height: 360px;
   }
 
   .block-content {
@@ -1057,6 +1069,85 @@ template {
   .wrapper {
     width: 78%;
     max-width: 1440px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header .wrapper .login-form p {
+    font-size: 22.5px;
+  }
+
+  .header .wrapper .icons a {
+    width: 49px;
+    height: 49px;
+  }
+
+  .header .wrapper .logo img {
+    width: 382px;
+    height: 116px;
+  }
+
+  .header .wrapper .logo {
+    position: initial;
+    -webkit-box-ordinal-group: 1;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+  }
+
+  .header .wrapper .arrow {
+    margin: 0;
+    position: absolute;
+    left: 4%;
+  }
+
+  .main-content .navigation-panel a {
+    font-size: 22.5px;
+  }
+
+  .block-content .block-with-employee .parent .child .text h3 {
+    font-size: 26.5px;
+  }
+
+  .block-content .block-with-employee .parent .child .text p {
+    font-size: 15px;
+  }
+
+  .block-content .block-with-employee .container .block-with-rools h3 {
+    font-size: 26.5px;
+  }
+
+  .block-content .block-with-employee .container .block-with-rools ol li {
+    font-size: 18px;
+  }
+
+  .block-content .block-with-employee .container .block-faq .collapsible {
+    font-size: 22.5px;
+  }
+
+  .block-content .block-with-employee .container .block-faq .content p {
+    font-size: 18px;
+  }
+
+  .block-content .block-with-employee {
+    max-height: 650px;
+  }
+
+  .foot .start-game .text h3 {
+    font-size: 24px;
+  }
+
+  .foot .start-game .text a .button {
+    width: 354px;
+    height: 74px;
+    font-size: 24px;
+  }
+
+  .foot .start-game {
+    min-height: 400px;
   }
 }
 /*# sourceMappingURL=style.min.css.map */
