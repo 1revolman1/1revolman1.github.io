@@ -225,6 +225,7 @@ body {
 }
 
 .main-content .navigation-panel a {
+  cursor: pointer;
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
   font-size: 30px;
@@ -561,6 +562,127 @@ body {
 
 *::-webkit-scrollbar-thumb {
   background-color: #000000;
+}
+
+.reg .header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+.reg .header #myVideo {
+  position: fixed;
+}
+
+.reg .header .registration {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center !important;
+  -webkit-justify-content: center !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+  -webkit-box-align: center !important;
+  -webkit-align-items: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important;
+}
+
+.reg .header .registration form {
+  width: initial;
+  z-index: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.reg .header .registration form h1 {
+  margin: 30px 0;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 42px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 2.1px;
+  text-align: center;
+  color: #ffffff;
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  -o-transition: transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
+}
+
+.reg .header .registration form .form__input[type="submit"]:focus {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.reg .header .registration form .form__label {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  display: block;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  color: white;
+  -webkit-transform: translateY(-7rem);
+  -ms-transform: translateY(-7rem);
+  transform: translateY(-7rem);
+}
+
+.reg .header .registration form .form__input {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  font-size: 1.2rem;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  border-radius: 0.2rem;
+  background-color: white;
+  border: none;
+  width: 100%;
+  display: block;
+  border-bottom: 0.3rem solid transparent;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.reg .header .registration form .form__input:placeholder-shown {
+  opacity: 0.45;
+}
+
+.reg .header .registration form .form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(-4rem);
+  -ms-transform: translateY(-4rem);
+  transform: translateY(-4rem);
+}
+
+.reg .header::before {
+  position: fixed;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap");
@@ -1148,6 +1270,16 @@ template {
 
   .foot .start-game {
     min-height: 400px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .reg .header .registration form {
+    width: 95%;
+  }
+
+  .reg .header .registration form h1 {
+    font-size: 10vw;
   }
 }
 /*# sourceMappingURL=style.min.css.map */
