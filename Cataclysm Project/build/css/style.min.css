@@ -565,11 +565,7 @@ body {
 }
 
 .reg .header {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  height: 100%;
+  height: initial;
 }
 
 .reg .header #myVideo {
@@ -577,6 +573,7 @@ body {
 }
 
 .reg .header .registration {
+  height: 100%;
   position: relative;
   padding: 0;
   margin: 0;
@@ -638,10 +635,38 @@ body {
   transition: transform 2s, -webkit-transform 2s;
 }
 
+.reg .header .registration form .form__question {
+  margin: 0 0 15px;
+}
+
+.reg .header .registration form .form__question h3,
+.reg .header .registration form .form__question p {
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #656565;
+}
+
+.reg .header .registration form .form__question p {
+  color: #ffffff;
+}
+
+.reg .header .registration form .form__question p a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .reg .header .registration form .form__input[type="submit"]:focus {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .reg .header .registration form .form__label {
@@ -659,7 +684,18 @@ body {
   transform: translateY(-7rem);
 }
 
-.reg .header .registration form .form__input {
+.reg .header .registration form .form__submit {
+  text-transform: uppercase;
+}
+
+.reg .header .registration form .big-text {
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+}
+
+.reg .header .registration form .form__input,
+.reg .header .registration form .form__link {
   font-family: "Roboto", sans-serif;
   color: #333;
   font-size: 1.2rem;
@@ -1277,6 +1313,13 @@ template {
 
   .foot .start-game {
     min-height: 400px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .reg .header .registration form .form__question h3,
+  .reg .header .registration form .form__question p {
+    font-size: 14px;
   }
 }
 
